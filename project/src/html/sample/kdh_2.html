@@ -1,0 +1,193 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+	title: "KCYCLE 경륜",
+	url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytMypage">
+	<div class="layoutArea">
+
+		<!-- 상단영역 -->
+		<div class="layoutTop">
+			<!-- Top -->
+			<%- include('../_ejs/header.ejs', {
+				url: "../../"
+			}) %>
+		</div>
+		<!-- //상단영역 -->
+
+		<!-- 중단영역 -->
+		<div class="layoutContainer" id="container">
+
+			<!-- 서브 콘텐츠 영역 -->
+			<div class="layoutSubCont">
+
+				<!-- 마이페이지 LNB -->
+				<div class="layoutLnbArea">
+					<div class="lnbArea">
+						<h1 class="lnbTit">마이페이지</h1>
+						<ul class="lnbMenu">
+							<li class="on"><a href="#"><span>나의 모의베팅</span></a></li>
+							<li><a href="#"><span>나의 활동지수</span></a></li>
+							<li><a href="#"><span>나의 게시글</span></a></li>
+							<li><a href="#"><span>나의 스크랩</span></a></li>
+							<li><a href="#"><span>내알림</span></a></li>
+							<li><a href="#"><span>내정보 수정</span></a></li>
+							<li><a href="#"><span>회원탈퇴</span></a></li>
+						</ul>
+					</div>
+
+					<div class="userArea">
+						<div class="info user">
+							<span class="grade">일반회원</span><br>
+							<strong>홍길동</strong>
+							<span class="id">(user1234)</span>
+						</div>
+						<div class="info">
+							가입일 : <span>2024.09.15</span>
+							<span class="state tRed">경고 : <span>1</span>회</span>
+						</div>
+						
+						<span class="shortcut"><a href="" class="txtBtn">내정보수정</a></span>
+					</div>
+				</div>
+
+				<!-- 서브 컨텐츠 내용이 들어오는 영역-->
+				<div class="layoutContArea myMain">
+					<!-- 서브 탑 (타이틀) -->
+                    <div class="cptSubTop">
+                        <div class="subTopArea">
+                            <ul class="location">
+                                <li class="item"><a href="#">홈</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+					<div class="cptDataSum bg01">
+						<div class="dataSum mRow">
+							<ul class="inner">
+								<li>
+									<div class="icon">
+										<img src="../../images/common/ic_mypage_sum_betting.svg" alt="">
+									</div>
+									<div class="item">모의베팅 순위</div>
+									<div class="val">158위</div>
+								</li>
+								<li>
+									<div class="icon">
+										<img src="../../images/common/ic_mypage_sum_activity.svg" alt="">
+									</div>
+									<div class="item">현재 보유 활동지수</div>
+									<div class="val">350,000 <i class="unit">P</i></div>
+								</li>
+								<li>
+									<div class="icon">
+										<img src="../../images/common/ic_mypage_sum_notify.svg" alt="">
+									</div>
+									<div class="item">새알림</div>
+									<div class="val">30</div>
+								</li>
+							</ul>
+						</div>
+						<div class="addInfo">
+							<button type="button" class="btnRefresh alignR" title="새로고침">2024.10.15 20:00 기준</button>
+						</div>
+					</div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="comTitH2 bk">
+								<h2>나의 모의베팅</h2>
+								<div class="right">
+									<button type="button" class="txtBtn">더 보기</button>
+								</div>
+							</div>
+							<div class="tempArea">작업중</div>
+						</div>
+					</div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="comTitH2 bk">
+								<h2>나의 활동지수</h2>
+								<div class="right">
+									<button type="button" class="txtBtn">더 보기</button>
+								</div>
+							</div>
+							<div class="tempArea">작업중</div>
+						</div>
+					</div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="comTitH2 bk">
+								<h2>나의 게시글</h2>
+								<div class="right">
+									<button type="button" class="txtBtn">더 보기</button>
+								</div>
+							</div>
+							<div class="tempArea">작업중</div>
+						</div>
+					</div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="comTitH2 bk mb0">
+								<h2>나의 스크랩</h2>
+								<div class="right">
+									<button type="button" class="txtBtn">더 보기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modTab">
+                        <div class="tabMenuGroup tabSwiper">
+                            <ul class="tabMenu swiper-wrapper">
+                                <li class="tabItem swiper-slide"><button class="tabName on" title="선택 된 탭메뉴">출주표</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                                <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">최근성적</button></li>
+                            </ul>
+                        </div>
+                        <div class="tabDirection">
+                            <div class="tabBtn alignL">
+                                <button class="prev">이전</button>
+                            </div>
+                            <div class="tabBtn alignR">
+                                <button class="next">다음</button>
+                            </div>
+                        </div>
+                        <div class="tabContianer">
+                            <div class="tabCont on"> <!-- addClass - on : 컨텐츠 노출 -->
+								<div class="tempArea">contents 0-1</div>
+                            </div>
+                            <div class="tabCont">
+								<div class="tempArea">contents 0-2</div>
+                            </div>
+                        </div>
+                    </div>
+
+				</div>
+				<!-- //서브 컨텐츠 내용이 들어오는 영역-->
+				
+			</div>
+			<!-- //서브 콘텐츠 영역 -->
+
+		</div>
+		<!-- //중단영역 -->
+
+		<!-- 하단영역 -->
+		<div class="layoutFooter">
+			<!-- Footer -->
+			<%- include('../_ejs/footer.ejs', {
+				url: "../../"
+			}) %>
+		</div>
+		<!-- //하단영역 -->
+
+	</div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

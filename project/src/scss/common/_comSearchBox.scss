@@ -1,0 +1,148 @@
+.comSearchBox {
+    width: 100%; margin-top: 60px; padding: 32px 40px; border-radius: 12px; background: var(--Bg-Line-bg-100); display: flex; flex-wrap: wrap; gap: 20px;
+    &:first-child {margin-top: 0px;}
+    .searchLine {
+        width: 100%; display: flex; justify-content: space-between;
+        &.col2 {
+            .condition {
+                width: calc(50% - 30px);
+                .title {
+                    width: 70px;
+                }
+            }
+        }
+        &.col4 {
+            .condition {
+                width: calc(25% - 45px);
+                .title {
+                    width: 70px;
+                }
+            }
+        }
+        &.col3 {
+            .condition {
+                width: calc(33.3333% - 40px);
+                .title {
+                    width: 70px;
+                }
+            }
+        }
+        &.col2_1 {
+            .condition {
+                width: calc(50% - 30px);
+                .title {
+                    width: 70px;
+                }
+            }
+        }
+        &.col21Sch {
+            gap: 40px;
+            .condition {
+                &:nth-child(1) {
+                    width: 32.1%; flex-shrink: 0;
+                    .title {
+                        width: 60px;
+                    }
+                }
+                &:nth-child(2) {
+                    width: 100%;
+                    .title {
+                        width: 80px;
+                    }
+                }
+            }
+            .btn {margin-left: 0;}
+        }
+        .condition {
+            width: 100%; display: flex; 
+            .title {
+                width: 70px; color: var(--Gray-800); font-size: rem(16px); font-weight: 600; line-height: 1.6; align-content: center; flex-shrink: 0;
+            }
+            .conBox {
+                width: 100%;
+            }
+        }
+        .btn {
+            margin-left: 20px; flex-shrink: 0; display: inline-flex; align-items: center;
+            &.search::before {
+                content:""; width: 20px; height: 20px; margin-right: 4px; background: url(../../images/common/ic_20_search_white.svg) center no-repeat; display: inline-block;
+            }
+        }
+    }
+    @include media('tablet') {
+        .searchLine {
+            &.col4 {
+                flex-wrap: wrap; row-gap: 16px;
+                .condition {
+                    width: calc(50% - 30px);
+                }
+            }
+            &.col3 {
+                flex-wrap: wrap; row-gap: 16px;
+                .condition {
+                    width: calc(50% - 30px);
+                    &:last-child {
+                        width: 100%;
+                    }
+                }
+            }
+            &.col2_1 {
+                flex-wrap: wrap; row-gap: 16px;
+                .condition {
+                    width: 100%;
+                }
+            }
+            &.col21Sch {
+                flex-wrap: wrap; row-gap: 16px;
+                .condition {
+                    &:nth-child(1) {
+                        width: 100%;
+                        .title {
+                            width: 70px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        width: 100%;
+                        .title {
+                            width: 70px;
+                        }
+                    }
+                }
+                .btn {width: 100%; justify-content: center;}
+            }
+        }
+    }
+    @include media('mobile') {
+        width: calc(100% + 32px); margin-top: 40px; margin-left: -16px; padding: 40px 16px; border-radius: 0; gap: 16px;
+        &:first-child {margin-top: -40px;}
+        .searchLine {
+            &.col2 {
+                .condition {
+                    width: calc(50% - 6px);
+                }
+            }
+            &.col3 {
+                .condition {
+                    width: calc(50% - 6px);
+                    &:last-child {
+                        width: 100%;
+                    }
+                }
+            }
+            &.col4 {
+                flex-wrap: wrap; row-gap: 16px;
+                .condition {
+                    width: calc(50% - 6px);
+                }
+            }
+            .condition {
+                .title {
+                    display:none;
+                }
+            }
+            .btn {
+                padding: 0 16px; margin-left: 10px;
+            }
+        }
+    }
+}

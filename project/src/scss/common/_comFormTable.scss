@@ -1,0 +1,127 @@
+/* --------------------------- 폼 테이블 --------------------------- */
+.comFormTable {
+    width:100%; margin-top: 40px; background:#fff;
+    &:first-child {margin-top:0;}
+
+    @include media('mobile') {
+        margin-top: 32px;
+        &:first-child {margin-top:0;}
+    }
+    .tableTitle {
+        h2 {
+            color: var(--Gray-900); font-size: rem(30px); font-weight: 600; line-height: 1.4;
+        }
+        & + .tableArea {
+            margin-top: 20px;
+        }
+        @include media('mobile') {
+            h2 { font-size: rem(22px);}
+            & + .tableArea {
+                margin-top: 16px;
+            }
+        }
+    }
+    .tableTop {
+        width: 100%; margin-bottom: 20px; display: flex; justify-content: space-between;
+        .alignL {
+            width: 100%; display: flex; justify-content: flex-start; align-items: center;
+        }
+        .alignR {
+            width: 100%; display: flex; justify-content: flex-end; align-items: center;
+        }
+        .txt {
+            font-size: rem(16px); color: var(--font-700); font-weight: 300; line-height: 1.6;
+            & + .txt {margin-left: 24px;}
+            
+        }
+        .normalTxt {
+            font-size: rem(16px); color: var(--font-800); font-weight: 400; line-height: 1.6;
+            .desc {
+                margin-left: 12px; color: var(--Point-Red); font-weight: 600;
+            }
+        }
+        .strong {
+            font-size: rem(18px); color: var(--font-900); font-weight: 700; line-height: 1.4;
+        }
+        @include media('mobile') {
+            margin-bottom: 12px; flex-wrap: wrap;
+            .alignL {
+
+            }
+            .alignR {
+                margin-top: 8px; justify-content: flex-start;
+            }
+            .txt {
+                font-size: rem(15px); 
+                & + .txt {margin-left: 20px;}
+            }
+        }
+    }
+    .tableArea {
+        width:100%; border-top: 2px solid var(--Gray-900); overflow: auto;
+        table {
+            width:100%; 
+            tbody {
+                th {
+                    padding: 16px 32px; color: var(--font-800); font-size: rem(16px); font-weight: 700; line-height: 1.4; border-bottom: 1px solid var(--Bg-Line-line-100); text-align: left;
+                }
+                td {
+                    padding: 16px 32px; color: var(--font-800); font-size: rem(16px); font-weight: 400; line-height: 1.6; border-bottom: 1px solid var(--Bg-Line-line-100); text-align: left;
+                    &.innerTxt {
+                        padding: 32px;
+                    }
+                }
+                .top {padding-top: 28px; vertical-align: top;}
+                .byte {width: 100%; margin-top: 4px; color: var(--Gray-300); font-size: rem(15px); font-weight: 500; line-height: 1.6; text-align: right; display: block;
+                    b {color: var(--Gray-800); font-weight: 500;}
+                }
+            }
+        }
+        .required {
+            margin-left: 5px; color: var(--Point-Red); font-size: rem(16px); font-weight: 700; line-height: 1.4;
+        }
+        
+        @include media('mobile') {
+            table {
+                display: flex;
+                caption {display: none;}
+                colgroup {display:none;}
+                tbody {
+                    width: 100%; display: flex; flex-wrap: wrap;
+                    tr {
+                        width: 100%; padding: 16px 0; display: flex; flex-wrap: wrap;
+                    }
+                    th {
+                        width:100%; display: block; padding: 0; font-size: rem(16px); font-weight: 600; line-height: 1.6; border-bottom: 0;
+                    }
+                    td {
+                        width:100%; margin-top: 8px; padding: 0; font-size: rem(15px); border-bottom: 0;
+                        &.innerTxt {
+                            margin-top: 0; padding: 4px 0 20px; border-bottom: 1px solid var(--Bg-Line-line-100); 
+                        }
+                    }
+                    .top {padding-top: 0;}
+                }
+            }
+            .required {
+                font-weight: 600; line-height: 1.6;
+            }
+        }
+    }
+
+    //조건
+    .frmGroup {
+        flex-wrap: wrap;                    
+    }
+    .iptTextArea {
+        height: 377px
+    }
+    .tableArea + .frmGroup {
+        margin-top: 20px;
+        @include media('mobile') {
+            margin-top: 4px;
+        }
+    }
+    
+}
+

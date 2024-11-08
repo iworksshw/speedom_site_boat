@@ -1,0 +1,1064 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+	title: "KCYCLE 경륜",
+	url: "../../"
+}) %>
+
+<style>
+	/* 퍼블확인용 - 적용X */
+	.comTabData .tabMenuGroup:not(.swiper-initialized) .tabItem {margin-right: 12px;}
+	
+</style>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+	<div class="layoutArea">
+
+		<!-- 상단영역 -->
+		<div class="layoutTop">
+			<!-- Top -->
+			<%- include('../_ejs/header.ejs', {
+				url: "../../"
+			}) %>
+		</div>
+		<!-- //상단영역 -->
+
+		<!-- 중단영역 -->
+		<div class="layoutContainer" id="container">
+
+			<!-- 서브 콘텐츠 영역 -->
+			<div class="layoutSubCont">
+
+				<!-- 서브 컨텐츠 내용이 들어오는 영역-->
+				<!-- 서브 탑 (타이틀) -->
+				<%- include('../_ejs/sub_top.ejs', {
+					location: ['뎁스_1', '뎁스_2', '뎁스_3'],
+					subTitle: '페이지 타이틀',
+					subText: '페이지 서브텍스트 문구입니다<br><b>두줄로 써본다</b>',
+					url: "../../",
+				}) %>
+
+				<div class="layoutContArea">
+					<div class="tempArea">경륜영상관 상단 검색영역(=통합검색)</div>
+
+					<!-- 검색 박스 -->
+                    <div class="comSearchBox untitled">
+						<div class="searchLine">
+							<dl class="condition">
+								<dt class="title">경주회차</dt>
+								<dd class="conBox">
+									<div class="frmGroup">
+										<div class="frmBox">
+											<select class="iptSlt">
+												<option value="">연도 전체</option>
+												<option value="">드롭다운</option>
+											</select>
+										</div>
+										<div class="frmBox">
+											<select class="iptSlt">
+												<option value="">경주회차 전체</option>
+												<option value="">드롭다운</option>
+											</select>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="searchLine">
+							<dl class="condition">
+								<dt class="title">선수정보</dt>
+								<dd class="conBox">
+									<div class="txtLbl">선수명</div>
+									<div class="frmGroup">
+										<div class="frmBox">
+											<input type="text" class="iptText" placeholder="" value="">
+										</div>
+									</div>
+									<div class="txtLbl">연도</div>
+									<div class="frmGroup">
+										<div class="frmBox">
+											<select class="iptSlt">
+												<option value="">전체</option>
+												<option value="">드롭다운</option>
+											</select>
+										</div>
+									</div>
+									<div class="txtLbl">경주회차</div>
+									<div class="frmGroup">
+										<div class="frmBox">
+											<select class="iptSlt">
+												<option value="">전체</option>
+												<option value="">드롭다운드롭다운</option>
+											</select>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="searchLine">
+							<dl class="condition">
+								<dt class="title">경주일</dt>
+								<dd class="conBox">
+									<div class="frmGroup period">
+										<div class="frmDate">
+											<input type="text" class="iptText" placeholder="YY.MM.DD">
+											<button type="button" title="날짜 선택"></button>
+										</div>
+										<div class="gap">-</div>
+										<div class="frmDate">
+											<input type="text" class="iptText" placeholder="YY.MM.DD">
+											<button type="button" title="날짜 선택"></button>
+										</div>
+									</div>
+									
+									<div class="txtLbl">직접입력</div>
+									<div class="frmGroup option">
+										<div class="frmBox">
+											<input id="periodGroup1_1" type="radio" class="iptRdo" name="periodGroup1" checked>
+											<label for="periodGroup1_1" class="iptLblBtn">오늘</label>
+										</div>
+										<div class="frmBox">
+											<input id="periodGroup1_2" type="radio" class="iptRdo" name="periodGroup1">
+											<label for="periodGroup1_2" class="iptLblBtn">최근 1주</label>
+										</div>
+										<div class="frmBox">
+											<input id="periodGroup1_3" type="radio" class="iptRdo" name="periodGroup1">
+											<label for="periodGroup1_3" class="iptLblBtn">최근 1달</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="searchLine">
+							<dl class="condition">
+								<dt class="title">경주일</dt>
+								<dd class="conBox">
+									<div class="frmGroup period">
+										<div class="frmDate">
+											<input type="text" class="iptText" placeholder="YY.MM.DD">
+											<button type="button" title="날짜 선택"></button>
+										</div>
+										<div class="gap">-</div>
+										<div class="frmDate">
+											<input type="text" class="iptText" placeholder="YY.MM.DD">
+											<button type="button" title="날짜 선택"></button>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							<dl class="condition">
+								<dt class="title">직접입력</dt>
+								<dd class="conBox">
+									<div class="frmGroup option">
+										<div class="frmBox">
+											<input id="periodGroup1_1" type="radio" class="iptRdo" name="periodGroup1" checked>
+											<label for="periodGroup1_1" class="iptLblBtn">오늘</label>
+										</div>
+										<div class="frmBox">
+											<input id="periodGroup1_2" type="radio" class="iptRdo" name="periodGroup1">
+											<label for="periodGroup1_2" class="iptLblBtn">최근 1주</label>
+										</div>
+										<div class="frmBox">
+											<input id="periodGroup1_3" type="radio" class="iptRdo" name="periodGroup1">
+											<label for="periodGroup1_3" class="iptLblBtn">최근 1달</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="searchLine">
+							<dl class="condition">
+								<dt class="title">경기등급</dt>
+								<dd class="conBox">
+									<div class="frmGroup option">
+										<div class="frmBox">
+											<input id="srchCondGroup1_1" type="radio" class="iptRdo" name="srchCondGroup1" checked>
+											<label for="srchCondGroup1_1" class="iptLblBtn">전체</label>
+										</div>
+										<div class="frmBox">
+											<input id="srchCondGroup1_2" type="radio" class="iptRdo" name="srchCondGroup1">
+											<label for="srchCondGroup1_2" class="iptLblBtn">선발(결승포함)</label>
+										</div>
+										<div class="frmBox">
+											<input id="srchCondGroup1_3" type="radio" class="iptRdo" name="srchCondGroup1">
+											<label for="srchCondGroup1_3" class="iptLblBtn">우수(결승포함)</label>
+										</div>
+										<div class="frmBox">
+											<input id="srchCondGroup1_4" type="radio" class="iptRdo" name="srchCondGroup1">
+											<label for="srchCondGroup1_4" class="iptLblBtn">특선(결승포함)</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="searchLine">
+							<dl class="condition">
+								<dt class="title">전법</dt>
+								<dd class="conBox">
+									<div class="frmGroup option">
+										<div class="frmBox">
+											<input id="srchCondGroup2_1" type="radio" class="iptRdo" name="srchCondGroup2" checked>
+											<label for="srchCondGroup2_1" class="iptLblBtn">전체</label>
+										</div>
+										<div class="frmBox">
+											<input id="srchCondGroup2_2" type="radio" class="iptRdo" name="srchCondGroup2">
+											<label for="srchCondGroup2_2" class="iptLblBtn">선행</label>
+										</div>
+										<div class="frmBox">
+											<input id="srchCondGroup2_3" type="radio" class="iptRdo" name="srchCondGroup2">
+											<label for="srchCondGroup2_3" class="iptLblBtn">젖히기</label>
+										</div>
+										<div class="frmBox">
+											<input id="srchCondGroup2_4" type="radio" class="iptRdo" name="srchCondGroup2">
+											<label for="srchCondGroup2_4" class="iptLblBtn">추입</label>
+										</div>
+										<div class="frmBox">
+											<input id="srchCondGroup2_5" type="radio" class="iptRdo" name="srchCondGroup2">
+											<label for="srchCondGroup2_5" class="iptLblBtn">마크</label>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="srchTotal" style="font-weight: 300; font-size: 30px; line-height: 1.4;"><b>‘선수’</b> 에 관한 전체 <b>20</b>개의 검색 결과입니다.</div>
+						</div>
+					</div> 
+
+					<div class="modTab">
+                        <div class="tabMenuGroup tabSwiper toAll">
+                            <ul class="tabMenu swiper-wrapper">
+								<li class="tabItem swiper-slide"><button class="tabName on" title="탭메뉴">전체(<span>100</span>)</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+								<li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">경주(<span>20</span>)</button></li>
+								<li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">스피돔소식(<span>20</span>)</button></li>
+								<li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">이벤트경륜(<span>20</span>)</button></li>
+								<li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">대상경륜방송(<span>20</span>)</button></li>
+								<li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">기획프로그램(<span>20</span>)</button></li>
+								<li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">경륜선수(<span>20</span>)</button></li>
+								<li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">경륜정보(<span>20</span>)</button></li>
+								<li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">경륜지식쌓기(<span>20</span>)</button></li>
+                            </ul>
+                        </div>
+                        <div class="tabDirection">
+                            <div class="tabBtn alignL">
+                                <button class="prev">이전</button>
+                            </div>
+                            <div class="tabBtn alignR">
+                                <button class="next">다음</button>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="comTitH2 bk">
+								<h2>메뉴 <b class="tKey">20</b></h2>
+								<div class="right">
+									<button type="button" class="txtBtn">더 보기</button>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="comTitH2 bk">
+								<h2>내알림</h2>
+								<div class="right">
+									<div class="frmGroup">
+										<div class="frmBox">
+											<select class="iptSlt">
+												<option value="">20개</option>
+												<option value="">드롭다운</option>
+											</select>
+										</div>
+										<div class="frmBox">
+											<select class="iptSlt">
+												<option value="">오름차순</option>
+												<option value="">드롭다운</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- /////////////////////////////////////// -->
+
+					<div class="cptSection">
+						<div class="sectArea">
+							<div class="frmCheckList">
+								<div class="frmBox"><input id="rdoGroup1_1" type="radio" class="iptRdo" name="rdoGroup1" checked><label for="rdoGroup1_1" class="iptLbl">사이트 이용 불편</label></div>
+								<div class="frmBox"><input id="rdoGroup1_2" type="radio" class="iptRdo" name="rdoGroup1"><label for="rdoGroup1_2" class="iptLbl">정보제공 불충분</label></div>
+								<div class="frmBox"><input id="rdoGroup1_3" type="radio" class="iptRdo" name="rdoGroup1"><label for="rdoGroup1_3" class="iptLbl">이용빈도 낮음</label></div>
+								<div class="frmBox"><input id="rdoGroup1_4" type="radio" class="iptRdo" name="rdoGroup1"><label for="rdoGroup1_4" class="iptLbl">늦은 정보 업데이트 속도</label></div>
+								<div class="frmBox">
+									<input id="rdoGroup1_5" type="radio" class="iptRdo" name="rdoGroup1"><label for="rdoGroup1_5" class="iptLbl">직접 입력</label>
+									<div class="frmBox">
+										<textarea class="iptTextArea" name="" id="" placeholder="회원님의 소중한 의견 부탁 드립니다."></textarea>
+										<span class="byte"><b>50</b> / 500 Byte</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="cptDataSum">
+						<div class="comTitH2 bk">
+							<h2>내알림</h2>
+							<div class="right">
+								<div class="frmBox">
+									<select class="iptSlt">
+										<option value="">2024년</option>
+										<option value="">2023년</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="dataSum">
+							<ul class="inner">
+								<li>
+									<span class="item">전체알림</span>
+									<span class="val">23490</span>
+								</li>
+								<li>
+									<span class="item">새알림</span>
+									<span class="val">10</span>
+								</li>
+								<li>
+									<span class="item">확인된 알림</span>
+									<span class="val">23480</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="comTitH2 bk">
+							<h2>나의 게시글</h2>
+						</div>
+						<div class="dataSum mRow">
+							<ul class="inner">
+								<li>
+									<span class="item">나의 전체 게시글 수</span>
+									<span class="val">70</span>
+								</li>
+								<li>
+									<span class="item">오늘 조회 수</span>
+									<span class="val">15</span>
+								</li>
+								<li>
+									<span class="item">전체 누적 조회 수</span>
+									<span class="val">2,500</span>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="comTitH2 bk">
+							<h2>나의 활동지수</h2>
+						</div>
+						<div class="dataSum mRow">
+							<ul class="inner">
+								<li>
+									<div class="item">현재 보유 활동지수</div>
+									<div class="val">2,000,000 <i class="unit">P</i></div>
+								</li>
+								<li>
+									<div class="item">8월 적립 활동지수</div>
+									<div class="val tBlue">+3,000,500 <i class="unit">P</i></div>
+								</li>
+								<li>
+									<div class="item">8월 사용 활동지수</div>
+									<div class="val tRed">-1,000,500 <i class="unit">P</i></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+						
+					<div class="comTabData">
+						<div class="tabMenuGroup tabDataSwiper">
+							<ul class="tabMenu swiper-wrapper">
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName on">전체</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">서울</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">경기</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">충남</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">충북</button>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="right">
+							<div class="frmBox">
+								<select class="iptSlt">
+									<option value="">2024년</option>
+									<option value="">2023년</option>
+								</select>
+							</div>
+						</div>
+					</div>
+						
+					<div class="comTabData">
+						<div class="tabMenuGroup tabDataSwiper">
+							<ul class="tabMenu swiper-wrapper">
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName on">전체</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">서울</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">경기</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">충남</button>
+								</li>
+								<!-- <li class="tabItem swiper-slide">
+									<button type="button" class="tabName">충북</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">서울</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">경기</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">충남</button>
+								</li>
+								<li class="tabItem swiper-slide">
+									<button type="button" class="tabName">충북</button>
+								</li> -->
+							</ul>
+						</div>
+						
+						<div class="right">
+							<div class="comAddGuide"> 
+								<p class="guide">활동지수는 매월 1일에 초기화 됩니다.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- 나의 게시글 -->
+					<div class="cptBoardList">
+                        <div class="boardListArea">
+                            <!-- 게시판 리스트 상단 -->
+                            <div class="comGroupTop reverse">
+                                <div class="alignL">
+									<div class="tit">내가 쓴 예상과 후기</div>
+                                    <!-- <div class="unit"><span class="text">전체 <span class="total">999</span> 건</span></div> -->
+                                </div>
+                                <div class="alignR">
+                                    <ul class="opList">
+                                        <!-- <li class="item">
+                                            <div class="frmGroup">
+                                                <div class="frmBox">
+                                                    <select class="iptSlt">
+                                                        <option value="">전체</option>
+                                                        <option value="">드롭다운</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </li> -->
+                                        <li class="item">
+                                            <div class="frmGroup">
+                                                <div class="frmSearch">
+                                                    <input type="text" class="iptText" placeholder="내용을 입력하세요">
+                                                    <button class="btnSearch">검색</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 게시판 리스트 -->
+                            <div class="listTable">
+                                <table>
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width:93px;">
+                                        <col style="width:auto;">
+                                        <col style="width:100px;">
+                                        <col style="width:120px;">
+                                        <col style="width:120px;">
+                                        <col style="width:140px;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="num">01</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                    <span class="icons">
+                                                        <span class="read">[130]</span>
+                                                        <span class="icon new">새로운 글</span>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">0</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">02</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                    <span class="icons">
+                                                        <span class="read">[130]</span>
+                                                        <span class="icon new">새로운 글</span>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">03</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 목록 리스트 총 15개 노출</a>
+                                                    <span class="icons">
+                                                        <span class="read">[130]</span>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">04</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">05</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">06</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">07</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">08</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">09</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">10</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">11</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">12</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="num">13</td>
+                                            <td class="bdTitle left">
+                                                <div class="title">
+                                                    <a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 2024 상반기 경륜 7대 뉴스, 한글50자 까지 나열됩니다</a>
+                                                </div>
+                                            </td>
+                                            <td class="recom"><span class="recommend">123</span></td>
+                                            <td>2024.07.05</td>
+                                            <td>abcd1234</td>
+                                            <td class="views">35125</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //게시판 리스트 -->
+                            
+                            <!-- 페이징 -->
+                            <div class="comPaging">
+                                <a class="start" href="#"></a>
+                                <a class="prev" href="#"></a>
+                                <ul class="numList">
+                                    <li><a href="#">1</a></li>
+                                    <li class="on"><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                                <a class="next" href="#"></a>
+                                <a class="end" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="cptSection">
+						<div class="sectArea">
+							<div class="cptDataList">
+								<ul class="dataListBox">
+									<li>
+										<a href="#" class="block">
+											<div class="tit">회원가입 이벤트</div>
+											<div class="date">2024-09-09</div>
+											<div class="val tBlue">
+												<span class="state">적립</span>
+												+1,050,000 <i class="unit">P</i>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="block">
+											<div class="tit">예상과 후기 사용자 글쓰기</div>
+											<div class="date">2024-09-08</div>
+											<div class="val tRed">
+												<span class="state">사용</span>
+												-50,000 <i class="unit">P</i>
+											</div>
+										</a>
+									</li>
+									<li>
+										<div class="new">새로운 알림</div>
+										<a href="#" class="block">
+											<div class="cate">게시글 신고</div>
+											<div class="tit full">음란, 욕설, 개인정보 등 유해 게시글 등록</div>
+											<div class="date">2024.09.25 11:08</div>
+										</a>
+									</li>
+									<li class="finished">
+										<a href="#" class="block">
+											<div class="cate">게시글 신고</div>
+											<div class="tit full">타인비방 및 명예훼손</div>
+											<div class="date">2024.09.25 11:08</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="comNoneData">
+								<p class="noneTxt">검색된 선수가 없습니다.</p>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="cptGalleryList">
+						<div class="galleryListArea">
+							<!-- 게시판 리스트 상단 -->
+							<div class="comGroupTop">
+								<div class="alignL">
+									<div class="unit"><span class="text">나의 경륜 동영상 <span class="total">1,500</span></span></div>
+								</div>
+								<div class="alignR">
+									<ul class="opList">
+										<li class="item">
+											<div class="frmGroup">
+												<div class="frmSearch">
+													<input type="text" class="iptText" placeholder="동영상 제목을 입력해주세요.">
+													<button class="btnSearch">검색</button>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- 리스트 영역 -->
+							<div class="listBoard col3_1">
+								<ul class="listGroup">
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">스피드온_챔피언십_시즌1_1주차</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>경륜선수</span>
+														<span>선수조회</span>
+														<span>신인선수 시범경주</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">도박 중독의 과정 알아가기</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">잘못된 신념 사례를 잘못된 신념으로 잘못된 신념을 알아보기</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">이용자 10계명</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">중독에서 벗어나 회복으로!</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">도박 중독의 과정 알아가기</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">잘못된 신념 사례를 잘못된 신념으로 잘못된 신념을 알아보기</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">이용자 10계명</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">중독에서 벗어나 회복으로!</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">도박 중독의 과정 알아가기</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">잘못된 신념 사례를 잘못된 신념으로 잘못된 신념을 알아보기</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+									<li class="listItem">
+										<a href="#" class="itemLink">
+											<div class="imgBox">
+												<div class="bg" style="background-image: url(../../../images/thum/thum_16_9_video.png);"></div>
+											</div>
+											<div class="infoBox">
+												<div class="title">이용자 10계명</div>
+												<ul class="info">
+													<li class="item date">2024.07.24</li>
+													<li class="item">조회수 : 200</li>
+													<li class="item cate">
+														<span>플레이존</span>
+														<span>예상과후기</span>
+													</li>
+												</ul>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							
+							<!-- 페이징 -->
+							<div class="comPaging">
+								<a class="start" href="#"></a>
+								<a class="prev" href="#"></a>
+								<ul class="numList">
+									<li><a href="#">1</a></li>
+									<li class="on"><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+								</ul>
+								<a class="next" href="#"></a>
+								<a class="end" href="#"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="cptSection">
+                        <div class="sectArea">
+							<div class="comTitH2 bk">
+								<h2>위반행위 및 낙차사고</h2>
+								<div class="right">
+									<button type="button" class="txtBtn">더 보기</button>
+								</div>
+							</div>
+							<div class="tempArea mt20">영역</div>
+
+							<div class="comTitH3">
+								<h3>위반행위 및 낙차사고</h3>
+								<div class="right">
+									<button type="button" class="txtBtn">더 보기</button>
+								</div>
+							</div>
+							<div class="tempArea mt20">영역</div>
+
+							<div class="comTitH3">
+								<h3>위반행위 및 낙차사고</h3>
+								<div class="right">
+									<div class="frmBox">
+										<select class="iptSlt">
+											<option value="">2024년</option>
+											<option value="">2023년</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="tempArea mt20">영역</div>
+
+                        </div>
+                    </div>
+
+				</div>
+				<!-- //서브 컨텐츠 내용이 들어오는 영역-->
+				
+			</div>
+			<!-- //서브 콘텐츠 영역 -->
+
+		</div>
+		<!-- //중단영역 -->
+
+		<!-- 하단영역 -->
+		<div class="layoutFooter">
+			<!-- Footer -->
+			<%- include('../_ejs/footer.ejs', {
+				url: "../../"
+			}) %>
+		</div>
+		<!-- //하단영역 -->
+
+	</div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

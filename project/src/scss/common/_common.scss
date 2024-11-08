@@ -1,0 +1,95 @@
+@import 'comDataTable';     //데이터 테이블
+@import 'comContTable';     //컨텐츠 테이블
+@import 'comFormTable';     //폼 테이블
+@import 'comBtnGroup';      //하단 버튼 그룹
+@import 'comSubInfo';       //페이지 안내
+@import 'comTitH2';         //기본 서브타이틀 H2
+@import 'comTitH3';         //기본 서브타이틀 H3
+@import 'comBasicTxt';      //기본 설명문 텍스트
+@import 'comBasicList';     //기본 UL 리스트
+@import 'comNumList';       //넘버링 리스트
+@import 'comImgWrap';       //단일 이미지 요소
+@import 'comImgBox';        //기본 이미지 박스
+@import 'comFomulBox';      //기본 수식 박스
+@import 'comGroupTop';      //보드 및 테이블 상단
+@import 'comSearchBox';     //검색 박스
+@import 'comBoardList';     //보드 리스트
+@import 'comPaging';        //페이징
+@import 'comFileDownload';  //첨부파일 다운로드
+@import 'comComment';       //댓글
+@import 'comPrevNext';      //이전글/다음글
+@import 'comAddGuide';      //테이블 등 하단 안내문구
+@import 'comCalendar';      //달력 양식
+@import 'comPrivacyBox';    //컨텐츠 내 약관상자
+@import 'comDiagrm';        //도표 상자
+@import 'comInfoLayerPop';  //컨텐츠 내부 레이어 팝업
+@import 'comNoneData';      //데이터 결과 없음
+@import 'comMovieBox';      //동영상 외부링크 리스트
+@import 'comBoardInfoBox';  //각종 게시판 내 정보상자
+@import 'comTabData';       //2뎁스 탭 (데이터)
+
+@import 'comPrivacyBox';     //컨텐츠 내 약관상자
+@import 'comMovieLinkBox';  //동영상 보기 링크
+@import 'comDateSwiper';    //날짜 선택 슬라이드
+@import 'comPlayerGrade';   //1~3위 선수 순위
+@import 'comPlayerThumList';//선수 썸네일 포함 리스트
+@import 'comJoinBtmText';   //로그인 / 회원가입 하단 텍스트
+@import 'comBtnTxt';        // 버튼 상단 텍스트
+@import 'comDataSwiper';    //도표 등 데이터 슬라이드
+
+@import 'comContInfo';  // 희망길벗 - 희망길벗경륜경정 중독예방치유센터 운영 목적
+@import 'comContGameFlow';  // 희망길벗 - 도박중독의 진행과정 - 세로형
+@import 'comContVerFlow';  // 희망길벗 - 도박중독의 진행과정 - 가로형
+@import 'comContNumBox'; // 희망길벗 - 넘버링 숫자+텍스트 조합
+@import 'comContSchBox'; // 희망길벗 - 도박중독 FAQ 검색창
+@import 'comAccordionList'; // 아코디언 (FAQ 활용)
+
+
+/* -------------------------------- 파일 업로드/다운로드 -------------------------------- */
+.comFileList{
+    .fileGroup{
+        .file{
+            &.upload{
+
+            }
+            &.download{
+
+            }
+            dl{
+                dt{
+
+                }
+                dd{
+                    a{}
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 1023px) {
+
+}
+
+/* -------------------------------- 이전글/다음글 -------------------------------- */
+.comOtherPage{
+    .otherGroup{
+        .otherItem{
+            .otherTitle{
+                
+            }
+            .otherCont{
+                .link{
+                    
+                }
+            }
+            .otherDate{
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 1023px) {
+
+}

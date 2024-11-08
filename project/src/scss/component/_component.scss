@@ -1,0 +1,79 @@
+@import 'cptHeader';    //상단
+@import 'cptFooter';    //하단
+
+@import 'cptSubTop';    //서브 탑
+@import 'cptSubBtm';    //서브 바텀
+
+@import 'cptLogin';     //로그인
+@import 'cptBoardList';	//일반게시판 리스트
+@import 'cptAlbumList'; //앨범게시판 리스트
+@import 'cptGallery';   //앨범/갤러리 변환게시판 리스트
+@import 'cptBoardView';	//게시판 상세
+@import 'cptBoardWrite';//게시판 쓰기
+@import 'cptComment';	//댓글
+
+@import 'cptSection';   //기본 컨텐츠 단락
+@import 'cptCol2Section';   //기본 컨텐츠 2열 단락
+@import 'cptCol3Section';   //기본 컨텐츠 3열 단락
+@import 'cptLinkSection';   //ID 스크롤 이동 단락
+
+@import 'cptEtcInfo';   //서브컨텐츠 추가 안내사항
+@import 'cptDescList';  //썸네일 포함 서브컨텐츠 설명 리스트
+
+@import 'cptQuickMove'; //서브페이지 빠른 이동
+@import 'cptImgPopup';  //이미지 내부 팝업
+@import 'cptImgGuideBox';  //이미지 포함 가이드 박스
+
+@import 'cptWordTab';   //용어사전 컴포넌트
+@import 'cptWordFilter'; // 정보조회 단어 컴포넌트
+@import 'cpt2ImgboxSect';  // 경주권과 구매권 이미지박스 컴포넌트
+@import 'cptOrderGuide';   // 진행 순서 이미지 가이드
+@import 'cptNumbGuide';    // 이미지 넘버링 가이드
+@import 'cptProcess';   // 절차 순서 컴포넌트
+@import 'cptLaw';       // 관련 법령 컴포넌트
+@import 'cptCompanys';  // 판매업체 리스트 컴포넌트
+@import 'cptCalendar';  // 연간 달력 컴포넌트
+@import 'cptPersonList';    // 선수정보 리스트
+@import 'cptPersonDesc';    // 선수정보 상세
+@import 'cptCompareData';   // 선수 전적 비교
+@import 'cptFullFloat';     // 선수 비교 플로팅 박스
+@import 'cptComplete';  // 완료 안내문
+@import 'cptDateSelect';    //날짜선택 셀렉트박스 묶음
+
+@import 'cptJoinTable'; //회원 정보 입력 폼
+
+@import 'cptGuideLine'; // 고객광장 - 안내사항
+@import 'cptAnnounce';  // 고객광장 - 이용안내
+@import 'cptPrivacy';   // 고객광장 - 운영정책
+@import 'cptReportingCenter';   // 고객광장 - 신고센터
+@import 'cptReportingSystem';   // 고객광장 - 신고접수제도 이용안내
+@import 'cptReportingReceipt';   // 고객광장 - 신고접수안내
+
+@import 'cptContBi';  // 희망길벗 - 희망길벗 BI
+@import 'cptContHistory';  // 희망길벗 - 희망길벗 연혁
+@import 'cptContPrevention';  // 희망길벗 - 예방과 치유방법 메인
+@import 'cptContSelfTest'; // 희망길벗 - 자가진단 항목체크 영역
+@import 'cptPopSelfTestResult'; // 희망길벗 - 자가진단 항목체크 팝업 결과
+@import 'cptContProgram'; // 희망길벗 - 프로그램 안내
+@import 'cptContPrgmView'; // 희망길벗 -프로그램 뷰페이지
+@import 'cptContCounsel'; // 희망길벗 - 상담안내 STEP 디자인
+
+@import 'cptDataSum'; // 마이페이지 - 요약정보 영역
+@import 'cptDataList'; // 마이페이지 - 데이터 리스트
+@import 'cptPrivacy';           // 고객광장 - 운영정책
+@import 'cptReportingCenter';   // 고객광장 - 신고센터
+@import 'cptReportingSystem';   // 고객광장 - 신고접수제도 이용안내
+@import 'cptReportingReceipt';  // 고객광장 - 신고접수안내
+@import 'cptTerms';             // 고객광장 - 이용약관
+
+@import 'cptSendEmail.scss';    // 기타 - 담당자 이메일 발송
+@import 'cptErrorPage.scss';    // 기타 - 에러페이지
+
+@import 'cptContFull';  //풀사이즈 컨텐츠 단락
+
+@import 'cptBatSimul';      // 모의배팅 윈도우 팝업 영역
+@import 'cptinfoPoint';     // 모의배팅 포인트 안내
+@import 'cptBatInfo';       // 모의베팅 최종 안내 팝업
+
+@import 'cptContKBI';  // 총괄본부 - BI소개
+@import 'cptContSpeedom'; // 총괄본부 - 광명스피돔안내

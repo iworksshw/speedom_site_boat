@@ -1,0 +1,188 @@
+.cptQuickMove {
+    margin-top: 60px;
+    &:first-child {margin-top: 0;}
+
+    .boxArea {
+        border-radius: 16px; padding: 24px 80px; background: var(--Bg-Line-bg-100); 
+
+        .quickBox { 
+            width: 100%; padding: 24px 0; border-top: 1px solid var(--Bg-Line-line-100); display: flex; align-items: center; justify-content: space-between; gap: 10px;
+            &:first-child {border-top: none; padding-top: 0;}
+            &:last-child {padding-bottom: 0;}
+
+            .txtArea {
+                .point {font-size: rem(18px); font-weight: 700; color: var(--Gray-900); line-height: 1.4; display: block;}
+                .desc {
+                    margin-top: 9px; font-size: rem(16px); line-height: 1.6; color: var(--Gray-800);
+                    b {font-weight: 600;}
+                }
+                img {display: inline-block; vertical-align: middle;}
+            }
+            .btnArea {
+                .btn {
+                    &::after {display: inline-block; content: ""; vertical-align: text-bottom; width: 20px; height: 20px; margin-left: 4px; background: url(../../images/common/ic_16_arr_right_w.svg) center no-repeat;}
+                    // 다운로드 버튼
+                    &.download {
+                        &:after {
+                            background-image: url('../../images/common/ic_16_file_download.svg');
+                            background-size: 12px;
+                        }
+                    }
+                    &.downloadWhite {
+                        &:after {
+                            background-image: url('../../images/common/ic_16_file_download_white.svg') !important;
+                            background-size: 12px;
+                        }
+                    }
+                    // 모바일에서 2줄 이상 케이스
+                    &.multiLine {
+                        display: flex;align-items: center;width: 100%;height: auto;min-height: 48px;line-height: normal;padding: 10px 48px 10px 24px;position: relative;
+                        &:after {position: absolute;top: 50%;right: 24px;transform: translateY(-50%);}
+                        @include media("mobile"){
+                            padding: 15px 48px 15px 24px;
+                        }
+                    }
+                }
+                // 버튼 2개 이상
+                &.multiBtn {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                }
+            }
+        }
+        &.bgWhite {
+            border-radius: 16px;border: 1px solid var(--bg-line-line-200, #EDEDED);background: var(--bg-line-white, #FFF);
+            .quickBox .btnArea .btn::after {
+                background-image: url('../../images/common/ic_16_arr_right_g.svg');
+            }
+        }
+        &.interval {
+            padding: 24px 40px;
+        }
+        &.copyright {
+            .txt {
+                color: var(--Gray-900, #111);font-size: rem(16px);font-weight: 400;line-height: 160%; /* 25.6px */
+                b {font-weight: 600;}
+            }
+            img {height: 48px; display: block;}
+        }
+        &.bbsViewBt {margin-bottom: 60px;}
+    }
+    
+    @include media("mobile"){
+        margin-top: 40px;
+        .boxArea {
+            width: calc(100% + 32px); margin-left: -16px; border-radius: 0; padding: 24px;
+            .quickBox {
+                flex-wrap: wrap; gap: 20px;
+                .txtArea {
+                    flex: 0 0 100%; word-break: keep-all;
+                    .desc {
+                        margin-top: 9px; font-size: rem(15px);
+                    }
+                }
+                .btnArea {
+                    flex: 0 0 100%;
+                    // 버튼 2개 이상
+                    &.multiBtn {
+                        flex-direction: column;
+                        align-items: normal;
+                        .btn {
+                            min-width: 222px;
+                            text-align: left;
+                            display: flex;
+                            align-items: center;
+                            span {
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            &.interval {padding: 32px 24px;width: 100%;margin-left: 0;}
+            &.copyright {
+                padding: 24px 24px 32px;border-radius: 16px;
+                .txt {font-size: rem(15px);}
+                img {height: 40px;}
+            }
+            &.bbsViewBt {margin-bottom: 32px;}
+            &.bbsOnly {margin-left: 16px; margin-right: 16px; width: calc(100% - 32px);}
+        }
+    }
+
+    // 고객광장 - 이용안내
+    & + .cptAnnounce {
+        margin-top: 60px;
+        @include media("mobile"){
+            margin-top: 40px;
+        }
+    }
+
+    // 마이페이지 - 비밀번호 재확인
+    &.login {
+        .comTitH3 h3 {
+            padding-left: 0; background: none;
+        }
+        .comBasicTxt .txt {
+            color: var(--Gray-600);
+        }
+        .boxArea {
+            display: flex; justify-content: center; padding-left: 60px; padding-right: 60px;
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+            .tbBox {
+                position: relative; display: flex; align-items: center;
+                &:not(:first-child) {
+                    margin-left: 120px;
+                    &::before {
+                        content: ""; position: absolute; left: -60px; top: 50%; width: 1px; height: 16px; background-color: var(--Gray-200); transform: translateY(-50%);
+                    }
+                }
+                
+                .tbTitle {
+                    min-width: 90px; padding-right: 40px; color: var(--Gray-800); font-size: rem(16px); font-weight: 700; line-height: 1.4;
+                }
+                .tbCont {
+                    color: var(--Gray-800); font-size: rem(16px); font-weight: 700; line-height: 1.4;
+                }
+            }
+        }
+        @include media('pcs'){
+            .boxArea {
+                .tbBox {
+                    &:not(:first-child) {
+                        margin-left: 80px;
+                        &::before {
+                            left: -40px;
+                        }
+                    }
+
+                    .tbTitle {
+                        min-width: 80px; padding-right: 20px; font-size: rem(15px);
+                    }
+                }
+            }
+        }
+        @include media('mobile'){
+            .boxArea {
+                flex-wrap: wrap; justify-content: flex-start; width: 100%; margin: 0; padding-left: 24px; padding-right: 24px;
+                .tbBox {
+                    width: 100%;
+                    &:not(:first-child) {
+                        margin-top: 20px; margin-left: 0;
+                    }
+
+                    .tbCont {
+                        width: 100%;
+                        .frmBox.frmMd {
+                            width: 100%; min-width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

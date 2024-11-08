@@ -1,0 +1,61 @@
+.comTitH2 {
+    margin-top: 40px;display: flex; align-items: center;
+    &:first-child {margin-top: 0;} 
+    .mgH60 {margin-top: 60px;}
+    h2 {font-size: rem(24px); color: var(---Primary); font-weight: 700; line-height: 1.4; word-break: keep-all;}
+    .etcAdds {margin-left: 16px; font-size: rem(18px); color: var(--Gray-800); align-self: flex-end;}
+    .rightTxt {margin-left: 20px; font-size: rem(16px); font-weight: 300; line-height: 1.5; color: var(--Gray-600);}
+    .right {
+        margin-left: auto;
+        .frmBox {
+            width: 160px; max-width: 160px;
+            .iptSlt {height: 36px; font-size: 14px; background-position: right 16px center;}
+        }
+        .txtBtn {padding-right: 16px; text-align: right; font-size: rem(14px); color: var(--Gray-600); background: url(../../images/common/ic_12_arr_right_g.svg) right center no-repeat;}
+    }
+
+    // 컴포넌트 변경 Class
+    &.bk {
+        h2 {color: var(--Grey-900);}
+    }
+
+    // 경륜 알아보기 - 경륜안내
+    &.lg {
+        margin-bottom: 20px; 
+        h2 {
+            font-size: rem(30px); font-weight: 300;
+        }
+        & ~ .comImgBox {
+            margin-top: 20px;
+        }
+        @include media('mobile') {
+            margin-bottom: 12px;
+            h2 {
+                font-size: rem(22px);
+            }
+        }
+    }
+
+    @include media("mobile"){
+        margin-top: 24px;
+        .mgH60 {margin-top: 40px;}
+        h2 {font-size: rem(20px);}
+        .etcAdds {font-size: rem(16px);}
+        .right {
+            .frmBox {
+                width: 120px; max-width: 120px;
+                .iptSlt {padding: 0 12px; border-radius: 6px; font-size: rem(14px); background-size: 14px; background-position: right 12px center;}
+            }
+        }
+        &.mRow {
+            width: 100%; flex-wrap: wrap; 
+            .right {
+                width: 100%; margin-top: 24px;
+                .frmBox {
+                    width: 100%; max-width: none;
+                }
+            }
+            .etcAdds {margin-left: 0;}
+        }
+    }
+}

@@ -1,0 +1,265 @@
+<!-- Header -->
+<%- include('../../_ejs/top.ejs', {
+    title: "KCYCLE 경륜",
+    url: "../../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../../_ejs/header.ejs', {
+                url: "../../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../../_ejs/sub_top.ejs', {
+                    location: ['경륜 라이브러리', '경륜가이드', '경륜 알아보기'],
+                    subTitle: '콘텐츠 테이블',
+                    subText: '각종 <b>콘텐츠에서 사용되는 폼 테이블</b>입니다.',
+                    url: "../../../",
+                }) %>
+
+                <!-- 콤포넌트 템플릿 메뉴 -->
+                <%- include('./tp_menu.ejs', { }) %>
+
+                <div class="layoutContArea">
+                    
+                    <div class="cptSection">
+                        <div class="sectArea">
+
+                            <div class="comTitH2">
+                                <h2>2024년 제 1회 명예심판행사 참가신청</h2>
+                            </div>
+
+                            <div class="comFormTable">
+                                
+                                <div class="tableTitle">
+                                    <h2>2024년 제 1회 명예심판행사 참가신청</h2>
+                                </div>
+
+                                <div class="tableTop">
+                                    <div class="alignL">
+                                        <em class="strong">신청기간 : 2024.05.20 ~ 2024.05.30</em>
+                                    </div>
+                                    <div class="alignR">
+                                        <span class="txt">2024.07.05</span>
+                                        <span class="txt">경륜심판팀</span>
+                                    </div>
+                                </div>
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width: 232px;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" class="innerTxt">
+                                                    안녕하세요. 명예심판 신청 관련 안내드립니다. 안녕하세요. 명예심판 신청 관련 안내드립니다.<br>
+                                                    안녕하세요. 명예심판 신청 관련 안내드립니다.안녕하세요. 명예심판 신청 관련 안내드립니다.안녕하세요. 명예심판 신청 관련 안내드립니다.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>이름<span class="required">*</span></th>
+                                                <td>
+                                                    <div class="frmGroup">
+                                                        <div class="frmBox frmMd">
+                                                            <input type="text" class="iptText" placeholder="" value="홍길동" disabled />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>아이디<span class="required">*</span></th>
+                                                <td>
+                                                    <div class="frmGroup">
+                                                        <div class="frmBox frmMd">
+                                                            <input type="text" class="iptText" placeholder="" value="honggildong1234" disabled />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>휴대폰번호<span class="required">*</span></th>
+                                                <td>
+                                                    <div class="frmGroup">
+                                                        <div class="frmBox frmMd">
+                                                            <input type="text" class="iptText" placeholder="" value="010-0987-6543" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>이메일주소</th>
+                                                <td>
+                                                    <div class="frmGroup">
+                                                        <div class="frmBox frmMd">
+                                                            <input type="text" class="iptText" placeholder="" value="honggildong" />
+                                                        </div>
+                                                        <div class="frmBox frmMd">
+                                                            <select class="iptSlt">
+                                                                <option value="">gmail.com</option>
+                                                                <option value="">직접입력</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="frmBox frmMd" style="display: none;">
+                                                            <input type="text" class="iptText" placeholder="직접입력" />
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>이용지점</th>
+                                                <td>
+                                                    <div class="frmBox frmMd">
+                                                        <select class="iptSlt">
+                                                            <option value="">선택하세요</option>
+                                                            <option value="">직접입력</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="top">제목</th>
+                                                <td>
+                                                    <div class="frmGroup">
+                                                        <div class="frmBox">
+                                                            <input type="text" class="iptText" placeholder="제목을 입력하세요" value="">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="top">내용</th>
+                                                <td>
+                                                    <textarea class="iptTextArea" name="" id=""></textarea>
+                                                    <span class="byte"><b>120</b> / 500 Byte</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="top interval">첨부파일</th>
+                                                <td>
+                                                    <!-- 파일 업로드 -->
+                                                    <div class="fileBox">
+                                                        <div class="fileBefore">
+                                                            <label for="uploadBtn1" class="btn">파일선택</label>
+                                                            <input type="file" id="uploadBtn1" class="uploadBtn">
+                                                            <p>첨부파일은 최대 10개, 파일 1개 당 1GB까지 등록할 수 있어요. </p>
+                                                        </div>
+                                                        <div class="fileAfter">
+                                                            <ul class="textBox"></ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="comPrivacyBox">
+                                <dl class="infoBox">
+                                    <dt class="boxTop">
+                                        <div class="frmGroup">
+                                            <div class="frmBox maxCont">
+                                                <input id="chk101" type="checkbox" class="iptChk" checked><label for="chk101" class="iptLbl">개인정보이동동의</label>
+                                            </div>
+                                        </div>
+                                    </dt>
+                                    <dd class="boxCont">
+                                        <p class="txtTit">
+                                            개인정보의 수집 및 이용목적
+                                        </p>
+                                        <p class="txt">
+                                            선수의 등급은 상ㆍ하반기(6개월단위)마다 경주 성적에 따라 등급 심사를 통하여 조정됩니다. 수급반은 매회차 변경됩니다.(S1↔S2)
+                                        </p>
+                                        <ul class="listGroup">
+                                            <li class="item">
+                                                <b class="lineTit">수집 및 이용항목</b>
+                                                <i class="lineTxt">회원가입 필수정보 외 성별, 나이, 이용지점</i>
+                                            </li>
+                                            <li class="item">
+                                                <b class="lineTit">수집 및 이용목적</b>
+                                                <i class="lineTxt">일일명예심판 행사 진행 관련</i>
+                                            </li>
+                                            <li class="item">
+                                                <b class="lineTit">보유 및 이용기간 : 3년</b>
+                                                <i class="lineTxt">(단, 법령에 따로 정하는 경우는 해당 기간까지 보관)</i>
+                                            </li>
+                                            <li class="item">
+                                                <b class="sTit">수집 및 이용목적</b>
+                                                <i class="sTxt">문화교실 운영 관련 수강생 관리</i>
+                                            </li>
+                                            <li class="item">
+                                                <b class="sTit">보유 및 이용기간</b>
+                                                <i class="sTxt">수강기간 내 (단, 법령에 따로 정하는 경우는 해당 기간까지 보관)</i>
+                                            </li>
+                                        </ul>
+                                        <p class="txt">
+                                            선수의 등급은 상ㆍ하반기(6개월단위)마다 경주 성적에 따라 등급 심사를 통하여 조정됩니다. 수급반은 매회차 변경됩니다.(S1↔S2)
+                                        </p>
+                                        <p class="anno">
+                                            ※ 스피존문화교실 회원의 부주의로 발생한 안전사고, 도난 및 분실등에 대해서는 기금조성총괄본부에서 일체 책임지지 않습니다.
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            
+                            <div class="comBtnGroup section">
+                                <div class="alignC">
+                                    <div class="btnBox">
+                                        <button class="btn Primary pcW180">신청하기</button>
+                                        <!-- <button class="btn Primary pcW180" disabled>신청하기</button> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- 서브 바텀 (담당자) -->
+                <%- include('../../_ejs/sub_btm.ejs', {
+                    team: '경륜운영팀',
+                    name: '차룡',
+                    phone: '02-2067-5711',
+                    url: "../../../",
+                }) %>
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../../_ejs/footer.ejs', {
+                url: "../../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../../_ejs/bottom.ejs', { }) %>

@@ -1,0 +1,175 @@
+.cptEtcInfo {
+    margin-top: 60px;
+    &:first-child {margin-top: 0;}
+
+    .infoBox {
+        width: 100%; border: 1px solid var(--Point-Primary2); border-radius: 20px; padding: 40px 32px;
+        .info{
+            padding: 32px 0; border-top: 1px solid var(--Bg-Line-line-200);
+            &:first-child {padding-top: 0; border-top: none;}
+            &:last-child {padding-bottom: 0;}
+            dt {
+                min-height: 40px; padding-left: 48px; background: url(../../images/common/ico_etc_info.svg) left center no-repeat; display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;
+                .tit {font-size: rem(20px); color: var(--Gray-800); font-weight:700; line-height: 1.4;}
+                .subTit {
+                    margin-left: 24px; font-size: rem(18px); color: var(---Primary); font-weight: 600; line-height: 1.6;  display: inline-block; position: relative;
+                    &::after {display: block; content: ""; width: 1px; height: 12px; position: absolute; left: -12px; top: 8px; background: var(--Gray-200);}
+                }
+            }
+            dd {
+                margin-top: 32px; 
+                .infoList {
+                    @extend .comBasicList;
+                    padding-left: 7px; flex: 1 1 auto;
+                    
+                    .listGroup {
+                        .item {
+                            margin-top: 12px;
+                            em {
+                                font-weight: 700;
+                            }
+                            .etcInfoBox {width: calc(100% + 11px); margin-left: -11px;}
+                        }
+                    }
+                    
+                }
+                .boxStep {
+                    margin-top: 12px; display: flex; column-gap: 55px;
+                    .stepItem {
+                        padding: 14px 8px; border-radius: 8px; text-align: center; background: var(--Bg-Line-line-300); flex: 0 1 100%; position: relative;
+                        &::after {display: block; content: ""; width: 24px; height: 24px; background: url(../../images/common/ic_20_arr_right_g.svg) center no-repeat; position: absolute; top: 50%; right: -39px; transform: translateY(-50%);}
+                        &:last-child:after {display: none;}
+
+                        em {font-size: rem(18px); color: var(---Primary); font-weight: 700; display: block;}
+                        i {margin-top: 4px; font-style: normal; font-size: rem(16px); color: var(--Gray-800); font-weight: 300; display: block;}
+                        b {font-weight: 600;}
+                    }
+                    .kImg {
+                        margin-top: 255px;
+                        i {font-weight: 400;}
+                        &::before {content:''; position: absolute; top: -255px; left: 0; right: 0; height: 255px;}
+                        &::after {top: -90px;}
+                    }
+                    .step1::before {background: url(../../images/contents/cont06_07_01_step1.png) no-repeat top center / 240px;}
+                    .step2::before {background: url(../../images/contents/cont06_07_01_step2.png) no-repeat top center / 254px;}
+                    .step3::before {background: url(../../images/contents/cont06_07_01_step3.png) no-repeat top center / 240px;}
+                }
+
+                .qnaList {
+                    .qnaItem {
+                        margin-top: 24px;
+                        &:first-child {margin-top: 0;}
+                        .qTit {
+                            line-height: 1.6;
+                            .num {font-size: rem(18px); color: var(---Primary); font-weight: 700;}
+                            .txt {font-size: rem(16px); color: var(--Gray-800); }
+                            .bullet {
+                                position: relative;padding-left: 18px;color: var(--Gray-800, #2C2C2C);font-size: rem(16px);font-weight: 700;line-height: 150%; /* 24px */
+                                &::after {display: block; content: ""; width: 3px; height: 3px; background: var(--Gray-400); position: absolute; left: 7px; top: 8px;}
+                            }
+                        }
+                        .aTxt {
+                            margin-top: 12px; border-radius: 8px; padding: 24px 30px; background: var(--Bg-Line-bg-200);
+                            .pharse {
+                                margin-top: 8px; font-size: rem(15px); line-height: 1.6; color: var(--Gray-800); word-break: keep-all;
+                                &:first-child {margin-top: 0;}
+                            }
+                        }
+                    }
+                }
+                .etcInfoBox {
+                    width: 100%; margin: 20px 0; padding: 24px 30px; border-radius: 8px; background: var(--Bg-Line-bg-300);
+                    .etcTit {margin-bottom: 12px; font-size: rem(15px); color: var(---Primary); font-weight: 700; display: inline-block;}
+                    .etcItem {
+                        margin-top: 6px; font-size: rem(15px); line-height: 1.6; color: var(--Gray-800); display: flex; justify-content: flex-start; align-items: flex-start; column-gap: 5px;
+                        &:first-child {margin-top: 0;}
+                        .txt {font-style: normal; line-height: 1.8; display: inline-block; vertical-align: middle; flex: 0 1 auto;}
+                        .num {font-weight: 600; display: inline-block;vertical-align: middle; white-space: nowrap;}
+                    }
+                }
+            }
+        }
+    }
+
+    // 컴포넌트 변경 Class
+    // 컨텐츠 2열
+    &.col2 {
+        dd {display: flex; column-gap: 24px; align-items: center;}
+        @include media("mobile"){
+            dd {
+                flex-wrap: wrap; row-gap: 16px;
+                .thumArea {
+                    width: 100%; text-align: center;
+                    img {max-width: 100%;}
+                }
+            }
+        }
+    }
+
+    @include media("mobile"){
+        margin-top: 40px;
+        
+        .infoBox {
+            border-radius: 16px; padding: 24px;
+            .info{
+                dt {
+                    min-height:auto; padding-left: 0; padding-top: 48px; background-position: left top;
+                    .tit {width: 100%; font-weight:600;}
+                    .subTit {
+                        margin-left:0; margin-top: 8px; font-size: rem(16px); line-height: 1.3;
+                        &::after {display:none;}
+                    }
+                }
+                dd {
+                    margin-top: 16px;
+                    .infoList {
+                        padding-left: 0;                        
+                    }
+
+                    .boxStep {
+                        gap: 36px 0; flex-wrap: wrap;
+                        .stepItem {
+                            flex: 0 0 100%;
+                            &::after {width: 20px; height: 20px; top: auto; right: auto; bottom: -28px; left: 50%; transform: translateX(-50%) rotate(90deg);}
+                            em {font-size: rem(16px);}
+                            i {font-size: rem(15px);}
+                        }
+                        .kImg {
+                            margin-top: 102px;
+                            i {font-weight: 400;}
+                            &::before {top: -102px; height: 102px;}
+                        }
+                        .step1::before {background-size: 120px;}
+                        .step2::before {background-size: 127px;}
+                        .step3::before {background-size: 120px;}
+                    }
+
+                    .qnaList {
+                        .qnaItem {
+                            margin-top: 20px;
+                            .qTit {
+                                display: flex; align-items: flex-start; column-gap: 5px;
+                                .num {font-size: rem(16px);}
+                                .txt {font-size: rem(15px);}
+                            }
+                            .aTxt {
+                                margin-top: 8px;padding: 20px 16px;
+                                .pharse {
+                                    margin-top: 8px; font-size: rem(14px);
+                                }
+                            }
+                        }
+                    }
+                    .etcInfoBox {
+                        margin: 16px 0; padding: 20px; 
+                        .etcItem {
+                            margin-top: 8px; display: inline-block;
+                            .txt {line-height: 1.6; }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,49 @@
+.comMovieBox {
+    margin-top: 40px;
+    &:first-child {margin-top: 0;}
+
+    .boxArea {
+        border-radius: 12px; padding: 28px 32px; background: #f0faf7;
+        .movieList {
+            display: flex; align-items: center;
+            .movieItem {
+                flex: 1 1 auto; text-align: center; padding: 0 10px; border-right: 1px solid var(--Gray-200);
+                &:last-child {border-right: none;}
+                a {
+                    display: inline-block; vertical-align: middle; font-size: rem(18px); font-weight: 500; color: var(---Secondary);
+                    &::after {display: inline-block; content: ""; vertical-align: middle; margin-left: 12px; width: 18px; height: 18px; background: url(../../images/common/ic_18_movie_play.svg) center no-repeat;}
+
+                    &.disabled {color: var(--Gray-300); pointer-events: none; cursor: default;}
+                    &.disabled::after {background-image: url(../../images/common/ic_18_movie_play_g.svg);}
+                }
+            }
+        }
+    }
+
+    @include media("mobile"){
+        margin-top: 32px;
+    
+        .boxArea {
+            padding: 4px 24px;
+            .movieList {
+                flex-wrap: wrap;
+                .movieItem {
+                    flex: 1 1 100%; text-align: left; padding: 20px 0; border-bottom: 1px solid var(--Gray-200); border-right: none;
+                    &:last-child {border-bottom: none;}
+                    a {
+                        width: 100%; font-size: rem(16px); display: flex;
+                        &::after {margin-left: auto;}
+                    }
+                }
+            }
+        }
+    }
+
+    // 간격 예외
+    .comTitH3 + & {
+        margin-top: 20px;
+        @include media("mobile"){
+            margin-top: 12px;
+        }
+    }
+}

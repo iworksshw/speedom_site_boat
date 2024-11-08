@@ -1,0 +1,371 @@
+.lytMypage {
+    .layoutArea{
+        .layoutTop{
+            width:100%; height:176px; background: #EDF5F2; /*position: sticky; left: 0; top: 0; z-index: 100;*/
+            @include media('mobile'){
+                height:70px;
+            }
+        }
+        .layoutContainer{
+            --lnb-width: 320px;
+            width:100%;
+            .layoutCont{
+
+            }
+            .layoutSubCont{
+                display: flex; align-items: flex-start; flex-wrap: wrap; width: 100%; max-width: 1480px; padding: 60px 20px 0; margin: 0 auto 120px; position: relative;
+                .layoutLnbArea {
+                    display: flex; flex-direction: column-reverse; width: var(--lnb-width); padding-right: 60px;
+                    .lnbArea {
+                        padding: 32px 40px; border-radius: 16px; border: 1px solid var(--Bg-Line-line-100);
+                        .lnbTit {margin-bottom: 20px; font-size: rem(20px);}
+                        .lnbMenu {
+                            & > li {
+                                margin-top: 16px;
+                                a > span {
+                                    display: inline-block;
+                                }
+                                &.on > a > span {
+                                    position: relative;
+                                    font-weight: 700;
+                                    &::after {
+                                        display: block; content: ""; width: calc(100% + 4px); height: 12px; background: #a1f4c7; position: absolute; left: -2px; bottom: 0; z-index: -1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .userArea {
+                        margin-bottom: 60px; padding: 24px 40px 24px 24px; font-size: rem(14px); border-radius: 16px; border: 1px solid var(--Bg-Line-line-100);
+                        .grade {
+                            display: inline-flex; height: 22px; margin-bottom: 8px; padding: 0 8px; justify-content: center; align-items: center; font-size: rem(12px); border-radius: 4px; border: 1px solid var(--Gray-500); white-space: nowrap;
+                        }
+                        .info {
+                            color: var(--Gray-600);
+                            .state {
+                                margin-left: 4px;
+                            }
+                            &.user {
+                                font-weight: 500;
+                                strong {
+                                    font-size: rem(20px); color: var(--Gray-900);
+                                }
+                            }
+                        }
+                        .shortcut {
+                            display: block; margin-top: 12px;
+                        }
+                        .txtBtn {
+                            display: inline-flex; padding-right: 16px; text-align: right; font-size: rem(14px); color: var(--Gray-600); background: url(../../images/common/ic_12_arr_right_g.svg) right center no-repeat;
+                        }
+                    }
+                }
+                .layoutContArea {
+                    width: calc(100% - var(--lnb-width));
+                    margin-left: auto;
+                    .cptSubTop {
+                        background-color: transparent;
+                        .subTopArea {
+                            padding: 0;
+                            .location {
+                                margin-top: -60px; padding: 22px 0 20px;
+                            }
+                            .subTitle {
+                                display: flex; align-items: center; justify-content: space-between; margin: 0 0 20px;
+                                h1 {
+                                    font-size: rem(24px); color: var(--Grey-900); font-weight: 700; line-height: 1.4; word-break: keep-all;
+                                    &::after {content: none;}
+                                    // h2 {font-size: rem(20px);}
+                                }
+                                .right {
+                                    display: flex; align-items: center; margin-left: auto;
+                                    .frmBox {
+                                        width: 160px; max-width: 160px;
+                                        .iptSlt {height: 36px; font-size: 14px; background-position: right 16px center;}
+                                    }
+                                    .txtBtn {padding-right: 16px; text-align: right; font-size: rem(14px); color: var(--Gray-600); background: url(../../images/common/ic_12_arr_right_g.svg) right center no-repeat;}
+                                    .comTooltip:not(:last-child) {margin-right: 6px;}
+                                }
+                            }
+                        }
+                        & + .cptDataSum,
+                        & + .modTab {
+                            margin-top: 0 !important;
+                        }
+                    }
+                    .comGroupTop .tit {
+                        font-size: rem(18px); font-weight: 700;
+                    }
+                    .comTitH3 h3 {
+                        padding-left: 0; background: none;
+                    }
+                    .comBoardInfoBox {
+                        width: 100%; margin: 0; padding: 24px; background-color: transparent; border-radius: 12px; border: 2px solid var(--Gray-900);
+                    }
+                    .cptJoinTable {
+                        margin-top: 60px;
+                        .joinArea {
+                            max-width: 100%; padding-top: 0;
+                            .tbBox {
+                                max-width: 600px;
+                            }
+                                        
+                            @include media('tablet'){
+                                .tbBox {
+                                    max-width: 100%;
+                                }
+                            }   
+                        }
+                    }
+
+                    &.myMain {
+                        .cptSubTop + * {
+                            margin-top: 0 !important;
+                        }
+                        .comTitH2 {
+                            margin: 0 0 20px;
+                        }
+                        [class^=cpt]:not(.cptSubTop) {
+                            margin-top: 100px;
+                        }
+                        .cptDataSum + [class^=cpt] {
+                            margin-top: 60px;
+                        } 
+                        .modTab {
+                            margin-top: 12px;
+                        }
+                        .cptPersonList .prsnList {
+                            gap: 60px 56px;
+                        }
+                    }
+                }
+
+                @include media('tablet'){
+                    width: 100%; padding: 0 16px;
+                    .layoutLnbArea {
+                        flex-direction: column; width: 100%; padding-right: 0;
+                        .lnbArea {
+                            position: relative; margin: 0 -16px 10px; padding: 0; border-radius: 0; border: 0;
+                            &::before,
+                            &::after {
+                                content: ""; position: absolute; top: 100%; left: 0; width: 100%; height: 10px; background: #f4f6fa; z-index: -1;
+                            }
+                            &::before {height: auto; border-bottom: 1px solid var(--Bg-Line-line-100); z-index: 0;}
+                            .lnbTit {
+                                width: 1px; height: 1px; margin: -1px; border: 0; overflow: hidden; clip: rect(1px,1px,1px,1px); clip-path: inset(50%);
+                            }
+                            .lnbMenu {
+                                display: flex; white-space: nowrap; padding: 0 0 0 16px; overflow-x: auto;
+                                & > li {
+                                    margin: 0 20px 0 0;
+                                    &:last-child {
+                                        margin-right: 16px;
+                                    }
+                                    a {
+                                        display: flex; align-items: center; height: 56px;
+                                    }
+                                }
+                            }
+                        }
+                        .userArea {
+                            display: flex; flex-wrap: wrap; margin: 32px 0; padding: 20px;
+                            .grade {
+                                margin-right: 16px; margin-bottom: 0;
+                            }
+                            .info { 
+                                margin-right: 8px;
+                                &:last-of-type {
+                                    margin-right: 32px;
+                                }
+                                &.user {
+                                    display: inline-flex; align-items: center; flex-wrap: wrap; width: 100%; margin-bottom: 10px;
+                                    br {
+                                        display: none;
+                                    }
+                                    strong {
+                                        margin-right: 4px;
+                                    }
+                                }
+                            }
+                            .shortcut {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                    .layoutContArea {
+                        width: 100%;
+                        .cptSubTop {
+                            .subTopArea {
+                                .location {
+                                    display: none;
+                                }
+                                .subTitle {
+                                    margin: 32px 0 12px;
+                                    h1 {
+                                        font-size: rem(20px);
+                                    }
+                                    .right .frmBox {
+                                        width: 120px;
+                                        max-width: 120px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                @include media('mobile'){
+                    .layoutLnbArea {
+                        padding-top: 66px;
+                        .lnbArea {
+                            position: fixed; top: 72px; left: 0; width: 100%; margin: 0; background-color: #fff; z-index: 100;
+                        }
+                    }
+                    .layoutContArea {
+                        .cptBoardList,
+                        .cptSection:not(:first-of-type),
+                        .cptDataSum + .cptSection {
+                            margin-top: 40px;
+                        }
+                        .modTab {
+                            margin-top: 0;
+                            .tabContianer {
+                                margin-top: 40px;
+                            }
+                        }
+                        .comGroupTop {
+                            .alignR .opList {
+                                margin-top: 0;
+                            }
+                            &.reverse {
+                                flex-direction: column;
+                                .alignL {
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                        &.myMain {
+                            [class^=cpt]:not(.cptSubTop) {
+                                margin-top: 60px;
+                            }
+                            .cptBoardList .boardListArea .comTitH2 {
+                                display: flex;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .layoutFooter{
+
+        }
+    }
+}
+
+// 임시 
+.tempArea {display: flex; align-items: center; justify-content: center; padding: 64px 0; background-color: #aaa; color: #fff; font-weight: 300; text-transform: uppercase; letter-spacing: 0;}
+
+// .lytMypage .layoutContArea > [class^=com],
+// .lytMypage .layoutContArea > [class^=cpt],
+// .lytMypage .layoutContArea > .modTab {
+//     position: relative;
+//     &::after {content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; border: 1px dashed red;}
+//     &[class^=com]::after {border-color: blue !important;}
+// }
+
+.comTooltip {
+    position: relative; display: inline-block; vertical-align: middle;
+    .tipBtn {width: 20px; height: 20px; background: url(../../images/common/ico_guide_default.svg) no-repeat center center; text-indent: -99999px; overflow: hidden;}
+    .comInfoLayerPop {
+        left: 50%; width: 300px; transform: translateX(-50%); text-align: left;
+        .popWrap .popHead {margin-bottom: -12px;}
+        .comBasicTxt .txt {
+            font-size: rem(14px);
+            word-break: break-all;
+        }
+    }
+}
+
+/*  sdf*/
+.iptRdo {
+    // 추가
+    & + .iptLblBtn {}
+    &:checked + .iptLblBtn {font-weight: 600; border-color: var(---Primary); background-color: #F0FAF7;}
+    &:disabled + .iptLblBtn {}
+    &:disabled:checked + .iptLblBtn {}
+}
+.iptLblBtn {
+    display: flex; align-items: center; justify-content: center; width: 100%; min-width: 82px; height: 48px; padding: 0 16px; font-size: rem(16px); border: 1px solid var(--Gray-200); border-radius: 8px; background-color: #fff;
+}
+
+// formBox lv
+.frmDate {
+    position: relative; width: 150px;
+    .iptText {
+        padding-right: 48px;
+    }
+    button {
+        position: absolute; top: 0; right: 0; width: 48px; height: 48px; background: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.7 7.7H17.3V16C17.3 16.718 16.718 17.3 16 17.3H4C3.28203 17.3 2.7 16.718 2.7 16V7.7Z' stroke='%232C2C2C' stroke-width='1.4'/%3E%3Crect x='5.7002' y='11.6001' width='1.8' height='1.8' rx='0.9' fill='%232C2C2C'/%3E%3Crect x='9.1001' y='11.6001' width='1.8' height='1.8' rx='0.9' fill='%232C2C2C'/%3E%3Crect x='12.5' y='11.6001' width='1.8' height='1.8' rx='0.9' fill='%232C2C2C'/%3E%3Crect x='6.35' y='2.35' width='0.7' height='1.3' rx='0.35' stroke='%232C2C2C' stroke-width='0.7'/%3E%3Crect x='12.9501' y='2.35' width='0.7' height='1.3' rx='0.35' stroke='%232C2C2C' stroke-width='0.7'/%3E%3Cmask id='path-7-inside-1_5358_7108' fill='white'%3E%3Cpath d='M2 5C2 3.89543 2.89543 3 4 3H16C17.1046 3 18 3.89543 18 5V8H2V5Z'/%3E%3C/mask%3E%3Cpath d='M0.6 5C0.6 3.12223 2.12223 1.6 4 1.6H16C17.8778 1.6 19.4 3.12223 19.4 5H16.6C16.6 4.66863 16.3314 4.4 16 4.4H4C3.66863 4.4 3.4 4.66863 3.4 5H0.6ZM18 8H2H18ZM0.6 8V5C0.6 3.12223 2.12223 1.6 4 1.6V4.4C3.66863 4.4 3.4 4.66863 3.4 5V8H0.6ZM16 1.6C17.8778 1.6 19.4 3.12223 19.4 5V8H16.6V5C16.6 4.66863 16.3314 4.4 16 4.4V1.6Z' fill='%232C2C2C' mask='url(%23path-7-inside-1_5358_7108)'/%3E%3C/svg%3E%0A") no-repeat center center;
+    }
+}
+
+// formGroup lv
+.frmGroup.period {
+    gap: 0;
+    .frmDate {
+        width: 100%;
+    }
+    .gap {
+        display: flex; align-items: center; justify-content: center; width: 30px; min-width: 30px; height: 48px; text-align: center;
+    }
+}
+.frmGroup.option {
+    gap: 8px;
+    .frmBox {
+        // width: max-content;
+    }
+}
+
+// comSearchBox
+.comSearchBox.untitled {
+    .searchLine .condition {
+        .title {
+            display: block; width: 80px !important; height: 48px;
+        }
+        .conBox {
+            display: flex; flex-wrap: wrap; column-gap: 40px; row-gap: 20px;
+            .txtLbl {
+                display: inline-flex; align-items: center; height: 48px; margin-right: -40px; padding-right: 15px; color: var(--Gray-600); vertical-align: top; white-space: nowrap;
+            }
+            .frmGroup {
+                margin-top: 0;
+                select {
+                    width: max-content; padding-right: 46px;
+                }
+                &.period {
+                    // width: 330px;
+                }
+            }
+        }
+    }
+
+    @include media('mobile'){
+        .searchLine .condition {
+            flex-wrap: wrap;
+            .conBox {
+                .txtLbl {
+                    width: 100%; height: auto;
+                }
+                .frmGroup {
+                    flex-wrap: wrap;
+                    &.period {
+                        flex-wrap: nowrap;
+                        width: 100%;
+                    }
+                }
+    
+            }
+        }
+    }
+}

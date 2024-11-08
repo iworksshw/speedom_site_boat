@@ -1,0 +1,91 @@
+.comImgWrap {
+    margin-top: 20px;
+    &:first-child {margin-top: 0;}
+
+    .mView {display: none;}
+
+    .imgGroup {
+        width: 100%; display: flex; align-items: stretch; 
+        .imgArea {
+            flex: 0 0 100%; overflow: hidden; line-height: 1; text-align: center;
+            .imgTxt {
+                margin-top: 12px; font-size: rem(16px); color: var(--Gray-800); line-height: 1.6; text-align: left; word-break: keep-all;
+                &.center {text-align: center;}
+            }
+        }
+    }
+
+    img {display: block; width: 100%; /* max-width: 100%; */ border-radius: 20px; /* border-radius: 16px; */ overflow: hidden;}
+    .cptImgGuideBox & img,
+    .cptCol2Section & img,
+    .cptCol3Section & img,
+    &[class*=col] img {border-radius: 12px;}
+
+    // 컴포넌트 변경 Class
+    // 2열
+    &.col2 {
+        .imgGroup {
+            gap: 80px;
+            .imgArea {flex: 0 0 calc(50% - 40px);}
+        }
+    }
+
+    // 3열
+    &.col3 {
+        .imgGroup {
+            gap: 24px;
+            .imgArea {flex: 0 0 calc(33.3333% - 16px);}
+        }
+    }
+
+    // 4열
+    &.col4,
+    &.col4_2 {
+        .imgGroup {
+            gap: 32px;
+            .imgArea {flex: 0 0 calc(25% - 24px);}
+            .imgTxt {font-size: rem(14px);}
+        }
+    }
+
+    @include media("mobile"){
+        .pcView {display: none;}
+        .mView {display: block;}
+
+        .imgGroup {
+            flex-wrap: wrap;
+            .imgArea {
+                .imgTxt {margin: 8px 0 4px;}
+            }
+        }
+        img:not([class*=col]) {border-radius: 16px;}
+
+        &.col2 {
+            .imgGroup {
+                gap: 20px;
+                .imgArea {flex: 0 0 100%;}
+            }
+        }
+
+        &.col3 {
+            .imgGroup {
+                gap: 20px;
+                .imgArea {flex: 0 0 100%;}
+            }
+        }
+
+        &.col4 {
+            .imgGroup {
+                gap: 20px;
+                .imgArea {flex: 0 0 100%;}
+            }
+        }
+
+        &.col4_2 {
+            .imgGroup {
+                gap: 20px;
+                .imgArea {flex: 0 0 calc(50% - 10px);}
+            }
+        }
+    }
+}

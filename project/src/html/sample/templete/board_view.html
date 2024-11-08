@@ -1,0 +1,241 @@
+<!-- Header -->
+<%- include('../../_ejs/top.ejs', {
+    title: "KCYCLE 경륜",
+    url: "../../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../../_ejs/header.ejs', {
+                url: "../../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../../_ejs/sub_top.ejs', {
+                    location: ['경륜 라이브러리', '경륜가이드', '경륜 알아보기'],
+                    subTitle: '게시판 상세',
+                    subText: '게시판의 <b>상세페이지</b> 입니다',
+                    url: "../../../",
+                }) %>
+
+                <!-- 콤포넌트 템플릿 메뉴 -->
+                <%- include('./tp_menu.ejs', { }) %>
+
+                <div class="layoutContArea">
+                    
+                    <div class="cptBoardView">
+                        <div class="boardViewArea">
+                            <div class="viewTop">
+                                <i class="noti">
+                                    <span class="mark">공지</span>
+                                    <span class="mark ing">진행중</span>
+                                    <span class="mark">종료</span>
+                                </i>
+                                <h2 class="viewTitle">24년 전반기 경정 최강자를 가린다. 체육 공단 이사장배 왕중왕전 19~20일 양일간 열려</h2>
+                                <ul class="info">
+                                    <li class="item">2024.07.05</li>
+                                    <li class="item">경륜심판팀</li>
+                                    <li class="item">조회수 : 200</li>
+                                    <li class="item">추천수 : <span class="recomNum">20</span></li>
+                                </ul>
+
+                            </div>
+                            <div class="comFileDownload">
+                                <dl class="fileGroup">
+                                    <dt class="fileTitle">첨부파일</dt>
+                                    <dd class="fileArea">
+                                        <ul class="fileList">
+                                            <li class="download"><a href="#">(공지용) 경륜 선수단 리스트.hwp</a></li>
+                                            <li class="download"><a href="#">경륜자전거 업사이클링 디자인 공모전 개최 안내.pdf</a></li>
+                                            <li class="download"><a href="#">(공지용) 경륜 선수단 리스트.hwp</a></li>
+                                            <li class="download"><a href="#">(공지용) 경륜 선수단 리스트리스트리스트.hwp</a></li>
+                                            <li class="download"><a href="#">(공지용) 경륜 선수단 리스트.hwp</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="viewBody">
+                                <div class="viewContArea">
+                                    <!-- 컨텐츠 영역입니다. -->
+                                    결승전치고 오랜만에 혼전이죠?
+                                    <br>사실 줄서기조차 예상이 어려운데요.
+                                    <br>경기스타일이 비슷한 은섭이와 용범이 투톱에 언제든지 판을 흔들수있는 다수의 선행강자에 독고다이로 초주선행해지는 불발되겠지만 뒤통수로 뒷상황을 예리하게 분석할 종근이!
+                                    <br>
+                                    <br>굳이 줄서기를 예상해 보자면종 
+                                    <br>
+                                    <br>근 - 혜 윤 - 우 겸 - 용 범 -은 섭 - 정 교 - 하 늘
+                                    <br>
+                                    <br>
+                                    <br>혜윤의 묻지마 선행후 우겸이의 젖히기 용범이와 은섭이의 결승선추입대결에 정교의 마크
+                                    <br>모 이런그림으로 용범이와 은섭이를  중심으로 우겸이와 정교까지 모든차권이 저배당이 형성될텐데요.
+                                    <br>대열앞선에서 누구사이를 짤라들어갈 종근이 이게 가장 큰경주변수!
+                                    <br>용범과 은섭사이를 혹은 우겸과 용범사이?
+                                    <br>
+                                    <br>아마도 종근이 용범의 경기력과 몸싸움 넘사벽인정할테고 그럼 용범의 뒤를 노릴 공산이 크네요.
+                                    <br>성공한다면
+                                    <br>쌍  승 : 용 범 - 종 근 (7-8배당은 나올듯)
+                                    <br>
+                                    <br>
+                                    <br>건승하세요.
+                                    <!-- //컨텐츠 영역입니다. -->
+                                </div>
+                                <div class="viewBtnGroup">
+                                    <div class="comBtnGroup">
+                                        <div class="alignC">
+                                            <div class="btnBox min">
+                                                <button class="btn sm gLine recom">추천하기</button>
+                                                <button class="btn sm gLine report">신고하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comBtnGroup">
+                                <div class="alignR moR">
+                                    <div class="btnBox min">
+                                        <button class="btn sm Primary">수정</button>
+                                        <button class="btn sm gLine">삭제</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comComment">
+                                <div class="cmtArea">
+                                    <div class="cmtHead">
+                                        <b class="cmtTitle">댓글</b>
+                                        <i class="number">5</i>
+                                    </div>
+                                    
+                                    <div class="cmtWriteBox">
+                                        <div class="alignL">
+                                            <textarea class="writeText" placeholder="댓글을 입력해주세요"></textarea>
+                                        </div>
+                                        <div class="alignR">
+                                            <span class="byte"><b>120</b>/500</span>
+                                            <button class="btnReg">등록</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cmtBody">
+
+                                        <!-- 댓글 단위 -->
+                                        <div class="cmtBox">
+                                            <div class="cmtTop">
+                                                <div class="alignL">
+                                                    <b class="cmtName">공정불법대응센터</b><i class="date">2023.08.02</i>
+                                                </div>
+                                                <div class="alignR">
+                                                    <button class="btnDel">삭제</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="cmtCont">
+                                                <p class="cmtText">지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다.</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- 댓글 단위 -->
+                                        <div class="cmtBox">
+                                            <div class="cmtTop">
+                                                <div class="alignL">
+                                                    <b class="cmtName">공정불법대응센터</b><i class="date">2023.08.02</i>
+                                                </div>
+                                                <div class="alignR">
+                                                    <button class="btnDel">삭제</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="cmtCont">
+                                                <p class="cmtText">지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="comPrevNext addLine"> <!-- addClass - addLine : 이전글 상단에 라인 추가하고 margin-top 띄움 -->
+                                <dl>
+                                    <dt>이전글</dt>
+                                    <dd><a href="#">[경륜] 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스 한글50자 까지 나열됩니다뉴스 한글50자 까지 나열됩니다 2024 상반기 경륜 7대 뉴스, ‘광명스피돔에서 생긴 일’ 새 글 경륜 7대 뉴스</a> </dd>
+                                </dl>
+                                <dl>
+                                    <dt>다음글</dt>
+                                    <dd><a href="#">스포츠동아배 대상경륜 기념 고객 사은행사 '예상지 드림2' 안내</a></dd>
+                                </dl>
+                            </div>
+
+                            <div class="comBtnGroup">
+                                <div class="alignR">
+                                    <div class="btnBox min">
+                                        <button class="btn dkLine">목록보기</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cptQuickMove">
+                                <div class="boxArea">
+                                    <div class="quickBox">
+                                        <div class="txtArea">
+                                            <em class="point">문화교실은 이렇게 운영되고 있어요.</em>
+                                            <p class="desc">
+                                                기금조성총괄본부는 문화강좌 선정에 있어 지역주민들의 관심과 호응도를 첫째 기준으로 삼고 있으며 시설 대여료와 수강료 없이 모든 문화교실을 운영하고 있어요.<br>
+                                                <span class="tKey">경륜과 경정을 공동으로 운영하는 지점의 경우,문화교실 운영요일과 시간이 변경될 수 있어요.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- 서브 바텀 (담당자) -->
+                <%- include('../../_ejs/sub_btm.ejs', {
+                    team: '경륜운영팀',
+                    name: '차룡',
+                    phone: '02-2067-5711',
+                    url: "../../../",
+                }) %>
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../../_ejs/footer.ejs', {
+                url: "../../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../../_ejs/bottom.ejs', { }) %>
