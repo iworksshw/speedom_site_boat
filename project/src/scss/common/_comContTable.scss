@@ -20,6 +20,8 @@
             &:last-child {border-right: none;}
         }
         .lineR {border-right-color: var(--Gray-300);}
+        // rowspan 일 경우 td:last-child border-right 적용
+        .rowLineR {border-right: 1px solid var(--Bg-Line-line-200) !important;}
 
         thead {
             th {
@@ -35,7 +37,7 @@
                     height: 24px; padding: 0 8px; border-radius: 4px; line-height: 24px; font-size: rem(12px); font-weight: 600; color: #fff;display: inline-block; vertical-align: middle;
                     &.orange {background: var(--Point-Orange);}
                     &.blue {background: var(--Point-Blue);}
-                    &.mint {background: var(--Point-Primary2);}
+                    &.mint {background: #28C39E;}
                 }
             }
         }
