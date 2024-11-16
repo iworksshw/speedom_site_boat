@@ -7,10 +7,10 @@
     .mView {display: none;}
 
     .tableArea {
-        &.sizeS table {min-width: 600px;}
-        &.sizeM table {min-width: 800px;}
-        &.sizeL table {min-width: 1000px;}
-        &.sizeXL table {min-width: 1200px;}    
+        &.sizeS table {min-width: 600px; overflow: auto;}
+        &.sizeM table {min-width: 800px; overflow: auto;}
+        &.sizeL table {min-width: 1000px; overflow: auto;}
+        &.sizeXL table {min-width: 1200px; overflow: auto;}       
     }
     
     table {
