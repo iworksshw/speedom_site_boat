@@ -2,11 +2,14 @@
 .cptSubTop {
     width: 100%; background: #EDF5F2;
 
-    &.bg01 {background: linear-gradient(92deg, #EBF8FA 1.1%, #EDF9F4 62.91%);}
-    &.bg02 {background: linear-gradient(92deg, #FAF4EB 1.1%, #F5F9ED 62.91%);}
-    &.bg03 {background: linear-gradient(92deg, #EDEEFA 1.1%, #EEF6F9 62.91%);}
-    &.bg04 {background: linear-gradient(92deg, #FBF1F5 1.1%, #ECF6F8 62.91%);}
-    &.bg05 {background: linear-gradient(92deg, #F1FBF2 1.1%, #ECF3F8 62.91%);}
+    &.bg01 {background: linear-gradient(92deg, #F2FCFF 1.1%, #DFF3FF 62.91%);}
+    &.bg02 {background: linear-gradient(92deg, #F5FBED 1.1%, #E3F5F9 62.91%);}
+    &.bg03 {background: linear-gradient(92deg, #FBF2F6 1.1%, #E9F3F7 61.05%);}
+    &.bg04 {background: linear-gradient(92deg, #FFFEE6 1.1%, #DFEFFF 62.91%);}
+    &.bg05 {background: linear-gradient(92deg, #F3F1FB 1.1%, #DDF3F2 62.91%);}
+    &.bg06 {background: linear-gradient(92deg, #EBF7F5 1.1%, #E7F3F9 62.91%);}
+    &.bg07 {background: linear-gradient(92deg, #D9EDFF 1.1%, #F0F9E0 62.91%);}
+
 
     .subTopArea {
         width: 100%; max-width:1480px; margin: 0 auto; padding: 24px 20px 50px; position: relative;
