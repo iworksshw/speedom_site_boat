@@ -351,8 +351,8 @@ select.iptSlt {
     //색깔별
     &.Primary {
         color: #fff; border: 1px solid var(---Primary); background: var(---Primary);
-        &:hover {border: 1px solid #143E69; background: #143E69;}
-        &:active {border: 1px solid #14314F; background: #14314F;}
+        &:hover {border: 1px solid #077265; background: #077265;}
+        &:active {border: 1px solid #05665B; background: #05665B;}
         &:disabled {color: var(--Gray-300); border: 1px solid var(--Gray-150); background: var(--Gray-150);}
     }
     &.gray {
