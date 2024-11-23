@@ -19,7 +19,7 @@
         .smryArea {
             display: flex; column-gap: 25px;
             .smryBox {
-                width: calc(68% - 12.5px); height: 260px; border-radius: 12px; background: #374c70; box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.10); flex: 0 0 calc(68% - 12.5px); display: flex;
+                width: calc(68% - 12.5px); height: 260px; border-radius: 12px; background: #2C5574; box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.10); flex: 0 0 calc(68% - 12.5px); display: flex;
                 .userData {
                     padding: 28px 24px; flex: 1 1 58.6%; display: flex; justify-content: space-between; flex-flow: column; position: relative;
                     &::after {display: block; content: ""; width: 1px; height: calc(100% - 56px); background: rgba(255,255,255,0.1); position: absolute; top: 28px; right: 0;}
@@ -36,7 +36,7 @@
                             }
                         }
                         .point {font-size: rem(36px); color: #fff; font-weight: 600; line-height: 1.4;}
-                        .btnReload {width: 28px; height: 28px; border-radius: 50%; margin-left: 8px; font-size: 0; background: #2d3e5b url(../../images/common/ic_20_reload.svg) center no-repeat;}
+                        .btnReload {width: 28px; height: 28px; border-radius: 50%; margin-left: 8px; font-size: 0; background: rgba(0, 0, 0, 0.20) url(../../images/common/ic_20_reload.svg) center no-repeat;}
                     }
                 }
                 .userRecord {
@@ -96,7 +96,7 @@
                             .swiper-pagination-bullet {
                                 margin-left: 8px;
                                 &.swiper-pagination-bullet-active {
-                                    background: var(---Primary);
+                                    background: var(--Point-Primary2);
                                 }
                             }
                         }
@@ -118,9 +118,9 @@
                             }
 
                             &.ranker {
-                                .num {color: var(---Primary); font-weight: 600;}
+                                .num {color: var(--Point-Primary2); font-weight: 600;}
                                 .id {font-weight: 600;}
-                                .point {color: var(---Primary); font-weight: 600;}
+                                .point {color: var(--Point-Primary2); font-weight: 600;}
                             }
                         }
                     }
@@ -132,11 +132,11 @@
             }
 
             .tooltipBox {
-                width: 280px; padding: 16px 23px 16px 16px; border-radius: 8px; border: 1px solid var(--Point-Primary2); background: #fff; position: absolute; z-index: 99; display: none; box-shadow: 10px 10px 10px 0px rgba(40, 195, 158, 0.10);
+                width: 280px; padding: 16px 23px 16px 16px; border-radius: 8px; border: 1px solid var(--Point-Primary2); background: #fff; position: absolute; z-index: 99; display: none; box-shadow: 10px 10px 10px 0px rgba(35, 165, 238, 0.10);
                 .btnClose {width: 16px; height: 16px; font-size: 0; background: url(../../images/common/ic_12_close.svg) center no-repeat; position: absolute; top: 8px; right: 8px;}
                 .txt {font-size: rem(15px); font-weight: 500; line-height: 1.6; color: var(--Gray-800); text-align: left;}
                 .btnMore {
-                    display: inline; font-size: rem(15px); color: var(---Primary);
+                    display: inline; font-size: rem(15px); color: var(--Point-Primary2);
                     &::after {display: inline-block; content: ""; width: 16px; height: 16px; margin-left: 2px; background: url(../../images/common/ic_16_new_window_mint.svg) center no-repeat; vertical-align: text-top;}
                 }
                 &::after {display: block; content: ""; width: 14px; height: 14px; background: url(../../images/common/ic_14_ballon_tail.svg) center no-repeat; position: absolute; top: -12px; left: 30px; z-index: 1;}
@@ -172,13 +172,13 @@
                         .matchBox {
                             width: 117px; height: 143px; border-radius: 12px; padding: 10px; background: #fff; text-align: center; transition: all 0.3s;
                             .matchTit {font-size: rem(20px); font-weight: 700; color: var(--Gray-800); transition: all 0.3s;background: url(../../images/common/ic_20_match_check.png) center -24px no-repeat;}
-                            .matchTag {margin-top: 8px; height: 25px; padding:0 10px; line-height: 25px; border-radius: 12.5px; font-size: rem(14px); color: var(---Primary); font-weight: 600; background: rgba(7, 139, 123, 0.10); display: inline-block;  transition: all 0.3s;}
+                            .matchTag {margin-top: 8px; height: 25px; padding:0 10px; line-height: 25px; border-radius: 12.5px; font-size: rem(14px); color: var(---Primary); font-weight: 600; background:#D6EFFA; display: inline-block;  transition: all 0.3s;}
                             .matchTime {margin-top: 4px; font-size: rem(15px); color: var(--Gray-600); transition: all 0.3s;}
                             
                             &.on, &:hover {
-                                width: 125px; height: 157px; background:linear-gradient(180deg, #18C3AD 0%, #226B95 100%); box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.15);
+                                width: 125px; height: 157px; background:linear-gradient(180deg, #179EEA 0%, #1D4E80 100%); box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.15);
                                 .matchTit {padding-top: 24px; color: #fff; background-position: top center;}
-                                .matchTag {color: var(---Point2); background: rgba(0, 0, 0, 0.30); }
+                                .matchTag {color: #44BCFF; background: rgba(0, 0, 0, 0.30); }
                                 .matchTime {color: #fff;}
                             }
 
@@ -208,7 +208,7 @@
             .mtchTit {
                 display: flex; align-items: center; column-gap: 8px;
                 .tit {font-size: rem(24px); color: var(--Gray-800); font-weight: 700;}
-                .tag {height: 33px; line-height: 32px; padding: 0 16px; border-radius: 16.5px; font-size: rem(18px); font-weight: 600; color: var(---Primary); background: rgba(7, 139, 123, 0.10);}
+                .tag {height: 33px; line-height: 32px; padding: 0 16px; border-radius: 16.5px; font-size: rem(18px); font-weight: 600; color: var(---Primary); background:#D6EFFA;}
                 .etc {font-size: rem(18px); color: var(--Gray-800); font-weight: 500;}
             }
 
@@ -231,7 +231,7 @@
                 }
 
                 .batInfo {
-                    width: 100%; border-radius: 12px; padding: 12px 16px 12px 40px; background: #f0faf7 url(../../images/common/ic_20_info_mint.svg) 16px center no-repeat; display: flex;
+                    width: 100%; border-radius: 12px; padding: 12px 16px 12px 40px; background: #E8F8FF url(../../images/common/ic_20_info_mint.svg) 16px center no-repeat; display: flex;
                     dt {
                         font-size: rem(15px); color: var(--Gray-800);
                         em {font-weight: 700;}
@@ -249,7 +249,7 @@
                     .batGroup {
                         display: flex; gap: 8px; flex-wrap: wrap;
                         .batItem {
-                            flex: 0 0 calc(20% - 6.4px); position: relative;
+                            flex: 0 0 calc(16.6667% - 6.6667px); position: relative;
                             input[type=radio] {
                                 font-size: 0; width: 1px; height: 1px; position: absolute; top: -1px; left: -1px; opacity: 0.01;
                             }
@@ -268,7 +268,7 @@
                                 .name {display: inline-block; vertical-align: middle; position: relative;}
                             }
                             input:checked + label {
-                                background: #f0faf7; border-color: var(---Primary); color: var(---Primary);
+                                background: #E8F8FF; border-color: var(---Primary); color: var(---Primary);
                                 .name {
                                     &::after {display: block; content: ""; width: 18px; height: 18px; background: url(../../images/common/ic_12_chk_mit.svg) center no-repeat; position: absolute; right: -20px; top: 13px;}
                                 }
@@ -379,7 +379,8 @@
                     &::before {display: inline-block; vertical-align: text-bottom; content: ""; width: 20px; height: 20px; margin-right: 4px; background: url(../../images/common/ic_20_reload_k.svg) center no-repeat;}
                 }
                 .btnBatting {
-                    width: 253px; height: 56px; margin-left: 7px; border-radius: 8px; line-height: 55px; text-align: center; font-size: rem(18px); font-weight: 500; color: #fff; background: linear-gradient(90deg, #18C1AC 0%, #3D5B95 100%);
+                    width: 253px; height: 56px; margin-left: 7px; border-radius: 8px; line-height: 55px; text-align: center; font-size: rem(18px); font-weight: 500; color: #fff; background: linear-gradient(270deg, #1E5183 0%, #189AE5 100%);
+                    &:disabled {background: var(--Gray-150); color: var(--Gray-300);}
                 }
             }
         }
@@ -518,14 +519,13 @@
                                 &:hover {
                                     width: 93px; height: 114px; box-shadow: none; background: #fff;
                                     .matchTit {padding-top: 0; color:var(--Gray-800); background-position: center -24px;}
-                                    .matchTag {color: var(---Primary); background: rgba(7, 139, 123, 0.10); }
+                                    .matchTag {color: var(---Primary);background:#D6EFFA;  }
                                     .matchTime {color: var(--Gray-600);}
                                 }  
-
                                 &.on {
-                                    width: 101px; height: 122px; box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.10);background:linear-gradient(180deg, #18C3AD 0%, #226B95 100%); 
+                                    width: 101px; height: 122px; box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.10);background:linear-gradient(180deg, #179EEA 0%, #1D4E80 100%); 
                                     .matchTit {padding-top: 24px; color: #fff; background-position: top center;}
-                                    .matchTag {color: var(---Point2); background: rgba(0, 0, 0, 0.30); }
+                                    .matchTag {color:#44BCFF; background: rgba(0, 0, 0, 0.30); }
                                     .matchTime {color: #fff;}
                                 }
                                     
@@ -591,7 +591,7 @@
     
                         .batGroup {
                             .batItem {
-                                flex: 0 0 calc(33.3333% - 5.3333px); 
+                                flex: 1 0 calc(33.3333% - 5.3333px);
                                 input + label {
                                     font-size: rem(14px);
                                 }
