@@ -12,7 +12,7 @@
 	<!-- 모바일 상단,타이틀바,주소창 색변경(안드로이드에서 크롬,파폭,오페라,삼성브라우저만 가능) -->
 	<!-- <meta name="theme-color" content="#4285f4"> -->
 
-	<title>KCYCLE 경륜</title>
+	<title>KBOAT 경정</title>
 
 	<link rel="stylesheet" href="../../common/css/swiper.css" />
 	<link rel="stylesheet" href="../../common/css/style.css" />
@@ -756,14 +756,14 @@
     <div class="subTopArea">
         <ul class="location">
             <li class="item"><a href="#">홈</a></li>
-            <li class="item"><a href="#">경륜 가이드</a></li>
+            <li class="item"><a href="#">경정 라이브러리</a></li>
             
-            <li class="item"><a href="#">경륜 지식쌓기</a></li>
+            <li class="item"><a href="#">경정 지식쌓기</a></li>
             
             
         </ul>
-        <div class="subTitle"><h1>경주전법소개</h1></div>
-        <div class="subText"><p>승리를 향한 전략과 기술! <br/><b>경륜전법</b>을 알아보세요.</p></div>
+        <div class="subTitle"><h1>심판판정</h1></div>
+        <div class="subText"><p>공정한 경기를 위한 눈과 귀,<br/><b>경정 심판판정</b></p></div>
         <ul class="addFunc">
             <li class="item print">
                 <button class="btnPrint">프린트</button>
@@ -778,106 +778,684 @@
                 <div class="layoutContArea">
                     
                     <div class="comSubInfo">
-                        <h2 class="infoTit">경주에서 승리하기 위해서는 적절한 전법 선택과 능숙한 기술 활용이 필수입니다.</h2>
-                        <p class="info">
-                            전법이란 승리를 위한 다양한 주행방법으로 승부를 결정짓는 중요한 요소 중 하나입니다. <br/>
-                            경륜 선수들은 자신의 컨디션과 경주상황에 맞는 적절한 전법을 선택하여 최적의 주행을 선보입니다.
-                        </p>
+                        <h2 class="infoTit">공정한 경기 운영을 위해선 경정 심판이 필요합니다.</h2>
+                        <p class="info">공정한 경기 운영을 위해 경정에는 엄격한 규칙과 이를 집행하는 심판이 존재합니다. 심판판정에 대해 자세히 알아보세요. </p>
                     </div>
-
-                    <div class="cptSection">
-                        <div class="sectArea">
-                            <div class="comTitH2">
-                                <h2>선행 전법</h2>
+                    
+                    <div class="modTab">
+                        <div class="tabMenuGroup tabSwiper toMob">
+                            <ul class="tabMenu swiper-wrapper">
+                                <li class="tabItem swiper-slide"><button class="tabName on" title="선택 된 탭메뉴">판정기준</button></li>
+                                <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">출발/착순 판정</button></li>
+                                <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">심판장비</button></li>
+                            </ul>
+                        </div>
+                        <div class="tabDirection">
+                            <div class="tabBtn alignL">
+                                <button class="prev">이전</button>
                             </div>
-                            
-                            <div class="comBasicTxt">
-                                <p class="txt">
-                                    마지막 바퀴 1코너를 넘어서기 전 부터 선두에서 경주를 주도하는 경주전개 형태의 주법입니다.
-                                </p>
+                            <div class="tabBtn alignR">
+                                <button class="next">다음</button>
                             </div>
+                        </div>
+                        <div class="tabContianer">
+                            <div class="tabCont on"><!-- addClass - on : 컨텐츠 노출 -->
+                                <!-- 탭 컨텐츠1 -->
+                                <div class="cptContSlide">
+                                    <div class="sectArea">
+                                        <ul class="slideGroup">
+                                            <li class="slideItem"> <!--class 'slideOn' : 슬라이드 OPEN-->
+                                                <div class="contBox">
+                                                    <button type="button" class="slideTit">
+                                                        <h5 class="tit">출발준비 <span class="mSm">(경정시행규정 제53조)</span></h5>
+                                                    </button>
+                                                    <div class="slideCont">
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">경주에 중대한 지장이 있다고 심판장이 판단하는 때에는 재출발할 수 있습니다.</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">온라인스타트 경주의 경우, 선수는 출발기에 모터보트를 고정시켜야 한다.</li>
+                                                                <li class="listItem">플라잉스타트 경주의 경우, 선수는 계류장을 떠나 대기수면으로 나가야 한다.</li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="paragraph">
+                                                            <ul class="imgList">
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_001.png" alt="출발피트(발주시)상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">01</span>
+                                                                            <span class="txt">출발피트(발주시)상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">계류기 고장 등으로 인해 모터보트가 신속하게 계류장을 떠날 수 없는 경우</li>
+                                                                            <li class="listItem">온라인스타트: 정상(녹색등), 재출발(적색등) 표시</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_002.png" alt="출발피트(발주後)상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">02</span>
+                                                                            <span class="txt">출발피트(발주後)상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">기상악화(강풍)로 인해 모터보트가 전복되어 항주불능 또는 항주곤란이 발생한 경우</li>
+                                                                            <li class="listItem">해당 호정은 출주제외 되며 재출발시킴</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_003.png" alt="대기행동 상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">03</span>
+                                                                            <span class="txt">대기행동 상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">대기행동 중 수상시설물(100m폴) 파손한 경우</li>
+                                                                            <li class="listItem">해당 호정은 출주제외 없이 재출발시킴</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_004.png" alt="대기행동(진입前상황)의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">04</span>
+                                                                            <span class="txt">대기행동(진입前상황)</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">대기행동(대기항주, 진입항주) 중 모터 이상 등으로 인해 모터보트가 정지되어 항주불능된 경우</li>
+                                                                            <li class="listItem">경주중지 후 재출발시킴</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slideItem">
+                                                <div class="contBox">
+                                                    <button type="button" class="slideTit">
+                                                        <h5 class="tit">대기행동 <span class="mSm">(경정시행규정 제55조)</span></h5>
+                                                    </button>
+                                                    <div class="slideCont">
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">대기행동이란 계류장을 떠나서 출발선을 통과하기 전까지의 모터보트 행동으로 대기항주와 진입항주로 이루어집니다.</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">
+                                                                    <span class="lineTit">대기항주 : </span>
+                                                                    <span class="lineTxt">모터보트가 계류장을 떠나 출발선에 정면으로 향하기까지의 항주를 말합니다.</span>
+                                                                </li>
+                                                                <li class="listItem">
+                                                                    <span class="lineTit">진입항주 : </span>
+                                                                    <span class="lineTxt">대기항주 직후부터 출발하기 전까지의 항주를 말합니다.</span>
+                                                                </li>
+                                                                <li class="listItem">
+                                                                    <span class="lineTit">대기행동 시 위반행위 : </span>
+                                                                    <span class="lineTxt">대기행동 시 다른 모터보트에 피해를 준 경우 등이 있습니다.</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="paragraph">
+                                                            <ul class="imgList">
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_005.png" alt="출발피트(발주시 전타)상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">01</span>
+                                                                            <span class="txt">출발피트(발주시 전타)</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">발주시 1호정의 전타로 인해 2호정에게 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_006.png" alt="대기행동 내압 상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">02</span>
+                                                                            <span class="txt">대기행동 내압 상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">대기항주시 2호정이 내압하여 1호정의 진행을 방해하여 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_007.png" alt="대기행동 외압 상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">03</span>
+                                                                            <span class="txt">대기행동 외압 상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">대기행동 진입항주 시 2호정이 외압하여 3호정 주행을 방해하여 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_008.png" alt="대기행동 중 끼어들기의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">04</span>
+                                                                            <span class="txt">대기행동 중 끼어들기</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">대기항주 시 4호정이 코스를 잃은 후 끼어든 상황</li>
+                                                                        </ul>
+                                                                        <div class="comAddGuide">
+                                                                            <p class="guide">단, 코스경합 경주방식에 한해 적용</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slideItem">
+                                                <div class="contBox">
+                                                    <button type="button" class="slideTit">
+                                                        <h5 class="tit">출발의 성립 <span class="mSm">(경정시행규정 제56조)</span></h5>
+                                                    </button>
+                                                    <div class="slideCont">
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">대기행동이란 계류장을 떠나서 출발선을 통과하기 전까지의 모터보트 행동으로 대기항주와 진입항주로 이루어집니다.</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem"><em>온라인스타트경주 출발은 출발기의 기계장치가 동시에 풀려 계류장을 출발 시 성립됩니다. </em></li>
+                                                                <li class="listItem"><em>플라잉스타트경주 출발은 <span class="tKey">0초선과 1.0초선의 슬릿선</span>을 기준으로 판정하게 됩니다.</em></li>
+                                                            </ul>
+                                                            <ul class="dashList">
+                                                                <div class="listItem">
+                                                                    <span class="lineTit">사전출발 : </span>
+                                                                    <span class="lineTxt">출발시각 이전에 통과한 때를 말함</span>
+                                                                </div>
+                                                                <div class="listItem">
+                                                                    <span class="lineTit">출발지체 : </span>
+                                                                    <span class="lineTxt">출발시각부터 1.0초를 초과하여 출발선을 통과한 때를 말함</span>
+                                                                </div>
+                                                                <div class="listItem">사전출발, 출발지체 선수는 출주에서 제외되며, 제30조를 적용하여 일정기간 출전정지 됨</div>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="paragraph">
+                                                            <div class="imgWrap">
+                                                                <img src="../../images/contents/cont21_01_03_03_009.png" alt="출발선에서의 외압/출발지체/사전출발/유효를 구분한 이미지">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slideItem">
+                                                <div class="contBox">
+                                                    <button type="button" class="slideTit">
+                                                        <h5 class="tit">도착의 확정 · 순위 <span class="mSm">(경정시행규정 제58조)</span></h5>
+                                                    </button>
+                                                    <div class="slideCont">
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">도착은 선수가 모터보트를 타고 결승선을 통과하여야 하며 그 순위는 <span class="tKey">모터보트의 한 끝이 결승선을 통과한 순서</span>대로 확정됩니다.</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">도착순위는 심판이 확정하며, 다만 제57조의 의거 도착 순위에 변경이 있을 경우에는 이를 변경하여 착순을 확정합니다. 변경된 착순을 확정할 경우, 심판실에서 방송을 통해 확정내용을 알려 드립니다.</li>
+                                                                <li class="listItem">1착의 선수가 결승선에 도착한 시각으로부터 30초 이내에 결승선에 도착하여야 하며, 1착 선수가 결승선에 도착한 시각 으로부터 30초의 제한시간 내에 도착하지 못할 것으로 심판이 판단한 경우는 실격을 선언할 수 있습니다.</li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="paragraph">
+                                                            <div class="imgWrap">
+                                                                <img src="../../images/contents/cont21_01_03_03_010.png" alt="도착선의 예시 이미지">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slideItem">
+                                                <div class="contBox">
+                                                    <button type="button" class="slideTit">
+                                                        <h5 class="tit">접촉금지 <span class="mSm">(경정시행규정 제60조)</span></h5>
+                                                    </button>
+                                                    <div class="slideCont">
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">접촉금지란, 직선항주 중이나 턴-마크 선회 중에 실속 등으로 인해 다른 모터보트와 추돌(접촉)하여 피해를 준 경우를 말합니다.</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">
+                                                                    <span class="lineTit">실속 : </span>
+                                                                    <span class="lineTxt">모터보트가 캐비테이션, 엔진스톱 등에 의해 일반적인 속도보다 현저히 속도가 줄어든 경우를 말한다. 또한 전복, 침몰, 낙수로 인해 다른 모터보트를 방해한 경우를 포함하고 있습니다.</span>
+                                                                </li>
+                                                                <li class="listItem">
+                                                                    <span class="lineTit">추돌 : </span>
+                                                                    <span class="lineTxt">피항할 수 있는 거리 간격이 있음에도 불구하고 다른 모터보트와 접촉하는 경우를 말합니다.</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                        <div class="paragraph">
+                                                            <ul class="imgList">
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_011.png" alt="실속상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">01</span>
+                                                                            <span class="txt">실속상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">턴-마크 선회시 1호정이 조타불량 실속으로 인해 후속 6, 5호 정에게 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_012.png" alt="코스선정 및 속도처리 잘못의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">02</span>
+                                                                            <span class="txt">코스선정 및 속도처리 잘못</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">턴-마크 선회시 4호정이 코스선정 및 속도처리 잘못으로 인해 6홎어의 진로를 방해하여 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slideItem">
+                                                <div class="contBox">
+                                                    <button type="button" class="slideTit">
+                                                        <h5 class="tit">방향전환 <span class="mSm">(경정시행규정 제62조)</span></h5>
+                                                    </button>
+                                                    <div class="slideCont">
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">방향전환이란 2척 이상의 모터보트가 *접근하여 나란히 달리고 있을 경우 다른 모터보트의 측면으로 방향전환 함으로써 진로를 방해하거나 피해를 준 경우를 말합니다.</p>
+                                                            <div class="imgWrap">
+                                                                <img src="../../images/contents/cont21_01_03_03_013.png" alt="도착선의 예시 이미지">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="paragraph">
+                                                            <ul class="basicList">
+                                                                <li class="listItem">
+                                                                    <span class="sTit">방향전환의 위반행위 </span>
+                                                                    <span class="sTxt">1착의 선수가 결승선에 도착한 시각으로부터 30초 이내에 결승선에 도착하여야 하며, 1착 선수가 결승선에 도착한 시각 으로부터 30초의 제한시간 내에 도착하지 못할 것으로 심판이 판단한 경우는 실격을 선언할 수 있습니다. </span>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="imgList">
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_014.png" alt="사행(코스변경) 상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">01</span>
+                                                                            <span class="txt">사행(코스변경) 상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">직선주로에서 1호정이 사행, 코스를 변경하면서 후속 6호정의 진행을 방해하여 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_015.png" alt="외압 상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">02</span>
+                                                                            <span class="txt">외압 상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">직선주로에서 4호정의 외압으로 나란히 달리던 3호정의 진행을 방해하여 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slideItem">
+                                                <div class="contBox">
+                                                    <button type="button" class="slideTit">
+                                                        <h5 class="tit">턴-마크 회전 <span class="mSm">(경정시행규정 제63조)</span></h5>
+                                                    </button>
+                                                    <div class="slideCont">
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">턴-마크를 회전한다는 것은 모터보트의 중심이 턴-마크의 중심을 도는 것을 말합니다. 모터보트는 턴-마크를 시계 반대방향으로 회전하여야 합니다. 2척 이상의 모터보트가 동시에 턴-마크를 도는 경우에는 바깥쪽의 모터보트는 안쪽의 모터보트에 안전한 공간을 주어야 합니다.</p>
+                                                            <div class="imgWrap">
+                                                                <img src="../../images/contents/cont21_01_03_03_016.png" alt="턴-마크를 회전 상황의 이미지">
+                                                            </div>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">선회 시 1호정이 턴-마크를 접촉하여 후속 3,5,4호정에 피해를 준 상황</li>
+                                                                <li class="listItem">
+                                                                    <span class="lineTit">위반행위 사례 : </span>
+                                                                    <span class="lineTxt">턴-마크 선회 중 조타불량으로 안쪽 모터보트가 바깥쪽 모터보트를 압박하거나, 바깥쪽 모터보트가 안쪽 모터보트를 압박하여 피해를 준 경우</span>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="imgList">
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_017.png" alt="외압 상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">01</span>
+                                                                            <span class="txt">외압 상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">턴-마크 선회 시 3호정이 외압하여 4,5호정의 진로를 방해하여 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_018.png" alt="내압 상황의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <div class="imgTit">
+                                                                            <span class="num">02</span>
+                                                                            <span class="txt">내압 상황</span>
+                                                                        </div>
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">턴-마크 선회 시 4호정이 내압하여 6호정의 진로를 방해하여 피해를 준 경우</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
 
-                            <div class="comImgWrap">
-                                <div class="imgGroup">
-                                    <div class="imgArea">
-                                        <img src="../../images/thum/cont01_03_03_001.png" alt="선행전법 영상 임시 이미지">
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="slideItem">
+                                                <div class="contBox">
+                                                    <button type="button" class="slideTit">
+                                                        <h5 class="tit">구조정과 사고정이 있는 경우 <span class="mSm">(경정시행규정 제65조 제2,3항)</span></h5>
+                                                    </button>
+                                                    <div class="slideCont">
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">사고정</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">경주 중 전복, 침몰, 고장, 선수부상, 낙수 등으로 인해 정상적으로 항주할 수 없는 모터보트를 사고정이라 합니다.</li>
+                                                            </ul>
+                                                        </div>   
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">턴-마크 부근에 구조정이나 사고정이 있는 경우</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">모터보트는 구조정이나 사고정의 바깥쪽을 항주해야 하며 다만, 바깥쪽에 안전한 거리 간격이 없는 경우는 심판의 지시에 따라 항주하여야 합니다.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">구조정과 사고정이 있는 경우의 위반행위</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">구조정이나 사고정과 안전한 간격을 유지하지 못하고 항주한 경우</li>
+                                                                <li class="listItem">턴-마크 부근에서 구조정이나 사고정의 바깥쪽을 항주해야 할 때 안쪽으로 항주한 경우</li>
+                                                                <li class="listItem">또는, 안쪽을 항주해야 할 때 바깥쪽으로 항주한 경우</li>
+                                                                <li class="listItem">그밖에 공정하고 안전한 경주에 지장을 준 경우</li>
+                                                            </ul>
+
+                                                            <ul class="imgList">
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_019.png" alt="위험지역과 경합지역의 예시 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">사고정 발생 시에는 센터 폴을 중심으로 사고정 발생지역을 위험지역으로 사고정이 없는 지역을 경합 지역으로 구분하며, 위험지역에서는 순위변경을 할 수 없으며 적정한 간격을 유지하여 항주해야 한다.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="imgItem">
+                                                                    <div class="imgArea">
+                                                                        <img src="../../images/contents/cont21_01_03_03_020.png" alt="안전주행 위반 시의 이미지">
+                                                                    </div>
+                                                                    <div class="txtArea">
+                                                                        <ul class="basicList">
+                                                                            <li class="listItem">위험지역에서 나란히 진입하는 경우 안쪽호정이 선행정이 되는 것이 원칙입니다. 단, 바깥쪽 호정의 선단과 후단의 중심선이 안쪽호정보다 앞선 경우 바깥쪽 호정을 선행정으로 합니다.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="paragraph">
+                                                            <p class="basicTxt">사고지역에서 안전경주 준수원칙</p>
+                                                            <ul class="basicList">
+                                                                <li class="listItem">구조정의 항행 및 구조작업 등으로 인해 경주중인 모터보트가 불리한 상황에 놓인 경우에도 해당 선수는 이의를 제기할 수 없습니다. 또한, 사고지점 통과시에 선행정을 추월하여 착순이 변경이 있을 경우에는 순위변동은 인정되지만 해당 행위에 대한 엄격한 위반행위 제재 및 선수제재양정기준에 따라 별도의 제재가 부여 됩니다.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="cptSection">
-                        <div class="sectArea">
-                            <div class="comTitH2">
-                                <h2>젖히기 전법</h2>
-                            </div>
-                            
-                            <div class="comBasicTxt">
-                                <p class="txt">
-                                    경륜 젖히기 전법은 레이스 후반에 다른 선수들을 제치고 극적인 역전을 노리는 전략입니다. <br/>
-                                    마지막 바퀴 직전까지 뒤처지더라도 젖히기 전법을 통해 승리를 쟁취할 수 있다는 점에서 경륜의 매력을 더욱 증폭시키는 전법 중 하나입니다.
-                                </p>
-                            </div>
-
-                            <div class="comImgWrap">
-                                <div class="imgGroup">
-                                    <div class="imgArea">
-                                        <img src="../../images/thum/cont01_03_03_002.png" alt="젖히기 전법 영상 임시 이미지">
+                            <div class="tabCont">
+                                <!-- 탭 컨텐츠2 -->
+                                <div class="cptSection">
+                                    <div class="sectArea">
+                                        <div class="comTitH2">
+                                            <h2>심판실</h2>
+                                        </div>
+                                        <div class="comBasicTxt">
+                                            <p class="txt">
+                                                스탠드 중앙의 가장 높은 위치에서 코스를 내려다보고 있는 곳에 심판실이 있습니다. 스타트 판정, 실격 및 경주위반 등의 판정, 착순판정 등을 심판실에서 합니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cptSection">
+                                    <div class="sectArea">
+                                        <div class="comTitH2">
+                                            <h2>출발 판정</h2>
+                                        </div>
+                                        <div class="comBasicTxt">
+                                            <p class="txt">
+                                                경정 경주의 출발과 착순 판정은 이동하는 피사체(모터보트)를 촬영하고 기록하는 라인스캔 카메라를 사용합니다. 출발판정은 출발 시각 1초 전부터 2초 후까지 총 3초간 1/2000초 간격으로 촬영합니다.
+                                            </p>
+                                        </div>
+                                        <div class="comImgWrap col3">
+                                            <div class="imgGroup">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/contents/cont21_01_03_03_021.png" alt="정상출발 판독 사진">
+                                                    <p class="imgTxt center"><b>정상출발 판독 사진</b></p>
+                                                </div>
+                                                <div class="imgArea">
+                                                    <img src="../../../images/contents/cont21_01_03_03_022.png" alt="사전출발 (F) 판독 사진">
+                                                    <p class="imgTxt center"><b>사전출발 (F) 판독 사진</b></p>
+                                                </div>
+                                                <div class="imgArea">
+                                                    <img src="../../../images/contents/cont21_01_03_03_023.png" alt="출발지체 (L) 판독 사진">
+                                                    <p class="imgTxt center"><b>출발지체 (L) 판독 사진</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cptSection">
+                                    <div class="sectArea">
+                                        <div class="comTitH2">
+                                            <h2>착순 판정</h2>
+                                        </div>
+                                        <div class="comBasicTxt">
+                                            <p class="txt">
+                                                착순 판정은 제1착의 선수가 결승선 통과 전부터 마지막 선수가 결승선을 통과할 때까지 1/2000초 간격으로 촬영하며 필요 시 착순 영상을 전광판에 표출합니다.
+                                            </p>
+                                        </div>
+                                        <div class="comImgWrap col3">
+                                            <div class="imgGroup">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/contents/cont21_01_03_03_024.png" alt="착순 사진">
+                                                    <p class="imgTxt center"><b>착순 사진</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="cptSection">
-                        <div class="sectArea">
-                            <div class="comTitH2">
-                                <h2>추입 전법</h2>
-                            </div>
-                            
-                            <div class="comBasicTxt">
-                                <p class="txt">
-                                    경륜 추입전법은 앞 선수 뒤에서 풍압을 피해 체력을 비축해 주행하다가 레이스 후반, 다른 선수들의 뒤를 따라가면서 기회를 노리고 <br/>
-                                    마지막 순간에 극적인 역전을 노리는 전법으로 인내심과 순발력이 요구되는 전법 중 하나입니다.
-                                </p>
-                            </div>
-
-                            <div class="comImgWrap">
-                                <div class="imgGroup">
-                                    <div class="imgArea">
-                                        <img src="../../images/thum/cont01_03_03_003.png" alt="추입전법 영상 임시 이미지">
+                            <div class="tabCont">
+                                <!-- 탭 컨텐츠3 -->
+                                <div class="cptSection">
+                                    <div class="sectArea">
+                                        <div class="comTitH2">
+                                            <h2>위치별 심판장비 현황</h2>
+                                        </div>
+                                        <div class="comImgWrap">
+                                            <div class="imgGroup">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/contents/cont21_01_03_03_025.png" alt="심판장비가 있는 위치 / 중앙심판실, 2코너, 발주대, 1코너">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="comTitH3">
+                                            <h3>중앙심판실</h3>
+                                        </div>
+                                        
+                                        <div class="comBasicTxt space">
+                                            <p class="txt">
+                                                자동경주운영장비, 주심판제어기, 부심판제어기, 플라잉판정장비, 착순판정장비, 대시계제어기, 소개항주측정기, 레이스카운트, 표시제어기, 레이스진행모니터링시스템, 심판전용카메라 조작기, 조작설비, 감시설비, 자동제어설비
+                                            </p>
+                                        </div>
+                                        <div class="comTitH3">
+                                            <h3>발주대</h3>
+                                        </div>
+                                        
+                                        <div class="comBasicTxt space">
+                                            <p class="txt"> 대시계, 체커등, 삼색신호등, 실격, 결장표시등, 야간경주용 LED조명시스템 등</p>
+                                        </div>
+                                        <div class="comTitH3">
+                                            <h3>1·2코너 신호장비</h3>
+                                        </div>
+                                        
+                                        <div class="comBasicTxt space">
+                                            <p class="txt"> 정상출발표시등, 위험신호등, 항주지시등, 심판전용카메라</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="cptSection">
-                        <div class="sectArea">
-                            <div class="comTitH2">
-                                <h2>마크 전법</h2>
-                            </div>
-                            
-                            <div class="comBasicTxt">
-                                <p class="txt">
-                                    경륜 마크전법은 두 명 이상의 선수가 팀을 이루어 서로 협력하며 경주를 진행하는 전법입니다. <br/>
-                                    마커는 선두를 달리는 선수를 보호하고 기회를 만들어주는 역할을 하고, 선두 선수는 마커의 도움을 받아 경주를 유리하게 이끌어나가는 역할을 합니다. <br/>
-                                    팀워크와 전략이 중요한 전법입니다.
-                                </p>
-                            </div>
+                                
+                                <div class="cptSection">
+                                    <div class="sectArea">
+                                        <div class="comTitH2">
+                                            <h2>소개항주 자동 측정장비</h2>
+                                        </div>
+                                        <div class="comBasicTxt">
+                                            <p class="txt">
+                                                소개항주 자동 측정 장비는 중앙심판실과 2코너 심판탑에 일직선상으로 150m의 거리를 레이저 센서를 사용해 자동으로 측정하는 방식으로 모터보트가 지나갈 때 보트를 감지하여 타임을 계측하게 됩니다.
+                                            </p>
+                                        </div>
+                                        <div class="comImgWrap">
+                                            <div class="imgGroup">
+                                                <div class="imgArea">
+                                                    <img class="pcView" src="../../../images/contents/cont21_01_03_03_026.png" alt="소개항주 자동 측정장비 약도.">
+                                                    <img class="mView" src="../../../images/contents/cont21_01_03_03_026_m.png" alt="소개항주 자동 측정장비 약도.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="comImgWrap">
-                                <div class="imgGroup">
-                                    <div class="imgArea">
-                                        <img src="../../images/thum/cont01_03_03_004.png" alt="마크전법 영상 임시 이미지">
+                                <div class="cptSection">
+                                    <div class="sectArea">
+                                        <div class="comTitH2">
+                                            <h2>플라잉·착순판정 장비</h2>
+                                        </div>
+                                        
+                                        <div class="comTitH3">
+                                            <h3>플라잉판정장비 기능</h3>
+                                        </div>
+                                        
+                                        <div class="comBasicTxt space">
+                                            <p class="txt">
+                                                플라잉판정 장비는 모터보트가 대기행동을 마치고 출발선을 통과한 직후 라인스캔카메라로 촬영된 이미지를 확인하여 출발 위반 여부를 판정하고 스타트타임을 측정 게시할 수 있는 장비입니다. <br/>
+                                                <em>대시계에서 1초전 신호를 받아 3초간</em> 촬영되고 있습니다.
+                                            </p>
+                                        </div>
+
+                                        <div class="comImgWrap">
+                                            <div class="imgGroup">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/contents/cont21_01_03_03_027.png" alt="플라잉 장비로 보는 이미지">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="comTitH3">
+                                            <h3>착순판정장비 기능</h3>
+                                        </div>
+                                        
+                                        <div class="comBasicTxt space">
+                                            <p class="txt">
+                                                착순판정장비는 모터보트가 결승선을 통과한 후 라인스캔카메라로 촬영된 이미지를 확인하여 착순, 경주기록, 착순결과표 등을 측정 게시할 수 있는 장비입니다. <em>제1착의 선수가 결승선 통과 전부터 마지막 선수가 결승선을 통과할 때까지 1/2000초</em> 간격으로 촬영되고 있습니다.
+                                            </p>
+                                        </div>
+
+                                        <div class="comImgWrap">
+                                            <div class="imgGroup">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/contents/cont21_01_03_03_028.png" alt="착순판정장비로 보는 착순 이미지">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cptEtcInfo">
+                                    <div class="infoBox">
+                                        <dl class="info">
+                                            <dt>
+                                                <em class="tit">라인스캔카메라의 원리</em>
+                                            </dt>
+                                            <dd>
+                                                <div class="infoList">
+                                                    <ul class="listGroup">
+                                                        <li class="item">
+                                                            플라잉 · 착순판정카메라(라인스캔카메라)는 일반카메라와 달리 셔텨 대신 슬릿(가는 틈)을 통해 출발 · 결승선을 라인단위로 스캔하여 이동하는 피사체를 촬영하고 기록하는 카메라입니다. 출발 · 결승선만을 연속으로 촬영하여 하나의 사진으로 만들어지기 때문에 모든 이미지는 출발 · 결승선을 통과할 때의 모습이며, 출발 · 결승선이 됨을 의미합니다.
+                                                        </li>
+                                                        <li class="item">
+                                                            <em>라인스캔카메라는 경마, 경륜, 육상 등의 결승장면을 촬영하는데 사용되고 있습니다.</em>
+                                                        </li>
+                                                    </ul>
+                                                </div> 
+                                            </dd>
+                                        </dl>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                     
                 <!-- 서브 바텀 (담당자) -->
                 
@@ -887,10 +1465,10 @@
         <div class="subBtmBox">
             <dl class="manager">
                 <dt>담당자</dt>
-                <dd><span>경륜심판팀</span><b>김태환</b></dd>
+                <dd><span>경정심판팀</span><b>송승숙</b></dd>
             </dl>
             <ul class="btmList">
-                <li class="phone">02-2067-5935</li>
+                <li class="phone">02-790-8611</li>
                 <li class="email"><a href="#">이메일 보내기</a></li>
             </ul>
         </div>
