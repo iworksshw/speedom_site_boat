@@ -11,6 +11,7 @@
   --Point-Primary2: #2F9BD8;
   --Point-Primary3: #1F4F82;
   --Point-Red: #f33;
+  --Point-Green: #45af56;
   ---Secondary: #254962;
   --Gray-900:#111111;
   --Gray-800:#2C2C2C;
@@ -21,6 +22,7 @@
   --Gray-300:#B0B2B7;
   --Gray-200:#CED1D6;
   --Gray-150:#EDEDED;
+  --Gray-100:#f7f7f7;
   --Gray-50:#FBFBFB;
   --Bg-Line-line-100: #E1E4EA;
   --Bg-Line-line-200: #EDEDED;
@@ -162,6 +164,7 @@ body.noScrl {height:100vh; overflow:hidden;}
 .tBlue {color: var(--Point-Blue) !important;}
 .tBlue2 {color: var(--Point-Blue2) !important;}
 .tMint {color: var(--Point-Primary2) !important;}
+.tGreen {color: var(--Point-Green) !important;}
 .tZoneGreen {color: var(--zone-green) !important;} //광명
 .tZonePink {color: var(--zone-pink) !important;}  //부산
 .tZoneBlue {color: var(--zone-blue) !important;}  //창원

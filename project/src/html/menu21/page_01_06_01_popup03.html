@@ -1,6 +1,6 @@
 <!-- Header -->
 <%- include('../_ejs/top.ejs', {
-    title: "KCYCLE 경륜",
+    title: "KBOAT 경정",
     url: "../../"
 }) %>
 
@@ -358,28 +358,28 @@
                                 <div class="modTab">
                                     <div class="tabMenuGroup tabSwiper toMob swiper-initialized swiper-horizontal swiper-backface-hidden">
                                         <ul class="tabMenu swiper-wrapper" id="swiper-wrapper-d73cad9b8c9d4fef" aria-live="polite">
-                                            <li class="tabItem swiper-slide"><button class="tabName on" title="선택 된 탭메뉴">단승</button></li> <!-- addClass - on : 메뉴 선택됨 -->
-                                            <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">연승</button></li>
-                                            <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">복승</button></li>
-                                            <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">쌍승</button></li>
-                                            <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">삼복승</button></li>
-                                            <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">쌍복승</button></li>
-                                            <li class="tabItem swiper-slide"><button class="tabName" title="탭메뉴">삼쌍승</button></li>
+                                            <li class="tabItem swiper-slide"><button type="button"class="tabName on" title="선택 된 탭메뉴">단승</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                                            <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">연승</button></li>
+                                            <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">복승</button></li>
+                                            <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">쌍승</button></li>
+                                            <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">삼복승</button></li>
+                                            <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">쌍복승</button></li>
+                                            <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">삼쌍승</button></li>
                                         </ul>
                                         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                     </div>
                                     <div class="tabDirection">
                                         <div class="tabBtn alignL">
-                                            <button class="prev swiper-button-disabled" disabled="" tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-d73cad9b8c9d4fef" aria-disabled="true">이전</button>
+                                            <button type="button"class="prev swiper-button-disabled" disabled="" tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-d73cad9b8c9d4fef" aria-disabled="true">이전</button>
                                         </div>
                                         <div class="tabBtn alignR">
-                                            <button class="next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-d73cad9b8c9d4fef" aria-disabled="false">다음</button>
+                                            <button type="button"class="next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-d73cad9b8c9d4fef" aria-disabled="false">다음</button>
                                         </div>
                                     </div>
                                     <div class="tabContianer">
                                         <div class="tabCont on"> <!-- addClass - on : 컨텐츠 노출 -->
                                             <dl class="batInfo">
-                                                <dt><em>단승식</em>(적중확률 <span class="tMint">1/7</span>) : </dt>
+                                                <dt><em>단승식</em>(적중확률 <span class="tKey">1/6</span>) : </dt>
                                                 <dd>1위 선수 1명을 적중시키는 방식</dd>
                                             </dl>
 
@@ -430,13 +430,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                             </div>
                                             
@@ -472,6 +465,10 @@
                                                         <input type="radio" name="rdo02" id="rdo207" disabled/>
                                                         <label for="rdo207"><b class="name">50,000</b></label>
                                                     </li>
+                                                    <li class="batItem">
+                                                        <input type="radio" name="rdo02" id="rdo208" disabled/>
+                                                        <label for="rdo208"><b class="name">100,000</b></label>
+                                                    </li>
                                                     <li class="batItem full">
                                                         <input type="text" placeholder="베팅할 활동지수를 입력하세요." disabled>
                                                     </li>
@@ -482,7 +479,7 @@
 
                                         <div class="tabCont">
                                             <dl class="batInfo">
-                                                <dt><em>연승식</em>(적중확률 <span class="tMint">2/7</span>) : </dt>
+                                                <dt><em>연승식</em>(적중확률 <span class="tKey">1/3</span>) : </dt>
                                                 <dd>1-2위 선수 중 1명을 적중시키는 방식</dd>
                                             </dl>
 
@@ -533,13 +530,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo03" id="rdo307"/>
-                                                        <label for="rdo307">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                             </div>
                                             
@@ -575,6 +565,10 @@
                                                         <input type="radio" name="rdo04" id="rdo407"/>
                                                         <label for="rdo407"><b class="name">50,000</b></label>
                                                     </li>
+                                                    <li class="batItem">
+                                                        <input type="radio" name="rdo04" id="rdo408"/>
+                                                        <label for="rdo408"><b class="name">100,000</b></label>
+                                                    </li>
                                                     <li class="batItem full">
                                                         <input type="text" placeholder="베팅할 활동지수를 입력하세요.">
                                                     </li>
@@ -585,7 +579,7 @@
                                         
                                         <div class="tabCont">
                                             <dl class="batInfo">
-                                                <dt><em>복승식</em>(적중확률 <span class="tMint">1/21</span>) : </dt>
+                                                <dt><em>복승식</em>(적중확률 <span class="tKey">1/15</span>) : </dt>
                                                 <dd>1·2위 선수 2명을 순위에 관계없이 적중시키는 방식</dd>
                                             </dl>
 
@@ -636,13 +630,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo07" id="rdo707"/>
-                                                        <label for="rdo707">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
 
                                                 <h5 class="slctTit">2위</h5>
@@ -689,13 +676,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo08" id="rdo807"/>
-                                                        <label for="rdo807">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                             </div>
                                             
@@ -731,6 +711,10 @@
                                                         <input type="radio" name="rdo09" id="rdo907"/>
                                                         <label for="rdo907"><b class="name">50,000</b></label>
                                                     </li>
+                                                    <li class="batItem">
+                                                        <input type="radio" name="rdo09" id="rdo908"/>
+                                                        <label for="rdo908"><b class="name">100,000</b></label>
+                                                    </li>
                                                     <li class="batItem full">
                                                         <input type="text" placeholder="베팅할 활동지수를 입력하세요.">
                                                     </li>
@@ -741,7 +725,7 @@
                                         
                                         <div class="tabCont">
                                             <dl class="batInfo">
-                                                <dt><em>쌍승식</em>(적중확률 <span class="tMint">1/42</span>) : </dt>
+                                                <dt><em>쌍승식</em>(적중확률 <span class="tKey">1/30</span>) : </dt>
                                                 <dd>1-2위 선수 중 2명을 순위에 맞게 적중시키는 방식</dd>
                                             </dl>
 
@@ -792,13 +776,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo10" id="rdo1007"/>
-                                                        <label for="rdo1007">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                                 
                                                 <h5 class="slctTit">2위</h5>
@@ -845,13 +822,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo11" id="rdo1107"/>
-                                                        <label for="rdo1107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                             </div>
                                             
@@ -887,6 +857,10 @@
                                                         <input type="radio" name="rdo12" id="rdo1207"/>
                                                         <label for="rdo1207"><b class="name">50,000</b></label>
                                                     </li>
+                                                    <li class="batItem">
+                                                        <input type="radio" name="rdo12" id="rdo1208"/>
+                                                        <label for="rdo1208"><b class="name">100,000</b></label>
+                                                    </li>
                                                     <li class="batItem full">
                                                         <input type="text" placeholder="베팅할 활동지수를 입력하세요.">
                                                     </li>
@@ -897,7 +871,7 @@
                                         
                                         <div class="tabCont">
                                             <dl class="batInfo">
-                                                <dt><em>삼복승식</em>(적중확률 <span class="tMint">1/35</span>) : </dt>
+                                                <dt><em>삼복승식</em>(적중확률 <span class="tKey">1/20</span>) : </dt>
                                                 <dd>1-2-3위 선수 3명을 순위에 관계없이 적중시키는 방식</dd>
                                             </dl>
 
@@ -948,13 +922,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                                 
                                                 <h5 class="slctTit">2위</h5>
@@ -999,13 +966,6 @@
                                                         <label for="rdo106">
                                                             <span class="number num06">6</span>
                                                             <b class="name">줄눈박이</b>
-                                                        </label>
-                                                    </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -1054,13 +1014,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                             </div>
                                             
@@ -1096,6 +1049,10 @@
                                                         <input type="radio" name="rdo02" id="rdo207"/>
                                                         <label for="rdo207"><b class="name">50,000</b></label>
                                                     </li>
+                                                    <li class="batItem">
+                                                        <input type="radio" name="rdo02" id="rdo208"/>
+                                                        <label for="rdo208"><b class="name">100,000</b></label>
+                                                    </li>
                                                     <li class="batItem full">
                                                         <input type="text" placeholder="베팅할 활동지수를 입력하세요.">
                                                     </li>
@@ -1106,7 +1063,7 @@
                                         
                                         <div class="tabCont">
                                             <dl class="batInfo">
-                                                <dt><em>쌍복승식</em>(적중확률 <span class="tMint">1/105</span>) : </dt>
+                                                <dt><em>쌍복승식</em>(적중확률 <span class="tKey">1/60</span>) : </dt>
                                                 <dd> 1위 선수 1명을 순위에 맞게, 2·3위 선수 2명은 순위에 관계없이 적중시키는 방식</dd>
                                             </dl>
 
@@ -1157,13 +1114,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                                 
                                                 <h5 class="slctTit">2위</h5>
@@ -1208,13 +1158,6 @@
                                                         <label for="rdo106">
                                                             <span class="number num06">6</span>
                                                             <b class="name">줄눈박이</b>
-                                                        </label>
-                                                    </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -1263,13 +1206,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                             </div>
                                             
@@ -1305,6 +1241,10 @@
                                                         <input type="radio" name="rdo02" id="rdo207"/>
                                                         <label for="rdo207"><b class="name">50,000</b></label>
                                                     </li>
+                                                    <li class="batItem">
+                                                        <input type="radio" name="rdo02" id="rdo208"/>
+                                                        <label for="rdo208"><b class="name">100,000</b></label>
+                                                    </li>
                                                     <li class="batItem full">
                                                         <input type="text" placeholder="베팅할 활동지수를 입력하세요.">
                                                     </li>
@@ -1315,7 +1255,7 @@
                                         
                                         <div class="tabCont">
                                             <dl class="batInfo">
-                                                <dt><em>삼쌍승식</em>(적중확률 <span class="tMint">1/210</span>) : </dt>
+                                                <dt><em>삼쌍승식</em>(적중확률 <span class="tKey">1/120</span>) : </dt>
                                                 <dd> 1-2-3위 선수 중 3명을 순위에 맞게 적중시키는 방식</dd>
                                             </dl>
 
@@ -1366,13 +1306,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                                 
                                                 <h5 class="slctTit">2위</h5>
@@ -1417,13 +1350,6 @@
                                                         <label for="rdo106">
                                                             <span class="number num06">6</span>
                                                             <b class="name">줄눈박이</b>
-                                                        </label>
-                                                    </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -1472,13 +1398,6 @@
                                                             <b class="name">줄눈박이</b>
                                                         </label>
                                                     </li>
-                                                    <li class="batItem">
-                                                        <input type="radio" name="rdo01" id="rdo107"/>
-                                                        <label for="rdo107">
-                                                            <span class="number num07">7</span>
-                                                            <b class="name">허준</b>
-                                                        </label>
-                                                    </li>
                                                 </ul>
                                             </div>
                                             
@@ -1513,6 +1432,10 @@
                                                     <li class="batItem">
                                                         <input type="radio" name="rdo02" id="rdo207"/>
                                                         <label for="rdo207"><b class="name">50,000</b></label>
+                                                    </li>
+                                                    <li class="batItem">
+                                                        <input type="radio" name="rdo02" id="rdo208"/>
+                                                        <label for="rdo208"><b class="name">100,000</b></label>
                                                     </li>
                                                     <li class="batItem full">
                                                         <input type="text" placeholder="베팅할 활동지수를 입력하세요.">
@@ -1623,7 +1546,7 @@
                     <div class="popupArea"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
                         <div class="popupContainer">
                             <div class="popupContArea">
-                                <button class="btnPopClose" onclick="closePopup('infoActivity');">닫기</button>
+                                <button type="button"class="btnPopClose" onclick="closePopup('infoActivity');">닫기</button>
                                 <div class="popTitle">활동지수</div>
                                 <div class="popCont">
                                     <!-- 팝업 컨텐츠 영역 -->
@@ -1699,7 +1622,7 @@
                     <div class="popupArea"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
                         <div class="popupContainer">
                             <div class="popupContArea">
-                                <button class="btnPopClose" onclick="closePopup('batting');">닫기</button>
+                                <button type="button"class="btnPopClose" onclick="closePopup('batting');">닫기</button>
                                 <div class="popTitle">모의베팅하기</div>
                                 <div class="popCont">
                                     <!-- 팝업 컨텐츠 영역 -->
@@ -1779,7 +1702,7 @@
                     <div class="popupArea"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
                         <div class="popupContainer">
                             <div class="popupContArea">
-                                <button class="btnPopClose" onclick="closePopup('finalBatting');">닫기</button>
+                                <button type="button"class="btnPopClose" onclick="closePopup('finalBatting');">닫기</button>
                                 <div class="popTitle">모의베팅완료</div>
                                 <div class="popCont">
                                     <!-- 팝업 컨텐츠 영역 -->
@@ -1869,7 +1792,7 @@
                         <div class="popupInMotion">
                             <div class="popupContainer">
                                 <div class="popupContArea">
-                                    <button class="btnPopClose" onclick="closePopup('battingAlert');">닫기</button>
+                                    <button type="button"class="btnPopClose" onclick="closePopup('battingAlert');">닫기</button>
                                     <div class="popCont">
                                         <!-- 팝업 컨텐츠 영역 -->
                                         <div class="alertTit">
@@ -1884,7 +1807,7 @@
                 
                                     <!-- 팝업 하단 영역 -->
                                     <div class="popBtm">
-                                        <button class="btn Primary">로그인하러 가기</button>
+                                        <button type="button"class="btn Primary">로그인하러 가기</button>
                                     </div>
                                 </div>
                             </div>

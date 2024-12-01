@@ -26,9 +26,9 @@
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
                 <!-- 서브 탑 (타이틀) -->
                 <%- include('../_ejs/sub_top.ejs', {
-                    location: ['경정정보','심판판정'],
-                    subTitle: '스타트/착순사진',
-                    subText: '<b>온라인스타트와 착순사진</b>을 <br>확인해보세요.',
+                    location: ['경정정보','경주현황'],
+                    subTitle: '경주속보',
+                    subText: '<b>선수교체 및 결장현황</b>에 대해 <br>알려드립니다.',
                     url: "../../",
                     visualClass: "bg02",
                 }) %>
@@ -51,6 +51,12 @@
                             <div class="viewBody">
                                 <div class="viewContArea">
                                     <img src="../../images/thum/board_temp_img02.png" alt="착순판정 이미지 자료">
+                                    <p>
+                                        ■ 제15경주 <br/>
+                                         ○ 대상선수 : 5번(김세준), 6번(김만섭)<br/>
+                                         ○ 적용규정 : 경주규칙 제72조3호(주행주의 의무), 제74조2항(주행방해 금지)<br/>
+                                         ○ 판정내용 : 제4주회 1코너부근에서 6번선수의 진로변경과, 5번선수의 과실주행 등이 상호복합적으로 작용하여 그 영향으로 5번 선수가 낙차된 상황으로, 5번 제72조3호 및 6번 제74조2항에 의거 각각 경고로 판정.
+                                    </p>
                                 </div>
                             </div>
                             
@@ -68,7 +74,7 @@
                             <div class="comBtnGroup">
                                 <div class="alignR">
                                     <div class="btnBox min">
-                                        <button class="btn dkLine">목록보기</button>
+                                        <button type="button"class="btn dkLine">목록보기</button>
                                     </div>
                                 </div>
                             </div>
@@ -80,9 +86,9 @@
 
                 <!-- 서브 바텀 (담당자) -->
                 <%- include('../_ejs/sub_btm.ejs', {
-                    team: '경정심판팀',
-                    name: '송승숙',
-                    phone: '031-790-8611',
+                    team: '경정기획팀',
+                    name: '곽유진',
+                    phone: '031-790-8307',
                     url: "../../",
                 }) %>
                 
