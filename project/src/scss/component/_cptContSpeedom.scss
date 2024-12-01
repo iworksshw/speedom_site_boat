@@ -37,6 +37,11 @@
         .list.bt {
             .img {margin-right: 0; margin-left: 100px;}
         }        
+        .parkImg {
+            margin-top: 20px;
+            img {width: 100%;}
+        }
+
     }
 
     @include media("mobile"){
