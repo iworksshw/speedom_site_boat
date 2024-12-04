@@ -39,8 +39,23 @@
                     }
                 }
             }
+            .rowLink {
+                margin-top: 20px;
+                button {
+                    display: flex; align-items: center; gap: 8px;
+                    &::after {content:''; width: 20px; height: 20px; background: url(../../images/common/ic_20_link.svg) no-repeat center;}
+                }
+            }
         }
     }
+    .txtInfo {
+        margin-top: 60px; padding: 40px 32px; border-radius: 20px; border: 1px solid var(--Point-Primary2);
+        h3 {
+            font-size: rem(20px); font-weight: 700; color: var(--Gray-800); margin-bottom: 32px; display: flex; align-items: center; gap: 8px;
+            &::before {content:''; width: 40px; height: 40px; background: url(../../images/contents/cont28_info_icon.svg) no-repeat center;}
+        }
+    }
+
     @include media("tablet"){
         .list {
             .cont {

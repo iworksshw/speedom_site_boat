@@ -7,11 +7,11 @@
             .rowA {
                 text-align: center;
                 .ic {width: 50px; height: 50px; margin: 0 auto;}
-                .icon1 {background: url(../../images/contents/cont06_07_01_icon1.svg) no-repeat center;}
-                .icon2 {background: url(../../images/contents/cont06_07_01_icon2.svg) no-repeat center;}
-                .icon3 {background: url(../../images/contents/cont06_07_01_icon3.svg) no-repeat center;}
-                .icon4 {background: url(../../images/contents/cont06_07_01_icon4.svg) no-repeat center;}
-                .icon5 {background: url(../../images/contents/cont06_07_01_icon5.svg) no-repeat center;}
+                .icon1 {background: url(../../images/contents/cont26_07_01_icon1.svg) no-repeat center;}
+                .icon2 {background: url(../../images/contents/cont26_07_01_icon2.svg) no-repeat center;}
+                .icon3 {background: url(../../images/contents/cont26_07_01_icon3.svg) no-repeat center;}
+                .icon4 {background: url(../../images/contents/cont26_07_01_icon4.svg) no-repeat center;}
+                .icon5 {background: url(../../images/contents/cont26_07_01_icon5.svg) no-repeat center;}
                 .txt {
                     margin-top: 10px;
                     .m1 {font-size: rem(14px); font-weight: 600; color: var(--Point-Primary2); line-height: 1.6;}
@@ -20,7 +20,7 @@
             }
             .line {   
                 margin: 16px 0; position: relative; text-align: center;
-                &::before {content:''; position: absolute; top: 8px; left: 0; right: 0; height: 2px; background: url(../../images/contents/cont06_07_01_dashed.svg);}
+                &::before {content:''; position: absolute; top: 8px; left: 0; right: 0; height: 2px; background: url(../../images/contents/cont26_07_01_dashed.svg);}
                 span {width: 18px; height: 18px; border: 4px solid var(--Point-Primary2); background: #FFF; border-radius: 50%; display: block; margin: 0 auto; position: relative;}
             }
             .rowB {
