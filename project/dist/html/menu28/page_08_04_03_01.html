@@ -758,12 +758,12 @@
             <li class="item"><a href="#">홈</a></li>
             <li class="item"><a href="#">총괄본부</a></li>
             
-            <li class="item"><a href="#">경정훈련원</a></li>
+            <li class="item"><a href="#">미사경정공원</a></li>
             
             
         </ul>
-        <div class="subTitle"><h1>시설안내</h1></div>
-        <div class="subText"><p>미사경정공원의 <b>다양한 시설과 대관</b>에 대해 알려드려요.</p></div>
+        <div class="subTitle"><h1>오시는 길</h1></div>
+        <div class="subText"><p><b>다양한 방법으로 미사경정공원까지</b><br />오시는 길을 알려드릴게요.</p></div>
         <ul class="addFunc">
             <li class="item print">
                 <button type="button"class="btnPrint">프린트</button>
@@ -776,18 +776,36 @@
 </div>
 
                 <div class="layoutContArea">
-
-                    <div class="comSubInfo">
-                        <h2 class="infoTit">미사경정공원은 시민들을 위해 다양한 시설을 갖추고 있습니다.</h2>
-                        <p class="info">미사경정공원은 놀이시설, 체육시설, 편의시설을 갖추어 시민들의 여가선용 장소로 사랑받고 있습니다.</p>
+                    
+                    <div class="cptLocation">
+                        <div class="comTitH2">
+                            <h2>미사경정공원 위치</h2>
+                        </div>
+                        <div class="kkoMap">
+                            <!-- 카카오맵 -->
+                            <div id="daumRoughmapContainer1733303264135" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp" : "1733303264135",
+                                    "key" : "2mf4f",
+                                    "mapWidth" : "100%",
+                                    "mapHeight" : "500"
+                                }).render();
+                            </script>
+                        </div>
+                        <div class="comBasicTxt">
+                            <p class="txt">
+                                경기도 하남시 미사대로 505(신장동)
+                            </p>
+                        </div>
                     </div>
                     
                     <div class="modTab mView_mgH40">
-                        <div class="tabMenuGroup tabSwiper toTab">
+                        <div class="tabMenuGroup tabSwiper toMob">
                             <ul class="tabMenu swiper-wrapper">
-                                <li class="tabItem swiper-slide"><button class="tabName on" title="놀이시설">놀이시설</button></li> <!-- addClass - on : 메뉴 선택됨 -->
-                                <li class="tabItem swiper-slide"><button class="tabName" title="체육시설">체육시설</button></li>
-                                <li class="tabItem swiper-slide"><button class="tabName" title="편의시설">편의시설</button></li>
+                                <li class="tabItem swiper-slide"><button class="tabName on" title="자가용 이용 · 주차안내">자가용 이용 · 주차안내</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                                <li class="tabItem swiper-slide"><button class="tabName" title="대중교통 이용안내">대중교통 이용안내</button></li>
                             </ul>
                         </div>
                         <div class="tabDirection">
@@ -799,227 +817,222 @@
                             </div>
                         </div>
                         <div class="tabContianer">
-                            <!-- 놀이시설 -->
+                            <!-- 자가용 이용 · 주차안내 -->
                             <div class="tabCont on">
-                                <div class="cptFacInfo">
-                                    <div class="list">
+                                <div class="comTitH2">
+                                    <h2>자가용 이용</h2>
+                                </div>
+                                <div class="comTitH3">
+                                    <h3>성남 및 분당지역 수도권 제1순환고속도로 이용</h3>
+                                </div>
+                                <div class="comBasicTxt space">
+                                    <p class="txt">
+                                        성남대로에서 수도권제1순환선 구리, 상일 방면으로 진입 -> 상일IC에서 천호대교, 하남 방면으로 오른쪽 고속도로 출구 진입 -> 상일 IC에서 하남 방면으로 오른쪽 방향 -> 진등지하차도에서 ‘미사역’ 방면으로 왼쪽 지하차도 진입
+                                    </p>
+                                </div>
+                                <div class="comTitH3">
+                                    <h3>강북 방면 세종포천고속도로(구리-포천) 이용</h3>
+                                </div>
+                                <div class="comBasicTxt space">
+                                    <p class="txt">
+                                        월드컵북로 방면 -> 성산2교에서 연희IC 방면으로 좌회전 -> 수내역, 내부순환로 방면으로 고가차도 오른쪽 옆길 -> 연희교차로에서 ‘내부순환로’ 방면으로 오른쪽 고가차도 진입, 도시고속도로 진입 -> 하월곡분기점교차로에서 ‘북부간선도로(구리·월릉IC)’ 방면으로 오른쪽 방향 -> 중랑IC에서 남구리IC 방면 오른쪽 고속도로 진입 -> 남구리IC에서 서울, 강변북로 방면으로 오른쪽 고속도로 출구 -> 아천 IC에서 구리암사대교, 올림픽대교 방면 -> 암사IC에서 강일IC 방면 -> 강일IC에서 서울·양양고속도로, 춘천, 덕소삼패 방면으로 고속도로 진입 -> 미사경정공원, 미사강변도시 방면으로 지하차도 오른쪽 옆길 -> 미사사거리에서 미사경정공원(후문) 방면으로 좌회전
+                                    </p>
+                                </div>
+                                <div class="comTitH3">
+                                    <h3>강남 방면</h3>
+                                </div>
+                                <div class="comBasicTxt space">
+                                    <p class="txt">
+                                        올림픽대로 방면으로 도시고속도로 진입 -> 강일IC에서 서울·양양고속도로, 춘천, 덕소삼패 방면으로 고속도로 진입 -> 미사교차로에서 팔당대교, 하남시청, 양평 방면으로 오른쪽 고속도로 출구 -> 미사경정공원, 미사강변도시 방면으로 지하차도 오른쪽 옆길 ->  미사사거리에서 미사경정공원(후문) 방면으로 좌회전
+                                    </p>
+                                </div>                                
+                                <div class="cptLocation">
+                                    <div class="comTitH2">
+                                        <h2>주차안내</h2>
+                                    </div>
+                                    <div class="comTitH3">
+                                        <h3>주차대수 및 주차요금</h3>
+                                    </div>
+                                    <div class="comBasicTxt space">
+                                        <p class="txt">
+                                            8개소(P1,P2,P3,P4,P5,P6,P7,P8) / 3,000대(이면주차 포함)
+                                        </p>
+                                    </div>
+                                    <div class="comTitH3">
+                                        <h3>주차 구획</h3>
+                                    </div>
+                                    <div class="comBasicTxt space">
+                                        <p class="txt">
+                                            2,280대(경정장 1,078대, 조정호 902대, 워밍업장 300대) / 720대 공간(이면)주차
+                                        </p>
+                                    </div>
+                                    <div class="parkInfo">
                                         <div class="img">
-                                            <img src="../../images/contents/cont28_04_02_01_img1.jpg" alt="지정좌석실">
-                                        </div>
-                                        <div class="cont">
-                                            <div class="rowA">
-                                                <dl>
-                                                    <dt>1인승 이륜자전거</dt>
-                                                    <dd>아이들의 정서발달과 체력 증진을 위해 놀이시설물이 다양하게 설치되어 있으며, 안전을 위해 바닥재질을 잔디우레탄으로 시공하였습니다.</dd>
-                                                </dl>
-                                            </div>
-                                            <div class="rowB">
-                                                <dl>
-                                                    <dt>이용시간</dt>
-                                                    <dd>
-                                                        09:00 ~ 18:00 <br />
-                                                        성수기 주말, 공휴일(4월~6월, 9월~10월)19:00, <br />
-                                                        7월~8월 20:00까지 연장 운영
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>이용요금</dt>
-                                                    <dd>
-                                                        4,000원/시간
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>운영대수</dt>
-                                                    <dd>
-                                                        185대
-                                                    </dd>
-                                                </dl>
-                                            </div>
+                                            <img src="../../images/contents/cont28_04_03_01_park.jpg" alt="경정공원 주차안내">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="cptEtcInfo">
-                                    <div class="infoBox">
-                                        <dl class="info">
-                                            <dt>
-                                                <em class="tit">이용 시 유의사항</span>
-                                            </dt>
-                                            <dd>
-                                                <div class="infoList">
-                                                    <ul class="listGroup">
-                                                        <li class="item">도로의 진행방향을 확인하신 후 이용하여야 하며, 과속하지 마시고 안전한 속도로 이용해주세요.</li>
-                                                        <li class="item">이용객이 많아 혼잡할 경우 안전사고 발생에 특히 주의해주세요.</li>
-                                                        <li class="item">자전거 이용 시 헬맷을 반드시 착용해주세요.</li>
-                                                        <li class="item">2인승 자전거의 뒷자석에는 미성년자를 태울 수 없으며, 3인승 자전거 이용 시 성인 최소 1명은 승차하여야해요.</li>
-                                                            </ul>
-                                                </div> 
-                                            </dd>
-                                        </dl>
+                                    <div class="comContTable mgH32">
+                                        <div class="tableArea sizeM">
+                                            <table>
+                                                <caption>주차요금 표 : 구분,요금,대상 항목을 포함한 표</caption>
+                                                <colgroup>
+                                                    <col style="width:11%">
+                                                    <col style="width:10%;">
+                                                    <col style="width:18%;">
+                                                    <col style="width:auto;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="2">구분</th>
+                                                        <th>주차요금</th>
+                                                        <th>적용대상</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="parkFirstTd">일반요금</td>
+                                                        <td>
+                                                            <div class="parkDet">
+                                                                <ul>
+                                                                    <li>소형</li>
+                                                                    <li>대형</li>
+                                                                    <li>월주차</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="parkDet">
+                                                                <ul>
+                                                                    <li>10분당 300원 / 일 최대 10,000원</li>
+                                                                    <li>10분당 600원 / 일 최대 20,000원</li>
+                                                                    <li>80,000원 / 월 (예정)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="comBasicList space">
+                                                                <ul class="listGroup">
+                                                                    <li class="item">승용차, 2.5t 이하</li>
+                                                                    <li class="item">25인승 이상, 2.5t 이상</li>
+                                                                    <li class="item">승용차량 (운영시간 06~20시, 주말제외)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="parkFirstTd">할인요금</td>
+                                                        <td>
+                                                            일반
+                                                        </td>
+                                                        <td>
+                                                            <div class="parkDet">
+                                                                <ul>
+                                                                    <li>주차료의 25%</li>
+                                                                    <li>주차료의 50%</li>
+                                                                    <li>1000원</li>
+                                                                    <li></li>
+                                                                    <li>무료</li>
+                                                                    <li></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="comBasicList space">
+                                                                <ul class="listGroup">
+                                                                    <li class="item">다둥이(2자녀)</li>
+                                                                    <li class="item">다둥이(3자녀), 경차, 저공해, 국가유공자, 장애인</li>
+                                                                    <li class="item">하남시민이 운행하는 차량 (세대당 1대)</li>
+                                                                    <li class="item">하남시민이 계약자로 운행하는 리스카, 렌터카 포함</li>
+                                                                    <li class="item">하남시민+할인차량(국가유공자, 장애인, 경차, 저공해, 다둥이(2자녀이상, 막내가 만13세 이하), 만65세 이상) 차량</li>
+                                                                    <li class="item">하남시 어린이집, 유치원, 요양병원(병원), 장애인단체(교통약자 이동지원센터) 차량</li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="comFacInfoMng">
-                                    <div class="le">
-                                        <div class="mng">담당자</div>
-                                        <div class="name">김민석</div>
-                                    </div>
-                                    <div class="ri">
-                                        <div class="tel">031-790-8864</div>
-                                        <div class="mail">soji11@ksponco.or.kr</div>
+                                    <div class="comAddGuide"> 
+                                        <p class="guide">입차 후 10분 이내 무료, 요금 사전정산 후 30분 내 출차 시 추가요금 없음</p>
+                                        <p class="guide">하남시민은 행정복지센터를 통해 주차감면 차량번호 등록 신청 및 처리 완료 시부터 적용</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- 체육시설 -->
+                            <!-- 대중교통 이용안내 -->
                             <div class="tabCont">
-                                <div class="cptFacInfo">
-                                    <div class="list">
-                                        <div class="img">
-                                            <img src="../../images/contents/cont28_04_02_02_img1.jpg" alt="미사리 조정·카누 경기장(미사경정공원)">
-                                        </div>
-                                        <div class="cont">
-                                            <div class="rowA">
-                                                <dl>
-                                                    <dt>미사리 조정·카누 경기장(미사경정공원)</dt>
-                                                    <dd>
-                                                        한강변에 위치한 미사리 조정·카누경기장은 넓은 호수 주위를 따라 5km의 자전거 하이킹 코스가 조성되어 있고 드넓은 잔디와 천혜의 울창한 자연녹지 공간이 펼쳐져있어 연간 100만명 이상의 시민들이 찾아 자전거 하이킹과 소풍을 즐기고 있습니다. <br /><br />
-                                                        또한, 잔디 축구장과 족구장 등 각종 생활체육시설이 갖추어져있어 방문객과 청소년들이 모여 체육활동은 물론 수도권시민들의 쾌적한 쉼터로 사랑을 받고 있으며 현재 새로운 레저스포츠로 각광받고 있는 "경정"이 매주 수요일, 목요일에 열리고 있습니다.
-                                                    </dd>
-                                                </dl>
-                                            </div>
-                                            <div class="rowLink">
-                                                <button class="btn md gLine">대관 예약 신청 바로가기</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="list">
-                                        <div class="img">
-                                            <img src="../../images/contents/cont08_04_02_02_img2.jpg" alt="농구장">
-                                        </div>
-                                        <div class="cont">
-                                            <div class="rowA">
-                                                <dl>
-                                                    <dt>농구장</dt>
-                                                    <dd>최신시설과 안전한 바닥재질의 농구장 2코트가 설치되어 있으며 누구라도 이용 가능합니다. 질서를 지키며 자유롭게 이용해 주세요.</dd>
-                                                </dl>
-                                            </div>
-                                            <div class="rowB">
-                                                <dl>
-                                                    <dt>이용일시</dt>
-                                                    <dd>
-                                                        09:00 ~ 20:00 <br />
-                                                        (계절 및 상황에 따라 변경될 수 있습니다.)
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>위치</dt>
-                                                    <dd class="flexAlign">
-                                                        광명스피돔 외부 <div class="popMap" onclick="openPopup('reports2');">위치보기</div>
-                                                    </dd>
-                                                </dl>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="list">
-                                        <div class="img">
-                                            <img src="../../images/contents/cont08_04_02_02_img3.jpg" alt="풋살경기장">
-                                        </div>
-                                        <div class="cont">
-                                            <div class="rowA">
-                                                <dl>
-                                                    <dt>풋살경기장<div class="rightTxt">대관가능시설</div></dt>
-                                                    <dd>최신시설과 인조 잔디 바닥 재질의 풋살 경기장이 설치되어 있으며 누구라도 이용 가능합니다. 질서를 지키며 자유롭게 이용해 주세요.</dd>
-                                                </dl>
-                                            </div>
-                                            <div class="rowB">
-                                                <dl>
-                                                    <dt>이용일시</dt>
-                                                    <dd>
-                                                        <b>3월~11월</b> 07:00~18:00 /<span class="blk"></span> <b>12월~2월</b> 08:00~17:00
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>이용요금</dt>
-                                                    <dd>
-                                                        무료, 유료(대관안내 참고)
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>이용시간</dt>
-                                                    <dd>
-                                                        1시간
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>이용방법</dt>
-                                                    <dd>
-                                                        현장방문 접수 후 사용
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>접수문의</dt>
-                                                    <dd>
-                                                        02-2067-5433 (광명홀 입구)
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>대관방법</dt>
-                                                    <dd>
-                                                        [시설안내 > 시설대관 안내] 참고
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>필수확인</dt>
-                                                    <dd>
-                                                        <div class="popUseInfo" onclick="openPopup('reports3_useInfo');">이용준수사항 안내</div>
-                                                    </dd>
-                                                </dl>
-                                                <dl>
-                                                    <dt>위치</dt>
-                                                    <dd class="flexAlign">
-                                                        광명스피돔 외부 <div class="popMap" onclick="openPopup('reports3');">위치보기</div>
-                                                    </dd>
-                                                </dl>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="comTitH2">
+                                    <h2>지하철 안내</h2>
                                 </div>
-                                <div class="cptEtcInfo">
-                                    <div class="infoBox">
-                                        <dl class="info">
-                                            <dt>
-                                                <em class="tit">이용 시 유의사항</span>
-                                            </dt>
-                                            <dd>
-                                                <div class="infoList">
-                                                    <ul class="listGroup">
-                                                        <li class="item">도보, 자전거 출입 가능 시간 : 05:00 ~ 20:00 / 차량 출입 가능 시간 : 06:00 ~ 20:00</li>
-                                                        <li class="item">미사경정공원 전 지역은 개인텐트 설치가 금지되어 있어요.</li>
-                                                    </ul>
-                                                </div> 
-                                            </dd>
-                                        </dl>
-                                    </div>
+                                <div class="comTitH3">
+                                    <h3 class="metro">5호선 미사역 하차 후 4번출구</h3>
                                 </div>
-                            </div>
-                            <!-- 편의시설 -->
-                            <div class="tabCont">
-                                <div class="cptFacInfo">
-                                    
+                                <div class="comBasicTxt">
+                                    <p class="txt">
+                                        시내버스(112-5번) 승차 -> 경정관람동 앞 하차
+                                    </p>
                                 </div>
-                                <div class="comFacInfoMng">
-                                    <div class="le">
-                                        <div class="mng">담당자</div>
-                                        <div class="name">김동신</div>
-                                    </div>
-                                    <div class="ri">
-                                        <div class="tel">031-790-8881</div>
-                                        <div class="mail">kimds7@ksponco.or.kr</div>
+                                <div class="comTitH2 mgH60">
+                                    <h2>버스 이용</h2>
+                                </div>
+                                <div class="comContTable">
+                                    <div class="tableArea sizeM">
+                                        <table>
+                                            <caption>노선번호, 기점, 주요경유지, 배차간격 항목을 포함한 표</caption>
+                                            <colgroup>
+                                                <col style="width:140px;">
+                                                <col style="width:auto;">
+                                                <col style="width:auto;">
+                                                <col style="width:140px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>버스번호</th>
+                                                    <th>경정장 인근 정류장</th>
+                                                    <th>노선안내</th>
+                                                    <th>경유지</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>112-5</td>
+                                                    <td>미사경정공원 관람동</td>
+                                                    <td>서울아산병원 ↔ 미사경정공원</td>
+                                                    <td>천호역,강동역,미사역</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1-4</td>
+                                                    <td>경정장 후문</td>
+                                                    <td>차산리 ↔ 미사동 차고지</td>
+                                                    <td>강동역, 미사역</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3-1(마을버스)</td>
+                                                    <td>경정장 후문</td>
+                                                    <td>한솔리치빌 2,3단지 ↔ 하남시민 체험농장</td>
+                                                    <td>하남풍산역, 미사역</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3-2(마을버스)</td>
+                                                    <td>경정장 후문</td>
+                                                    <td>한솔리치빌 2,3단지 ↔ 미사동 뒷벌</td>
+                                                    <td>하남풍산역, 미사역</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2000-2</td>
+                                                    <td>조정경기장 (정문)입구</td>
+                                                    <td>잠실역 ↔ 양평터미널</td>
+                                                    <td>신원역, 잠실역</td>
+                                                </tr>                                                
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
+                    
                 </div>
-                
 
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
 
