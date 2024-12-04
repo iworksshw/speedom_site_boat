@@ -7,13 +7,22 @@
         .root_daum_roughmap .map_border {display: none;}
     }
     .parkInfo {
-        margin-top: 32px; padding: 32px 32px; border-radius: 16px; border: 1px solid var(--Bg-Line-line-200);
+        margin-top: 32px;
         .img {
             img {width: 100%; height: auto; border-radius: 16px; display: block;}
         }
         .txtInfo {
             margin-top: 20px; display: flex; padding: 32px 120px; justify-content: space-between; align-items: center; border-radius: 12px; background: var(--Bg-Line-bg-200); 
             .list {}            
+        }
+    }
+    .comBasicList.space {padding: 0 16px;}
+    .parkDet {
+        ul {
+            li {
+                min-height: 22.5px; margin-top: 8px;
+                &:first-child {margin-top: 0;}
+            }
         }
     }
 
