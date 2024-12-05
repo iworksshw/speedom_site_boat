@@ -1,0 +1,499 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "KBOAT 경정",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/header.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    location: ['총괄본부'],
+                    subTitle: '시설안내',
+                    subText: '<b>편안하고 쾌적한 환경</b>에서<br /> 경정을 즐겨보세요.',
+                    url: "../../",
+                    visualClass: "bg06",
+                }) %>
+
+                <div class="layoutContArea">
+
+                    <div class="comSubInfo">
+                        <h2 class="infoTit">쾌적하고 아늑한 관람환경, 차별화된 양질의 서비스를 제공하는 지정좌석실</h2>
+                        <p class="info">지정좌석실은 스피드온 앱을 통한 예약, 현금 결제를 통해 입장하실 수 있어요.</p>
+                    </div>
+                    
+                    <div class="cptFacInfo">
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img1.jpg" alt="미사리 경정본장">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>미사리 경정본장</dt>
+                                        <dd>경기 하남시 미사대로 505</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>노블레스</em>
+                                                    좌석수 : 66석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 84석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                                <li>
+                                                    <em>스탠다드</em>
+                                                    좌석수 : 48석 <br />
+                                                    이용료 : 5,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            2층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            031-790-8401
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img2.jpg" alt="장안지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>장안지점</dt>
+                                        <dd>서울특별시 동대문구 장한로2길 33 (장안동, (구)두봉백화점 2층~5층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>노블레스</em>
+                                                    좌석수 : 34석 <br />
+                                                    이용료 : 15,000원
+                                                </li>
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 162석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            5층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6404
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img3.jpg" alt="분당지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>분당지점</dt>
+                                        <dd>경기도 성남시 분당구 성남대로 925번길 11 (야탑동, 유니월드마트 4~5층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 130석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            4층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6453
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img4.jpg" alt="관악지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>관악지점</dt>
+                                        <dd>서울시 관악구 신림로 59길 23 (서원동, 삼모스포렉스 2~5층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 110석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            프리미엄 5층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6507
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img5.jpg" alt="시흥지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>시흥지점</dt>
+                                        <dd>경기도 시흥시 월곶중앙로 38 (월곶동, 마린월드건물 2,3층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 98석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            3층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6653
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img6.jpg" alt="성북지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>성북지점</dt>
+                                        <dd>서울특별시 성북구 동소문로 300 (하월곡동, 구크로바예식장 1~5층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 65석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            1층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6463
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img7.jpg" alt="강남지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>강남지점</dt>
+                                        <dd>서울특별시 강남구 학동로 171 (논현동, 삼익악기빌딩 4~6층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>노블레스</em>
+                                                    좌석수 : 24석 <br />
+                                                    이용료 : 10,500원
+                                                </li>
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 87석 <br />
+                                                    이용료 : 10,500원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            노블레스 및 프리미엄 6층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6665
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img8.jpg" alt="천안지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>천안지점</dt>
+                                        <dd>충청남도 천안시 서북구 두정로 220 (두정동, 두정프라자 5~8층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>노블레스</em>
+                                                    좌석수 : 25석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 108석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            노블레스 5층, 프리미엄 8층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6704
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img9.jpg" alt="의정부지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>의정부지점</dt>
+                                        <dd>경기도 의정부시 시민로 80 (의정부동, 센트럴타워빌딩 2~3층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 70석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                                <li>
+                                                    <em>스탠다드</em>
+                                                    좌석수 : 159석 <br />
+                                                    이용료 : 5,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            2층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6853
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="img">
+                                <img src="../../images/contents/cont28_06_img9.jpg" alt="의정부지점">
+                            </div>
+                            <div class="cont">
+                                <div class="rowA">
+                                    <dl>
+                                        <dt>동대문지점</dt>
+                                        <dd>서울특별시 중구 장충단로 263 (을지로6가, 밀리오레백화점 빌딩 10~12층)</dd>
+                                    </dl>
+                                </div>
+                                <div class="rowB">
+                                    <dl class="mbType">
+                                        <dt>지정실 종류</dt>
+                                        <dd>
+                                            <ul class="roomClass">
+                                                <li>
+                                                    <em>프리미엄</em>
+                                                    좌석수 : 66석 <br />
+                                                    이용료 : 10,000원
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>위치</dt>
+                                        <dd>
+                                            12층
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>안내</dt>
+                                        <dd>
+                                            02-2067-6153
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>               
+
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+
+                <!-- 서브 바텀 (담당자) -->
+                <%- include('../_ejs/sub_btm.ejs', {
+                    team: '영업총괄팀',
+                    name: '김홍식',
+                    phone: '02-2067-5603',
+                    url: "../../",
+                }) %>
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

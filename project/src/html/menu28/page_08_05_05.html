@@ -1,0 +1,127 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "KBOAT 경정",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/header.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    location: ['총괄본부','경정훈련원'],
+                    subTitle: '오시는 길',
+                    subText: '<b>다양한 방법으로 경정훈련원</b>까지<br>오시는 길을 알려드릴게요.',
+                    url: "../../",
+                    visualClass: "bg06",
+                }) %>
+
+                <div class="layoutContArea">
+                    
+                    <div class="cptLocation">
+                        <div class="comTitH2">
+                            <h2>경정훈련원 위치</h2>
+                        </div>
+                        <div class="kkoMap">
+                            <!-- 카카오맵 -->
+                            <div id="daumRoughmapContainer1733318059545" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp" : "1733318059545",
+                                    "key" : "2mf58",
+                                    "mapWidth" : "100%",
+                                    "mapHeight" : "360"
+                                }).render();
+                            </script>
+                        </div>
+                        <div class="comBasicTxt">
+                            <p class="txt">
+                                인천광역시 중구 운서동 국민체육진흥공단 경정훈련원
+                            </p>
+                        </div>
+                        <div class="comTitH2">
+                            <h2>자가용 이용</h2>
+                        </div>
+                        <div class="comTitH3">
+                            <h3>서울</h3>
+                        </div>
+                        <div class="comBasicTxt space">
+                            <p class="txt">
+                                인천국제공항고속도로 -> 영종해안남로 19-122(1시간 10분)
+                            </p>
+                        </div>
+                        <div class="comTitH3">
+                            <h3>전남 광주</h3>
+                        </div>
+                        <div class="comBasicTxt space">
+                            <p class="txt">
+                                호남고속도로(동림IC) -> 고창담양고속도로(장성분기점) -> 서해안고속도로(고창분기점) -> 영동고속도로(안산분기점) -> 인천대교고속도로(송도IC) ->영종해안남로 19-122(4시간 15분)
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="comTitH2 mgH60">
+                        <h2>대중교통 이용</h2>
+                    </div>
+                    <div class="comTitH3">
+                        <h3>공항철도</h3>
+                    </div>
+                    <div class="comBasicTxt space">
+                        <p class="txt">
+                            공항철도 : 인천공항 1터미널역 하차 후 3층 7번 출구 ->시내버스(306번, 111번 등)승차 ->무의도입구역 하차 ->경정훈련원 방향 도보 15분
+                        </p>
+                    </div>
+                    <div class="comAddGuide mgH32"> 
+                        <p class="guide">고속버스안내 : 서울 (02)446-8000, 455-2111.</p>
+                    </div>
+                </div>
+
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+
+                <!-- 서브 바텀 (담당자) -->
+                <%- include('../_ejs/sub_btm.ejs', {
+                    team: '경정서비스팀',
+                    name: '유득희',
+                    phone: '031-790-8883',
+                    url: "../../",
+                }) %>
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

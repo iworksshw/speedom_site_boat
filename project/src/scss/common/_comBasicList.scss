@@ -39,6 +39,13 @@
     // 컬러 변경
     .listGroup.color .item {color: var(--Gray-600, #58595F);}
 
+    // 테이블 내 작성시 폰트 사이즈 변경 - 예) 시설안내 주차요금안내
+    &.fs15 {
+        .txt,
+        .item {font-size: rem(15px);}
+        
+    }
+
     @include media("mobile"){
         .item {
             font-size: rem(15px);
@@ -57,6 +64,11 @@
 
         // 간격 예외
         .comImgBox + & {margin-top: 24px;}
+
+        &.fs15 {
+            .txt,
+            .item {font-size: rem(14px);}
+        }
     }
 }
 
