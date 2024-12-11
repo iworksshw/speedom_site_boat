@@ -1,0 +1,144 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "KBOAT 경정",
+	url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytMypage">
+	<div class="layoutArea">
+
+		<!-- 상단영역 -->
+		<div class="layoutTop">
+			<!-- Top -->
+			<%- include('../_ejs/header.ejs', {
+				url: "../../"
+			}) %>
+		</div>
+		<!-- //상단영역 -->
+
+		<!-- 중단영역 -->
+		<div class="layoutContainer" id="container">
+
+			<!-- 서브 콘텐츠 영역 -->
+			<div class="layoutSubCont">
+
+				<!-- 마이페이지 LNB -->
+				<div class="layoutLnbArea">
+					<div class="lnbArea">
+						<h1 class="lnbTit">마이페이지</h1>
+						<ul class="lnbMenu">
+							<li class="on"><a href="#"><span>나의 모의베팅</span></a></li>
+							<li><a href="#"><span>나의 활동지수</span></a></li>
+							<li><a href="#"><span>나의 게시글</span></a></li>
+							<li><a href="#"><span>나의 스크랩</span></a></li>
+							<li><a href="#"><span>내알림</span></a></li>
+							<li><a href="#"><span>내정보 수정</span></a></li>
+							<li><a href="#"><span>회원탈퇴</span></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 서브 컨텐츠 내용이 들어오는 영역-->
+				<div class="layoutContArea">
+                    <!-- 서브 탑 (타이틀) -->
+                    <div class="cptSubTop">
+                        <div class="subTopArea">
+                            <ul class="location">
+                                <li class="item"><a href="#">홈</a></li>
+                                <li class="item"><a href="#">마이페이지</a></li>
+                            </ul>
+							<div class="subTitle">
+								<h1>나의 모의베팅</h1>
+                                <div class="right">
+                                    <div class="selectDate">
+										<div class="val">2024년 9월 2주</div>
+										<button type="button" class="prev">이전</button>
+										<button type="button" class="next">다음</button>
+									</div>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="cptDataSum">
+						<div class="dataSum totalSum mRow">
+                            <div class="total">
+                                <div class="item">현재 보유 활동지수
+									<button type="button" class="popIcon" onclick="openPopup('tip1')">팝업 열기</button>
+                                </div>
+                                <div class="val">2,000,000 <i class="unit">P</i></div>
+                            </div>
+                            
+							<ul class="inner">
+								<li>
+									<span class="item">나의 랭킹</span>
+									<span class="val">1,223 <i class="unit">위</i></span>
+								</li>
+								<li>
+									<span class="item">획득한 활동지수</span>
+									<span class="val">123,456 <i class="unit">P</i></span>
+								</li>
+								<li>
+									<span class="item">참여한 경주수</span>
+									<span class="val">123,456 <i class="unit">개</i></span>
+								</li>
+								<li>
+									<span class="item">나의 적중률
+										<button type="button" class="popIcon" onclick="openPopup('tip1')">팝업 열기</button>
+									</span>
+									<span class="val">99.99 <i class="unit">%</i></span>
+								</li>
+							</ul>
+						</div>
+                    </div>
+
+					<div class="cptDataList">
+						<div class="comTabData">
+							<div class="tabMenuGroup tabDataSwiper">
+								<ul class="tabMenu swiper-wrapper">
+									<li class="tabItem swiper-slide">
+										<button type="button" class="tabName on">전체</button>
+									</li>
+									<li class="tabItem swiper-slide">
+										<button type="button" class="tabName">구매</button>
+									</li>
+									<li class="tabItem swiper-slide">
+										<button type="button" class="tabName">환급</button>
+									</li>
+									<li class="tabItem swiper-slide">
+										<button type="button" class="tabName">기타</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+                        <div class="comNoneData">
+                            <p class="noneTxt">거래내역이 없습니다.</p>
+                        </div>
+					</div>
+					
+				</div>
+				<!-- //서브 컨텐츠 내용이 들어오는 영역-->
+				
+			</div>
+			<!-- //서브 콘텐츠 영역 -->
+
+		</div>
+		<!-- //중단영역 -->
+
+		<!-- 하단영역 -->
+		<div class="layoutFooter">
+			<!-- Footer -->
+			<%- include('../_ejs/footer.ejs', {
+				url: "../../"
+			}) %>
+		</div>
+		<!-- //하단영역 -->
+
+	</div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
