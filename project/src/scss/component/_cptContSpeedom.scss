@@ -17,10 +17,13 @@
                 dl {
                     display: flex; color: var(--Gray-800); font-size: rem(16px); margin-top: 12px;
                     &:first-child {margin-top: 0;}
-                    dt {width: 120px; font-weight: 700;}
+                    dt {
+                        width: 120px; font-weight: 700;
+                        .blk {display: block;}
+                    }
                     dd {flex: 1; line-height: 1.6;}
                 }                
-            }
+            }            
         }
         .btnGrp {
             margin-top: 32px; display: flex; align-items: center; gap: 12px;
@@ -37,6 +40,11 @@
         .list.bt {
             .img {margin-right: 0; margin-left: 100px;}
         }        
+        .parkImg {
+            margin-top: 20px;
+            img {width: 100%;}
+        }
+
     }
 
     @include media("mobile"){
@@ -48,9 +56,18 @@
                 width: 100%; flex: none; margin-top: 24px;
                 .infoTxt {                   
                     dl {
-                        dt {width: 100px; font-size: rem(15px); line-height: 1.5;}
+                        dt {
+                            width: 100px; font-size: rem(15px); line-height: 1.5;
+                            .blk {display: inline-block;}
+                        }
                         dd {font-size: rem(15px);}
                     }                
+                }
+                &.verDiv {
+                    dl {
+                        display: block;
+                        dt {margin-bottom: 8px;}
+                    }
                 }
             }
             .list.bt {

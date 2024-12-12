@@ -71,3 +71,11 @@
     }
     & + .comDataTable {margin-top: 40px;}
 }
+
+.btnIcoMovie {
+    position: relative;  display: inline-block; width: 40px; height: 40px; vertical-align: middle; background-color: #EEF9FD !important; overflow: hidden; border-radius: 50%;
+    &::after {content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 40px; background: url(../../images/common/ic_18_movie_play.svg) center no-repeat;}
+
+    &.disabled {pointer-events: none; cursor: default;}
+    // &.disabled::after {background-image: url(../../images/common/ic_18_movie_play_g.svg);}
+}

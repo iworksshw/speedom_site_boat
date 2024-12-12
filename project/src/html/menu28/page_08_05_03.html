@@ -1,0 +1,171 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "KBOAT 경정",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/header.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    location: ['총괄본부','경정훈련원'],
+                    subTitle: '교육과정 안내',
+                    subText: '<b>선수후보생의 교육과정</b>을<br />상세하게 알려드려요.',
+                    url: "../../",
+                    visualClass: "bg06",
+                }) %>
+
+                <div class="layoutContArea">
+                    
+                    <div class="comSubInfo">
+                        <h2 class="infoTit">우수한 경정선수를 양성하는 경정훈련원의 교육과정안내</h2>
+                        <p class="info">
+                            경주기술과 건전한 직업윤리 및 교양 확립에 중점을 둔 교육과정을 안내해드려요.
+                        </p>
+                    </div>
+
+                    <div class="cptSection">
+                        <div class="comTitH2">
+                            <h2>교육안내</h2>
+                        </div>
+                        <div class="comBasicList space">
+                            <ul class="listGroup">
+                                <li class="item">교육기간 : 12개월 ~ 18개월</li>
+                                <li class="item">교육방법 : 합숙훈련(월∼금)을 통한 학과 및 실기 교육</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cptSection">
+                        <div class="comTitH2">
+                            <h2>교육과목 및 내용</h2>
+                        </div>
+                    </div>
+
+                    <div class="comContTable">
+                        <div class="tableArea sizeM">
+                            <table>
+                                <caption>교육과목 및 내용 : 구분, 교육과목, 내용 항목을 포함한 표</caption>
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:auto;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="lineR">구분</th>
+                                        <th>교육과목</th>
+                                        <th>내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="parkFirstTd">학과교육</td>
+                                        <td>
+                                            <div class="comBasicTxt space fs15">
+                                                <p class="txt">경정관계법규</p>
+                                                <p class="txt">직업윤리</p>
+                                                <p class="txt">경주용모터·보트정비학</p>
+                                                <p class="txt">공정교육 및 직업윤리</p>
+                                                <p class="txt">조종학 이론</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="comBasicTxt space fs15">
+                                                <p class="txt">경정시행 관련 제규정 등</p>
+                                                <p class="txt">인성·윤리의식 함양</p>
+                                                <p class="txt">운동생리학, 스포츠 사회학, 구급법</p>
+                                                <p class="txt">모터보트의 구조 및 명칭의 이해, 내연기관</p>
+                                                <p class="txt">경주분석, 전법 및 위반사례 등</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="parkFirstTd">실기교육</td>
+                                        <td>
+                                            <div class="comBasicTxt space fs15">
+                                                <p class="txt">기초체력</p>
+                                                <p class="txt">정비실기</p>
+                                                <p class="txt">조종실기</p>
+                                                <p class="txt">경주운영실기</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="comBasicTxt space fs15">
+                                                <p class="txt">체계적 체력 육성(운동처방프로그램)</p>
+                                                <p class="txt">모터보트 분해 및 조립</p>
+                                                <p class="txt">기본선회, 편대선회, 스타트훈련 등</p>
+                                                <p class="txt">모의경주 등 실전훈련</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="parkFirstTd">특별활동</td>
+                                        <td>
+                                            <div class="comBasicTxt space">
+                                                <p class="txt">체육활동 및 야외활동</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="comBasicTxt space">
+                                                <p class="txt">극기훈련, 산악훈련 등</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+
+                <!-- 서브 바텀 (담당자) -->
+                <%- include('../_ejs/sub_btm.ejs', {
+                    team: '경정훈련원',
+                    name: '이병노',
+                    phone: '032-742-1304',
+                    url: "../../",
+                }) %>
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

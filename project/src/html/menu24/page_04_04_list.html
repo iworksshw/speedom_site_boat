@@ -1,0 +1,157 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "KBOAT 경정",
+	url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+	<div class="layoutArea">
+
+		<!-- 상단영역 -->
+		<div class="layoutTop">
+			<!-- Top -->
+			<%- include('../_ejs/header.ejs', {
+				url: "../../"
+			}) %>
+		</div>
+		<!-- //상단영역 -->
+
+		<!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    location: ['경정영상관'],
+                    subTitle: '대상경정방송',
+                    subText: '<b>연도별 대상경정 순위와 영상</b>, <br>경주번호 클릭 시 상세한 경주결과를 보실 수 있어요.',
+                    url: "../../",
+                    visualClass: "bg05",
+                }) %>
+
+                <div class="layoutContArea">
+                    <div class="cptSection">
+                        <div class="sectArea">
+                            <div class="comGroupTop">
+                                <div class="alignR">
+                                    <ul class="opList">
+                                        <li class="item">
+                                            <div class="frmGroup">
+                                                <div class="frmBox">
+                                                    <select class="iptSlt">
+                                                        <option value="">전체</option>
+                                                        <option value="">드롭다운</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="comDataTable both">
+                                <div class="tableArea sizeL">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:20%;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>대상경주명</th>
+                                                <th>개최일자(회차)</th>
+                                                <th>1위</th>
+                                                <th>2위</th>
+                                                <th>3위</th>
+                                                <th>경주결과</th>
+                                                <th>동영상</th>
+                                                <th>시상식</th>
+                                                <th>포인트경정</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>제22회 쿠리하라배 특별경정</th>
+                                                <td>2024.10.17 <br>(41회차)</td>
+                                                <td><a href="#" class="txtBtn">정민수</a></td>
+                                                <td><a href="#" class="txtBtn">심상철</a></td>
+                                                <td><a href="#" class="txtBtn">김민준</a></td>
+                                                <td><a href="#" class="txtBtn" target="_blank" title="새창열림">15 경주</a></td>
+                                                <td><button type="button" class="btnIcoMovie" title="동영상보기 새창열림"></button></td>
+                                                <td><button type="button" class="btnIcoMovie" title="시상식 새창열림"></button></td>
+                                                <td><button type="button" class="btnIcoMovie" title="포인트경정 새창열림"></button></td>
+                                            </tr>
+                                            <tr>
+                                                <th>제16회 스포츠경향배 대상경정</th>
+                                                <td>2024.08.22 <br>(34회차)</td>
+                                                <td><a href="#" class="txtBtn">정민수</a></td>
+                                                <td><a href="#" class="txtBtn">심상철</a></td>
+                                                <td><a href="#" class="txtBtn">김민준</a></td>
+                                                <td><a href="#" class="txtBtn" target="_blank" title="새창열림">15 경주</a></td>
+                                                <td><button type="button" class="btnIcoMovie" title="동영상보기 새창열림"></button></td>
+                                                <td><button type="button" class="btnIcoMovie" title="시상식 새창열림"></button></td>
+                                                <td><button type="button" class="btnIcoMovie" title="포인트경정 새창열림"></button></td>
+                                            </tr>
+                                            <tr>
+                                                <th>이사장배 왕중왕전</th>
+                                                <td>2024.06.20 <br>(25회차)</td>
+                                                <td><a href="#" class="txtBtn">정민수</a></td>
+                                                <td><a href="#" class="txtBtn">심상철</a></td>
+                                                <td><a href="#" class="txtBtn">김민준</a></td>
+                                                <td><a href="#" class="txtBtn" target="_blank" title="새창열림">15 경주</a></td>
+                                                <td><button type="button" class="btnIcoMovie" title="동영상보기 새창열림"></button></td>
+                                                <td><button type="button" class="btnIcoMovie" title="시상식 새창열림"></button></td>
+                                                <td><button type="button" class="btnIcoMovie" title="포인트경정 새창열림"></button></td>
+                                            </tr>
+                                            <tr>
+                                                <th>스프츠월드배 대상경주</th>
+                                                <td>2024.04.18 <br>(16회차)</td>
+                                                <td><a href="#" class="txtBtn">정민수</a></td>
+                                                <td><a href="#" class="txtBtn">심상철</a></td>
+                                                <td><a href="#" class="txtBtn">김민준</a></td>
+                                                <td><a href="#" class="txtBtn" target="_blank" title="새창열림">15 경주</a></td>
+                                                <td><button type="button" class="btnIcoMovie" title="동영상보기 새창열림"></button></td>
+                                                <td><button type="button" class="btnIcoMovie" title="시상식 새창열림"></button></td>
+                                                <td><button type="button" class="btnIcoMovie" title="포인트경정 새창열림"></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+		<!-- 하단영역 -->
+		<div class="layoutFooter">
+			<!-- Footer -->
+			<%- include('../_ejs/footer.ejs', {
+				url: "../../"
+			}) %>
+		</div>
+		<!-- //하단영역 -->
+
+	</div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

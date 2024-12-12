@@ -8,7 +8,8 @@
                     font-size: rem(30px); color: var(--Gray-800); line-height: 1.4; font-weight: 300;
                     strong {
                         font-weight: 600; color: var(--Gray-900); position: relative; z-index: 1;
-                        &::after {content:''; position: absolute; left: 0; right: 0; bottom: 0; height: 13px; background: #A1F4C7; z-index: -1;}
+                        &::after {content:''; position: absolute; left: 0; right: 0; bottom: 0; height: 13px; background: #B3E8FF; z-index: -1;}
+                        &.hideMaker:after {display: none;}
                     }
                 }
                 p {
@@ -25,6 +26,14 @@
                 }
             }             
         }
+        .mView {display: none;}
+    }
+
+    @include media("pcs"){ 
+        .rstRi {
+            &.pcView {display: none;}
+        }
+        .mView {display: block;}
     }
 
     @include media("mobile"){        
@@ -47,8 +56,8 @@
             }
             .rstRi {
                 width: auto; margin: 100px -16px 0; padding: 0 16px; padding-top: 40px; border-top: 10px solid #F4F6FA;
-                &.pcView {display: none;}
             }
+            
         }        
     }
 }

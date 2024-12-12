@@ -40,6 +40,8 @@
                     &.blue {background: var(--Point-Blue);}
                     &.mint {background: var(--Point-Primary2);}
                 }
+                // 예시_ 시설안내 주차안내
+                &.parkFirstTd {border-right-color: var(--Gray-300); background: var(--Bg-Line-bg-100); font-weight: 600; color: var(--Gray-800);}
             }
         }
         .frm {

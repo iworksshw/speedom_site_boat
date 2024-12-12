@@ -1,0 +1,44 @@
+.comFacInfoMng {
+    margin-top: 60px; padding: 20px 60px; border-radius: 16px; background: var(--Bg-Line-bg-100); display: flex; align-items: center; justify-content: space-between;
+
+    .le,
+    .ri {display: flex; align-items: center; font-size: rem(18px);}
+    .le {     
+        color: var(--Gray-800);   
+        .mng {
+            position: relative; margin-right: 20px; padding-right: 20px;
+            &::after {content:''; position: absolute; top: 9px; right: 0; width: 1px; height: 11px; background: var(--Gray-300);}
+        }
+        .name {font-weight: 800;}
+    }
+    .ri {        
+        .tel {
+            margin-right: 30px; display: flex; align-items: center; gap: 12px;
+            &::before {content:''; width: 20px; height: 20px; background: url(../../images/common/ic_cont_phone.svg) no-repeat center;}
+        }
+        .mail {
+            display: flex; align-items: center; gap: 12px;
+            &::before {content:''; width: 20px; height: 20px; background: url(../../images/common/ic_cont_email.svg) no-repeat center;}
+        }
+    }
+
+
+    @include media("mobile"){
+        margin-top: 40px; padding: 16px 24px; display: block; 
+        .le,
+        .ri {font-size: rem(15px);}
+        .le {     
+            .mng {
+                margin-right: 16px; padding-right: 16px;
+                &::after {top: 5px;}
+            }
+            .name {font-weight: 700;}
+        }
+        .ri {        
+            margin-top: 16px; display: block;
+            .tel {
+                margin-right: 0; margin-bottom: 8px;                
+            }
+        }
+    }
+}
