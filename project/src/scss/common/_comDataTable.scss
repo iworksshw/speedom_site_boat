@@ -299,7 +299,7 @@
     }
     .rating {                               //선발, 우수 특선
         &.bold {font-weight: 600;}          //특준, 선준, 우준
-        &.mint {color: var(--Point-Primary2); font-weight: 600;}    //선결
+        &.mint {color: #28C39E; font-weight: 600;}    //선결
         &.blue {color: var(--Point-Blue); font-weight: 600;}        //우결
         &.orange {color: var(--Point-Orange); font-weight: 600;}    //결승
         &.red {color: #f00; font-weight: 600;}                    //특우
