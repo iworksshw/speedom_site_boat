@@ -13,9 +13,9 @@
         .photoArea {
             flex: 0 1 auto; padding-top: 20px;
             .thumArea {
-                width: 186px; height: 186px; padding: 13px; background: url(../../images/common/thum_person_border.svg) center no-repeat;
+                width: 186px; height: 240px; padding: 13px; background: url(../../images/common/thum_person_border.svg) center no-repeat;
                 .thumWrap {
-                    width: 100%; height: 100%; border-radius: 50%; overflow: hidden; text-align: center;
+                    width: 100%; height: 100%; overflow: hidden; text-align: center;
                     img {width: 100%; height: 100%; object-fit: cover;}
                 }
             }
