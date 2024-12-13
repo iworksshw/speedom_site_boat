@@ -288,6 +288,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Top 버튼 동작
+    const btnTop = document.querySelector(".cptQuickMenu .btnTop");
+    if(btnTop){
+        btnTop.addEventListener("click", function(){
+            window.scrollTo({
+                top:0,
+                behavior: "smooth"
+            })
+        });
+    }
+
     //input text reset
     inputTextReset();
 
@@ -332,11 +343,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 플로팅 푸터 옵션 toggle
     batFloating();
-
+    
     // 아코디언함수
     contSlideOpen();
+
+    // 경륜영상관 - 검색 박스 - 체크박스 이벤트
+    inputCheckBoxAll();
 });
 
+// 모의배팅 init
+function battingInit() {
+    // 주간지수 슬라이드
+    recordSlide();
+
+    // 랭킹 슬라이트
+    rankSlide();
+
+    // 경기선택 슬라이드
+    matchSlide();
+
+    // 플로팅 푸터 옵션 toggle
+    batFloating();
+
+    //탭메뉴 (1차)
+    tabMenuInit();
+}
 
 
 // ------------------------------- 전체 메뉴 ------------------------------- //
@@ -350,9 +381,11 @@ function all1MenuAction(){
     
     const tabMo = window.matchMedia('(max-width: 768px)');      //모바일 분기
 
-    btnAllMenu.addEventListener("click", function(e){
-        document.querySelector(".allMenuArea").classList.add("on");
-    });
+    if(btnAllMenu){
+        btnAllMenu.addEventListener("click", function(e){
+            document.querySelector(".allMenuArea").classList.add("on");
+        });
+    }
     btnCloseAllMenus.forEach(function(btn){
         btn.addEventListener("click", function(e){
             document.querySelector(".allMenuArea").classList.remove("on");
@@ -926,6 +959,7 @@ function contSlideOpen() {
     }
 }
 
+
 // ------------------------------- input text reset 함수 ------------------------------- //
 function inputTextReset(){
     let btnResets = document.querySelectorAll('.btnReset');
@@ -969,16 +1003,23 @@ function rankSlide() {
 
 // 경기 선택 슬라이드
 function matchSlide(){
+    const onMatchBtn = document.querySelector(".matchBox.on");
+    const matchSlide = onMatchBtn.closest(".swiper-slide");
+    const matchSlides = Array.from(matchSlide.parentNode.children);  
+    const sdindex = matchSlides.indexOf(matchSlide); 
+
     let matchSwiper = new Swiper(".matchSwiper", {
         slidesPerView: "auto",
         spaceBetween: 12,
         centeredSlides: false,
+        initialSlide: sdindex,
         navigation: {
             nextEl: ".matchNavi .swiper-button-next",
             prevEl: ".matchNavi .swiper-button-prev",
         },
     });
 
+    // ON 변경
     const matchBtns = document.querySelectorAll(".matchSlct .matchBox");
 
     matchBtns.forEach(function(matchBtn, idx){
@@ -990,13 +1031,23 @@ function matchSlide(){
             });
             if (!matchBtn.classList.contains("disabled")) {
                 this.classList.add("on");
-                swCenter(target);
+                // swCenter(target);
             }
         })
-    })
+    });
+
+    // 시작 시 ON 으로 이동
+    /*
+    const onMatchBtn = document.querySelector(".matchBox.on");
+    const matchSlide = onMatchBtn.closest(".swiper-slide");
+    const matchSlides = Array.from(matchSlide.parentNode.children);  
+    const sdindex = matchSlides.indexOf(matchSlide); 
+    matchSwiper.slideTo(sdindex);
+    swCenter(sdindex)
 
     function swCenter(target) {
         const snbWrap = document.querySelector('.matchSwiper .swiper-wrapper');
+        console.log(snbWrap);
         const targetRect = target.getBoundingClientRect(); 
         const box = document.querySelector('.matchSwiper');
         const boxHalf = box.clientWidth / 2; 
@@ -1024,6 +1075,7 @@ function matchSlide(){
         snbWrap.style.transform = 'translateX(' + pos * -1 + 'px)';
         snbWrap.style.transitionDuration = '500ms';
     }
+    */
 }
 
 // 플로팅 푸터 옵션 toggle
@@ -1220,3 +1272,34 @@ function timePickerTo(startIpt, startCont, endIpt, endCont){
 }
 
 //datePickerTo("startpicker-input", "startpicker-container", "endpicker-input", "endpicker-container");
+
+
+// 경륜영상관 - 검색 박스 - 체크박스 이벤트
+function inputCheckBoxAll(){
+    if (document.querySelector(".searchOptionBox")){
+        document.querySelectorAll('.searchOptionBox .frmGroup').forEach((form) => {
+            const checkboxes = Array.from(form.querySelectorAll('.iptRdoChk[type=checkbox]'));
+            const chkAll = checkboxes.find((el) => el.classList.contains('chkAll'));
+            const otherCheckboxes = checkboxes.filter((el) => el !== chkAll);
+
+            if (checkboxes.length > 1) {
+                checkboxes.forEach((checkbox) => {
+                    checkbox.addEventListener('change', (e) => {
+                        handleCheckboxChange(e.target, chkAll, otherCheckboxes);
+                    });
+                });
+            }
+        });
+
+        function handleCheckboxChange(target, chkAll, checkboxes) {
+            if (target === chkAll) {
+                checkboxes.forEach((checkbox) => {
+                    checkbox.checked = chkAll.checked;
+                });
+            } else {
+                const allChecked = checkboxes.every((checkbox) => checkbox.checked);
+                chkAll.checked = allChecked;
+            }
+        }
+    }
+}
