@@ -33,7 +33,7 @@
                             &:hover {
                                 .depth2Link {
                                     color: var(---Primary); text-decoration: underline; text-underline-position: under;
-                                    &.newW::after {border-color: 1px solid var(---Primary); background-image: url(../../images/common/ic_16_new_window_mint.svg); background-size: 16px;}
+                                    &.newW::after {border-color: 1px solid var(---Primary); background-image: url(../../images/common/ic_16_new_window_point.svg);}
                                 }
                             }
                         }
