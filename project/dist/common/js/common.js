@@ -451,9 +451,9 @@ function all1MenuAction(){
     
     all2Menus.forEach(function(all2Menu){
         all2Menu.addEventListener("click", function(e){
-            e.preventDefault();
             if(tabMo.matches) {
                 if(!all2Menu.nextElementSibling){return;}
+                e.preventDefault(); //모바일에서만
                 all2Menu.parentNode.classList.toggle("on");
                 if(all2Menu.parentNode.classList.contains("on")){
                     slideDown(all2Menu.nextElementSibling, 200);
@@ -1088,7 +1088,6 @@ function matchSlide(){
         });
     }
 
-
     // 시작 시 ON 으로 이동
     /*
     const onMatchBtn = document.querySelector(".matchBox.on");
@@ -1334,6 +1333,39 @@ function inputCheckBoxAll(){
             const checkboxes = Array.from(form.querySelectorAll('.iptRdoChk[type=checkbox]'));
             const chkAll = checkboxes.find((el) => el.classList.contains('chkAll'));
             const otherCheckboxes = checkboxes.filter((el) => el !== chkAll);
+
+            if (checkboxes.length > 1) {
+                checkboxes.forEach((checkbox) => {
+                    checkbox.addEventListener('change', (e) => {
+                        handleCheckboxChange(e.target, chkAll, otherCheckboxes);
+                    });
+                });
+            }
+        });
+
+        function handleCheckboxChange(target, chkAll, checkboxes) {
+            if (target === chkAll) {
+                checkboxes.forEach((checkbox) => {
+                    checkbox.checked = chkAll.checked;
+                });
+            } else {
+                const allChecked = checkboxes.every((checkbox) => checkbox.checked);
+                chkAll.checked = allChecked;
+            }
+        }
+    }
+}
+
+//개인정보 동의 박스 전체 동의/해제
+function inputCheckAll(){
+    if (document.querySelector(".comPrivacyBox")){
+        document.querySelectorAll('.comPrivacyBox .infoBox').forEach((form) => {
+            const checkboxes = Array.from(form.querySelectorAll('.iptChk[type=checkbox]'));
+            const chkAll = checkboxes.find((el) => el.classList.contains('chkAll'));
+            const otherCheckboxes = checkboxes.filter((el) => el !== chkAll);
+            console.log(checkboxes)
+            console.log(chkAll)
+            console.log(otherCheckboxes)
 
             if (checkboxes.length > 1) {
                 checkboxes.forEach((checkbox) => {
