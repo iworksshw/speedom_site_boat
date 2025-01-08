@@ -1,7 +1,7 @@
 <!-- Header -->
 <%- include('../_ejs/top.ejs', {
-    title: "KBOAT 경정",
-    url: "../../"
+	title: "KBOAT Racing",
+	url: "../../"
 }) %>
 
 <!-- 레이아웃 -->
@@ -11,7 +11,7 @@
         <!-- 상단영역 -->
         <div class="layoutTop">
             <!-- Top -->
-            <%- include('../_ejs/header.ejs', {
+            <%- include('../_ejs_eng/header.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -25,35 +25,33 @@
 
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
                 <!-- 서브 탑 (타이틀) -->
-                <%- include('../_ejs/sub_top.ejs', {
-                    location: ['경정', '경정가이드', '경정 알아보기'],
-                    subTitle: '경주진행과정',
-                    subText: '스릴 넘치는 경정 경주<br/><b>어떻게 진행되는 지 알아보세요.</b>',
-                    url: "../../",
-                    visualClass : "bg01",
-                }) %>
+                <%- include('../_ejs_eng/sub_top.ejs', {
+                    location: ['K-Boating', 'Boat Racing Guide','Understanding Boat Racing'],
+                    subTitle: 'Race Process',
+                    subText: 'The thrill of boating<br/><b>Learn how it unfolds.</b>',
+					url: "../../",
+                    visualClass: "bg03",
+				}) %>
 
                 <div class="layoutContArea">
 
                     <div class="comSubInfo">
-                        <h2 class="infoTit">경정만의 스릴과 매력을 즐기기 위해 다양한 경정의 기초정보를 알아봅시다.</h2>
-                        <p class="info">경정장에서 불꽃 튀는 레이스가 관객들을 기다리고 있습니다. 경정의 기초정보를 이용하여 경정을 더욱 재밌게 즐겨보세요</p>
+                        <h2 class="infoTit">Let&rsquo;s explore the fundamental information about boating race to enjoy its unique thrill and charm.</h2>
+                        <p class="info">Thrilling races await spectators at the boating stadium. By learning basic information about boating race, you can enjoy it even more.</p>
                     </div>
 
                     <div class="cptSection">
                         <div class="sectArea">
                             <div class="comTitH2">
-                                <h2>경주 진행과정</h2>
+                                <h2>Race Process</h2>
                             </div>
 
                             <div class="comBasicTxt">
-                                <p class="txt">
-                                    출발 신호 후 출발기로부터 출발한 선수들은 <em>5바퀴(1,691m)를 주행</em>하여 레이스를 펼치는데 선두유도원이 풍압을 막아주기 위하여 앞에서 끌어주고 <em>선두유도원이 퇴피한 뒤 결승선 도착 1바퀴 반 지점에서 타종이 시작되면 본격적인 레이스</em>가 펼쳐지게됩니다.
-                                </p>
+                                <p class="txt">After the starting signal, riders set off from the starting line and <em>complete five laps (1,691 metres) on the track</em>. A lead guide leads the race initially, reducing wind resistance for the riders. <em>Once the lead guide exits the track, the race enters its critical stage. When the bell rings with one and a half laps remaining to the finish line, the final sprint begins in earnest</em>.</p>
                             </div>
 
                             <div class="comAddGuide"> 
-                                <p class="guide">결승전까지는약 3분 정도 시간이 소요되며 이 시간 동안 상당한 박진감을 동시에 맛보실 수 있습니다.</p>
+                                <p class="guide">The race concludes in approximately three minutes, delivering a high-intensity and captivating experience throughout its duration.</p>
                             </div>
                         </div>
                     </div>
@@ -61,40 +59,25 @@
                     <div class="cptOrderGuide col3">
                         <div class="guideArea">
                             <div class="comTitH3">
-                                <h3>경주 전 - 소개항주</h3>
+                                <h3>Pre-Race - Introduction Run</h3>
                             </div>
 
                             <div class="imgGuide">
                                 <ul class="guideGroup">
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_001.png" alt="출전 선수 확정의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">01</span>
-                                            <span class="txt">출전 선수 확정</span>
-                                        </p>
-                                        <p class="desc">경주 전 고객에게 선수의 기량과 모터보트의 성능을 보여주기 위하여 경주수면을 전속력으로 2주회 이내 항주합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_001.png" alt="Example image illustrating racer confirmation."></div>
+                                        <p class="tit"><span class="num">01</span> <span class="txt">Rider Confirmation</span></p>
+                                        <p class="desc">Before the race, the racers perform high-speed practice runs on the racecourse, completing up to two laps at full speed to showcase their skill and the performance of their motorboats to the audience.</p>
                                     </li>
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_002.png" alt="시합 전 확정검사의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">02</span>
-                                            <span class="txt">소개항주타임 발표</span>
-                                        </p>
-                                        <p class="desc">소개항주 1주회 혹은 2주회째 백스트레치 센터에서 2턴마크 까지(150m) 거리의 항주 시간을 측정하여 고객에게 제공합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_002.png" alt="Example image of illustrating pre-race confirmation testing"></div>
+                                        <p class="tit"><span class="num">02</span> <span class="txt">Introduction Run Time Announcement</span></p>
+                                        <p class="desc">During the introduction run, the time taken to travel the 150m distance from the backstretch centre to the second turn mark is measured during the first or second lap and provided to the audience.</p>
                                     </li>
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_003.png" alt="출전 선수 소개의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">02-01</span>
-                                            <span class="txt">온라인스타트항주 및 타임 발표</span>
-                                        </p>
-                                        <p class="desc">경주 전 출발신호에 대한 선수들의 반응속도 및 모터보트의 성능 등의 정보를 제공하기 위하여 계류장에서부터 플라잉스타트라인까지 335m 거리의 항주타임을 측정하여 고객에게 제공합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_003.png" alt="Example image of illustrating rider introduction"></div>
+                                        <p class="tit"><span class="num">02-01</span> <span class="txt">Online Start Run and Time Announcement</span></p>
+                                        <p class="desc">To provide information about the racers&apos; reaction speeds to the start signal and the performance of the motorboats, the time taken to cover the 335m distance from the dock to the flying start line is measured and shared with the audience.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -104,30 +87,20 @@
                     <div class="cptOrderGuide col3">
                         <div class="guideArea">
                             <div class="comTitH3">
-                                <h3>경주 전 - 발매 진행 </h3>
+                                <h3>Pre-Race - Ticket Sales </h3>
                             </div>
 
                             <div class="imgGuide">
                                 <ul class="guideGroup">
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_004.png" alt="경주권 구매의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">03</span>
-                                            <span class="txt">승자투표권 발매개시</span>
-                                        </p>
-                                        <p class="desc">구매표에 관련 내용을 표기하여 경주권을 구입합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_004.png" alt="Example image of illustrating purchase of race tickets"></div>
+                                        <p class="tit"><span class="num">03</span> <span class="txt">Commencement of Betting on Winning Tickets</span></p>
+                                        <p class="desc">Details are marked on the purchase slip, and race tickets are bought.</p>
                                     </li>
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_005.png" alt="배당률 게시의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">04</span>
-                                            <span class="txt">승자투표권 발매마감</span>
-                                        </p>
-                                        <p class="desc">고객 투표가 마감되면 승식별로 환급률이 확정되며, 전광판에 표시됩니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_005.png" alt="Example image of illustrating display of payout odds"></div>
+                                        <p class="tit"><span class="num">04</span> <span class="txt">Closure of Betting</span></p>
+                                        <p class="desc">Once customer betting closes, the payout odds for each betting type are finalised and displayed on the digital board.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -137,73 +110,43 @@
                     <div class="cptOrderGuide col3">
                         <div class="guideArea">
                             <div class="comTitH3">
-                                <h3>경주 진행</h3>
+                                <h3>Race Progression</h3>
                             </div>
 
                             <div class="imgGuide">
                                 <ul class="guideGroup">
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_006.png" alt="선수입장의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">05</span>
-                                            <span class="txt">경주개시 (계류장 출발)</span>
-                                        </p>
-                                        <p class="desc">대시계가 작동이 되면 6척의 보트가 출주신호와 함께 일제히 계류장을 출발합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_006.png" alt="Example image of illustrating entry of participants"></div>
+                                        <p class="tit"><span class="num">05</span> <span class="txt">Race Start (Departure from Pit Area)</span></p>
+                                        <p class="desc">Once the large clock activates, six boats leave the pit area simultaneously at the start signal.</p>
                                         <div class="comAddGuide"> 
-                                            <p class="guide">온라인스타트경주에서는 출주신호와 함께 계류장을 출발하는 시점부터 경주가 시작됩니다.</p>
+                                            <p class="guide">In online start races, the race begins as the boats leave the pit area following the start signal.</p>
                                         </div>
                                     </li>
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_007.png" alt="경주 출발의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">06</span>
-                                            <span class="txt">대기행동</span>
-                                        </p>
-                                        <p class="desc">모터보트가 계류장을 출발하여 출발선(스타트라인)을 통과할 때까지의 움직임을 말하며, 코스경합방식 또는 진입고정방식이 있습니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_007.png" alt="Example image of illustrating purchase of race tickets"></div>
+                                        <p class="tit"><span class="num">06</span> <span class="txt">Standby Behaviour</span></p>
+                                        <p class="desc">This refers to the movement of motorboats after departing from the pit area until they cross the start line. There are two systems in use: the course competition system or the fixed entry system.</p>
                                     </li>
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_008.png" alt="경주 진행의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">07</span>
-                                            <span class="txt">출발 Start</span>
-                                        </p>
-                                        <p class="desc">경정은 질주상태에서 1.0초 이내에 출발선(스타트라인)을 통과 하는 플라잉스타트 방식을 사용합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_008.png" alt="Example image illustrating race in progress"></div>
+                                        <p class="tit"><span class="num">07</span> <span class="txt">Start</span></p>
+                                        <p class="desc">The race uses the flying start method, in which the motorboats cross the start line within 1.0 seconds while in motion.</p>
                                     </li>
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_009.png" alt="선두유도원 퇴피의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">08</span>
-                                            <span class="txt">경주</span>
-                                        </p>
-                                        <p class="desc">대시계가 작동이 되면 6척의 보트가 출주신호와 함께 일제히 계류장을 출발합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_009.png" alt="Example image illustrating pacer exit"></div>
+                                        <p class="tit"><span class="num">08</span> <span class="txt">Race</span></p>
+                                        <p class="desc">Once the large clock activates, six boats leave the pit area simultaneously at the start signal.</p>
                                     </li>
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_010.png" alt="타종의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">09</span>
-                                            <span class="txt">도착</span>
-                                        </p>
-                                        <p class="desc">모터보트가 계류장을 출발하여 출발선(스타트라인)을 통과할 때까지의 움직임을 말하며, 코스경합방식 또는 진입고정방식이 있습니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_010.png" alt="Example image illustrating bell ring"></div>
+                                        <p class="tit"><span class="num">09</span> <span class="txt">Arrival</span></p>
+                                        <p class="desc">This refers to the movement of motorboats after departing from the pit area until they cross the start line. There are two systems in use: the course competition system or the fixed entry system.</p>
                                     </li>
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_011.png" alt="전력질주의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">10</span>
-                                            <span class="txt">결승선 도착 Finish</span>
-                                        </p>
-                                        <p class="desc">경정은 질주상태에서 1.0초 이내에 출발선(스타트라인)을 통과 하는 플라잉스타트 방식을 사용합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_011.png" alt="Example image illustrating the spurt"></div>
+                                        <p class="tit"><span class="num">10</span> <span class="txt">Finish</span></p>
+                                        <p class="desc">The race uses the flying start method, in which the motorboats cross the start line within 1.0 seconds while in motion.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -213,20 +156,15 @@
                     <div class="cptOrderGuide col3">
                         <div class="guideArea">
                             <div class="comTitH3">
-                                <h3>경주 종료</h3>
+                                <h3>End of Race</h3>
                             </div>
 
                             <div class="imgGuide">
                                 <ul class="guideGroup">
                                     <li class="guideItem">
-                                        <div class="imgArea">
-                                            <img src="../../images/contents/cont21_01_01_03_012.png" alt="순위 확정 및 확정배당률 게시의 예시 이미지">
-                                        </div>
-                                        <p class="tit">
-                                            <span class="num">11</span>
-                                            <span class="txt">환급금 지급</span>
-                                        </p>
-                                        <p class="desc">승자투표권을 적중한 고객에게 환급금을 지급합니다.</p>
+                                        <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_012.png" alt="Example image of illustrating confirmation of results and display of confirmed payout odds"></div>
+                                        <p class="tit"><span class="num">11</span> <span class="txt">Payout of Winngings</span></p>
+                                        <p class="desc">Winngings are paid to customers who have winning betting tickets.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -236,45 +174,37 @@
                     <div class="cptSection">
                         <div class="sectArea">
                             <div class="comTitH2">
-                                <h2>경정만의 독특한 경주방식</h2>
+                                <h2>Unique Race Format in Boating</h2>
                             </div>
 
                             <div class="comFloatImg">
-                                <div class="imgArea">
-                                    <img src="../../images/contents/cont21_01_01_03_013.png" alt="대시계 작동 후 계류장 출발 -> 출발 약 60초 전후 저속으로 대기항주 실시 / 출발 15초 전 6대의 모터보트가 출발선을 향해 정대(진입항주) > 출발 약 8초전 전속질주 > 0초에 가깝게 출발">
-                                </div>
+                                <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_013.png" alt="Departure from pit area after large clock activation -> Low-speed circling around 60 seconds before start / 6 motorboats heading toward start line 15 seconds before start (entry run) > Full-speed acceleration around 8 seconds before start > Start near 0 seconds"></div>
                                 <div class="descArea">
-                                    <h4 class="descTit">계류장 출발과 대기행동</h4>
-                                    <p class="desc">6정의 보트가 계류장을 출발하여 출발선(스타트라인)을 통과할 때 까지 움직임을 대기행동 이라고 합니다. 출주신호와 함께 계류장을 출주한 후 유리한 코스를 선점 하기위한 코스경합방식과 코스경합 없이 배정된 코스로 이동하는 진입고정방식이 있으며, 현재 진입 고정방식을 시행하고 있습니다.</p>
+                                    <h4 class="descTit">Departure from Pit Area and Standby Behaviour</h4>
+                                    <p class="desc">The movement of the six boats from leaving the pit area until they cross the start line is referred to as standby behaviour. After departing the pit area following the start signal, racers compete to secure advantageous lanes under the course competition system, or move to their designated lanes without competition under the fixed lane entry system. Currently, the fixed lane entry system is being implemented.</p>
                                 </div>
                             </div>
                             
                             <div class="comTitH3">
-                                <h3>대기항주</h3>
+                                <h3>Standby Run</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    계류장을 떠나서 진입항주 전까지의 항주. 계류장에는 6척이 번호순으로 서 있는데, 진입고정방식에서는 정번이 코스번호가 되며 코스경합방식에서는 계류장을 떠나는 동시에 본인이 원하는 코스를 선택하게 됩니다.
-                                </p>
+                                <p class="txt">It occurs between the departure from the pit area and the start of the entry run. There are six boats in numerical order in the pit area. In the fixed lane entry system, the number assigned at the pit area corresponds to the lane number, while in the course competition system, racers select their desired lane immediately after leaving the dock.</p>
                             </div>
                             <div class="comTitH3">
-                                <h3>코스결합방식</h3>
+                                <h3>Course Competition System</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    계류장을 떠나서 진입항주 전까지의 항주. 계류장에는 6척이 번호순으로 서 있는데, 진입고정방식에서는 정번이 코스번호가 되며 코스경합방식에서는 계류장을 떠나는 동시에 본인이 원하는 코스를 선택하게 됩니다.
-                                </p>
+                                <p class="txt">It occurs between the departure from the pit area and the start of the entry run. There are six boats in numerical order in the pit area. In the fixed lane entry system, the number assigned at the pit area corresponds to the lane number, while in the course competition system, racers select their desired lane immediately after leaving the dock.</p>
                             </div>
                             <div class="comTitH3">
-                                <h3>진입항주</h3>
+                                <h3>Entry Run</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    모든 배가 대기항주를 끝내고 출발선 쪽으로 향한 후 출발선을 통과할 때까지의 항주. 선택 혹은 배정된 코스에 들어가는 것을 ‘진입’ 이라 합니다.
-                                </p>
+                                <p class="txt">After completing the standby run, all boats head toward the start line. The movement until they cross the start line is called the entry run. The act of moving into the chosen or designated lane is referred to as &ldquo;entry.&rdquo;</p>
                             </div>
                         </div>
                     </div>
@@ -282,43 +212,27 @@
                     <div class="cptSection">
                         <div class="sectArea">
                             <div class="comTitH2">
-                                <h2>승부의 포인트 플라잉 스타트</h2>
+                                <h2>The Flying Start: Key to Success</h2>
                             </div>
 
                             <div class="comFloatImg">
                                 <div class="descArea">
-                                    <p class="desc">
-                                        경정은 정지된 상태에서 출발하는 온라인 스타트 방식이 아닌, 질주 상태에서 정해진 시간 안에 출발선(스타트라인)을 통과하는 플라잉 스타트 방식을 사용합니다. <br/>
-                                        출주신호와 함께 계류장을 떠난 선수들은 대기행동 후, 출발시각 0~1.0초 사이에 출발선을 통과해야 합니다. 만일 출발시각 이전에 출발선을 통과하면 사전출발(Flying), 1.0초를 초과해 통과하면 출발지체(Late) 라는 규칙이 적용되어 해당선수는 출주에서 제외되고 해당선수의 승자투표권은 고객에게 환불됩니다.
-                                    </p>
+                                    <p class="desc">Boat racing does not use a stationary start like the online start method. Instead, the flying start method is employed, where boats in motion must cross the start line within a designated timeframe. <br/> After leaving the pit area following the start signal, racers must cross the start line within 0 to 1.0 seconds of the starting time. If they cross the start line before the start time, they are subject to the Flying (premature start) rule. If they exceed 1.0 seconds after the start time, the Late start rule applies. In both cases, the racer is disqualified, and the affected customer&apos;s betting tickets are refunded.</p>
 
                                     <div class="comTitH3">
-                                        <h3>스타트타이밍(Start Timing, ST)</h3>
+                                        <h3>Start Timing (ST)</h3>
                                     </div>
         
                                     <div class="comBasicTxt space">
-                                        <p class="txt">
-                                            대시계 바늘이 0초를 가리키고 나서 몇 초 후에 보트의 끝머리가 출발선을 통과했는지를 알리는 수치 0.11이라고 나와 있으면 0.11초 후에 출발선을 통과했다는 의미합니다.
-                                        </p>
+                                        <p class="txt">Start timing is the value indicating how many seconds after the large clock&apos;s hand reaches 0 a boat&apos;s rear edge crosses the start line. For example, if the value is 0.11, it means the boat crossed the start line 0.11 seconds after 0 seconds.</p>
                                     </div>
                                 </div>
-                                <div class="imgArea">
-                                    <img src="../../images/contents/cont21_01_01_03_014.png" alt="좌측의 출발 지체(L), 우측의 사전출발(F)">
-                                </div>
+                                <div class="imgArea"><img src="../../images/contents/cont21_01_01_03_014.png" alt="Late start (L) on the left, Flying departure (F) on the right"></div>
                             </div>
                             
                         </div>
                     </div>
                 </div>
-
-                    
-                <!-- 서브 바텀 (담당자) -->
-                <%- include('../_ejs/sub_btm.ejs', {
-                    team: '경정기획팀',
-                    name: '성주연',
-                    phone: '02-790-8304',
-                    url: "../../",
-                }) %>
                 
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
                 
@@ -331,7 +245,7 @@
         <!-- 하단영역 -->
         <div class="layoutFooter">
             <!-- Footer -->
-            <%- include('../_ejs/footer.ejs', {
+            <%- include('../_ejs_eng/footer.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -342,4 +256,4 @@
 
 
 <!-- Bottom -->
-<%- include('../_ejs/bottom.ejs', { }) %>
+<%- include('../_ejs_eng/bottom.ejs', { }) %>
