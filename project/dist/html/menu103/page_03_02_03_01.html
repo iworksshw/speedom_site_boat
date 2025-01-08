@@ -31,7 +31,7 @@
 <div class="wrap">
 
 <!-- 레이아웃 -->
-<div class="lytLayout">
+<div class="lytLayout eng">
     <div class="layoutArea">
 
         <!-- 상단영역 -->
@@ -689,26 +689,26 @@
                 <!-- 서브 탑 (타이틀) -->
                 
 
-<div class="cptSubTop bg02">
+<div class="cptSubTop bg03">
     <div class="subTopArea">
         <ul class="location">
             <li class="item"><a href="#">홈</a></li>
-            <li class="item"><a href="#">경정</a></li>
+            <li class="item"><a href="#">K-Boating</a></li>
             
-            <li class="item"><a href="#">경정 정보</a></li>
+            <li class="item"><a href="#">Boat Racing Information</a></li>
             
             
-            <li class="item"><a href="#">경주결과</a></li>
+            <li class="item"><a href="#">Race Results</a></li>
             
         </ul>
-        <div class="subTitle"><h1>일반경주</h1></div>
-        <div class="subText"><p><b>눈부신 승부의 결과</b>를 <br>다시 한번 확인하세요.</p></div>
+        <div class="subTitle"><h1>General Race</h1></div>
+        <div class="subText"><p>Check the results of <br>the <b>dazzling competition</b> once again..</p></div>
         <ul class="addFunc">
             <li class="item print">
-                <button type="button"class="btnPrint">프린트</button>
+                <button class="btnPrint">Print</button>
             </li>
             <li class="item share">
-                <button type="button"class="btnShare">공유</button>
+                <button class="btnShare">Share</button>
             </li>
         </ul>
     </div>
@@ -718,8 +718,8 @@
                 <div class="layoutContArea">
 
 					<div class="comSubInfo">
-						<h2 class="infoTit">짜릿한 스피드, 박진감 넘치는 경주의 결과를 안내합니다.</h2>
-						<p class="info">경주종료 직후 1착, 2착, 3착 선수 및 승식별 확정배당률 정보가 제공되며 심판판정 확정 직후 상세한 경주기록이 표시됩니다.</p>
+						<h2 class="infoTit">We provide the results of the thrilling speed and intense race.</h2>
+						<p class="info">Confirmed payout odds for each betting type and information on the first, second, and third-place finishers are provided immediately after the race ends. Detailed race records are displayed shortly after the referee&apos;s official decision.</p>
 					</div>
                     
                     <div class="cptDateSelect">
@@ -738,166 +738,83 @@
                                     </div>
                                     <div class="frmBox">
                                         <select class="iptSlt typeLine">
-                                            <option value="">2024년 07월 21일 28회 3일차</option>
-                                            <option value="">2024년 07월 21일 28회 4일차</option>
-                                            <option value="">2024년 07월 21일 28회 5일차</option>
-                                            <option value="">2024년 07월 21일 28회 6일차</option>
-                                            <option value="">2024년 07월 21일 28회 7일차</option>
-                                            <option value="">2024년 07월 21일 28회 8일차</option>
-                                            <option value="">2024년 07월 21일 28회 9일차</option>
+                                            <option value="">21 July 2024, 28th Race, Day 3</option>
+                                            <option value="">21 July 2024, 28th Race, Day 4</option>
+                                            <option value="">21 July 2024, 28th Race, Day 5</option>
+                                            <option value="">21 July 2024, 28th Race, Day 6</option>
+                                            <option value="">21 July 2024, 28th Race, Day 7</option>
+                                            <option value="">21 July 2024, 28th Race, Day 8</option>
+                                            <option value="">21 July 2024, 28th Race, Day 9</option>
                                         </select>
                                     </div>
                                 </div>
 
-                                <button type="button" class="calendarBtn" onclick="openPopup('calendarPop')">달력으로 날짜 선택</button>
+                                <button type="button" class="calendarBtn" onclick="openPopup('calendarPop')">Select Date via Calendar</button>
 
                                 <div class="layerPopup" id="calendarPop"> <!--class 'on' : 팝업 열림-->
                                     <div class="popHead">
-                                        <h3>달력조회</h3>
-                                        <button type="button" class="popClose"  onclick="closePopup('calendarPop')">팝업 닫기</button>
+                                        <h3>Calendar Search</h3>
+                                        <button type="button" class="popClose"  onclick="closePopup('calendarPop')">Close Pop-up</button>
                                     </div>
                                     <div class="popCont">
                                         <div class="dateSetting">
                                             <div class="btnGroup">
-                                                <button type="button" class="setBtn first">이전 해로 이동</button>
-                                                <button type="button" class="setBtn prev">이전 달로 이동</button>
+                                                <button type="button" class="setBtn first">Go to Previous Year</button>
+                                                <button type="button" class="setBtn prev">Go to Previous Month</button>
                                             </div>
-                                            <div class="date">
-                                                <span>2024년</span>
-                                                <span>12월</span>
-                                            </div>
+                                            <div class="date"><span>December</span> <span>2024</span></div>
                                             <div class="btnGroup">
-                                                <button type="button" class="setBtn next">다음 달로 이동</button>
-                                                <button type="button" class="setBtn last">다음 해로 이동</button>
+                                                <button type="button" class="setBtn next">Go to Next Month</button>
+                                                <button type="button" class="setBtn last">Go to Next Year</button>
                                             </div>
                                         </div>
 
                                         <div class="comCalendar inPop"> <!--class 'inPop' : 레이어팝업 내부에 들어올 때-->
                                             <ul class="weekDays">
-                                                <li class="dayItem"><p>월</p></li>
-                                                <li class="dayItem"><p>화</p></li>
-                                                <li class="dayItem"><p>수</p></li>
-                                                <li class="dayItem"><p>목</p></li>
-                                                <li class="dayItem"><p>금</p></li>
-                                                <li class="dayItem"><p>토</p></li>
-                                                <li class="dayItem"><p class="sun">일</p></li>
+                                                <li class="dayItem"><p>Mon</p></li>
+                                                <li class="dayItem"><p>Tue</p></li>
+                                                <li class="dayItem"><p>Wed</p></li>
+                                                <li class="dayItem"><p>Thu</p></li>
+                                                <li class="dayItem"><p>Fri</p></li>
+                                                <li class="dayItem"><p>Sat</p></li>
+                                                <li class="dayItem"><p class="sun">Sun</p></li>
                                             </ul>
                                             <ul class="dayGroup">
-                                                <li class="dayItem">
-                                                    <span class="txt">1</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">2</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">3</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">4</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark mint">5</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark mint">6</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark mint">7</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">8</span>
-                                                </li>
-                                                <li class="dayItem today"> <!--class 'today' : 오늘 날짜 표시-->
-                                                    <span class="txt">9</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">10</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">11</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark blue">12</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark blue">13</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark blue">14</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">15</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">16</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">17</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">18</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark mint">19</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark mint">20</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark mint">21</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">22</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">23</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">24</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">25</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark mint">26</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark mint">27</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="mark yellow">28</span>
-                                                    
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">29</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">30</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt">31</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt none">1</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt none">2</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt none">3</span>
-                                                </li>
-                                                <li class="dayItem">
-                                                    <span class="txt none">4</span>
-                                                </li>
+                                                <li class="dayItem"><span class="txt">1</span></li>
+                                                <li class="dayItem"><span class="txt">2</span></li>
+                                                <li class="dayItem"><span class="txt">3</span></li>
+                                                <li class="dayItem"><span class="txt">4</span></li>
+                                                <li class="dayItem"><span class="mark mint">5</span></li>
+                                                <li class="dayItem"><span class="mark mint">6</span></li>
+                                                <li class="dayItem"><span class="mark mint">7</span></li>
+                                                <li class="dayItem"><span class="txt">8</span></li>
+                                                <li class="dayItem today"> <!--class 'today' : 오늘 날짜 표시--> <span class="txt">9</span></li>
+                                                <li class="dayItem"><span class="txt">10</span></li>
+                                                <li class="dayItem"><span class="txt">11</span></li>
+                                                <li class="dayItem"><span class="mark blue">12</span></li>
+                                                <li class="dayItem"><span class="mark blue">13</span></li>
+                                                <li class="dayItem"><span class="mark blue">14</span></li>
+                                                <li class="dayItem"><span class="txt">15</span></li>
+                                                <li class="dayItem"><span class="txt">16</span></li>
+                                                <li class="dayItem"><span class="txt">17</span></li>
+                                                <li class="dayItem"><span class="txt">18</span></li>
+                                                <li class="dayItem"><span class="mark mint">19</span></li>
+                                                <li class="dayItem"><span class="mark mint">20</span></li>
+                                                <li class="dayItem"><span class="mark mint">21</span></li>
+                                                <li class="dayItem"><span class="txt">22</span></li>
+                                                <li class="dayItem"><span class="txt">23</span></li>
+                                                <li class="dayItem"><span class="txt">24</span></li>
+                                                <li class="dayItem"><span class="txt">25</span></li>
+                                                <li class="dayItem"><span class="mark mint">26</span></li>
+                                                <li class="dayItem"><span class="mark mint">27</span></li>
+                                                <li class="dayItem"><span class="mark yellow">28</span></li>
+                                                <li class="dayItem"><span class="txt">29</span></li>
+                                                <li class="dayItem"><span class="txt">30</span></li>
+                                                <li class="dayItem"><span class="txt">31</span></li>
+                                                <li class="dayItem"><span class="txt none">1</span></li>
+                                                <li class="dayItem"><span class="txt none">2</span></li>
+                                                <li class="dayItem"><span class="txt none">3</span></li>
+                                                <li class="dayItem"><span class="txt none">4</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -928,33 +845,31 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>경주</th>
-                                                <th>1위</th>
-                                                <th>2위</th>
-                                                <th>3위</th>
-                                                <th>단승식</th>
-                                                <th>연승식</th>
-                                                <th>쌍승식</th>
-                                                <th>복승식</th>
-                                                <th>삼복승식</th>
-                                                <th>쌍복승식</th>
-                                                <th>삼쌍승식</th>
-                                                <th>환불여부</th>
+                                                <th>Race</th>
+                                                <th>1st Place</th>
+                                                <th>2nd Place</th>
+                                                <th>3rd Place</th>
+                                                <th>Win</th>
+                                                <th>Place</th>
+                                                <th>Straight Forecast</th>
+                                                <th>Reverse Forecast</th>
+                                                <th>Combination Tricast</th>
+                                                <th>Banker Tricast</th>
+                                                <th>Tricast</th>
+                                                <th>Refund Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">01R</span>
-                                                </th>
+                                                <th><span class="mark blue">01R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num01">1</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num01">1</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num02">2</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num02">2</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num03">3</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num03">3</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -966,17 +881,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">02R</span>
-                                                </th>
+                                                <th><span class="mark blue">02R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num04">4</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num04">4</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -988,17 +901,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">03R</span>
-                                                </th>
+                                                <th><span class="mark blue">03R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1010,17 +921,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">04R</span>
-                                                </th>
+                                                <th><span class="mark blue">04R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1032,17 +941,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">05R</span>
-                                                </th>
+                                                <th><span class="mark blue">05R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1054,17 +961,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">06R</span>
-                                                </th>
+                                                <th><span class="mark blue">06R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1076,17 +981,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">07R</span>
-                                                </th>
+                                                <th><span class="mark blue">07R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1098,17 +1001,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">08R</span>
-                                                </th>
+                                                <th><span class="mark blue">08R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1120,17 +1021,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">09R</span>
-                                                </th>
+                                                <th><span class="mark blue">09R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1142,17 +1041,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">10R</span>
-                                                </th>
+                                                <th><span class="mark blue">10R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1164,17 +1061,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">11R</span>
-                                                </th>
+                                                <th><span class="mark blue">11R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1186,17 +1081,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">12R</span>
-                                                </th>
+                                                <th><span class="mark blue">12R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1208,17 +1101,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">13R</span>
-                                                </th>
+                                                <th><span class="mark blue">13R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1230,17 +1121,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">14R</span>
-                                                </th>
+                                                <th><span class="mark blue">14R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1252,17 +1141,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">15R</span>
-                                                </th>
+                                                <th><span class="mark blue">15R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1274,17 +1161,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">16R</span>
-                                                </th>
+                                                <th><span class="mark blue">16R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1296,17 +1181,15 @@
                                                 <td>-</td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    <span class="mark blue">17R</span>
-                                                </th>
+                                                <th><span class="mark blue">17R</span></th>
                                                 <td>
-                                                    <div class="name"><span class="sign num07">7</span><span class="player">김상인</span></div>
+                                                    <div class="name"><span class="sign num07">7</span><span class="player">Kim Sang-in</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><span class="player">곽훈신</span></div>
+                                                    <div class="name"><span class="sign num05">5</span><span class="player">Gwak Hoon-shin</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><span class="player">김광진</span></div>
+                                                    <div class="name"><span class="sign num06">6</span><span class="player">Kim Gwang-jin</span></div>
                                                 </td>
                                                 <td>(7) 1.3</td>
                                                 <td>(7) 1.0<br>(6)1.7</td>
@@ -1330,142 +1213,73 @@
                             <div class="swiper dateSwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue on" onclick="scrlMoveTo('boat01', this)"> <!--class 'on' : 현재 날짜-->
-                                            <span class="region">경정</span>
-                                            <span class="date">01</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue on" onclick="scrlMoveTo('boat01', this)"> <!--class 'on' : 현재 날짜--> <span class="region">Boat Racing</span> <span class="date">01</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat02', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">02</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat02', this)"><span class="region">Boat Racing</span> <span class="date">02</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat03', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">03</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat03', this)"><span class="region">Boat Racing</span> <span class="date">03</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat04', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">04</span>
-                                        </button>
+                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat04', this)"><span class="region">Boat Racing</span> <span class="date">04</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat05', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">05</span>
-                                        </button>
+                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat05', this)"><span class="region">Boat Racing</span> <span class="date">05</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat06', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">06</span>
-                                        </button>
+                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat06', this)"><span class="region">Boat Racing</span> <span class="date">06</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat07', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">07</span>
-                                        </button>
+                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat07', this)"><span class="region">Boat Racing</span> <span class="date">07</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat08', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">08</span>
-                                        </button>
+                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat08', this)"><span class="region">Boat Racing</span> <span class="date">08</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat09', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">09</span>
-                                        </button>
+                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat09', this)"><span class="region">Boat Racing</span> <span class="date">09</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat10', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">10</span>
-                                        </button>
+                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat10', this)"><span class="region">Boat Racing</span> <span class="date">10</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat11', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">11</span>
-                                        </button>
+                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat11', this)"><span class="region">Boat Racing</span> <span class="date">11</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat12', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">12</span>
-                                        </button>
+                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat12', this)"><span class="region">Boat Racing</span> <span class="date">12</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat13', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">13</span>
-                                        </button>
+                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat13', this)"><span class="region">Boat Racing</span> <span class="date">13</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat14', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">14</span>
-                                        </button>
+                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat14', this)"><span class="region">Boat Racing</span> <span class="date">14</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat15', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">15</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat15', this)"><span class="region">Boat Racing</span> <span class="date">15</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat16', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">16</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat16', this)"><span class="region">Boat Racing</span> <span class="date">16</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat17', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">17</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat17', this)"><span class="region">Boat Racing</span> <span class="date">17</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat18', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">18</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat18', this)"><span class="region">Boat Racing</span> <span class="date">18</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat19', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">19</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat19', this)"><span class="region">Boat Racing</span> <span class="date">19</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat20', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">20</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat20', this)"><span class="region">Boat Racing</span> <span class="date">20</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat21', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">21</span>
-                                        </button>
+                                        <button type="button" class="dateBox blue" onclick="scrlMoveTo('boat21', this)"><span class="region">Boat Racing</span> <span class="date">21</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat22', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">22</span>
-                                        </button>
+                                        <button type="button" class="dateBox red" onclick="scrlMoveTo('boat22', this)"><span class="region">Boat Racing</span> <span class="date">22</span></button>
                                     </div>
                                     <div class="swiper-slide">
-                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat23', this)">
-                                            <span class="region">경정</span>
-                                            <span class="date">23</span>
-                                        </button>
+                                        <button type="button" class="dateBox green" onclick="scrlMoveTo('boat23', this)"><span class="region">Boat Racing</span> <span class="date">23</span></button>
                                     </div>
                                 </div>
                                 <div class="swiper-button-next selectDate"></div>
@@ -1477,8 +1291,8 @@
                     <div class="modLinkScroll">
                         <div class="cptLinkSection" id="boat01">
                             <div class="comTitH2 mRow">
-                                <h2>제 01경주 (출발시간 11:40)</h2>
-                                <p class="etcAdds">신인일반 플라잉 2주회(1200m)</p>
+                                <h2>Race 01 (Start Time: 11:40)</h2>
+                                <p class="etcAdds">Rookie Standard, Flying, 2 Laps (1200m)</p>
                             </div>
 
                             <div class="comDataTable">
@@ -1496,24 +1310,24 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>경정종류</th>
-                                                <th>경주등급</th>
-                                                <th>출발시간</th>
-                                                <th>거리</th>
-                                                <th>경주상황</th>
-                                                <th>특이사항</th>
-                                                <th>결과</th>
+                                                <th>Race Type</th>
+                                                <th>Race Grade</th>
+                                                <th>Start Time</th>
+                                                <th>Distance</th>
+                                                <th>Race Situation</th>
+                                                <th>Remarks</th>
+                                                <th>Results</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>대상경정</td>
-                                                <td>일반</td>
+                                                <td>Title Boat Racing</td>
+                                                <td>Standard</td>
                                                 <td>11:40</td>
                                                 <td>1200m</td>
-                                                <td>성립</td>
+                                                <td>Established</td>
                                                 <td>-</td>
-                                                <td>확정</td>
+                                                <td>Confirmed</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1535,20 +1349,20 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>날씨</th>
-                                                <th>기온</th>
-                                                <th>풍향</th>
-                                                <th>풍속</th>
-                                                <th>습도</th>
-                                                <th>수온</th>
-                                                <th>수위</th>
+                                                <th>Weather</th>
+                                                <th>Temperature</th>
+                                                <th>Wind Direction</th>
+                                                <th>Wind Speed</th>
+                                                <th>Humidity</th>
+                                                <th>Water Temperature</th>
+                                                <th>Water Level</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>비</td>
+                                                <td>Rain</td>
                                                 <td>32℃</td>
-                                                <td>동</td>
+                                                <td>East</td>
                                                 <td>4㎧</td>
                                                 <td>76%</td>
                                                 <td>30℃</td>
@@ -1570,9 +1384,9 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>1주회</th>
-                                                <th>2주회</th>
-                                                <th>3주회</th>
+                                                <th>1st Lap</th>
+                                                <th>2nd Lap</th>
+                                                <th>3rd Lap</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1589,15 +1403,13 @@
                             <div class="comMovieBox">
                                 <div class="boxArea">
                                     <ul class="movieList">
-                                        <li class="movieItem">
-                                            <a href="#" target="_blank" title="새창열림">전체 경주 영상 보기</a>
-                                        </li>
+                                        <li class="movieItem"><a href="#" target="_blank" title="Open in a New Window">Watch Full Race Video</a></li>
                                     </ul>
                                 </div>
                             </div>
                                                     
                             <div class="comTitH3 mRow">
-                                <h3>착순</h3>
+                                <h3>Placing</h3>
                             </div>
 
                             <div class="comDataTable both">
@@ -1620,25 +1432,25 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>착순</th>
-                                                <th>선수정보</th>
-                                                <th>모터</th>
-                                                <th>보트</th>
-                                                <th>소개항주</th>
-                                                <th>진입코스</th>
+                                                <th>Placing</th>
+                                                <th>Athlete Information</th>
+                                                <th>Motor</th>
+                                                <th>Boat</th>
+                                                <th>Introduction Run</th>
+                                                <th>Entry Course</th>
                                                 <th>ST</th>
-                                                <th>항주시간</th>
-                                                <th>위반행위</th>
-                                                <th>틸트각</th>
-                                                <th>전법</th>
-                                                <th>비고</th>
+                                                <th>Run Time</th>
+                                                <th>Violations</th>
+                                                <th>Tilt Angle</th>
+                                                <th>Strategy</th>
+                                                <th>Remarks</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th>1</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num01">1</span><a href="#none" class="player">김상인</a></div>
+                                                    <div class="name"><span class="sign num01">1</span><a href="#none" class="player">Kim Sang-in</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -1648,13 +1460,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>2</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num02">2</span><a href="#none" class="player">강동진</a></div>
+                                                    <div class="name"><span class="sign num02">2</span><a href="#none" class="player">Kang Dong-jin</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -1664,13 +1476,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>3</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num03">3</span><a href="#none" class="player">김광진</a></div>
+                                                    <div class="name"><span class="sign num03">3</span><a href="#none" class="player">Kim Gwang-jin</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -1680,13 +1492,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>4</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num04">4</span><a href="#none" class="player">곽훈신</a></div>
+                                                    <div class="name"><span class="sign num04">4</span><a href="#none" class="player">Gwak Hoon-shin</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -1696,13 +1508,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>5</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><a href="#none" class="player">정언열</a></div>
+                                                    <div class="name"><span class="sign num05">5</span><a href="#none" class="player">Jeong Eon-yeol</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -1712,13 +1524,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>6</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><a href="#none" class="player">오성균</a></div>
+                                                    <div class="name"><span class="sign num06">6</span><a href="#none" class="player">Oh Sung-gyun</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -1728,7 +1540,7 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                         </tbody>
@@ -1737,7 +1549,7 @@
                             </div>
 
                             <div class="comTitH3">
-                                <h3>심판판정내용</h3>
+                                <h3>Refereeing Decisions</h3>
                             </div>
 
                             <div class="comDataTable both colLineDel">
@@ -1755,25 +1567,25 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>선수</th>
-                                                <th>주회수</th>
-                                                <th>장소</th>
-                                                <th>적용조항</th>
-                                                <th>판정</th>
-                                                <th>판정내용</th>
-                                                <th>사고종류</th>
+                                                <th>Athlete</th>
+                                                <th>Lap Count</th>
+                                                <th>Location</th>
+                                                <th>Applicable Article</th>
+                                                <th>Judgement</th>
+                                                <th>Judgement Details</th>
+                                                <th>Accident Type</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th>
-                                                    <div class="name"><span class="sign num01">1</span><a href="#" class="player">김상인</a></div>
+                                                    <div class="name"><span class="sign num01">1</span><a href="#" class="player">Kim Sang-in</a></div>
                                                 </th>
-                                                <td>1주</td>
-                                                <td>1턴마크</td>
-                                                <td>60조(접촉금지)</td>
-                                                <td>경고</td>
-                                                <td class="left">1주회 1턴마크 선회시 조타불량 실속 4,6호정 방해.</td>
+                                                <td>1st Lap</td>
+                                                <td>1st Turn Mark</td>
+                                                <td>Article 60 (Prohibition of Contact)</td>
+                                                <td>Warning</td>
+                                                <td class="left">Steering failure and loss of speed during the first turn mark of the first lap caused obstruction to boats No. 4 and No. 6.</td>
                                                 <td>-</td>
                                             </tr>
                                         </tbody>
@@ -1782,9 +1594,9 @@
                             </div>
 
                             <div class="comTitH3">
-                                <h3>배당률 안내</h3>
+                                <h3>Payout Odds Guide</h3>
                                 <div class="right">
-                                    <button type="button" class="btn xs gLine" onclick="openPopup('finalRate')">최종배당률 보기</button>
+                                    <button type="button" class="btn xs gLine" onclick="openPopup('finalRate')">View Final Payout Odds</button>
                                 </div>
                             </div>
 
@@ -1799,60 +1611,50 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>승식</th>
-                                                <th>승자</th>
-                                                <th>평균확정배당률</th>
+                                                <th>Betting Types</th>
+                                                <th>Winner</th>
+                                                <th>Average Confirmed Payout Odds</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th>단승식</th>
+                                                <th>Win</th>
                                                 <td><span class="sign num02">2</span></td>
                                                 <td>1.3</td>
                                             </tr>
                                             <tr>
-                                                <th>연승식</th>
+                                                <th>Place</th>
                                                 <td><span class="sign num02">2</span></td>
                                                 <td>1.0</td>
                                             </tr>
                                             <tr>
-                                                <th>연승식</th>
+                                                <th>Place</th>
                                                 <td><span class="sign num03">3</span></td>
                                                 <td>2.1</td>
                                             </tr>
                                             <tr>
-                                                <th>복승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span>
-                                                </td>
+                                                <th>Reverse Forecast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span></td>
                                                 <td>2.6</td>
                                             </tr>
                                             <tr>
-                                                <th>쌍승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span>
-                                                </td>
+                                                <th>Straight Forecast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span></td>
                                                 <td>2.3</td>
                                             </tr>
                                             <tr>
-                                                <th>삼복승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span>
-                                                </td>
+                                                <th>Combination Tricast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span></td>
                                                 <td>4.2</td>
                                             </tr>
                                             <tr>
-                                                <th>쌍복승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span>
-                                                </td>
+                                                <th>Banker Tricast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span></td>
                                                 <td>4.4</td>
                                             </tr>
                                             <tr>
-                                                <th>삼쌍승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span>
-                                                </td>
+                                                <th>Tricast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span></td>
                                                 <td>6.1</td>
                                             </tr>
                                         </tbody>
@@ -1862,8 +1664,8 @@
                         </div>
                         <div class="cptLinkSection" id="boat02">
                             <div class="comTitH2 mRow">
-                                <h2>제 02경주 (선발 12:03)</h2>
-                                <p class="etcAdds">일반 플라잉</p>
+                                <h2>Race 02 (Entry: 12:03)</h2>
+                                <p class="etcAdds">Standard Flying</p>
                             </div>
 
                             <div class="comDataTable">
@@ -1881,24 +1683,24 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>경정종류</th>
-                                                <th>경주등급</th>
-                                                <th>출발시간</th>
-                                                <th>거리</th>
-                                                <th>경주상황</th>
-                                                <th>특이사항</th>
-                                                <th>결과</th>
+                                                <th>Race Type</th>
+                                                <th>Race Grade</th>
+                                                <th>Start Time</th>
+                                                <th>Distance</th>
+                                                <th>Race Situation</th>
+                                                <th>Remarks</th>
+                                                <th>Results</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>대상경정</td>
-                                                <td>일반</td>
+                                                <td>Title Boat Racing</td>
+                                                <td>Standard</td>
                                                 <td>11:40</td>
                                                 <td>1200m</td>
-                                                <td>성립</td>
+                                                <td>Established</td>
                                                 <td>-</td>
-                                                <td>확정</td>
+                                                <td>Confirmed</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1920,20 +1722,20 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>날씨</th>
-                                                <th>기온</th>
-                                                <th>풍향</th>
-                                                <th>풍속</th>
-                                                <th>습도</th>
-                                                <th>수온</th>
-                                                <th>수위</th>
+                                                <th>Weather</th>
+                                                <th>Temperature</th>
+                                                <th>Wind Direction</th>
+                                                <th>Wind Speed</th>
+                                                <th>Humidity</th>
+                                                <th>Water Temperature</th>
+                                                <th>Water Level</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>비</td>
+                                                <td>Rain</td>
                                                 <td>32℃</td>
-                                                <td>동</td>
+                                                <td>East</td>
                                                 <td>4㎧</td>
                                                 <td>76%</td>
                                                 <td>30℃</td>
@@ -1955,9 +1757,9 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>1주회</th>
-                                                <th>2주회</th>
-                                                <th>3주회</th>
+                                                <th>1st Lap</th>
+                                                <th>2nd Lap</th>
+                                                <th>3rd Lap</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1974,15 +1776,13 @@
                             <div class="comMovieBox">
                                 <div class="boxArea">
                                     <ul class="movieList">
-                                        <li class="movieItem">
-                                            <a href="#" target="_blank" title="새창열림">전체 경주 영상 보기</a>
-                                        </li>
+                                        <li class="movieItem"><a href="#" target="_blank" title="Open in a New Window">Watch Full Race Video</a></li>
                                     </ul>
                                 </div>
                             </div>
                                                     
                             <div class="comTitH3 mRow">
-                                <h3>착순</h3>
+                                <h3>Placing</h3>
                             </div>
 
                             <div class="comDataTable both">
@@ -2005,25 +1805,25 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>착순</th>
-                                                <th>선수정보</th>
-                                                <th>모터</th>
-                                                <th>보트</th>
-                                                <th>소개항주</th>
-                                                <th>진입코스</th>
+                                                <th>Placing</th>
+                                                <th>Athlete Information</th>
+                                                <th>Motor</th>
+                                                <th>Boat</th>
+                                                <th>Introduction Run</th>
+                                                <th>Entry Course</th>
                                                 <th>ST</th>
-                                                <th>항주시간</th>
-                                                <th>위반행위</th>
-                                                <th>틸트각</th>
-                                                <th>전법</th>
-                                                <th>비고</th>
+                                                <th>Run Time</th>
+                                                <th>Violations</th>
+                                                <th>Tilt Angle</th>
+                                                <th>Strategy</th>
+                                                <th>Remarks</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th>1</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num01">1</span><a href="#none" class="player">김상인</a></div>
+                                                    <div class="name"><span class="sign num01">1</span><a href="#none" class="player">Kim Sang-in</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -2033,13 +1833,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>2</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num02">2</span><a href="#none" class="player">강동진</a></div>
+                                                    <div class="name"><span class="sign num02">2</span><a href="#none" class="player">Kang Dong-jin</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -2049,13 +1849,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>3</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num03">3</span><a href="#none" class="player">김광진</a></div>
+                                                    <div class="name"><span class="sign num03">3</span><a href="#none" class="player">Kim Gwang-jin</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -2065,13 +1865,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>4</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num04">4</span><a href="#none" class="player">곽훈신</a></div>
+                                                    <div class="name"><span class="sign num04">4</span><a href="#none" class="player">Gwak Hoon-shin</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -2081,13 +1881,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>5</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num05">5</span><a href="#none" class="player">정언열</a></div>
+                                                    <div class="name"><span class="sign num05">5</span><a href="#none" class="player">Jeong Eon-yeol</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -2097,13 +1897,13 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                             <tr>
                                                 <th>6</th>
                                                 <td>
-                                                    <div class="name"><span class="sign num06">6</span><a href="#none" class="player">오성균</a></div>
+                                                    <div class="name"><span class="sign num06">6</span><a href="#none" class="player">Oh Sung-gyun</a></div>
                                                 </td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult01');">66</a></td>
                                                 <td><a href="#" class="txtBtn tBold"  onclick="openPopup('raceResult02');">102</a></td>
@@ -2113,7 +1913,7 @@
                                                 <td>1:16.785</td>
                                                 <td>-</td>
                                                 <td>+1.5</td>
-                                                <td>휘감기</td>
+                                                <td>Sweeping</td>
                                                 <td>-</td>
                                             </tr>
                                         </tbody>
@@ -2122,7 +1922,7 @@
                             </div>
 
                             <div class="comTitH3">
-                                <h3>심판판정내용</h3>
+                                <h3>Refereeing Decisions</h3>
                             </div>
 
                             <div class="comDataTable both colLineDel">
@@ -2140,25 +1940,25 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>선수</th>
-                                                <th>주회수</th>
-                                                <th>장소</th>
-                                                <th>적용조항</th>
-                                                <th>판정</th>
-                                                <th>판정내용</th>
-                                                <th>사고종류</th>
+                                                <th>Athlete</th>
+                                                <th>Lap Count</th>
+                                                <th>Location</th>
+                                                <th>Applicable Article</th>
+                                                <th>Judgement</th>
+                                                <th>Judgement Details</th>
+                                                <th>Accident Type</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th>
-                                                    <div class="name"><span class="sign num01">1</span><a href="#" class="player">김상인</a></div>
+                                                    <div class="name"><span class="sign num01">1</span><a href="#" class="player">Kim Sang-in</a></div>
                                                 </th>
-                                                <td>1주</td>
-                                                <td>1턴마크</td>
-                                                <td>60조(접촉금지)</td>
-                                                <td>경고</td>
-                                                <td class="left">1주회 1턴마크 선회시 조타불량 실속 4,6호정 방해.</td>
+                                                <td>1st Lap</td>
+                                                <td>1st Turn Mark</td>
+                                                <td>Article 60 (Prohibition of Contact)</td>
+                                                <td>Warning</td>
+                                                <td class="left">Steering failure and loss of speed during the first turn mark of the first lap caused obstruction to boats No. 4 and No. 6.</td>
                                                 <td>-</td>
                                             </tr>
                                         </tbody>
@@ -2167,9 +1967,9 @@
                             </div>
 
                             <div class="comTitH3">
-                                <h3>배당률 안내</h3>
+                                <h3>Payout Odds Guide</h3>
                                 <div class="right">
-                                    <button type="button" class="btn xs gLine" onclick="openPopup('finalRate')">최종배당률 보기</button>
+                                    <button type="button" class="btn xs gLine" onclick="openPopup('finalRate')">View Final Payout Odds</button>
                                 </div>
                             </div>
 
@@ -2184,60 +1984,50 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th>승식</th>
-                                                <th>승자</th>
-                                                <th>평균확정배당률</th>
+                                                <th>Betting Types</th>
+                                                <th>Winner</th>
+                                                <th>Average Confirmed Payout Odds</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th>단승식</th>
+                                                <th>Win</th>
                                                 <td><span class="sign num02">2</span></td>
                                                 <td>1.3</td>
                                             </tr>
                                             <tr>
-                                                <th>연승식</th>
+                                                <th>Place</th>
                                                 <td><span class="sign num02">2</span></td>
                                                 <td>1.0</td>
                                             </tr>
                                             <tr>
-                                                <th>연승식</th>
+                                                <th>Place</th>
                                                 <td><span class="sign num03">3</span></td>
                                                 <td>2.1</td>
                                             </tr>
                                             <tr>
-                                                <th>복승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span>
-                                                </td>
+                                                <th>Reverse Forecast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span></td>
                                                 <td>2.6</td>
                                             </tr>
                                             <tr>
-                                                <th>쌍승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span>
-                                                </td>
+                                                <th>Straight Forecast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span></td>
                                                 <td>2.3</td>
                                             </tr>
                                             <tr>
-                                                <th>삼복승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span>
-                                                </td>
+                                                <th>Combination Tricast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span></td>
                                                 <td>4.2</td>
                                             </tr>
                                             <tr>
-                                                <th>쌍복승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span>
-                                                </td>
+                                                <th>Banker Tricast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span></td>
                                                 <td>4.4</td>
                                             </tr>
                                             <tr>
-                                                <th>삼쌍승식</th>
-                                                <td>
-                                                    <span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span>
-                                                </td>
+                                                <th>Tricast</th>
+                                                <td><span class="sign num02">2</span> · <span class="sign num03">3</span> · <span class="sign num05">5</span></td>
                                                 <td>6.1</td>
                                             </tr>
                                         </tbody>
@@ -2249,20 +2039,20 @@
 
                     <!-- 최종배당률 팝업 -->
                     <div id="finalRate" class="modPopup lg"> <!-- class - on : 팝업오픈, md : middle,  lg : large -->
-                        <div class="popupDim">딤영역</div>
+                        <div class="popupDim">Dim Area</div>
                         <div class="popupArea"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
                             <div class="popupInMotion">
                                 <div class="popupContainer">
                                     <div class="popupContArea">
-                                        <button type="button"class="btnPopClose" onclick="closePopup('finalRate');">닫기</button>
-                                        <div class="popTitle">최종배당률</div>
+                                        <button type="button"class="btnPopClose" onclick="closePopup('finalRate');">Close</button>
+                                        <div class="popTitle">Final Payout Odds</div>
                                         <div class="popCont">
                                             <!-- 팝업 컨텐츠 영역 -->
                                             <div class="cptSection">
                                                 <div class="sectArea">
                                                     
                                                     <div class="comTitH2">
-                                                        <h2>제 01경주 (출발시간 11:40)</h2>
+                                                        <h2>Race 01 (Start Time: 11:40)</h2>
                                                     </div>
                         
                                                     <div class="comPlayerThumList inPop"> <!--class 'inPop' : 팝업 내부 활용 시 추가 클래스-->
@@ -2271,84 +2061,67 @@
                                                                 <li class="playerItem">
                                                                     <a href="#none" class="playerPf">
                                                                         <div class="thumArea">
-                                                                            <img src="../../images/thum/thum_profile.png" alt="김상인 프로필 이미지">
+                                                                            <img src="../../images/thum/thum_profile.png" alt="Profile Image of Kim Sang-in">
                                                                         </div>
                                                                         <div class="descArea">
-                                                                            <div class="player">
-                                                                                <span class="sign num01">1</span>
-                                                                                <span class="name">김상인</span>
-                                                                            </div>
-                                                                            <p class="desc">17기/B2/31세/남</p>
+                                                                            <div class="player"><span class="sign num01">1</span> <span class="name">Kim Sang-in</span></div>
+                                                                            <p class="desc">Generation 17 / B2/ Age 31/ Male</p>
+                                                                        </div>
+                                                                    </a>
+                                                                    
+                                                                </li>
+                                                                <li class="playerItem">
+                                                                    <a href="#" class="playerPf">
+                                                                        <div class="thumArea">
+                                                                            <img src="../../images/thum/thum_profile.png" alt="Profile Image of Kang Dong-jin"><
+                                                                            /div>
+                                                                        <div class="descArea">
+                                                                            <div class="player"><span class="sign num02">2</span> <span class="name">Kang Dong-jin</span></div>
+                                                                            <p class="desc">Generation 17 / B2/ Age 31/ Male</p>
                                                                         </div>
                                                                     </a>
                                                                 </li>
                                                                 <li class="playerItem">
                                                                     <a href="#" class="playerPf">
                                                                         <div class="thumArea">
-                                                                            <img src="../../images/thum/thum_profile.png" alt="강동진 프로필 이미지">
-                                                                        </div>
+                                                                            <img src="../../images/thum/thum_profile.png" alt="Profile Image of Kim Gwang-jin"><
+                                                                            /div>
                                                                         <div class="descArea">
-                                                                            <div class="player">
-                                                                                <span class="sign num02">2</span>
-                                                                                <span class="name">강동진</span>
-                                                                            </div>
-                                                                            <p class="desc">17기/B2/31세/남</p>
+                                                                            <div class="player"><span class="sign num03">3</span> <span class="name">Kim Gwang-jin</span></div>
+                                                                            <p class="desc">Generation 17 / B2/ Age 31/ Male</p>
                                                                         </div>
                                                                     </a>
                                                                 </li>
                                                                 <li class="playerItem">
                                                                     <a href="#" class="playerPf">
                                                                         <div class="thumArea">
-                                                                            <img src="../../images/thum/thum_profile.png" alt="김광진 프로필 이미지">
+                                                                            <img src="../../images/thum/thum_profile.png" alt="Profile Image of Gwak Hoon-shin">
                                                                         </div>
                                                                         <div class="descArea">
-                                                                            <div class="player">
-                                                                                <span class="sign num03">3</span>
-                                                                                <span class="name">김광진</span>
-                                                                            </div>
-                                                                            <p class="desc">17기/B2/31세/남</p>
+                                                                            <div class="player"><span class="sign num04">4</span> <span class="name">Gwak Hoon-shin</span></div>
+                                                                            <p class="desc">Generation 17 / B2/ Age 31/ Male</p>
                                                                         </div>
-                                                                    </a>
-                                                                </li>
+
+                                                                    </a</li>
                                                                 <li class="playerItem">
                                                                     <a href="#" class="playerPf">
                                                                         <div class="thumArea">
-                                                                            <img src="../../images/thum/thum_profile.png" alt="곽훈신 프로필 이미지">
+                                                                            <img src="../../images/thum/thum_profile.png" alt="Profile Image of Jeong Eon-yeol">
                                                                         </div>
                                                                         <div class="descArea">
-                                                                            <div class="player">
-                                                                                <span class="sign num04">4</span>
-                                                                                <span class="name">곽훈신</span>
-                                                                            </div>
-                                                                            <p class="desc">17기/B2/31세/남</p>
+                                                                            <div class="player"><span class="sign num05">5</span> <span class="name">Jeong Eon-yeol</span></div>
+                                                                            <p class="desc">Generation 17 / B2/ Age 31/ Male</p>
                                                                         </div>
-                                                                    </a>
-                                                                </li>
+
+                                                                    </a</li>
                                                                 <li class="playerItem">
                                                                     <a href="#" class="playerPf">
                                                                         <div class="thumArea">
-                                                                            <img src="../../images/thum/thum_profile.png" alt="정언열 프로필 이미지">
-                                                                        </div>
+                                                                            <img src="../../images/thum/thum_profile.png" alt="Profile Image of Oh Sung-gyun"></
+                                                                            div>
                                                                         <div class="descArea">
-                                                                            <div class="player">
-                                                                                <span class="sign num05">5</span>
-                                                                                <span class="name">정언열</span>
-                                                                            </div>
-                                                                            <p class="desc">17기/B2/31세/남</p>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="playerItem">
-                                                                    <a href="#" class="playerPf">
-                                                                        <div class="thumArea">
-                                                                            <img src="../../images/thum/thum_profile.png" alt="오성균 프로필 이미지">
-                                                                        </div>
-                                                                        <div class="descArea">
-                                                                            <div class="player">
-                                                                                <span class="sign num06">6</span>
-                                                                                <span class="name">오성균</span>
-                                                                            </div>
-                                                                            <p class="desc">17기/B2/31세/남</p>
+                                                                            <div class="player"><span class="sign num06">6</span> <span class="name">Oh Sung-gyun</span></div>
+                                                                            <p class="desc">Generation 17 / B2/ Age 31/ Male</p>
                                                                         </div>
                                                                     </a>
                                                                 </li>
@@ -2357,7 +2130,7 @@
                                                     </div>
                         
                                                     <div class="comTitH2 bk">
-                                                        <h2>매출액</h2>
+                                                        <h2>Sales</h2>
                                                     </div>
                         
                                                     <div class="comDataTable">
@@ -2376,14 +2149,14 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>단승식</th>
-                                                                        <th>연승식</th>
-                                                                        <th>쌍승식</th>
-                                                                        <th>복승식</th>
-                                                                        <th>삼복승식</th>
-                                                                        <th>쌍복승식</th>
-                                                                        <th>삼쌍승식</th>
-                                                                        <th>합계</th>
+                                                                        <th>Win</th>
+                                                                        <th>Place</th>
+                                                                        <th>Straight Forecast</th>
+                                                                        <th>Reverse Forecast</th>
+                                                                        <th>Combination Tricast</th>
+                                                                        <th>Banker Tricast</th>
+                                                                        <th>Tricast</th>
+                                                                        <th>Total</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -2417,7 +2190,7 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>배번</th>
+                                                                        <th>Racer Number</th>
                                                                         <th>1</th>
                                                                         <th>2</th>
                                                                         <th>3</th>
@@ -2428,7 +2201,7 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <th>단승식</th>
+                                                                        <th>Win</th>
                                                                         <td><span class="tRed tBold">1.7</span></td>
                                                                         <td><span class="tRed tBold">2.1</span></td>
                                                                         <td>-</td>
@@ -2437,7 +2210,7 @@
                                                                         <td>14.1</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>연승식</th>
+                                                                        <th>Place</th>
                                                                         <td><span class="tRed tBold">1.0</span></td>
                                                                         <td><span class="tRed tBold">1.0</span></td>
                                                                         <td>-</td>
@@ -2451,7 +2224,7 @@
                                                     </div>
                                                     
                                                     <div class="comTitH3">
-                                                        <h3>쌍승식</h3>
+                                                        <h3>Straight Forecast</h3>
                                                     </div>
                                                     
                                                     <div class="comDataTable both colLineDel">
@@ -2469,7 +2242,7 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>선 \ 후</th>
+                                                                        <th>Lead \ Follow</th>
                                                                         <th>1</th>
                                                                         <th>2</th>
                                                                         <th>3</th>
@@ -2539,7 +2312,7 @@
                                                     </div>
                                                     
                                                     <div class="comTitH3">
-                                                        <h3>복승식</h3>
+                                                        <h3>Reverse Forecast</h3>
                                                     </div>
                                                     
                                                     <div class="comDataTable both colLineDel">
@@ -2557,7 +2330,7 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>선 \ 후</th>
+                                                                        <th>Lead \ Follow</th>
                                                                         <th>1</th>
                                                                         <th>2</th>
                                                                         <th>3</th>
@@ -2627,7 +2400,7 @@
                                                     </div>
                         
                                                     <div class="comTitH3">
-                                                        <h3>삼복승식</h3>
+                                                        <h3>Combination Tricast</h3>
                                                     </div>
                         
                                                     <div class="comDataTable colLineDel">
@@ -2646,14 +2419,14 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr class="row2Line">
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -2714,7 +2487,7 @@
                                                     </div>
                                                     
                                                     <div class="comTitH3">
-                                                        <h3>쌍복승식</h3>
+                                                        <h3>Banker Tricast</h3>
                                                     </div>
                         
                                                     <div class="comDataTable colLineDel"><!-- addClass - row: th가 body에 존재, colLineDel: 2줄마다 나타나는 선을 없앰 -->
@@ -2737,18 +2510,18 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr class="row2Line">
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
-                                                                        <th>배번</th>
-                                                                        <th>배당률</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>Racer Number</th>
+                                                                        <th>Payout Odds</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -2898,12 +2671,10 @@
                                                     </div>
                         
                                                     <div class="comTitH3">
-                                                        <h3>삼쌍승식</h3>
+                                                        <h3>Tricast</h3>
                                                     </div>
                         
-                                                    <div class="comDataTable colLineDel"><!-- addClass - row: th가 body에 존재, colLineDel: 2줄마다 나타나는 선을 없앰 -->
-                                                        <div class="tableArea sizeM player01"> <!-- addClass - player01~07 th색깔 변경 -->
-                                                            <table>
+                                                    <div class="comDataTable colLineDel"><!-- addClass - row: th가 body에 존재, colLineDel: 2줄마다 나타나는 선을 없앰 --><div class="tableArea sizeM player01"> <!-- addClass - player01~07 th색깔 변경 --><table>
                                                                 <caption></caption>
                                                                 <colgroup>
                                                                     <col style="width:10%;">
@@ -2918,24 +2689,26 @@
                                                                     <col style="width:10%;">
                                                                 </colgroup>
                                                                 <thead>
-                                                                    <tr class="row1Line"> <!-- addClass - row1Line 1줄마다 선 두껍게 -->
-                                                                        <th colspan="2">1-2위</th>
-                                                                        <th colspan="2">1-2위</th>
-                                                                        <th colspan="2">1-2위</th>
-                                                                        <th colspan="2">1-2위</th>
-                                                                        <th colspan="2">1-2위</th>
+                                                                    <tr class="row1Line"> 
+                                                                        <!-- addClass - row1Line 1줄마다 선 두껍게 -->
+                                                                        <th colspan="2">1st-2nd Place</th>
+                                                                        <th colspan="2">1st-2nd Place</th>
+                                                                        <th colspan="2">1st-2nd Place</th>
+                                                                        <th colspan="2">1st-2nd Place</th>
+                                                                        <th colspan="2">1st-2nd Place</th>
                                                                     </tr>
-                                                                    <tr class="row2Line"> <!-- addClass - row2Line 2줄마다 선 두껍게 -->
-                                                                        <th>3위</th>
-                                                                        <th>배당률</th>
-                                                                        <th>3위</th>
-                                                                        <th>배당률</th>
-                                                                        <th>3위</th>
-                                                                        <th>배당률</th>
-                                                                        <th>3위</th>
-                                                                        <th>배당률</th>
-                                                                        <th>3위</th>
-                                                                        <th>배당률</th>
+                                                                    <tr class="row2Line"> 
+                                                                        <!-- addClass - row2Line 2줄마다 선 두껍게 -->
+                                                                        <th>3rd Place</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>3rd Place</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>3rd Place</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>3rd Place</th>
+                                                                        <th>Payout Odds</th>
+                                                                        <th>3rd Place</th>
+                                                                        <th>Payout Odds</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -3380,19 +3153,19 @@
 
                     <!-- 모터성적 정보 팝업 -->
                     <div id="raceResult01" class="modPopup lg"> <!-- class - on : 팝업오픈, md : middle,  lg : large -->
-                        <div class="popupDim">딤영역</div>
+                        <div class="popupDim">Dim Area</div>
                         <div class="popupArea"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
                             <div class="popupInMotion">
                                 <div class="popupContainer">
                                     <div class="popupContArea">
-                                        <button type="button"class="btnPopClose" onclick="closePopup('raceResult01');">닫기</button>
-                                        <div class="popTitle">모터성적 정보</div>
+                                        <button type="button"class="btnPopClose" onclick="closePopup('raceResult01');">Close</button>
+                                        <div class="popTitle">Motor Performance Information</div>
                                         <div class="popCont">
                                             <!-- 팝업 컨텐츠 영역 -->
                                             <div class="cptSection">
                                                 <div class="sectArea">
                                                     <div class="comTitH3 mRow">
-                                                        <h3>경주기록표</h3>
+                                                        <h3>Race Record Sheet</h3>
                                                     </div>
 
                                                     <div class="comDataTable">
@@ -3412,15 +3185,15 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>번호</th>
-                                                                        <th>출주횟수</th>
-                                                                        <th>출전회차<br>(년도/회차)</th>
-                                                                        <th>1착</th>
-                                                                        <th>2착</th>
-                                                                        <th>3착</th>
-                                                                        <th>평균착순점</th>
-                                                                        <th>연대율</th>
-                                                                        <th>최고타임</th>
+                                                                        <th>Number</th>
+                                                                        <th>Number of Races Entered</th>
+                                                                        <th>Race Sessions<br>(Year/Session)</th>
+                                                                        <th>1st place</th>
+                                                                        <th>2nd place</th>
+                                                                        <th>3rd place</th>
+                                                                        <th>Average Placing Points</th>
+                                                                        <th>Top Two Percentage</th>
+                                                                        <th>Best Time</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -3441,7 +3214,7 @@
                                                     </div>
 
                                                     <div class="comTitH3 mRow">
-                                                        <h3>경주별 순위기록</h3>
+                                                        <h3>Ranking Records by Race</h3>
                                                     </div>
     
                                                     <div class="comDataTable both">
@@ -3461,24 +3234,23 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>경주회차</th>
-                                                                        <th>착순</th>
-                                                                        <th>정번</th>
-                                                                        <th>진입코스</th>
-                                                                        <th>모터</th>
-                                                                        <th>보트</th>
-                                                                        <th>소개항주</th>
+                                                                        <th>Race Session</th>
+                                                                        <th>Placing</th>
+                                                                        <th>Boat Number</th>
+                                                                        <th>Entry Course</th>
+                                                                        <th>Motor</th>
+                                                                        <th>Boat</th>
+                                                                        <th>Introduction Run</th>
                                                                         <th>ST/OST</th>
-                                                                        <th>틸트각</th>
+                                                                        <th>Tilt Angle</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                    <!-- to Dev: 순위별 포인트 컬러 class -->
-                                                                    <!-- 1위 : 'tRed' / 2위 : 'tOrange' / 3위 : 'tKey' -->
-                                                                    <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                    <!-- to Dev: 순위별 포인트 컬러 class --> <!-- 1위 : 'tRed' / 2위 : 'tOrange' / 3위 : 'tKey' -->
+                                                                     <tr>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tRed tBold">1</span></td>
-                                                                        <td>황민주</td>
+                                                                        <td>Hwang Min-joo</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3487,9 +3259,9 @@
                                                                         <td>+1.5</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tOrange tBold">2</span></td>
-                                                                        <td>류석현</td>
+                                                                        <td>Ryu Seok-hyun</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3498,9 +3270,9 @@
                                                                         <td>+1.5</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tKey tBold">3</span></td>
-                                                                        <td>손근성</td>
+                                                                        <td>Sohn Geun-seong</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3509,9 +3281,9 @@
                                                                         <td>+1.5</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tBold">4</span></td>
-                                                                        <td>정경호</td>
+                                                                        <td>Jeong Kyung-ho</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3520,9 +3292,9 @@
                                                                         <td>+1.5</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tBold">5</span></td>
-                                                                        <td>이태희</td>
+                                                                        <td>Lee Tae-hee</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3546,19 +3318,19 @@
 
                     <!-- 보트성적 정보 팝업 -->
                     <div id="raceResult02" class="modPopup lg"> <!-- class - on : 팝업오픈, md : middle,  lg : large -->
-                        <div class="popupDim">딤영역</div>
+                        <div class="popupDim">Dim Area</div>
                         <div class="popupArea"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
                             <div class="popupInMotion">
                                 <div class="popupContainer">
                                     <div class="popupContArea">
-                                        <button type="button"class="btnPopClose" onclick="closePopup('raceResult02');">닫기</button>
-                                        <div class="popTitle">보트성적 정보</div>
+                                        <button type="button"class="btnPopClose" onclick="closePopup('raceResult02');">Close</button>
+                                        <div class="popTitle">Boat Performance Information</div>
                                         <div class="popCont">
                                             <!-- 팝업 컨텐츠 영역 -->
                                             <div class="cptSection">
                                                 <div class="sectArea">
                                                     <div class="comTitH3 mRow">
-                                                        <h3>경주기록표</h3>
+                                                        <h3>Race Record Sheet</h3>
                                                     </div>
 
                                                     <div class="comDataTable">
@@ -3578,15 +3350,15 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>번호</th>
-                                                                        <th>출주횟수</th>
-                                                                        <th>출전회차<br>(년도/회차)</th>
-                                                                        <th>1착</th>
-                                                                        <th>2착</th>
-                                                                        <th>3착</th>
-                                                                        <th>평균착순점</th>
-                                                                        <th>연대율</th>
-                                                                        <th>최고타임</th>
+                                                                        <th>Number</th>
+                                                                        <th>Number of Races Entered</th>
+                                                                        <th>Race Sessions<br>(Year/Session)</th>
+                                                                        <th>1st place</th>
+                                                                        <th>2nd place</th>
+                                                                        <th>3rd place</th>
+                                                                        <th>Average Placing Points</th>
+                                                                        <th>Top Two Percentage</th>
+                                                                        <th>Best Time</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -3607,7 +3379,7 @@
                                                     </div>
 
                                                     <div class="comTitH3 mRow">
-                                                        <h3>경주별 순위기록</h3>
+                                                        <h3>Ranking Records by Race</h3>
                                                     </div>
     
                                                     <div class="comDataTable both">
@@ -3627,24 +3399,23 @@
                                                                 </colgroup>
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>경주회차</th>
-                                                                        <th>착순</th>
-                                                                        <th>정번</th>
-                                                                        <th>진입코스</th>
-                                                                        <th>모터</th>
-                                                                        <th>보트</th>
-                                                                        <th>소개항주</th>
+                                                                        <th>Race Session</th>
+                                                                        <th>Placing</th>
+                                                                        <th>Boat Number</th>
+                                                                        <th>Entry Course</th>
+                                                                        <th>Motor</th>
+                                                                        <th>Boat</th>
+                                                                        <th>Introduction Run</th>
                                                                         <th>ST/OST</th>
-                                                                        <th>틸트각</th>
+                                                                        <th>Tilt Angle</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                    <!-- to Dev: 순위별 포인트 컬러 class -->
-                                                                    <!-- 1위 : 'tRed' / 2위 : 'tOrange' / 3위 : 'tKey' -->
-                                                                    <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                    <!-- to Dev: 순위별 포인트 컬러 class --> <!-- 1위 : 'tRed' / 2위 : 'tOrange' / 3위 : 'tKey' -->
+                                                                     <tr>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tRed tBold">1</span></td>
-                                                                        <td>황민주</td>
+                                                                        <td>Hwang Min-joo</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3653,9 +3424,9 @@
                                                                         <td>+1.5</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tOrange tBold">2</span></td>
-                                                                        <td>류석현</td>
+                                                                        <td>Ryu Seok-hyun</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3664,9 +3435,9 @@
                                                                         <td>+1.5</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tKey tBold">3</span></td>
-                                                                        <td>손근성</td>
+                                                                        <td>Sohn Geun-seong</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3675,9 +3446,9 @@
                                                                         <td>+1.5</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tBold">4</span></td>
-                                                                        <td>정경호</td>
+                                                                        <td>Jeong Kyung-ho</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3686,9 +3457,9 @@
                                                                         <td>+1.5</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <th>24회차 2일차 03경주(2024.06.13)</th>
+                                                                        <th>3rd Race on Day 2 of the 24th Racing Series (2024.06.13)</th>
                                                                         <td><span class="tBold">5</span></td>
-                                                                        <td>이태희</td>
+                                                                        <td>Lee Tae-hee</td>
                                                                         <td>4</td>
                                                                         <td>98</td>
                                                                         <td>99</td>
@@ -3710,25 +3481,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- 서브 바텀 (담당자) -->
-                
-
-<div class="cptSubBtm">
-    <div class="subBtmArea">
-        <div class="subBtmBox">
-            <dl class="manager">
-                <dt>담당자</dt>
-                <dd><span>경정기획팀</span><b>최동훈</b></dd>
-            </dl>
-            <ul class="btmList">
-                <li class="phone">031-790-8306</li>
-                <li class="email"><a href="#">이메일 보내기</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
                 
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
                 
