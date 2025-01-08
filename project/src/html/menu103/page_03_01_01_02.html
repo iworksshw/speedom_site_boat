@@ -1,7 +1,7 @@
 <!-- Header -->
 <%- include('../_ejs/top.ejs', {
-    title: "KBOAT 경정",
-    url: "../../"
+	title: "KBOAT Racing",
+	url: "../../"
 }) %>
 
 <!-- 레이아웃 -->
@@ -11,7 +11,7 @@
         <!-- 상단영역 -->
         <div class="layoutTop">
             <!-- Top -->
-            <%- include('../_ejs/header.ejs', {
+            <%- include('../_ejs_eng/header.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -25,38 +25,38 @@
 
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
                 <!-- 서브 탑 (타이틀) -->
-                <%- include('../_ejs/sub_top.ejs', {
-                    location: ['경정가이드', '경정 알아보기'],
-                    subTitle: '경정기초정보',
-                    subText: '경정이 <b>처음이신가요?</b><br>지금부터 경정에 대해 알아봐요.',
-                    url: "../../",
-                    visualClass: "bg01",
-                }) %>
+                <%- include('../_ejs_eng/sub_top.ejs', {
+                    location: ['K-Boating', 'Boat Racing Guide','Understanding Boat Racing'],
+                    subTitle: 'Basic Information on Cycle Racing',
+                    subText: '<b>Are you new</b> to boat racing?<br>Let&rsquo;s learn about it together.',
+					url: "../../",
+                    visualClass: "bg03",
+				}) %>
 
                 <div class="layoutContArea">
                     
                     <div class="comSubInfo">
-                        <h2 class="infoTit">경정만의 스릴과 매력을 즐기기 위해 다양한 경정의 기초정보를 알아봅시다</h2>
-                        <p class="info">경정장에서 불꽃 튀는 레이스가 관객들을 기다리고 있습니다. 경정의 기초정보를 이용하여 경정을 더욱 재밌게 즐겨보세요.</p>
+                        <h2 class="infoTit">Let&rsquo;s explore the fundamental information about boat racing to enjoy its unique thrill and charm.</h2>
+                        <p class="info">Thrilling races await spectators at the boating stadium. By learning basic information about boat racing, you can enjoy it even more.</p>
                     </div>
 
 
                     <div class="modTab">
                         <div class="tabMenuGroup tabSwiper toTab">
                             <ul class="tabMenu swiper-wrapper">
-                                <li class="tabItem swiper-slide"><button type="button"class="tabName on" title="선택 된 탭메뉴">경정소개</button></li> <!-- addClass - on : 메뉴 선택됨 -->
-                                <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">경주득점</button></li>
-                                <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">승률·연대율·삼연대율</button></li>
-                                <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">틸트각</button></li>
-                                <li class="tabItem swiper-slide"><button type="button"class="tabName" title="탭메뉴">승식의 종류</button></li>
+                                <li class="tabItem swiper-slide"><button type="button"class="tabName on" title="Selected Tab Menu">Introduction to Boat Racing</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                                <li class="tabItem swiper-slide"><button type="button"class="tabName" title="Tab Menu">Race Score</button></li>
+                                <li class="tabItem swiper-slide"><button type="button"class="tabName" title="Tab Menu">Winning Percentage·Top Two Percentage·Top Three Percentage</button></li>
+                                <li class="tabItem swiper-slide"><button type="button"class="tabName" title="Tab Menu">Tilt Angle</button></li>
+                                <li class="tabItem swiper-slide"><button type="button"class="tabName" title="Tab Menu">Betting Types</button></li>
                             </ul>
                         </div>
                         <div class="tabDirection">
                             <div class="tabBtn alignL">
-                                <button type="button"class="prev">이전</button>
+                                <button type="button"class="prev">Previous</button>
                             </div>
                             <div class="tabBtn alignR">
-                                <button type="button"class="next">다음</button>
+                                <button type="button"class="next">Next</button>
                             </div>
                         </div>
                         <div class="tabContianer">
@@ -66,96 +66,66 @@
                                     <div class="sectArea">
                                         <ul class="stepGroup">
                                             <li class="stepItem">
-                                                <h2 class="stepTit">
-                                                    <span class="num">01</span>
-                                                    <p class="tit">경정경주 운영</p>
+                                                <h2 class="stepTit"><span class="num">01</span><p class="tit">Operation of Boating Races</p>
                                                 </h2>
                                                 <div class="stepCont">
-                                                    <p class="txt">국민체육진흥공단 경륜경정총괄본부는 경륜경정법 제4조 및 경정시행규정 제2장에 근거하여 연간 경주개최 계획을 수립하고 문화체육관광부장관의 승인을 받아 자체 세부계획을 수립하여 매년 경정 경주를 시행하고 있습니다.</p>
-                                                    <h3 class="subTit">2024 경주운영 세부계획</h3>
+                                                    <p class="txt">The KCYCLE and KBOAT Headquarters under the Korea Sports Promotion Foundation organises boating races every year based on Article 4 of the Track Cycling and Boat Racing Act and Chapter 2 of the Boat Racing Regulations. An annual race schedule is planned, approved by the Minister of Culture, Sports, and Tourism, and detailed internal plans are created accordingly.</p>
+                                                    <h3 class="subTit">2024 Race Operation Plan</h3>
                                                     <ul class="listGroup contTit">
-                                                        <li class="item">
-                                                            <em class="tit">개최장소 : </em>
-                                                            <span> 미사리 경정장(경기도 하남시 미사대로 505)</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <em class="tit">개최기간 :</em>
-                                                            <span> 2024. 1. 3. ~ 12. 26.(수ㆍ목요일 등 개최)</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <em class="tit">개최일수 : </em>
-                                                            <span>총 51회 105일 이내, 총 2,100경주 이내(1일 20경주 이내)</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <em class="tit">투표방식 : </em>
-                                                            <span>단승식, 연승식, 복승식, 쌍승식, 삼복승식, 삼쌍승식, 쌍복승식<br/> * 7개 승식 기본운영, 입장제한 등 매출분석에 따라 탄력 운영</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <em class="tit">경주종류 : </em>
-                                                            <span>플라잉스타트 경주 및 온라인스타트 경주</span>
-                                                        </li>
-                                                        <li class="item">
-                                                            <em class="tit">경주거리 : </em>
-                                                            <span>플라잉스타트 : 1,200m(2주회), 1,800m(3주회) / 온라인스타트 : 935m(1주회), 1,535m(2주회)</span>
-                                                        </li>
+                                                        <li class="item"><em class="tit">Venue: </em> <span> Misa Motorboat Racing Park (505 Misadaero, Hanam-si, Gyeonggi-do)</span></li>
+                                                        <li class="item"><em class="tit">Period:</em> <span> 2024. 1. 3. - 12. 26 (held on Wednesdays and Thursdays, among others)</span></li>
+                                                        <li class="item"><em class="tit">Number of Race Days: </em><span>A total of 51 times within 105 days, a total of 2,100 races (20 races per day)</span></li>
+                                                        <li class="item"><em class="tit">Betting Types: </em> <span>Win, Place, Reverse Forecast, Straight Forecast, Combination Tricast, Tricast, Banker Tricast<br/> * Seven basic betting options, operated flexibly based on attendance restrictions and sales analysis</span></li>
+                                                        <li class="item"><em class="tit">Types of Races: </em> <span>Flying Start Races and Online Start Races</span></li>
+                                                        <li class="item"><em class="tit">Race Distance: </em> <span>Flying Start: 1,200m (2 laps) / 1,800m (3 laps) / Online Start: 935m (1 lap) / 1,535m (2 laps)</span></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                             <li class="stepItem">
-                                                <h2 class="stepTit">
-                                                    <span class="num">02</span>
-                                                    <p class="tit">경주편성체계</p>
+                                                <h2 class="stepTit"><span class="num">02</span><p class="tit">Race Composition System</p>
                                                 </h2>
                                                 <div class="stepCont">
-                                                    <h3 class="subTit">선수주선</h3>
+                                                    <h3 class="subTit">Athlete Assignment</h3>
                                                     <ul class="listGroup">
-                                                        <li class="item">일반경정은 A1~B2까지의 등급을 기준으로 선수를 주선하며, 대상경주는 토너먼트, 고객투표, 상금상위자, 성적우수자 등으로 선수를 주선하게 됩니다.</li>
-                                                        <li class="item">경주등급별 선수주선은 특정 기간의 경주 성적을 기준으로 성적 우수자를 주선하며, 주선된 선수는 직계 존속의 경조사, 천재지변 등 경정시행규정 제10조 및 제13조가 정하는 불참요건에 해당하지 않는 한 경기에 출전해야 할 의무가 있습니다.</li>
+                                                        <li class="item">In general boat racing, athletes are assigned according to their rankings, ranging from A1 to B2. In title races, athletes are assigned based on factors such as tournament progression, customer votes, top earnings, or outstanding performance.</li>
+                                                        <li class="item">Athlete assignments for each race grade are determined based on performance over a specific period. Assigned athletes are obligated to participate in the race unless excused by valid reasons such as family events, natural disasters, or other disqualifications specified in Articles 10 and 13 of the Boat Racing Regulations.</li>
                                                     </ul>
-                                                    <h3 class="subTit">경주편성</h3>
+                                                    <h3 class="subTit">Race Scheduling</h3>
                                                     <ul class="listGroup">
-                                                        <li class="item">일반경기는 각개 대진으로, 대상 및 그랑프리 경주는 각개 대진과 토너먼트로 경주를 편성합니다.</li>
-                                                        <li class="item">토너먼트 대진은 1일 차의 성적이 2일차의 경기에 영향을 미치게 됩니다.</li>
-                                                        <li class="item">경주 편성시에는 성적, 선수의 신상명세, 모터와 보트의 성적, 고객의 성향 등을 고려하고 있습니다.</li>
-                                                        <li class="item">2명 이상의 선수가 예정 정번이 동일한 경우는 성적우수자에게 유리하며, 대상경주 결승선수는 선발기준 상위자(성적순, 상금 상위 등)부터 순차적으로 코스를 지정하고 코스 선택권을 부여받습니다.</li>
+                                                        <li class="item">Regular races are organised as individual matchups. Title and Grand Prix races are arranged as both individual matchups and tournaments.</li>
+                                                        <li class="item">In tournaments, the results of Day 1 races influence participation in Day 2 races.</li>
+                                                        <li class="item">Scheduling considers factors such as athlete performance, personal profiles, motor and boat performance, and customer preferences.</li>
+                                                        <li class="item">When two or more athletes are assigned to the same lane by the random draw, preference is given to athletes with superior performance. For the finals of title races, course selections are allocated to athletes in descending order based on criteria such as performance and earnings rankings.</li>
                                                     </ul>
                                                 </div>
                                             </li>
                                             <li class="stepItem">
-                                                <h2 class="stepTit">
-                                                    <span class="num">03</span>
-                                                    <p class="tit">경정선수 지원과 관리</p>
+                                                <h2 class="stepTit"><span class="num">03</span><p class="tit">Support and Management of Boat Racing Athletes</p>
                                                 </h2>
                                                 <div class="stepCont">
-                                                    <p class="txt">경륜경정총괄본부는 경주출전을 위해 선수동에 입소한 선수가 쾌적한 환경 속에서 경주에 전념할 수 있도록 주변환경과 내부시설을 개선하고 있습니다.</p>
+                                                    <p class="txt">The KCYCLE and KBOAT Headquarters ensures that athletes staying at the athlete&rsquo;s dormitory for race participation can focus entirely on their events in a comfortable environment. Surrounding environments and internal facilities are continually improved.</p>
 
-                                                    <h3 class="subTit">주진행 및 선수지도</h3>
+                                                    <h3 class="subTit">Race Coordination and Athlete Guidance</h3>
                                                     <ul class="listGroup">
-                                                        <li class="item">경주에 출전하는 선수는 의사로부터 신체검사 및 상담을 통해 경주출전여부를 체크받고 있으며, 배정된 모터, 보트를 수령한 후 지정연습을 실시하고 확정검사를 받습니다.</li>
-                                                        <li class="item">경주일 출전선수를 대상으로 복장검사를 하고 공지사항 등을 전달하며 경주종료 후에는 심판판정 및 선수경기력향상을 위해 선수교육을 실시하고 있습니다.</li>
+                                                        <li class="item">Athletes participating in races undergo physical examinations and consultations with doctors to confirm their eligibility for competition. After receiving assigned motors and boats, they conduct designated practice sessions and complete a confirmation inspection.</li>
+                                                        <li class="item">On race days, athletes undergo uniform inspections, are informed of announcements, and receive training sessions post-race. These sessions focus on referee judgements and improving athletes&rsquo; performance.</li>
                                                     </ul>
-                                                    <h3 class="subTit">경주 안전 보호장구 운영</h3>
+                                                    <h3 class="subTit">Safety Gear for Races</h3>
                                                     <ul class="listGroup">
-                                                        <li class="item">경정경주는 사고의 위험성이 높은 경주이므로 경주에 출전하는 선수의 신체 및 생명보호를 위해 경주안전장구 착용을 의무화 하고 있습니다.</li>
-                                                        <li class="item">경주안전장구는 매년 제조 구매하여 선수에게 지급하여 경주에 임하도록 하고 있습니다.</li>
+                                                        <li class="item">Since boating races pose significant risk, athletes are required to wear safety equipment to protect their bodies and lives.</li>
+                                                        <li class="item">Safety gear is procured annually and distributed to athletes for use during competitions.</li>
                                                     </ul>
                                                 </div>
                                             </li>
                                             <li class="stepItem">
-                                                <h2 class="stepTit">
-                                                    <span class="num">04</span>
-                                                    <p class="tit">경주정 운영관리</p>
+                                                <h2 class="stepTit"><span class="num">04</span><p class="tit">Race Motors and Boats Management</p>
                                                 </h2>
                                                 <div class="stepCont">
                                                     <ul class="listGroup">
-                                                        <li class="item">
-                                                            경륜경정총괄본부는 원활한 경정경주를 위해 경주용 모터와 보트를 확보하고 출주모터와 보트를 관리합니다.<br/>
-                                                            <span class="adds">모터보트 발주, 시제품 검사 및 테스트, 시험정 6정 검사 및 테스트, 신규정 확보<br/>
-                                                                모터성능 균질성확보, 보트 중량의 균일성 유지, 보관 및 반,출입통제, 기록관리</span>
-                                                        </li>
-                                                        <li class="item">경주정 정비는 전문 정비요원에 의한 사전점검 정비와 선수에 의한 일반정비가 있습니다.</li>
-                                                        <li class="item">정비요원은 보트를 수리하고, 사고 및 이상발생 모터를 정밀하게 정비하며, 선수는 모터를 분해조립 및 정비점검을 실시합니다.</li>
-                                                        <li class="item">또한 경주정은 확정검사, 출주전검사, 출주직전검사, 출주후검사(반납검사), 재검사를 통해 안전하게 관리됩니다.</li>
+                                                        <li class="item">The KCYCLE and KBOAT Headquarters secures and maintains race motors and boats to ensure smooth operation.<br/> <span class="adds">Ordering motors and boats, along with testing prototypes and conducting inspections, inspecting and testing six trial boats, securing new boats<br/> Ensuring uniform motor performance,maintaining consistency in boat weights, monitoring storage, controlling entries and exits, and keeping detailed records</span></li>
+                                                        <li class="item">Maintenance of race boats includes pre-inspection maintenance by professional maintenance staff and general maintenance performed by the racers.</li>
+                                                        <li class="item">The maintenance staff repair the boats and carry out precise inspections and maintenance on motors with defects or malfunctions, while the racers disassemble, assemble, and inspect the motors themselves.</li>
+                                                        <li class="item">Additionally, race boats are managed safely through confirmation inspections, pre-race inspections, pre-start inspections, post-race inspections (return inspections), and re-inspections.</li>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -169,21 +139,16 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>착순점</h2>
+                                            <h2>Placing Points</h2>
                                         </div>
                         
                                         <div class="comBasicTxt">
-                                            <p class="txt">
-                                                착순점은 경주 착순에 따라 주어지는 점수로 경주등급에 따라 아래와 같이 부여됩니다. <br/>
-                                                동착이 발생할 경우 동착 모두 해당 착순점을 부여합니다.
-                                            </p>
+                                            <p class="txt">Placing points are awarded based on the order of finishing a race. The points are allocated differently depending on the race grade as shown below. <br/> In the event of a tie judgement, all athletes are awarded the corresponding placing points.</p>
                                         </div>
                                         
-                                        <div class="comContTable">
-                                            <!-- PC 테이블 -->
-                                            <div class="pcView">
+                                        <div class="comContTable"><!-- PC 테이블 --><div class="pcView">
                                                 <table class="basic">
-                                                    <caption>착순점 구분표 : 일반·이벤트 경주와 그 외를 구분한 표</caption>
+                                                    <caption>Placing Points Classification Table: A table distinguishing between general/event races and other categories</caption>
                                                     <colgroup>
                                                         <col style="width: auto;">
                                                         <col style="width: 14.28%;">
@@ -195,41 +160,39 @@
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th class="lineR">구분</th>
-                                                            <th>1위</th>
-                                                            <th>2위</th>
-                                                            <th>3위</th>
-                                                            <th>4위</th>
-                                                            <th>5위</th>
-                                                            <th>6위</th>
+                                                            <th class="lineR">Classification</th>
+                                                            <th>1st Place</th>
+                                                            <th>2nd Place</th>
+                                                            <th>3rd Place</th>
+                                                            <th>4th Place</th>
+                                                            <th>5th Place</th>
+                                                            <th>6th Place</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td class="lineR"><b>일반∙이벤트 경주</b></td>
-                                                            <td>10점</td>
-                                                            <td>8점</td>
-                                                            <td>6점</td>
-                                                            <td>4점</td>
-                                                            <td>2점</td>
-                                                            <td>1점</td>
+                                                            <td class="lineR"><b>General/Event Races</b></td>
+                                                            <td>10 points</td>
+                                                            <td>8 points</td>
+                                                            <td>6 points</td>
+                                                            <td>4 points</td>
+                                                            <td>2 points</td>
+                                                            <td>1 point</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="lineR"><b>일반∙이벤트 경주 외</b></td>
-                                                            <td>11점</td>
-                                                            <td>9점</td>
-                                                            <td>7점</td>
-                                                            <td>5점</td>
-                                                            <td>3점</td>
-                                                            <td>2점</td>
+                                                            <td class="lineR"><b>Other than General/Event Races</b></td>
+                                                            <td>11 points</td>
+                                                            <td>9 points</td>
+                                                            <td>7 points</td>
+                                                            <td>5 points</td>
+                                                            <td>3 points</td>
+                                                            <td>2 points</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                            </div>
-                                            <!-- Mobile 테이블 -->
-                                            <div class="mView">
+                                            </div><!-- Mobile 테이블 --><div class="mView">
                                                 <table class="basic">
-                                                    <caption>착순점 구분표 : 일반·이벤트 경주와 그 외를 구분한 표</caption>
+                                                    <caption>Placing Points Classification Table: A table distinguishing between general/event races and other categories</caption>
                                                     <colgroup>
                                                         <col style="width: 112px;">
                                                         <col style="width:auto;">
@@ -237,61 +200,61 @@
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th class="lineR">구분</th>
-                                                            <th>순위</th>
-                                                            <th>점수</th>
+                                                            <th class="lineR">Classification</th>
+                                                            <th>Ranking</th>
+                                                            <th>Score</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td rowspan="6" class="lineR"><b>일반∙이벤트<br>경주</b></td>
-                                                            <td>1위</td>
-                                                            <td>10점</td>
+                                                            <td rowspan="6" class="lineR"><b>General/Event<br>Races</b></td>
+                                                            <td>1st Place</td>
+                                                            <td>10 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2위</td>
-                                                            <td>8점</td>
+                                                            <td>2nd Place</td>
+                                                            <td>8 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>3위</td>
-                                                            <td>6점</td>
+                                                            <td>3rd Place</td>
+                                                            <td>6 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>4위</td>
-                                                            <td>4점</td>
+                                                            <td>4th Place</td>
+                                                            <td>4 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>5위</td>
-                                                            <td>2점</td>
+                                                            <td>5th Place</td>
+                                                            <td>2 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>6위</td>
-                                                            <td>1점</td>
+                                                            <td>6th Place</td>
+                                                            <td>1 point</td>
                                                         </tr>
                                                         <tr>
-                                                            <td rowspan="6" class="lineR"><b>일반∙이벤트<br>경주 외</b></td>
-                                                            <td>1위</td>
-                                                            <td>11점</td>
+                                                            <td rowspan="6" class="lineR"><b>Other than<br>General/Event Races</b></td>
+                                                            <td>1st Place</td>
+                                                            <td>11 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2위</td>
-                                                            <td>9점</td>
+                                                            <td>2nd Place</td>
+                                                            <td>9 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>3위</td>
-                                                            <td>7점</td>
+                                                            <td>3rd Place</td>
+                                                            <td>7 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>4위</td>
-                                                            <td>5점</td>
+                                                            <td>4th Place</td>
+                                                            <td>5 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>5위</td>
-                                                            <td>3점</td>
+                                                            <td>5th Place</td>
+                                                            <td>3 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>6위</td>
-                                                            <td>2점</td>
+                                                            <td>6th Place</td>
+                                                            <td>2 points</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -304,20 +267,16 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>사고점</h2>
+                                            <h2>Incident Points</h2>
                                         </div>
                         
                                         <div class="comBasicTxt">
-                                            <p class="txt">
-                                                사고점은 경주중 실격, 경고, 주의 등으로 선수에게 주어진 감점이며, 위반사항에 따라 아래와 같이 부여됩니다.
-                                            </p>
+                                            <p class="txt">Incident points are penalty points given to racers for disqualification, warnings, or cautions during a race, and they are assigned as follows according to the violation.</p>
                                         </div>
                                         
-                                        <div class="comContTable">
-                                            <!-- PC 테이블 -->
-                                            <div class="pcView">
+                                        <div class="comContTable"><!-- PC 테이블 --><div class="pcView">
                                                 <table class="basic">
-                                                    <caption>사고점 구분표 : 일반·이벤트 경주와 그 외를 구분한 표</caption>
+                                                    <caption>Incident Points Classification Table: A table distinguishing between general/event races and other categories</caption>
                                                     <colgroup>
                                                         <col style="width: 9%;">
                                                         <col style="width: auto;">
@@ -330,46 +289,44 @@
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th class="lineR" colspan="2">구분</th>
-                                                            <th>출주제외(I)</th>
-                                                            <th>반칙실격</th>
-                                                            <th>출주제외(II) ‧ 기타실격</th>
-                                                            <th>반칙경고</th>
-                                                            <th>경고</th>
-                                                            <th>주의</th>
+                                                            <th class="lineR" colspan="2">Classification</th>
+                                                            <th>Exclusion from Race (I)</th>
+                                                            <th>Disqualification due to Violations</th>
+                                                            <th>Exclusion from Race (II) / Other Disqualifications</th>
+                                                            <th>Foul Warnings</th>
+                                                            <th>Warning</th>
+                                                            <th>Caution</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td rowspan="2"><b>선수책임</b></td>
-                                                            <td class="lineR"><b>일반특선 대상경주</b></td>
-                                                            <td>15점</td>
-                                                            <td>7점</td>
-                                                            <td>4점</td>
-                                                            <td>2점</td>
-                                                            <td>1점</td>
-                                                            <td>0.5점</td>
+                                                            <td rowspan="2"><b>Athlete&rsquo;s Responsibility</b></td>
+                                                            <td class="lineR"><b>General Special Title Races</b></td>
+                                                            <td>15 points</td>
+                                                            <td>7 points</td>
+                                                            <td>4 points</td>
+                                                            <td>2 points</td>
+                                                            <td>1 point</td>
+                                                            <td>0.5 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="lineR"><b>그랑프리경주 결승경주</b></td>
-                                                            <td>15점</td>
-                                                            <td>10점</td>
-                                                            <td>4점</td>
-                                                            <td>4점</td>
-                                                            <td>1점</td>
-                                                            <td>0.5점</td>
+                                                            <td class="lineR"><b>Grand Prix Race Final Race</b></td>
+                                                            <td>15 points</td>
+                                                            <td>10 points</td>
+                                                            <td>4 points</td>
+                                                            <td>4 points</td>
+                                                            <td>1 point</td>
+                                                            <td>0.5 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="lineR" colspan="2"><b>선수책임외</b></td>
-                                                            <td colspan="6">모두 0점으로 하고 출주횟수 제외</td>
+                                                            <td class="lineR" colspan="2"><b>Beyond Athlete&apos;s Responsibility</b></td>
+                                                            <td colspan="6">All are set to 0 points and excluded from the number of entries</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                            </div>
-                                            <!-- Mobile 테이블 -->
-                                            <div class="mView">
+                                            </div><!-- Mobile 테이블 --><div class="mView">
                                                 <table class="basic">
-                                                    <caption>사고점 구분표 : 일반·이벤트 경주와 그 외를 구분한 표</caption>
+                                                    <caption>Incident Points Classification Table: A table distinguishing between general/event races and other categories</caption>
                                                     <colgroup>
                                                         <col style="width: 112px;">
                                                         <col style="width:auto;">
@@ -377,70 +334,66 @@
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
-                                                            <th class="lineR">구분</th>
-                                                            <th>감점대상</th>
-                                                            <th>점수</th>
+                                                            <th class="lineR">Classification</th>
+                                                            <th>Penalty Categories</th>
+                                                            <th>Score</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td rowspan="6" class="lineR"><b>일반특선<br/> 대상경주<br/> (선수책임)</b></td>
-                                                            <td>출주제외(I)</td>
-                                                            <td>15점</td>
+                                                            <td rowspan="6" class="lineR"><b>General Special<br/> Grand Prix Race<br/>(Athlete&rsquo;s Responsibility)</b></td>
+                                                            <td>Exclusion from Race (I)</td>
+                                                            <td>15 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>반칙실격</td>
-                                                            <td>7점</td>
+                                                            <td>Disqualification due to Violations</td>
+                                                            <td>7 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>출주제외(II)<br>
-                                                                기타실격</td>
-                                                            <td>4점</td>
+                                                            <td>Exclusion from Race (II)<br> Other Disqualifications</td>
+                                                            <td>4 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>반칙경고</td>
-                                                            <td>2점</td>
+                                                            <td>Foul Warnings</td>
+                                                            <td>2 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>경고</td>
-                                                            <td>1점</td>
+                                                            <td>Warning</td>
+                                                            <td>1 point</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>주의</td>
-                                                            <td>0.5점</td>
+                                                            <td>Caution</td>
+                                                            <td>0.5 points</td>
                                                         </tr>
                                                         
                                                         <tr>
-                                                            <td rowspan="6" class="lineR"><b>그랑프리경주<br/>
-                                                                결승경주<br/>
-                                                                (선수책임)</b></td>
-                                                            <td>출주제외(I)</td>
-                                                            <td>15점</td>
+                                                            <td rowspan="6" class="lineR"><b>Grand Prix Race<br/> Final Race<br/> (Athlete&rsquo;s Responsibility)</b></td>
+                                                            <td>Exclusion from Race (I)</td>
+                                                            <td>15 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>반칙실격</td>
-                                                            <td>10점</td>
+                                                            <td>Disqualification due to Violations</td>
+                                                            <td>10 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>출주제외(II)<br>
-                                                                기타실격</td>
-                                                            <td>4점</td>
+                                                            <td>Exclusion from Race (II)<br> Other Disqualifications</td>
+                                                            <td>4 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>반칙경고</td>
-                                                            <td>2점</td>
+                                                            <td>Foul Warnings</td>
+                                                            <td>2 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>경고</td>
-                                                            <td>1점</td>
+                                                            <td>Warning</td>
+                                                            <td>1 point</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>주의</td>
-                                                            <td>0.5점</td>
+                                                            <td>Caution</td>
+                                                            <td>0.5 points</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="lineR"><b>선수책임 외</b></td>
-                                                            <td colspan="2">모두 0점 처리 출주횟수 제외</td>
+                                                            <td class="lineR"><b>Beyond Athlete&rsquo;s Responsibility</b></td>
+                                                            <td colspan="2">All are set to 0 points and excluded from the number of entries</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -452,22 +405,16 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>평균착순점</h2>
+                                            <h2>Average Placing Points</h2>
                                         </div>
                         
                                         <div class="comBasicTxt">
-                                            <p class="txt">
-                                                경주 착순에 따라 주어지는 착순점의 합계를 출주횟수로 나눈 점수로, 선수의 경주능력을 가장 쉽게 알 수 있는 객관적인 수치입니다.
-                                            </p>
+                                            <p class="txt">A numerical measure of an athlete&rsquo;s race capability, calculated by dividing the total placing points (awarded based on race placings) by the number of races entered.</p>
                                         </div>
 
                                         <div class="comFomulBox">
-                                            <div class="pcView">
-                                                <img src="../../images/contents/cont21_01_01_02_001.png" alt="수식: 착순점/출추횟수">
-                                            </div>
-                                            <div class="mView">
-                                                <img src="../../images/contents/cont21_01_01_02_001_m.png" alt="수식: 착순점/출추횟수">
-                                            </div>
+                                            <div class="pcView"><img src="../../images/contents/cont21_01_01_02_001.png" alt="Formula: Placing Points/Number of Races Entered"></div>
+                                            <div class="mView"><img src="../../images/contents/cont21_01_01_02_001_m.png" alt="Formula: Placing Points/Number of Races Entered"></div>
                                         </div>
 
                                     </div>
@@ -476,22 +423,16 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>평균사고점</h2>
+                                            <h2>Average Incident Points</h2>
                                         </div>
                         
                                         <div class="comBasicTxt">
-                                            <p class="txt">
-                                                해당 등급심사기간(전반기 혹은 후반기)의 사고점 합계를 출주횟수로 나눈 점수로, 선수의 경주능력을 가장 쉽게 알수 있는 객관적인 수치입니다.
-                                            </p>
+                                            <p class="txt">It is calculated by dividing the total incident points during the relevant grading evaluation period (first or second half of the year) by the number of races entered, serving as an objective figure that most easily indicates a racer&apos;s ability.</p>
                                         </div>
 
                                         <div class="comFomulBox">
-                                            <div class="pcView">
-                                                <img src="../../images/contents/cont21_01_01_02_002.png" alt="수식: 사고점/출추횟수">
-                                            </div>
-                                            <div class="mView">
-                                                <img src="../../images/contents/cont21_01_01_02_002_m.png" alt="수식: 사고점/출추횟수">
-                                            </div>
+                                            <div class="pcView"><img src="../../images/contents/cont21_01_01_02_002.png" alt="Formula: Incident Points/Number of Races Entered"></div>
+                                            <div class="mView"><img src="../../images/contents/cont21_01_01_02_002_m.png" alt="Formula: Incident Points/Number of Races Entered"></div>
                                         </div>
 
                                     </div>
@@ -500,22 +441,16 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>평균득점</h2>
+                                            <h2>Average Scores</h2>
                                         </div>
                         
                                         <div class="comBasicTxt">
-                                            <p class="txt">
-                                                평균착순점에서 평균사고점을 뺀 점수입니다.
-                                            </p>
+                                            <p class="txt">It is the score obtained by subtracting the average incident point from the average placing point.</p>
                                         </div>
 
                                         <div class="comFomulBox">
-                                            <div class="pcView">
-                                                <img src="../../images/contents/cont21_01_01_02_003.png" alt="수식: 평균 사고점/평균 출추횟수">
-                                            </div>
-                                            <div class="mView">
-                                                <img src="../../images/contents/cont21_01_01_02_003_m.png" alt="수식: 평균 사고점/평균 출추횟수">
-                                            </div>
+                                            <div class="pcView"><img src="../../images/contents/cont21_01_01_02_003.png" alt="Formula: Average Incident Points/Number of Races Entered"></div>
+                                            <div class="mView"><img src="../../images/contents/cont21_01_01_02_003_m.png" alt="Formula: Average Incident Points/Number of Races Entered"></div>
                                         </div>
 
                                     </div>
@@ -527,22 +462,16 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>승률</h2>
+                                            <h2>Winning Percentage</h2>
                                         </div>
                         
                                         <div class="comBasicTxt">
-                                            <p class="txt">
-                                                선수가 <em>1착으로 들어온 횟수를 출주회수로 나누어 백분율</em>로 나타낸 것을 말합니다.
-                                            </p>
+                                            <p class="txt">The winning percentage refers to <em>the number of times a cyclist has come in first place divided by the number of races entered</em>, expressed as a percentage.</p>
                                         </div>
 
                                         <div class="comFomulBox">
-                                            <div class="pcView">
-                                                <img src="../../images/contents/cont01_01_01_02_004.png" alt="수식: (1착횟수/출추횟수) * 100%">
-                                            </div>
-                                            <div class="mView">
-                                                <img src="../../images/contents/cont01_01_01_02_004_m.png" alt="수식: (1착횟수/출추횟수) * 100%">
-                                            </div>
+                                            <div class="pcView"><img src="../../images/contents/cont01_01_01_02_004.png" alt="Formula: (Number of 1st place wins/Number of races entered) * 100%"></div>
+                                            <div class="mView"><img src="../../images/contents/cont01_01_01_02_004_m.png" alt="Formula: (Number of 1st place wins/Number of races entered) * 100%"></div>
                                         </div>
 
                                     </div>
@@ -551,24 +480,20 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>연대율</h2>
+                                            <h2>Top Two Percentage</h2>
                                         </div>
                         
                                         <div class="comBasicList">
                                             <ul class="listGroup">
-                                                <li class="item">선수가 <em>1착, 2착로 들어온 회수를 전체 출주회수로 나누어 백분율</em>로 나타낸 것으로 <em>입착률</em>이라고도 합니다.</li>
-                                                <li class="item">수치가 클수록 1, 2착위로 들어올 확률이 높으며 경주권을 구입할 경우에도 평균착순점보다 연대율을 중시합니다.</li>
-                                                <li class="item">쌍승식에서는 1위와 2위를 함께 맞추는 것이므로 해당 선수가 1, 2위로 들어온 회수를 수치로 나타낸 연대율이 경주권 구입의 중요한 참고가 됩니다.</li>
+                                                <li class="item">The top two percentage is calculated by <em>dividing the number of first- and second-place finishes by the total number of races entered, expressed as a percentage</em>. It is also referred to as the <em>placement rate</em>.</li>
+                                                <li class="item">A higher percentage indicates a greater likelihood of the participant finishing in first or second place. When purchasing race tickets, the top two percentage is often given more weight than the average finishing score.</li>
+                                                <li class="item">In Straight Forecast betting, where you need to select both the first and second place finishers, the first two percentage, which reflects a cyclist&apos;s past first and second-place finishes, serves as an important reference when purchasing your race tickets.</li>
                                             </ul>
                                         </div>
 
                                         <div class="comFomulBox">
-                                            <div class="pcView">
-                                                <img src="../../images/contents/cont01_01_01_02_013.png" alt="수식: ((1착횟수 + 2착횟수)/출추횟수) * 100%">
-                                            </div>
-                                            <div class="mView">
-                                                <img src="../../images/contents/cont01_01_01_02_013_m.png" alt="수식: ((1착횟수 + 2착횟수)/출추횟수) * 100%">
-                                            </div>
+                                            <div class="pcView"><img src="../../images/contents/cont01_01_01_02_013.png" alt="Formula: ((Number of first-place finishes + Number of second-place finishes)/Number of races entered) * 100%"></div>
+                                            <div class="mView"><img src="../../images/contents/cont01_01_01_02_013_m.png" alt="Formula: ((Number of first-place finishes + Number of second-place finishes)/Number of races entered) * 100%"></div>
                                         </div>
 
                                     </div>
@@ -577,24 +502,20 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>삼연대율</h2>
+                                            <h2>Top Three Percentage</h2>
                                         </div>
                         
                                         <div class="comBasicList">
                                             <ul class="listGroup">
-                                                <li class="item">선수가 <em>1, 2, 3착으로 들어온 회수를 전체 출주회수로 나누어 백분율</em>로 나타낸 것입니다.</li>
-                                                <li class="item">수치가 클수록 1, 2, 3착위로 들어올 확률이 높으며 경주권을 구입할 경우에도 평균착순점보다 연대율을 중시합니다.</li>
-                                                <li class="item">삼복승식에서는 1착 2착 3착를 함께 맞추는 것이므로 해당 선수가 1, 2, 3위로 들어온 회수를 수치로 나타낸 삼연대율이 경주권 구입의 중요한 참고가 됩니다.</li>
+                                                <li class="item">The top three percentage is calculated by <em>dividing the number of first-, second-, and third-place finishes by the total number of races entered, expressed as a percentage</em>.</li>
+                                                <li class="item">A higher percentage indicates a greater likelihood of the participant finishing in first, second, or third place. When purchasing race tickets, the top three percentage is often given more weight than the average finishing score.</li>
+                                                <li class="item">In Combination Tricast betting, where you need to select the first, second, and third place finishers, the first three percentage, which reflects a cyclist&rsquo;s past first-, second-, and third-place finishes, serves as an important reference when purchasing your race tickets.</li>
                                             </ul>
                                         </div>
 
                                         <div class="comFomulBox">
-                                            <div class="pcView">
-                                                <img src="../../images/contents/cont01_01_01_02_014.png" alt="수식: ((1착횟수 + 2착횟수 + 3착횟수)/출추횟수) * 100%">
-                                            </div>
-                                            <div class="mView">
-                                                <img src="../../images/contents/cont01_01_01_02_014_m.png" alt="수식: ((1착횟수 + 2착횟수 + 3착횟수)/출추횟수) * 100%">
-                                            </div>
+                                            <div class="pcView"><img src="../../images/contents/cont01_01_01_02_014.png" alt="Formula: ((Number of first-place finishes + Number of second-place finishes + Number of third-place finishes)/Number of races entered) * 100%"></div>
+                                            <div class="mView"><img src="../../images/contents/cont01_01_01_02_014_m.png" alt="Formula: ((Number of first-place finishes + Number of second-place finishes + Number of third-place finishes)/Number of races entered) * 100%"></div>
                                         </div>
 
                                     </div>
@@ -606,41 +527,39 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>틸트각</h2>
+                                            <h2>Tilt Angle</h2>
                                         </div>
                         
                                         <div class="comBasicTxt">
-                                            <p class="txt">
-                                                모터를 보트에 부착하는 각도(프로펠러 측과 보트 접수면과의 각도)를 말하며, 일반 레저용 선외기는 자동조절장치가 설치되어 있어 항주 중에도 틸트각 조절이 가능하나, 경정경주용 모터는 경량화 및 고장 방지를 위하여 간소화한 기계로서 경주 출주 2시간 전에 사용 각도를 신고하고 고정하여 경주를 합니다.
-                                            </p>
+                                            <p class="txt">The tilt angle refers to the angle at which the motor is attached to the boat (the angle between the propeller side and the surface of the boat). For general leisure outboard motors, an automatic adjustment mechanism allows the tilt angle to be modified even during operation. However, racing motors for boating races are simplified machines designed for lightness and to prevent malfunctions. As such, the tilt angle must be reported and fixed two hours before the race begins.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>틸트각이 미치는 영향</h2>
+                                            <h2>Effects of the Tilt Angle</h2>
                                         </div>
 
                                         <div class="comTitH3">
-                                            <h3>틸트각을 올릴 경우</h3>
+                                            <h3>When the tilt angle is raised</h3>
                                         </div>
                         
                                         <div class="comBasicList space">
                                             <ul class="listGroup">
-                                                <li class="item">프로펠러도 위로 올라오며 이때 프로펠러에 작용하는 추력이 밑으로 향하게 되면서 선수(배의 앞부분)가 들리게 되어 직진상태에서는 경주정의 속도가 빨라질 수 있습니다.</li>
-                                                <li class="item">선회시에는 수면과 접촉면이 작아져 불안정하게 선회하는 단점이 있습니다.</li>
+                                                <li class="item">The propeller also rises, causing the thrust acting on the propeller to push downward. This raises the bow (the front part of the boat), allowing the racing boat&apos;s speed to increase in a straight trajectory.</li>
+                                                <li class="item">However, during turns, the reduced contact area with the water surface may result in instability.</li>
                                             </ul>
                                         </div>
                                         
                                         <div class="comTitH3">
-                                            <h3>틸트각을 내릴 경우</h3>
+                                            <h3>When the tilt angle is lowered</h3>
                                         </div>
                         
                                         <div class="comBasicList space">
                                             <ul class="listGroup">
-                                                <li class="item">프로펠러도 낮아져 프로펠러에 작용하는 추력이 위로 향하게 되면서 선수(배의 앞부분)을 밑으로 누릅니다. 이 때 선속은 늦어질 수가 있지만 선회시 수면과의 접촉이 넓어져, 안정감있게 선회할 수 있습니다.</li>
-                                                <li class="item">틸트각은 선수가 경주 당일 기후조건과 코스 배정 등 경주운영 상황을 고려하여 선택 사용합니다.</li>
+                                                <li class="item">The propeller is lowered, causing the thrust acting on it to push upward and press the bow (the front part of the boat) downward. While this may reduce speed, the increased contact with the water surface during turns provides greater stability.</li>
+                                                <li class="item">Racers select the tilt angle to be used on race day based on weather conditions, course assignments, and other race operation factors.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -652,137 +571,105 @@
                                 <div class="cptSection">
                                     <div class="sectArea">
                                         <div class="comTitH2">
-                                            <h2>승식</h2>
+                                            <h2>Betting Types</h2>
                                         </div>
                         
                                         <div class="comBasicTxt">
-                                            <p class="txt">
-                                                승식은 경주결과를 예측하고 베팅하는 방식으로 1위 또는 1·2위, 1·2·3위를 함께 맞추는 7종류의 승식으로 구성되어 경정 승식에 따라 다양하게 즐길 수 있습니다.
-                                            </p>
+                                            <p class="txt">Betting types in boating races involve predicting race outcomes. These include seven distinct types of bets, such as predicting the 1st place, the 1st and 2nd places, or the 1st, 2nd, and 3rd places combined.</p>
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <!-- 고유영역 -->
                                 <div class="cptDescList">
                                     <div class="listArea">
                                         <ul class="thumList">
                                             <li class="thumItem">
-                                                <div class="thumArea">
-                                                    <img src="../../images/contents/cont21_01_01_02_004.png" alt="경주 중 1위 체크">
-                                                </div>
+                                                <div class="thumArea"><img src="../../images/contents/cont21_01_01_02_004.png" alt="Select the 1st place finisher in the race"></div>
                                                 <dl class="descArea">
-                                                    <dt>
-                                                        <em class="tit">단승식</em>
-                                                        <div class="ballon">적중확률 : <span class="detail">1/6</span></div>
+                                                    <dt><em class="tit">Win</em><div class="ballon">Accuracy rate: <span class="detail">1/6</span></div>
                                                     </dt>
                                                     <dd>
                                                         <ul class="listGroup">
-                                                            <li class="item">1위 선수 1명을 맞추는 방식입니다.</li>
-                                                            <li class="item">가장 기본적인 승식이며, 비교적 적은 금액으로 배당금을 기대할 수 있습니다.</li>
+                                                            <li class="item">This is a method of predicting the 1st place racer.</li>
+                                                            <li class="item">It is the most basic type of bet, suitable for beginners, with modest stakes offering potential payouts.</li>
                                                         </ul>
                                                     </dd>
                                                 </dl>
                                             </li>
                                             <li class="thumItem">
-                                                <div class="thumArea">
-                                                    <img src="../../images/contents/cont21_01_01_02_005.png" alt="경주 중 1, 2위 체크">
-                                                </div>
+                                                <div class="thumArea"><img src="../../images/contents/cont21_01_01_02_005.png" alt="Select the 1st and 2nd place finishers in the race"></div>
                                                 <dl class="descArea">
-                                                    <dt>
-                                                        <em class="tit">연승식</em>
-                                                        <div class="ballon">적중확률 : <span class="detail">2/6</span></div>
+                                                    <dt><em class="tit">Place</em><div class="ballon">Accuracy rate: <span class="detail">2/6</span></div>
                                                     </dt>
                                                     <dd>
                                                         <ul class="listGroup">
-                                                            <li class="item">1위 혹은 2위 선수 중 1명을 맞추는 방식입니다.</li>
-                                                            <li class="item">8인 이상의 경우는 3위 이내, 출주 선수 4인 이하로 열리는 경기에서는 진행하지 않습니다.</li>
+                                                            <li class="item">This involves predicting either the first or second place finisher.</li>
+                                                            <li class="item">For races with eight or more participants, predicting a position within the top three qualifies. This betting type is not available in races with four or fewer participants.</li>
                                                         </ul>
                                                     </dd>
                                                 </dl>
                                             </li>
                                             <li class="thumItem">
-                                                <div class="thumArea">
-                                                    <img src="../../images/contents/cont21_01_01_02_006.png" alt="경주 중 1, 2위 순서 무관 체크">
-                                                </div>
+                                                <div class="thumArea"><img src="../../images/contents/cont21_01_01_02_006.png" alt="Select the 1st and 2nd place finishers in any order"></div>
                                                 <dl class="descArea">
-                                                    <dt>
-                                                        <em class="tit">쌍승식</em>
-                                                        <div class="ballon">적중확률 : <span class="detail">1/36</span></div>
+                                                    <dt><em class="tit">Straight Forecast</em><div class="ballon">Accuracy rate: <span class="detail">1/36</span></div>
                                                     </dt>
                                                     <dd>
                                                         <ul class="listGroup">
-                                                            <li class="item">1, 2위 선수 2명을 순위에 맞게 맞추는 방식입니다.</li>
-                                                            <li class="item">복승식보다 어렵지만, 더 높은 배당금을 기대할 수 있습니다.</li>
+                                                            <li class="item">This involves predicting the 1st and 2nd place finishers in the correct order.</li>
+                                                            <li class="item">It is more difficult than the Reverse Forecast betting, but it offers the potential for higher payouts.</li>
                                                         </ul>
                                                     </dd>
                                                 </dl>
                                             </li>
                                             <li class="thumItem">
-                                                <div class="thumArea">
-                                                    <img src="../../images/contents/cont21_01_01_02_007.png" alt="경주 중 1, 2위 체크">
-                                                </div>
+                                                <div class="thumArea"><img src="../../images/contents/cont21_01_01_02_007.png" alt="Select the 1st and 2nd place finishers in the race"></div>
                                                 <dl class="descArea">
-                                                    <dt>
-                                                        <em class="tit">복승식</em>
-                                                        <div class="ballon">적중확률 : <span class="detail">1/18</span></div>
+                                                    <dt><em class="tit">Reverse Forecast</em><div class="ballon">Accuracy rate: <span class="detail">1/18</span></div>
                                                     </dt>
                                                     <dd>
                                                         <ul class="listGroup">
-                                                            <li class="item"> 1, 2위 선수 2명을 순위에 상관없이 맞추는 방식입니다.</li>
-                                                            <li class="item">연승보다 어렵지만 더 높은 배당금을 기대할 수 있습니다.</li>
+                                                            <li class="item"> This involves predicting the 1st and 2nd place finishers in any order.</li>
+                                                            <li class="item">It is more difficult than the Place betting, but it offers the potential for higher payouts.</li>
                                                         </ul>
                                                     </dd>
                                                 </dl>
                                             </li>
                                             <li class="thumItem">
-                                                <div class="thumArea">
-                                                    <img src="../../images/contents/cont21_01_01_02_008.png" alt="경주 중 1, 2, 3위 체크">
-                                                </div>
+                                                <div class="thumArea"><img src="../../images/contents/cont21_01_01_02_008.png" alt="Select the 1st, 2nd, and 3rd place finishers in the race"></div>
                                                 <dl class="descArea">
-                                                    <dt>
-                                                        <em class="tit">삼복승식</em>
-                                                        <div class="ballon">적중확률 : <span class="detail">1/30</span></div>
+                                                    <dt><em class="tit">Combination Tricast</em><div class="ballon">Accuracy rate: <span class="detail">1/30</span></div>
                                                     </dt>
                                                     <dd>
                                                         <ul class="listGroup">
-                                                            <li class="item">1, 2, 3위의 선수 3명을 순위에 상관없이 맞추는 방식입니다.</li>
-                                                            <li class="item">쌍승식에 비해 간단한 승식입니다.</li>
+                                                            <li class="item">This involves predicting the 1st, 2nd, and 3rd place finishers in any order.</li>
+                                                            <li class="item">It is a simpler betting type than the Straight Forecast.</li>
                                                         </ul>
                                                     </dd>
                                                 </dl>
                                             </li>
                                             <li class="thumItem">
-                                                <div class="thumArea">
-                                                    <img src="../../images/contents/cont21_01_01_02_009.png" alt="경주 중 1, 2, 3위 체크">
-                                                </div>
+                                                <div class="thumArea"><img src="../../images/contents/cont21_01_01_02_009.png" alt="Select the 1st, 2nd, and 3rd place finishers in the race"></div>
                                                 <dl class="descArea">
-                                                    <dt>
-                                                        <em class="tit">삼쌍승식</em>
-                                                        <div class="ballon">적중확률 : <span class="detail">1/180</span></div>
+                                                    <dt><em class="tit">Tricast</em><div class="ballon">Accuracy rate: <span class="detail">1/180</span></div>
                                                     </dt>
                                                     <dd>
                                                         <ul class="listGroup">
-                                                            <li class="item">1, 2, 3위 선수 3명을 순위에 맞게 맞추는 방식입니다.</li>
-                                                            <li class="item"> 가장 어려운 승식이지만, 가장 높은 배당금을 기대할 수 있습니다.</li>
+                                                            <li class="item">This involves predicting the 1st, 2nd, and 3rd place finishers in the correct order.</li>
+                                                            <li class="item"> It is the most difficult betting type, but it offers the highest potential payout.</li>
                                                         </ul>
                                                     </dd>
                                                 </dl>
                                             </li>
                                             <li class="thumItem">
-                                                <div class="thumArea">
-                                                    <img src="../../images/contents/cont21_01_01_02_010.png" alt="경주 중 1, 2, 3위 체크">
-                                                </div>
+                                                <div class="thumArea"><img src="../../images/contents/cont21_01_01_02_010.png" alt="Select the 1st, 2nd, and 3rd place finishers in the race"></div>
                                                 <dl class="descArea">
-                                                    <dt>
-                                                        <em class="tit">쌍복승식</em>
-                                                        <div class="ballon">적중확률 : <span class="detail">1/90</span></div>
+                                                    <dt><em class="tit">Banker Tricast</em><div class="ballon">Accuracy rate: <span class="detail">1/90</span></div>
                                                     </dt>
                                                     <dd>
                                                         <ul class="listGroup">
-                                                            <li class="item">1위 선수를 순위에 맞게, 2, 3위 선수 2명은 순위에 상관없이 맞추는 방식입니다.</li>
-                                                            <li class="item">쌍승식보다 어렵지만 높은 배당금을 기대할 수 있습니다.</li>
+                                                            <li class="item">This involves predicting the 1st place finisher, and the 2nd and 3rd place finishers in any order.</li>
+                                                            <li class="item">It is more difficult than the Straight Forecast, but it offers the potential for higher payouts.</li>
                                                         </ul>
                                                     </dd>
                                                 </dl>
@@ -790,29 +677,17 @@
                                         </ul>
                                     </div>
                                 </div>
-
                                 <!-- 정보이야기 박스 영역 -->
                                 <div class="cptEtcInfo">
                                     <div class="infoBox">
                                         <dl class="info">
-                                            <dt>
-                                                <em class="tit">경주를 올바르고 재밌게 즐겨보세요!</em>
-                                                <span class="subTit">건강하고 즐거운 경정문화를 위한 TIP</span>
-                                            </dt>
+                                            <dt><em class="tit">Enjoy the race properly and have fun!</em> <span class="subTit">Tips for a healthy and enjoyable boat racing culture</span></dt>
                                             <dd>
                                                 <div class="infoList">
                                                     <ul class="listGroup">
-                                                        <li class="item">
-                                                            경정은 스릴과 함게 박진감 넘치는 모터보트 경주를 즐기면서 베팅으로 배당금까지 받는 "일석이조"의 재미있는 경기입니다.
-                                                        </li>
-                                                        <li class="item">
-                                                            자신 있게 선택한 레이스에만 베팅하고, 처음부터 무리하지 않고 조금씩 베팅 금액을 늘려나가는 것이 좋습니다.<br>
-                                                            (한 경주 당 3~5장 정도의 경주권을 구입하여 적당한 수준으로 베팅하는 것이 중요해요!)
-                                                        </li>
-                                                        <li class="item">
-                                                            베팅은 손실을 감수할 수 있는 범위 내에서 진행하세요.<br>
-                                                            <em>도박 과몰입 위험과 법적 제한 사항을 충분히 인지하고 책임감 있게 참여해야 합니다.</em>
-                                                        </li>
+                                                        <li class="item">Boating races combine the excitement of high-speed competition with the added thrill and liveliness of betting opportunities, providing both entertainment and financial rewards.</li>
+                                                        <li class="item">It is advisable to place bets only on races you are confident about and to gradually increase your betting amount rather than overextending from the beginning.<br> (It is recommended to purchase around 3 to 5 betting tickets per race and to bet within a reasonable range!)</li>
+                                                        <li class="item">Place bets only within an amount you can afford to lose.<br> <em>Be fully aware of the risks of gambling addiction and legal restrictions, and participate responsibly.</em></li>
                                                     </ul>
                                                 </div> 
                                             </dd>
@@ -826,15 +701,6 @@
                     </div>
 
                 </div>
-
-                    
-                <!-- 서브 바텀 (담당자) -->
-                <%- include('../_ejs/sub_btm.ejs', {
-                    team: '경정기획팀',
-                    name: '성주연',
-                    phone: '031-790-8304',
-                    url: "../../",
-                }) %>
                 
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
                 
@@ -847,7 +713,7 @@
         <!-- 하단영역 -->
         <div class="layoutFooter">
             <!-- Footer -->
-            <%- include('../_ejs/footer.ejs', {
+            <%- include('../_ejs_eng/footer.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -858,4 +724,4 @@
 
 
 <!-- Bottom -->
-<%- include('../_ejs/bottom.ejs', { }) %>
+<%- include('../_ejs_eng/bottom.ejs', { }) %>

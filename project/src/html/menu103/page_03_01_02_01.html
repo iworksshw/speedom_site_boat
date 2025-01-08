@@ -1,7 +1,7 @@
 <!-- Header -->
 <%- include('../_ejs/top.ejs', {
-    title: "KBOAT 경정",
-    url: "../../"
+	title: "KBOAT Racing",
+	url: "../../"
 }) %>
 
 <!-- 레이아웃 -->
@@ -11,7 +11,7 @@
         <!-- 상단영역 -->
         <div class="layoutTop">
             <!-- Top -->
-            <%- include('../_ejs/header.ejs', {
+            <%- include('../_ejs_eng/header.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -25,92 +25,64 @@
 
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
                 <!-- 서브 탑 (타이틀) -->
-                <%- include('../_ejs/sub_top.ejs', {
-                    location: ['경정', '경정가이드', '경정 알아보기'],
-                    subTitle: '출주표 보는법',
-                    subText: '경기의 모든 것을 담은 지도, <br/><b>출주표</b>란 무엇일까요?',
-                    url: "../../",
-                    visualClass : "bg01",
-                }) %>
+                <%- include('../_ejs_eng/sub_top.ejs', {
+                    location: ['K-Boating', 'Boat Racing Guide','Enjoy Boat Racing'],
+                    subTitle: 'How to Read the Entrants List',
+                    subText: 'What is the <b>racecard</b>, <br/>the complete guide to a race?</b>',
+					url: "../../",
+                    visualClass: "bg03",
+				}) %>
 
                 <div class="layoutContArea">
 
                     <div class="comSubInfo">
-                        <h2 class="infoTit">출주표는 경주의 흐름과 다양한 선수들의 정보를 한눈에 확인할 수 있는 필수 데이터 입니다.</h2>
-                        <p class="info">출주표는 각 경주에 출전하는 선수들의 정보, 과거 경기 결과, 현재 기세 등을 한눈에 확인할 수 있는 필수적인 정보 도구입니다.<br/>
-                            출주표를 이용해 베팅 전략을 수립하고 선수나 경주를 비교 분석해 경주결과를 예측하는데 도움이 될 수 있습니다.</p>
+                        <h2 class="infoTit">The racecard is essential data that allows you to view the flow of the race and a variety of rider information at a glance.</h2>
+                        <p class="info">It provides crucial information about the riders competing in each race, their past results, and current form.<br/> By utilising the racecard, you can develop betting strategies, compare and analyse riders or races, and predict race results.</p>
                     </div>
                     
                     <div class="cptNumbGuide">
                         <div class="guideArea">
                             <div class="imgArea">
-                                <img src="../../images/contents/cont21_01_02_02_001.png" alt="경주 출주표. 상세 하단 참조" class="pcView">
-                                <img src="../../images/contents/cont21_01_02_02_001_m.png" alt="경주 출주표. 상세 하단 참조" class="mView">
+                                <img src="../../images/contents/cont21_01_02_02_001.png" alt="Racecard Details Below" class="pcView"> 
+                                <img src="../../images/contents/cont21_01_02_02_001_m.png" alt="Racecard Details Below" class="mView">
                             </div>
                             <div class="descArea">
                                 <ul class="numGroup">
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">01</span>
-                                            <span class="txt">경주정보구분</span>
-                                        </div>
-                                        <div class="desc">시간대별로 경주를 안내하고 경주 등급(신인, 일반)과 경주종류를 안내합니다.</div>
+                                        <div class="tit"><span class="num">01</span> <span class="txt">Race Information</span></div>
+                                        <div class="desc">Provides information on the race schedule, including time slots, race grades (Entry and General), and race types.</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">02</span>
-                                            <span class="txt">체중</span>
-                                        </div>
-                                        <div class="desc">선수 체중을 측정하여 중량부과기준(남자 55kg, 여자51kg) 미만 선수는 중량을 부과하여 경주에 출주합니다.</div>
+                                        <div class="tit"><span class="num">02</span> <span class="txt">Weight</span></div>
+                                        <div class="desc">The weight of athletes is measured, and those below the minimum weight criteria (55kg for men, 51kg for women) are required to add weight in order to participate in the race.</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">03</span>
-                                            <span class="txt">최근 6회차성적</span>
-                                        </div>
-                                        <div class="desc">최근 출전한 6회차의 평균착순점, 평균득점, 승률, 연대율, 삼연대율, 평균ST/OST 기록을 안내합니다.</div>
+                                        <div class="tit"><span class="num">03</span> <span class="txt">Results Over the Last 6 Races</span></div>
+                                        <div class="desc">Provides information on the average placing points, average score, winning percentage, top two percentage, top three percentage, and average ST/OST records for the last six races participated in.</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">04</span>
-                                            <span class="txt">최근 8경주착순</span>
-                                        </div>
-                                        <div class="desc">최근 출전한 8경주의 착순 기록으로 좌측부터 최근 성적순으로 표기합니다.</div>
+                                        <div class="tit"><span class="num">04</span> <span class="txt">Placing in the Last 8 Races</span></div>
+                                        <div class="desc">Shows the placing records from the last 8 races participated in, listed in order from the most recent performance on the left.</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">05</span>
-                                            <span class="txt">연간누적성적</span>
-                                        </div>
-                                        <div class="desc">연간 누적 평균착순점, 연대율을 의미합니다.</div>
+                                        <div class="tit"><span class="num">05</span> <span class="txt">Annual Cumulative Results</span></div>
+                                        <div class="desc">Represents the annual cumulative average placing points and top two percentage.</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">06</span>
-                                            <span class="txt">F/L</span>
-                                        </div>
-                                        <div class="desc">등급심사기간의 출발위반 횟수를 표기하고, 반기단위로 기록합니다.</div>
+                                        <div class="tit"><span class="num">06</span> <span class="txt">F/L</span></div>
+                                        <div class="desc">Indicates the number of false starts during the grading evaluation period, recorded on a biannual basis.</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">07</span>
-                                            <span class="txt">평균 사고점</span>
-                                        </div>
-                                        <div class="desc">등급심사시간의 평균사고점을 의미합니다.</div>
+                                        <div class="tit"><span class="num">07</span> <span class="txt">Average Incident Points</span></div>
+                                        <div class="desc">Represents the average incident points recorded during the grading evaluation period.</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">08</span>
-                                            <span class="txt">금일출주경주</span>
-                                        </div>
-                                        <div class="desc">해당 경주를 제외한 금일 출주 경주번호를 안내합니다.</div>
+                                        <div class="tit"><span class="num">08</span> <span class="txt">Today&rsquo;s Other Races</span></div>
+                                        <div class="desc">Lists the race numbers for today&rsquo;s events, excluding the current race.</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">09</span>
-                                            <span class="txt">전일성적</span>
-                                        </div>
-                                        <div class="desc">전일 출전한 경주, 착순, 코스를 안내합니다.</div>
+                                        <div class="tit"><span class="num">09</span> <span class="txt">Previous Day&rsquo;s Results</span></div>
+                                        <div class="desc">Provides details of the previous day&rsquo;s races, including the placings and courses used.</div>
                                     </li>
                                 </ul>
                             </div>
@@ -120,31 +92,22 @@
                     <div class="cptNumbGuide">
                         <div class="guideArea">
                             <div class="imgArea">
-                                <img src="../../images/contents/cont21_01_02_02_002.png" alt="경주 출주표. 상세 하단 참조" class="pcView">
-                                <img src="../../images/contents/cont21_01_02_02_002_m.png" alt="경주 출주표. 상세 하단 참조" class="mView">
+                                <img src="../../images/contents/cont21_01_02_02_002.png" alt="Racecard Details Below" class="pcView"> 
+                                <img src="../../images/contents/cont21_01_02_02_002_m.png" alt="Racecard Details Below" class="mView">
                             </div>
                             <div class="descArea">
                                 <ul class="numGroup">
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">10</span>
-                                            <span class="txt">6개월 코스별 연대율/코스별 출주횟수</span>
-                                        </div>
-                                        <div class="desc">최근 6개월 동안 발생한 선수의 코스 연대율 및 코스별 출주횟수</div>
+                                        <div class="tit"><span class="num">10</span> <span class="txt">Top Two Percentage by Course/Number of Races Entered by Course Over 6 Months</span></div>
+                                        <div class="desc">The athlete&apos;s top two percentage by course and number of races entered by course over 6 months</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">11</span>
-                                            <span class="txt">모터성적</span>
-                                        </div>
-                                        <div class="desc">번호, 평균 착순점, 연대율</div>
+                                        <div class="tit"><span class="num">11</span> <span class="txt">Motor Performance</span></div>
+                                        <div class="desc">Number, average placing points, top two percentage</div>
                                     </li>
                                     <li class="numItem">
-                                        <div class="tit">
-                                            <span class="num">12</span>
-                                            <span class="txt">보트성적</span>
-                                        </div>
-                                        <div class="desc">번호, 평균 착순점, 연대율</div>
+                                        <div class="tit"><span class="num">12</span> <span class="txt">Boat Performance</span></div>
+                                        <div class="desc">Number, average placing points, top two percentage</div>
                                     </li>
                                 </ul>
                             </div>
@@ -154,19 +117,17 @@
                     <div class="cptSection">
                         <div class="sectArea">
                             <div class="comTitH3">
-                                <h3>평균착순점</h3>
+                                <h3>Average Placing Points</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    경주 착순에 따라 주어지는 착순점의 합계를 출주횟수로 나눈 점수로 선수의 경주능력을 가장 쉽게 알 수 있는 객관적인 수치
-                                </p>
+                                <p class="txt">An objective measure of an athlete&rsquo;s racing ability, calculated by dividing the total placing points (awarded based on race placings) by the number of races entered.</p>
                             </div>
 
                             <div class="comContTable">
                                 <div class="tableArea sizeM">
                                     <table class="basic">
-                                        <caption>평균착순점 구분표 : 일반·이벤트 경주와 그 외를 구분한 표</caption>
+                                        <caption>Average Placing Points Classification Table: A table distinguishing between general/event races and other categories</caption>
                                         <colgroup>
                                             <col style="width: auto;">
                                             <col style="width: 14.28%;">
@@ -178,99 +139,89 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th class="lineR">경주등급＼착순</th>
-                                                <th>1위</th>
-                                                <th>2위</th>
-                                                <th>3위</th>
-                                                <th>4위</th>
-                                                <th>5위</th>
-                                                <th>6위</th>
+                                                <th class="lineR">Race Grade \ Placing</th>
+                                                <th>1st Place</th>
+                                                <th>2nd Place</th>
+                                                <th>3rd Place</th>
+                                                <th>4th Place</th>
+                                                <th>5th Place</th>
+                                                <th>6th Place</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th class="lineR">일반∙이벤트 경주</th>
-                                                <td>10점</td>
-                                                <td>8점</td>
-                                                <td>6점</td>
-                                                <td>4점</td>
-                                                <td>2점</td>
-                                                <td>1점</td>
+                                                <th class="lineR">General/Event Races</th>
+                                                <td>10 points</td>
+                                                <td>8 points</td>
+                                                <td>6 points</td>
+                                                <td>4 points</td>
+                                                <td>2 points</td>
+                                                <td>1 point</td>
                                             </tr>
                                             <tr>
-                                                <th class="lineR">일반∙이벤트 경주 외</th>
-                                                <td>11점</td>
-                                                <td>9점</td>
-                                                <td>7점</td>
-                                                <td>5점</td>
-                                                <td>3점</td>
-                                                <td>2점</td>
+                                                <th class="lineR">Other than General/Event Races</th>
+                                                <td>11 points</td>
+                                                <td>9 points</td>
+                                                <td>7 points</td>
+                                                <td>5 points</td>
+                                                <td>3 points</td>
+                                                <td>2 points</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                             <div class="comAddGuide"> 
-                                <p class="guide">동착발생 시 모두 해당 착순점을 부여</p>
+                                <p class="guide">In the event of a tie judgement, all athletes are awarded the corresponding placing points</p>
                             </div>
                             
                             <div class="comTitH3">
-                                <h3>평균득점</h3>
+                                <h3>Average Scores</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    평균착순점(착순점합계÷출주횟수) 에서 평균사고점(사고점합계÷출주횟수) 을 뺀 점수
-                                </p>
+                                <p class="txt">The score derived by subtracting the average incident points (total incident points ÷ number of races entered) from the average placing points (total placing points ÷ number of races entered)</p>
                             </div>
                             
                             <div class="comTitH3">
-                                <h3>평균승률(연대율)ㆍ(삼연대율)득점</h3>
+                                <h3>Average Winning Percentage (Top Two Percentage)ㆍ(Top Three Percentage) Score</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    1위(1ㆍ2위)(1ㆍ2ㆍ3위)로 골인한 횟수를 출주횟수로 나누어 백분율로 나타낸 것
-                                </p>
+                                <p class="txt">The number of races finished in 1st place (1st and 2nd place) (1st, 2nd, and 3rd place) divided by the number of races entered, expressed as a percentage</p>
                             </div>
                             
                             <div class="comTitH3">
-                                <h3>평균ST(Start Time)</h3>
+                                <h3>Average ST (Start Time)</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    플라잉스타트 경주에서 대시계가 0초를 가리키고 난 후 보트의 출발선 통과 시간을 알리는 수치로 낮을수록 빠른 출발을 나타냄
-                                </p>
+                                <p class="txt">A measure indicating the time it takes for a boat to cross the starting line during a flying start race after the large clock reaches 0 seconds. A lower number signifies a faster start</p>
                             </div>
                             
                             <div class="comTitH3">
-                                <h3>평균OST(OnlineStart Time)</h3>
+                                <h3>Average OST (Online Start Time)</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    온라잉스타트 경주에서 출주신호 이후 출발기 기계장치가 풀려 계류장을 출발하는 시점부터 플라잉스타트라인까지(335m 거리) 통과 시간을 알리는 수치로 낮을수록 빠른 출발을 나타냄
-                                </p>
+                                <p class="txt">In an online start race, this measure indicates the time taken to travel from the moment the starting signal is given and the starting machine is released to the moment the boat crosses the flying start line (a distance of 335m). A lower value represents a faster start</p>
                             </div>
                             
                             <div class="comTitH3">
-                                <h3>평균사고점</h3>
+                                <h3>Average Incident Points</h3>
                             </div>
 
                             <div class="comBasicTxt space">
-                                <p class="txt">
-                                    해당등급심사기간의 사고점의 합계를 출추횟수로 나눈 점수
-                                </p>
+                                <p class="txt">This score is the sum of the incident points during the corresponding grading evaluation period divided by the number of races entered</p>
                             </div>
                             <div class="comAddGuide space"> 
-                                <p class="guide">사고점이란 경주중 실격, 경고, 주의 등으로 선수에게 주어지는 감점</p>
+                                <p class="guide">Incident points are points deducted from a athletes for disqualifications, warnings, or cautions during a race</p>
                             </div>
 
                             <div class="comContTable">
                                 <div class="tableArea sizeM">
                                     <table class="basic">
-                                        <caption>평균착순점 구분표 : 일반·이벤트 경주와 그 외를 구분한 표</caption>
+                                        <caption>Average Placing Points Classification Table: A table distinguishing between general/event races and other categories</caption>
                                         <colgroup>
                                             <col style="width: auto;">
                                             <col style="width: 14.28%;">
@@ -282,28 +233,28 @@
                                         </colgroup>
                                         <thead>
                                             <tr>
-                                                <th class="lineR">경주등급＼착순</th>
-                                                <th>출주제외(I)</th>
-                                                <th>반칙실격</th>
-                                                <th>출주제외(II)·기타실격</th>
-                                                <th>반칙경고</th>
-                                                <th>경고</th>
-                                                <th>주의</th>
+                                                <th class="lineR">Race Grade \ Placing</th>
+                                                <th>Exclusion from Race (I)</th>
+                                                <th>Disqualification due to Violations</th>
+                                                <th>Exclusion from Race (II) / Other Disqualifications</th>
+                                                <th>Foul Warnings</th>
+                                                <th>Warning</th>
+                                                <th>Caution</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th class="lineR">일반경주</th>
-                                                <td>15점</td>
-                                                <td>7점</td>
-                                                <td>4점</td>
-                                                <td>2점</td>
-                                                <td>1점</td>
-                                                <td>0.5점</td>
+                                                <th class="lineR">General Race</th>
+                                                <td>15 points</td>
+                                                <td>7 points</td>
+                                                <td>4 points</td>
+                                                <td>2 points</td>
+                                                <td>1 point</td>
+                                                <td>0.5 points</td>
                                             </tr>
                                             <tr>
-                                                <th class="lineR">선수책임 외</th>
-                                                <td colspan="6">0점</td>
+                                                <th class="lineR">Beyond Athlete&rsquo;s Responsibility</th>
+                                                <td colspan="6">0 points</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -312,15 +263,6 @@
                         </div>
                     </div>
                 </div>
-
-                    
-                <!-- 서브 바텀 (담당자) -->
-                <%- include('../_ejs/sub_btm.ejs', {
-                    team: '경정기획팀',
-                    name: '김정환',
-                    phone: '02-790-8407',
-                    url: "../../",
-                }) %>
                 
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
                 
@@ -333,7 +275,7 @@
         <!-- 하단영역 -->
         <div class="layoutFooter">
             <!-- Footer -->
-            <%- include('../_ejs/footer.ejs', {
+            <%- include('../_ejs_eng/footer.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -344,4 +286,4 @@
 
 
 <!-- Bottom -->
-<%- include('../_ejs/bottom.ejs', { }) %>
+<%- include('../_ejs_eng/bottom.ejs', { }) %>
