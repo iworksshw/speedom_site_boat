@@ -22,7 +22,7 @@
                 .imgArea {
                     width: 100%; margin-top: 12px; overflow: hidden; line-height: 1;
                     &:first-child {margin-top: 0;}
-                    img {width: 100%;}
+                    img {width: 100%; border-radius: 12px; overflow: hidden;}
                 }
                 .desc {margin-top: 12px; font-size: rem(16px); color: var(--Gray-800); line-height: 1.6;}
                 .comAddGuide {margin-top: 6px;}

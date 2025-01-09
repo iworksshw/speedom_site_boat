@@ -8,8 +8,8 @@
                 .mark {
                     font-size: rem(16px); color: var(--Gray-800); font-weight: 600; line-height: 1.6;
                     &::before {display: inline-block; content: ""; width: 16px; height: 16px; border-radius: 50%; margin-right:8px;}
-                    &.mint::before {background: var(--Point-Primary2);}
-                    &.blue::before {background: var(--Point-Blue);}
+                    &.mint::before {background: #0EA3F6;}
+                    &.blue::before {background: #28C39E;}
                     &.yellow::before {background: #ffb444;}
                 }
             }

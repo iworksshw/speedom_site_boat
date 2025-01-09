@@ -30,7 +30,7 @@
                     }
                     &.complete {
                         &::after {
-                            font-size: 0; border: 1px solid var(---Primary); background: var(---Primary) url(../../images/common/ic_20_step.svg) center no-repeat; opacity: 0.4;
+                            font-size: 0; border: 1px solid #0EA3F6; background: #0EA3F6 url(../../images/common/ic_20_step.svg) center no-repeat; opacity: 0.4;
                         }
                         &::before {
                             background: url(../../images/common/ic_etc_step_on.svg) center no-repeat;
@@ -42,7 +42,7 @@
                     }
                     &.current {
                         &::after {
-                            color: #fff; font-weight: 700; border: 1px solid var(---Primary); background: var(---Primary);
+                            color: #fff; font-weight: 700; border: 1px solid #0EA3F6; background: #0EA3F6;
                         }
                         &::before {
                             background: url(../../images/common/ic_etc_step_on.svg) center no-repeat;

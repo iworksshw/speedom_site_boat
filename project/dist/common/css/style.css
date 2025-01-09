@@ -1588,6 +1588,12 @@ body:has(.cptHeader.on) .allMenuArea {
 .cptHeader .gnbArea .gnbBox .depth2Area : 99
 .cptHeader .allMenuArea : ----------------200
 
+#퀵메뉴
+.cptQuickMenu ----------------------------95
+
+#하단 플로팅 배너
+.lytMain .layoutArea .layoutContainer .bannerBtm ----95
+
 #테이블
 .comDataTable .tableArea table thead tr th - 10
 
@@ -4358,7 +4364,7 @@ select.iptSlt.typeLine {
 	bottom: -100%;
 	left: 50%;
 	transform: translateX(-50%);
-	z-index: 999;
+	z-index: 95;
 	transition: bottom 0.4s;
 }
 .lytMain .layoutArea .layoutContainer .bannerBtm.on {
@@ -5076,6 +5082,8 @@ select.iptSlt.typeLine {
 .cptHeader .quickArea .quickBox .guickMenuGroup .item {
 	padding-left: 29px;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 .cptHeader .quickArea .quickBox .guickMenuGroup .item::before {
 	content: "";
@@ -5100,6 +5108,36 @@ select.iptSlt.typeLine {
 .cptHeader .quickArea .quickBox .guickMenuGroup .item a[target=_blank] {
 	padding-right: 20px;
 	background: url(../../images/common/ic_link_blank.svg) right 2px center no-repeat;
+}
+.cptHeader .quickArea .quickBox .guickMenuGroup .item .txt {
+	color: var(--Gray-700);
+	font-size: 0.9375rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.cptHeader .quickArea .quickBox .guickMenuGroup .item .viewPer {
+	color: var(--Gray-700);
+	font-size: 0.9375rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-left: 4px;
+}
+.cptHeader .quickArea .quickBox .guickMenuGroup .item .btnView {
+	width: 16px;
+	height: 16px;
+	font-size: 0;
+	border-radius: 4px;
+	border: 1px solid var(--Gray-300);
+}
+.cptHeader .quickArea .quickBox .guickMenuGroup .item .btnView.minus {
+	background: url(../../images/common/ic_12_header_minus.svg) center no-repeat;
+	margin-left: 8px;
+}
+.cptHeader .quickArea .quickBox .guickMenuGroup .item .btnView.plus {
+	background: url(../../images/common/ic_12_header_plus.svg) center no-repeat;
+	margin-left: 4px;
 }
 .cptHeader .headArea {
 	width: 100%;
@@ -5320,7 +5358,10 @@ select.iptSlt.typeLine {
 	height: 470px;
 	display: block;
 }
-.cptHeader .gnbArea .gnbBox .depth1Group .depth1Menu.on .depth1Name, .cptHeader .gnbArea .gnbBox .depth1Group .depth1Menu:hover .depth1Name, .cptHeader .gnbArea .gnbBox .depth1Group .depth1Menu:focus .depth1Name {
+.cptHeader .gnbArea .gnbBox .depth1Group .depth1Menu:has(.depth2Area).active .depth1Name {
+	background: url(../../images/common/ic_gnb_dep1_on.svg) right 2px center no-repeat;
+}
+.cptHeader .gnbArea .gnbBox .depth1Group .depth1Menu.on .depth1Name, .cptHeader .gnbArea .gnbBox .depth1Group .depth1Menu:hover .depth1Name, .cptHeader .gnbArea .gnbBox .depth1Group .depth1Menu:focus .depth1Name, .cptHeader .gnbArea .gnbBox .depth1Group .depth1Menu.active .depth1Name {
 	color: var(---Primary);
 }
 .cptHeader .gnbArea .gnbBox .depth2Area {
@@ -5370,7 +5411,7 @@ select.iptSlt.typeLine {
 	line-height: normal;
 	display: block;
 }
-.cptHeader .gnbArea .gnbBox .depth2Area .depth2Box .depth2Group .depth2Menu:hover {
+.cptHeader .gnbArea .gnbBox .depth2Area .depth2Box .depth2Group .depth2Menu:hover, .cptHeader .gnbArea .gnbBox .depth2Area .depth2Box .depth2Group .depth2Menu.active {
 	border-radius: 12px;
 	background: #F9FAFC;
 }
@@ -5414,6 +5455,10 @@ select.iptSlt.typeLine {
 }
 .cptHeader .gnbArea .gnbBox .depth3Group .depth3Menu {
 	width: 100%;
+}
+.cptHeader .gnbArea .gnbBox .depth3Group .depth3Menu.active .depth3Name {
+	text-decoration: underline;
+	text-underline-position: under;
 }
 .cptHeader .gnbArea .gnbBox .depth3Group .depth3Menu .depth3Name {
 	width: 100%;
@@ -5682,7 +5727,7 @@ select.iptSlt.typeLine {
 	content: "";
 	width: calc(100% + 4px);
 	height: 14px;
-	background: #A1F4C7;
+	background: #B3E8FF;
 	display: block;
 	position: absolute;
 	left: -2px;
@@ -5692,6 +5737,9 @@ select.iptSlt.typeLine {
 	transition: all 0.1s;
 }
 .allMenuArea .allMenuGroup .allMenuBox .depth3Group .depth3Menu .depth3Name:hover::after {
+	opacity: 1;
+}
+.allMenuArea .allMenuGroup .allMenuBox .depth3Group .depth3Menu.active .depth3Name::after {
 	opacity: 1;
 }
 .allMenuArea .allMenuGroup .allMenuBox .quickLink {
@@ -6658,7 +6706,7 @@ select.iptSlt.typeLine {
 	top: 200px;
 	box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.07);
 	overflow: hidden;
-	z-index: 999;
+	z-index: 95;
 	transition: opacity 0.3s;
 }
 .cptQuickMenu .quickHead {
@@ -10133,6 +10181,8 @@ select.iptSlt.typeLine {
 }
 .cptOrderGuide .imgGuide .guideGroup .guideItem .imgArea img {
 	width: 100%;
+	border-radius: 12px;
+	overflow: hidden;
 }
 .cptOrderGuide .imgGuide .guideGroup .guideItem .desc {
 	margin-top: 12px;
@@ -10720,10 +10770,10 @@ select.iptSlt.typeLine {
 	margin-right: 8px;
 }
 .cptCalendar .calenInfo .markInfo .item .mark.mint::before {
-	background: var(--Point-Primary2);
+	background: #0EA3F6;
 }
 .cptCalendar .calenInfo .markInfo .item .mark.blue::before {
-	background: var(--Point-Blue);
+	background: #28C39E;
 }
 .cptCalendar .calenInfo .markInfo .item .mark.yellow::before {
 	background: #ffb444;
@@ -11830,6 +11880,7 @@ select.iptSlt.typeLine {
 	display: flex;
 	column-gap: 8px;
 	align-items: center;
+	justify-content: space-between;
 }
 .cptDateSelect .selectBox .layerPopup .popCont .dateSetting .btnGroup {
 	display: flex;
@@ -12348,8 +12399,8 @@ select.iptSlt.typeLine {
 }
 .cptJoinTable .joinArea .joinStep .stepGroup .step.complete::after {
 	font-size: 0;
-	border: 1px solid var(---Primary);
-	background: var(---Primary) url(../../images/common/ic_20_step.svg) center no-repeat;
+	border: 1px solid #0EA3F6;
+	background: #0EA3F6 url(../../images/common/ic_20_step.svg) center no-repeat;
 	opacity: 0.4;
 }
 .cptJoinTable .joinArea .joinStep .stepGroup .step.complete::before {
@@ -12361,8 +12412,8 @@ select.iptSlt.typeLine {
 .cptJoinTable .joinArea .joinStep .stepGroup .step.current::after {
 	color: #fff;
 	font-weight: 700;
-	border: 1px solid var(---Primary);
-	background: var(---Primary);
+	border: 1px solid #0EA3F6;
+	background: #0EA3F6;
 }
 .cptJoinTable .joinArea .joinStep .stepGroup .step.current::before {
 	background: url(../../images/common/ic_etc_step_on.svg) center no-repeat;
@@ -19273,6 +19324,15 @@ select.iptSlt.typeLine {
 	width: 20px;
 	height: 20px;
 }
+.cptSchRstCont .thumGall .list a .videoPlayback > button[class*=btnPlay]:disabled {
+	cursor: default;
+}
+.cptSchRstCont .thumGall .list a .videoPlayback > button[class*=btnPlay]:disabled:before {
+	opacity: 0.5;
+}
+.cptSchRstCont .thumGall .list a .videoPlayback > button[class*=btnPlay]:disabled span {
+	color: var(--Gray-300);
+}
 .cptSchRstCont .thumGall .list a .videoPlayback > button.btnPlayIntro:before {
 	background: url("../../images/contents/cont04_01_icon2.svg") no-repeat 50%;
 }
@@ -22288,6 +22348,7 @@ select.iptSlt.typeLine {
 }
 .comDataTable .profile .info .other {
 	margin-top: 4px;
+	font-weight: 400;
 	display: flex;
 	white-space: nowrap;
 }
@@ -22620,16 +22681,16 @@ select.iptSlt.typeLine {
 		width: calc(100% + 16px);
 		overflow: auto;
 	}
-	.comContTable .tableArea table th {
+	.comContTable table th {
 		padding: 8px 5px;
 		font-size: 0.875rem;
 		word-break: keep-all;
 	}
-	.comContTable .tableArea table tbody td {
+	.comContTable table tbody td {
 		padding: 8px 5px;
 		font-size: 0.875rem;
 	}
-	.comContTable .tableArea table tbody td .mark {
+	.comContTable table tbody td .mark {
 		height: 20px;
 		line-height: 20px;
 	}
@@ -25151,14 +25212,15 @@ select.iptSlt.typeLine {
 	padding: 6px 16px;
 	border-radius: 8px;
 	background: var(--Bg-Line-bg-200);
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
 	column-gap: 15px;
 }
 .comCalendar .dayGroup {
 	min-width: 290px;
 	padding: 16px;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
 	gap: 14px 15px;
 }
 .comCalendar .dayItem {
@@ -25190,10 +25252,10 @@ select.iptSlt.typeLine {
 	cursor: pointer;
 }
 .comCalendar .dayItem .mark.mint {
-	background: var(--Point-Primary2);
+	background: #0EA3F6;
 }
 .comCalendar .dayItem .mark.blue {
-	background: var(--Point-Blue);
+	background: #28C39E;
 }
 .comCalendar .dayItem .mark.yellow {
 	background: #ffb444;

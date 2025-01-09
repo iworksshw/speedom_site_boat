@@ -113,6 +113,11 @@
                             flex: 1; display: flex;flex-direction: column;justify-content: end;align-items: center;gap: 4px;padding: 12px 0px 8px;border-radius: 8px;border: 1px solid var(--Bg-Line-line-100, #E1E4EA);background: var(--Bg-Line-bg-200, #F3F5F8);
                             span {color: var(--Gray-700, #414347);font-size: rem(14px);font-weight: 500;line-height: 160%; /* 22.4px */}
                             &:before {content: '';flex-shrink: 0;width: 20px;height: 20px;}
+                            &:disabled {
+                                cursor: default;
+                                &:before {opacity: 0.5;}
+                                span {color: var(--Gray-300);}
+                            }
                         }
                         &.btnPlayIntro:before {background: url('../../images/contents/cont04_01_icon2.svg') no-repeat 50%;}
                         &.btnPlayRace:before {background: url('../../images/contents/cont04_01_icon1.svg') no-repeat 50%;}
