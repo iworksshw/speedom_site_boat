@@ -30115,6 +30115,146 @@ select.iptSlt.typeLine {
 	}
 }
 
+/* 영문버전 수정 */
+.eng {
+	/* 출주표 */
+	/* 상세페이지 */
+	/* 이전/다음 페이지 */
+	/* 경륜동영상 */
+	/* 경륜동영상 상세부분 */
+}
+.eng .comDateSwiper.sticky.sOn .dateSwiper {
+	top: 0;
+}
+.eng .comDateSwiper .dateSwiper .swiper-slide .dateBox {
+	width: max-content;
+	padding: 11px 10px;
+	border-radius: 5px;
+}
+.eng .comDataTable .legend {
+	width: 50px;
+}
+.eng .comDataTable .name {
+	width: 100%;
+	justify-content: flex-start;
+}
+.eng .modLinkScroll .comTitH3 .right .legendList .lgItem .legend {
+	width: 50px;
+}
+@media screen and (max-width: 767px) {
+	.eng .modLinkScroll .comTitH3:has(.right) {
+		flex-wrap: wrap;
+	}
+	.eng .modLinkScroll .comTitH3:has(.right) .right .legendList {
+		flex-wrap: wrap;
+	}
+	.eng .modLinkScroll .comTitH3:has(.right) .right .legendList .lgItem {
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		gap: 5px;
+	}
+	.eng .modLinkScroll .comTitH3:has(.right) .right .legendList .lgItem .legend {
+		width: 50px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.eng .cptBoardView .boardViewArea .viewTop .info {
+		flex-wrap: wrap;
+		gap: 0 12px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.eng .comPrevNext dl {
+		gap: 10px;
+	}
+	.eng .comPrevNext dl dt {
+		width: 130px;
+		flex: 0 0 auto;
+		justify-content: flex-end;
+	}
+	.eng .comPrevNext dl dd {
+		width: calc(100% - 140px);
+	}
+}
+.eng .comSchDetail .searchOptionBox .iptRdoChk[type=checkbox] + label {
+	min-width: max-content;
+	padding: 0 20px;
+}
+.eng .comSchDetail .searchOptionBox > dl dd .innerBox {
+	flex-wrap: wrap;
+	gap: 10px 40px;
+}
+.eng .comSchDetail .searchOptionBox > dl dd .innerBox .subMenu .schBox .schDet {
+	min-width: max-content;
+	padding: 0 15px;
+	white-space: nowrap;
+}
+.eng .comSchDetail .searchOptionBox > dl dd .innerBox .frmGroup {
+	flex-wrap: wrap;
+}
+.eng .comSchDetail .searchOptionBox > dl dd .innerBox .frmBox {
+	width: max-content;
+}
+@media screen and (max-width: 767px) {
+	.eng .comSchDetail .searchOptionBox .iptRdoChk[type=checkbox] + label {
+		min-width: max-content;
+		padding: 0 20px;
+	}
+	.eng .comSchDetail .searchOptionBox > dl dt {
+		width: 100%;
+	}
+	.eng .comSchDetail .searchOptionBox > dl dd .innerBox {
+		flex-wrap: wrap;
+		gap: 10px 40px;
+	}
+	.eng .comSchDetail .searchOptionBox > dl dd .innerBox .subMenu .schBox .schDet {
+		min-width: max-content;
+		padding: 0 15px;
+		white-space: nowrap;
+	}
+	.eng .comSchDetail .searchOptionBox > dl dd .innerBox .frmGroup {
+		flex-wrap: nowrap;
+	}
+	.eng .comSchDetail .searchOptionBox > dl dd .innerBox .frmGroup.frmGroup.gridItem4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.eng .comSchDetail .searchOptionBox > dl dd .innerBox .frmBox {
+		width: auto;
+	}
+}
+.eng .cptTheaterDetail .theaterDetail {
+	height: 100vh;
+	overflow-y: auto;
+}
+.eng .cptTheaterDetail [class*=Area].funcArea {
+	height: 100vh;
+}
+.eng .cptTheaterDetail [class*=Area] ul.btnGroup > li {
+	width: 100%;
+}
+.eng .cptTheaterDetail [class*=Area] .raceInfo .item {
+	flex-wrap: wrap;
+}
+.eng .cptTheaterDetail [class*=Area] .raceInfo .item .itemTit {
+	width: 100%;
+}
+.eng .cptTheaterDetail [class*=Area] .raceInfo .item .itemVal {
+	width: 50%;
+}
+.eng .cptTheaterDetail [class*=Area] .raceInfo.half .item {
+	width: 100%;
+	flex-wrap: nowrap;
+}
+.eng .cptTheaterDetail [class*=Area] .raceInfo.half .item .itemTit {
+	width: 50%;
+	flex-shrink: 0;
+}
+.eng .cptTheaterDetail [class*=Area] .raceInfo.full .item .itemVal + .itemVal {
+	margin-left: 0;
+}
+
 @media print {
 	.lytLayout .layoutArea .layoutTop {
 		display: none;
