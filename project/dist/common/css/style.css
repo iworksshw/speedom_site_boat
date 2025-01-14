@@ -26250,6 +26250,13 @@ form:has(.cptSection:first-child):first-child {
 .comMovieBox .boxArea .movieList .movieItem a.disabled::after {
 	background-image: url(../../images/common/ic_18_movie_play_g.svg);
 }
+.comMovieBox .boxArea .movieList .movieItem.download a::after {
+	background: url(../../images/common/ic_16_movie_download.svg) center no-repeat;
+	vertical-align: text-top;
+}
+.comMovieBox .boxArea .movieList .movieItem.download a.disabled::after {
+	opacity: 0.3;
+}
 .comMovieBox .boxArea.gap {
 	border-radius: 0;
 	padding: 0;

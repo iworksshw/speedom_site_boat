@@ -16,6 +16,12 @@
                     &.disabled {color: var(--Gray-300); pointer-events: none; cursor: default;}
                     &.disabled::after {background-image: url(../../images/common/ic_18_movie_play_g.svg);}
                 }
+                &.download {
+                    a {
+                        &::after {background: url(../../images/common/ic_16_movie_download.svg) center no-repeat; vertical-align: text-top;}
+                        &.disabled::after {opacity: 0.3;}
+                    }
+                }
             }
         }
 
