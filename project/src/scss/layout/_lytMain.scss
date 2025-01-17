@@ -281,9 +281,13 @@
                                 }
     
                                 .txt {
-                                    text-align: center; font-size: rem(16px); color: var(--Gray-800); font-weight: 600; line-height: 32px;
-                                    .sm {font-style: normal; font-size: rem(13px); color: var(--Gray-600);}
-                                    em {font-weight: 700; color: #000;}
+                                    width: 100%; text-align: center; font-size: rem(16px); color: var(--Gray-800); font-weight: 600; line-height: 32px; display: flex; justify-content: center;
+                                    .sm {
+                                        padding-top: 1px; padding-left: 7px; font-style: normal; font-size: rem(13px); color: var(--Gray-600); position: relative;
+                                        &::before {
+                                            content: "/"; font-size: 0.625rem; color: var(--Gray-300); display: block; position: absolute; top: 0; left: 2px
+                                        }
+                                    }
                                 }
                                 .checked {width: 20px; height:20px; font-size: 0; line-height: 24px; display: inline-block; background: url(../../images/main/ic_24_check_on.svg) center / 20px no-repeat;}
     
@@ -466,9 +470,9 @@
                         &:last-child {margin-bottom: 0;}
                         .banner {
                             width: 100%; height: 92px; padding: 21px 30px; border-radius: 10px; overflow: hidden; background: calc(100% - 5px) 22px no-repeat, left top no-repeat; display: block;
-                            &.bg01 {background-image: url(../../images/main/ic_banner01.svg), linear-gradient(96deg, #20A2C4 0%, #67D0C2 100%);}
-                            &.bg02 {background-image: url(../../images/main/ic_banner02.svg), linear-gradient(96deg, #278AE3 0%, #5AC2E5 100%);}
-                            &.bg03 {background-image: url(../../images/main/ic_banner03.svg), linear-gradient(96deg, #596BEF 0%, #6CABFB 100%);}
+                            &.bg01 {background-image: url(../../images/common/ic_banner01.png), linear-gradient(96deg, #20A2C4 0%, #67D0C2 100%);}
+                            &.bg02 {background-image: url(../../images/common/ic_banner02.png), linear-gradient(96deg, #278AE3 0%, #5AC2E5 100%);}
+                            &.bg03 {background-image: url(../../images/common/ic_banner03.png), linear-gradient(96deg, #596BEF 0%, #6CABFB 100%);}
                             i {font-size: rem(16px); color: #fff; font-style: normal; display: block;}
                             b {font-size: rem(18px); color: #fff; font-weight: 700;display: block;}
                         }

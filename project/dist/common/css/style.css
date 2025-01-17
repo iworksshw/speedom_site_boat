@@ -3606,20 +3606,31 @@ select.iptSlt.typeLine {
 	font-style: normal;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .txt {
+	width: 100%;
 	text-align: center;
 	font-size: 1rem;
 	color: var(--Gray-800);
 	font-weight: 600;
 	line-height: 32px;
+	display: flex;
+	justify-content: center;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .txt .sm {
+	padding-top: 1px;
+	padding-left: 7px;
 	font-style: normal;
 	font-size: 0.8125rem;
 	color: var(--Gray-600);
+	position: relative;
 }
-.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .txt em {
-	font-weight: 700;
-	color: #000;
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .txt .sm::before {
+	content: "/";
+	font-size: 0.625rem;
+	color: var(--Gray-300);
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 2px;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .checked {
 	width: 20px;
@@ -4112,13 +4123,13 @@ select.iptSlt.typeLine {
 	display: block;
 }
 .lytMain .layoutArea .layoutContainer .rankingArea .linkBanner .bannerItem .banner.bg01 {
-	background-image: url(../../images/main/ic_banner01.svg), linear-gradient(96deg, #20A2C4 0%, #67D0C2 100%);
+	background-image: url(../../images/common/ic_banner01.png), linear-gradient(96deg, #20A2C4 0%, #67D0C2 100%);
 }
 .lytMain .layoutArea .layoutContainer .rankingArea .linkBanner .bannerItem .banner.bg02 {
-	background-image: url(../../images/main/ic_banner02.svg), linear-gradient(96deg, #278AE3 0%, #5AC2E5 100%);
+	background-image: url(../../images/common/ic_banner02.png), linear-gradient(96deg, #278AE3 0%, #5AC2E5 100%);
 }
 .lytMain .layoutArea .layoutContainer .rankingArea .linkBanner .bannerItem .banner.bg03 {
-	background-image: url(../../images/main/ic_banner03.svg), linear-gradient(96deg, #596BEF 0%, #6CABFB 100%);
+	background-image: url(../../images/common/ic_banner03.png), linear-gradient(96deg, #596BEF 0%, #6CABFB 100%);
 }
 .lytMain .layoutArea .layoutContainer .rankingArea .linkBanner .bannerItem .banner i {
 	font-size: 1rem;
@@ -5224,6 +5235,7 @@ select.iptSlt.typeLine {
 	background: #fff;
 	border-radius: 12px;
 	filter: drop-shadow(0px 0px 1px #ededed);
+	overflow: hidden;
 }
 .cptHeader .headArea .headBox .myMenuGroup .item .myMenuArea .myMenuBox::after {
 	content: "";
@@ -16882,6 +16894,8 @@ form:has(.cptSection:first-child):first-child {
 .cptBatSimul .smlFloating .contBox .contArea .contDt .batCont dd {
 	font-size: 1rem;
 	color: var(--Gray-400);
+	display: flex;
+	gap: 4px;
 }
 .cptBatSimul .smlFloating .contBox .contArea .contDt .batCont dd .number {
 	width: 16px;
@@ -27141,14 +27155,16 @@ form:has(.cptSection:first-child):first-child {
 		padding: 24px;
 	}
 	.comDateSwiper .dateSwiper::before {
-		width: 24px;
-		top: 24px;
-		background: #fff;
+		width: 60px;
+		top: 10px;
+		background: linear-gradient(90deg, #fff 40%, transparent);
+		pointer-events: none;
 	}
 	.comDateSwiper .dateSwiper::after {
 		width: 60px;
-		top: 24px;
+		top: 10px;
 		background: linear-gradient(270deg, #fff 40%, transparent);
+		pointer-events: none;
 	}
 }
 .comDateSwiper.sticky.sOn {
