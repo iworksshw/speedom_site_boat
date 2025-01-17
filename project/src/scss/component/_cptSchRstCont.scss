@@ -203,7 +203,7 @@
             }
             .stxLine {
                 position: relative; color: var(--Gray-800); z-index: 1; font-weight: 600;
-                &::before {content:''; position: absolute; left: 0; right: 0; bottom: 0; height: 37%; background: #A1F4C7; z-index: -1;}
+                &::before {content:''; position: absolute; left: 0; right: 0; bottom: 0; height: 37%; background: #B3E8FF; z-index: -1;}
             }
             .playerRst {
                 display: flex; align-items: center;

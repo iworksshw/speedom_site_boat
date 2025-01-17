@@ -13893,7 +13893,7 @@ form:has(.cptSection:first-child):first-child {
 }
 .cptContSelfTest .testCont .clickBox ul li input[type=radio]:checked + label {
 	border: 1px solid var(---Primary);
-	background: #F0FAF7;
+	background: #EEF9FD;
 	font-weight: 600;
 	color: var(--Gray-900);
 }
@@ -19674,7 +19674,7 @@ form:has(.cptSection:first-child):first-child {
 		right: 0;
 		bottom: 0;
 		height: 37%;
-		background: #A1F4C7;
+		background: #B3E8FF;
 		z-index: -1;
 	}
 	.cptSchRstCont .ctt .playerRst {
@@ -25561,18 +25561,6 @@ form:has(.cptSection:first-child):first-child {
 	font-weight: 800;
 	position: relative;
 }
-.comCalendar .dayItem.today .txt::after {
-	display: block;
-	content: "";
-	width: 4px;
-	height: 4px;
-	border-radius: 50%;
-	background: var(--Gray-300);
-	position: absolute;
-	bottom: 5px;
-	left: 50%;
-	transform: translateX(-50%);
-}
 .comCalendar .dayItem.on .mark.mint {
 	outline: rgba(40, 195, 158, 0.4) solid 4px;
 }
@@ -29102,9 +29090,9 @@ form:has(.cptSection:first-child):first-child {
 		align-items: normal;
 	}
 	.comSchDetail .searchOptionBox > dl dt span {
-		color: var(---Primary, #078B7B);
-		font-size: 0.9375rem;
-		font-weight: 600;
+		color: var(--Gray-600);
+		font-size: 0.875rem;
+		font-weight: 300;
 	}
 	.comSchDetail .searchOptionBox > dl dd {
 		display: block;
@@ -29147,9 +29135,9 @@ form:has(.cptSection:first-child):first-child {
 		font-size: 0.9375rem;
 	}
 	.comSchDetail .searchOptionBox > dl dd .innerBox .subMenu > p span {
-		color: var(---Primary, #078B7B);
-		font-size: 0.9375rem;
-		font-weight: 600;
+		color: var(--Gray-600);
+		font-size: 0.875rem;
+		font-weight: 300;
 	}
 	.comSchDetail .searchOptionBox > dl dd .innerBox .subMenu .schBox .schBtn button,
 	.comSchDetail .searchOptionBox > dl dd .innerBox .subMenu .schBox .schDet {
