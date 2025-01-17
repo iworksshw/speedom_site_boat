@@ -17831,6 +17831,8 @@ form:has(.cptSection:first-child):first-child {
 }
 .cptContSpeedom .contArea .parkImg {
 	margin-top: 20px;
+	border-radius: 16px;
+	overflow: hidden;
 }
 .cptContSpeedom .contArea .parkImg img {
 	width: 100%;
@@ -23232,6 +23234,9 @@ form:has(.cptSection:first-child):first-child {
 	font-size: 0.9375rem;
 	font-weight: 400;
 	line-height: 1.6;
+}
+.comFormTable .cmt .text + a.btn {
+	margin-left: 8px;
 }
 .comFormTable .cmt a.btn[target=_blank] {
 	margin-left: 8px;
@@ -28885,11 +28890,12 @@ form:has(.cptSection:first-child):first-child {
 }
 .comSchDetail .searchOptionBox > dl {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	flex: 1;
 	gap: 8px;
 }
 .comSchDetail .searchOptionBox > dl dt {
+	height: 48px;
 	display: flex;
 	align-items: center;
 	gap: 4px;
