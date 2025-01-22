@@ -30,6 +30,12 @@
                     &::after {display: block; content: ""; clear: both;}
                     .item {width: 50%; float: left; margin-top: 0; margin-bottom: 12px;}
                 }
+                &.half {
+                    display: flex;
+                    .listGroup {
+                        width: 50%;
+                    }
+                }
             }
             .comImgWrap {
                 margin-top: 40px;

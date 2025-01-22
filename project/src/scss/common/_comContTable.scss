@@ -48,6 +48,15 @@
             padding: 13px 5px;
         }
         .left {padding-left: 16px; text-align: left;}
+        .tbGreen {background: #ECF8F6 !important;}
+        .tbBlue {background: #ECF1F8;}
+        .tbRed {background: #F6ECF8;}
+        .tbYellow {background: #F5F2DD45;}
+        .tbGray {background: #EDF4F8;}
+        .bdrBold {border-right: 1px solid var(--Gray-300) !important;}
+        .bdbBold {border-bottom: 1px solid var(--Gray-300) !important;}
+        .bdr {border-right: 1px solid var(--Bg-Line-line-200) !important;}
+        .bdb {border-bottom: 1px solid var(--Bg-Line-line-200) !important;}
     }
 
     @include media("mobile"){
