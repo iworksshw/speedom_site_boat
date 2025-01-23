@@ -30736,6 +30736,12 @@ form:has(.cptSection:first-child):first-child {
 		width: 50px;
 	}
 }
+.eng .comTitH2.mRow {
+	flex-wrap: wrap;
+}
+.eng .comTitH2.mRow .right {
+	margin-top: 12px;
+}
 @media screen and (max-width: 767px) {
 	.eng .cptBoardView .boardViewArea .viewTop .info {
 		flex-wrap: wrap;
