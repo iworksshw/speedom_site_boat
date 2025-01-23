@@ -3088,7 +3088,7 @@ select.iptSlt.typeLine {
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox {
 	width: 100%;
 	height: 618px;
-	padding: 15px 20px 20px;
+	padding: 20px;
 	border-radius: 16px;
 	background: var(--Bg-Line-bg-200);
 }
@@ -3101,6 +3101,7 @@ select.iptSlt.typeLine {
 	font-size: 1rem;
 	color: var(--Gray-600);
 	font-weight: 500;
+	line-height: 26px;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .raceTit .titArea .race {
 	display: flex;
@@ -3153,7 +3154,7 @@ select.iptSlt.typeLine {
 	color: var(--Gray-300);
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea {
-	margin-top: 4px;
+	margin-top: 18px;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .modTab .tabMenuGroup {
 	padding: 0;
@@ -3269,8 +3270,30 @@ select.iptSlt.typeLine {
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea {
 	position: relative;
 }
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .refresh {
+	width: 100%;
+	margin-top: 14px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .refresh .btnRefresh {
+	width: 16px;
+	height: 16px;
+	font-size: 0;
+	background: url(../../images/common/ic_16_refresh.svg) center no-repeat;
+	display: block;
+}
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .refresh .text {
+	margin-left: 4px;
+	color: var(--Gray-500);
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 20px;
+	display: block;
+}
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable {
-	margin-top: 12px;
+	margin-top: 8px;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .columnGroup {
 	width: 100%;
@@ -3363,15 +3386,24 @@ select.iptSlt.typeLine {
 	background: #FF66AF;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem {
-	height: 33px;
+	height: 32px;
 	position: relative;
 	text-align: center;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem:nth-child(1) {
-	height: 121px;
+	height: 120px;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem:nth-child(2) {
-	height: 54px;
+	height: 53px;
+}
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem:nth-last-child(1) {
+	height: 27px;
+}
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem:nth-last-child(2) {
+	height: 27px;
+}
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem:nth-last-child(3) {
+	height: 30px;
 }
 .lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem .th {
 	width: 100%;
@@ -3733,7 +3765,7 @@ select.iptSlt.typeLine {
 	font-size: 0.8125rem;
 	color: var(--Gray-600);
 	position: absolute;
-	bottom: -23px;
+	bottom: -31px;
 	right: 3px;
 	background: url(../../images/common/ic_16_info.svg) left center no-repeat;
 }
@@ -4329,6 +4361,52 @@ select.iptSlt.typeLine {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup {
+	margin-top: 5px;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .linkBox {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .linkBox a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .snsBox {
+	width: 100%;
+	height: 86px;
+	margin-top: 9px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .snsBox:first-child {
+	margin-top: 0;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .snsBox.blog {
+	background: #F3F5F8 url(../../images/main/ic_60_sns_blog.svg) right 24px center no-repeat;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .snsBox.inst {
+	background: #F3F5F8 url(../../images/main/ic_60_sns_inst.svg) right 24px center no-repeat;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .snsBox .snsName {
+	color: var(--Gray-800);
+	font-size: 1.0625rem;
+	font-weight: 400;
+	line-height: 1.6;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .snsBox .snsName em {
+	font-weight: 700;
+}
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup .snsBox a {
+	width: 100%;
+	height: 100%;
+	padding: 0 24px;
+	display: block;
+	align-content: center;
 }
 .lytMain .layoutArea .layoutContainer .bannerArea .bannerSlideWrap {
 	margin-top: 2px;
@@ -24173,6 +24251,7 @@ form:has(.cptSection:first-child):first-child {
 }
 .comImgWrap .imgGroup .imgArea:has(video) {
 	border: 1px solid #000;
+	border-radius: 20px;
 }
 .comImgWrap .imgGroup .imgArea .imgTxt {
 	margin-top: 12px;
@@ -30127,6 +30206,10 @@ form:has(.cptSection:first-child):first-child {
 	}
 	.modMdPopup .popupArea .popupContArea .popBtm.division {
 		justify-content: space-between;
+	}
+	.modMdPopup .popupArea .popupContArea .popBtm:has(.btn:nth-child(2)) .btn {
+		width: calc(50% - 6px);
+		min-width: calc(50% - 6px);
 	}
 }
 
