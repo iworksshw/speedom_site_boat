@@ -384,6 +384,19 @@
                         i {font-weight: 100; font-style: normal; display: block;}
                         b {font-weight: 700; display: block;}
                     }
+                    
+                    .btnArea {
+                        position: absolute; right: 40px; top: 40px;
+                        .raceCheck {
+                            padding-left: 30px; margin-left: 8px; line-height: 24px; font-size: rem(14px); color: #fff; font-weight: 500; display: inline-block; vertical-align: middle; background: url(../../images/main/ic_24_check_on.svg) left center no-repeat;
+                            b {color: #B3E8FF; font-weight: 700;}
+                            &.uncheck {
+                                background-image: url(../../images/main/ic_24_check_off.svg);
+                                b {color: #fff;}
+                            }
+                        }
+                    }
+
                     .slideUnit {
                         display: flex; align-items: center; justify-content: flex-end; gap: 20px; position: absolute; right: 40px; top: 90px;
                         .autoplay-progress {
