@@ -4391,6 +4391,9 @@ select.iptSlt.typeLine {
 .lytMain .layoutArea .layoutContainer .snsArea .snsGroup {
 	margin-top: 5px;
 }
+.lytMain .layoutArea .layoutContainer .snsArea .snsGroup:has(.linkBox) {
+	margin-top: 2px;
+}
 .lytMain .layoutArea .layoutContainer .snsArea .snsGroup .linkBox {
 	width: 100%;
 	height: 100%;
@@ -29638,6 +29641,48 @@ form:has(.cptSection:first-child):first-child {
 	}
 }
 
+/* ------------------------ 로딩바 ------------------------ */
+.comLoading {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: rgba(0, 0, 0, 0.6);
+	gap: 12px;
+	justify-content: center;
+	align-items: center;
+}
+.comLoading.on {
+	display: flex;
+}
+.comLoading .circle {
+	width: 16px;
+	height: 16px;
+	font-size: 0;
+	border-radius: 50%;
+	background: #fff;
+	animation: loadingAction 1.2s ease-in-out infinite;
+}
+.comLoading .circle:nth-child(2) {
+	animation-delay: 0.15s;
+}
+.comLoading .circle:nth-child(3) {
+	animation-delay: 0.3s;
+}
+@keyframes loadingAction {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.5);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 /* -------------------------------- 파일 업로드/다운로드 -------------------------------- */
 /* -------------------------------- 이전글/다음글 -------------------------------- */
 /* --------------------------- 팝업 Large --------------------------- */
@@ -30466,7 +30511,6 @@ form:has(.cptSection:first-child):first-child {
 }
 .modTab .tabMenuGroup {
 	width: 100%;
-	padding: 0 20px;
 	overflow: hidden;
 }
 .modTab .tabMenuGroup .tabMenu {
@@ -30889,6 +30933,9 @@ form:has(.cptSection:first-child):first-child {
 		max-width: none;
 		word-break: break-all;
 	}
+}
+.eng .comSearchBox .searchLine.col3Sch .condition .title {
+	width: 90px;
 }
 
 @media print {
