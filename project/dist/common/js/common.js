@@ -928,7 +928,8 @@ function scrlMoveTo(link, nowBtn) {
 
     if(elem) {
         const moveY = elem.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({top:moveY - 160, behavior:"smooth"});
+        window.scrollTo({top:moveY - 160});
+        //window.scrollTo({top:moveY - 160, behavior:"smooth"});
     } 
 }
 
