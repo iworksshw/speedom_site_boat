@@ -875,7 +875,27 @@ function slctDateSlide() {
                 prevEl: ".swiper-button-prev.selectDate",
             },
         });
+
+        slctDateWatch(dateSwiper);
     }
+}
+
+//날짜 선택 실시간 감시
+function slctDateWatch($swiper) {
+    let onDateBtn = document.querySelector(".dateBox.on");
+    let dateSlide = onDateBtn.closest(".swiper-slide");
+    let dateSlides = Array.from(dateSlide.parentNode.children);  
+    let sdindex = dateSlides.indexOf(dateSlide); 
+
+    setInterval(function(){
+        onDateBtn = document.querySelector(".dateBox.on");
+        dateSlide = onDateBtn.closest(".swiper-slide");
+        dateSlides = Array.from(dateSlide.parentNode.children);  
+        if (sdindex != dateSlides.indexOf(dateSlide)) {
+            sdindex = dateSlides.indexOf(dateSlide);
+            $swiper.slideTo(sdindex);
+        }
+    }, 500);
 }
 
 // 일별달력 스와이퍼 Sticky
