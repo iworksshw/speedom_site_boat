@@ -60,8 +60,8 @@
                 .category {
                     padding-left: 24px; font-size: rem(16px); color: var(--Gray-800); position: relative;
                     &::before {display: block; content: "";width: 18px; height: 18px; border-radius: 50%; position: absolute; top: 2px; left: 0;}
-                    &.mint::before {background: var(--Point-Primary2);}
-                    &.blue::before {background: var(--Point-Blue);}
+                    &.mint::before {background: #0EA3F6;}
+                    &.blue::before {background: #28C39E;}
                     &.yellow::before {background: #ffb444;}
                 }
                 .desc {

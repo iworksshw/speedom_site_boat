@@ -176,7 +176,7 @@
                         .matchBox {
                             width: 117px; height: 143px; border-radius: 12px; padding: 10px; background: #fff; text-align: center; transition: all 0.3s;
                             .matchTit {font-size: rem(20px); font-weight: 700; color: var(--Gray-800); transition: all 0.3s;background: url(../../images/common/ic_20_match_check.png) center -24px no-repeat;}
-                            .matchTag {margin-top: 8px; height: 25px; padding:0 10px; line-height: 25px; border-radius: 12.5px; font-size: rem(14px); color: var(---Primary); font-weight: 600; background:#D6EFFA; display: inline-block;  transition: all 0.3s;}
+                            .matchTag {margin-top: 8px; height: 25px; padding:0 10px; line-height: 25px; border-radius: 12.5px; font-size: rem(14px); color: var(--Primary); font-weight: 600; background:#D6EFFA; display: inline-block;  transition: all 0.3s;}
                             .matchTime {margin-top: 4px; font-size: rem(15px); color: var(--Gray-600); transition: all 0.3s;}
                             
                             &.on, &:hover {
@@ -212,7 +212,7 @@
             .mtchTit {
                 display: flex; align-items: center; column-gap: 8px;
                 .tit {font-size: rem(24px); color: var(--Gray-800); font-weight: 700;}
-                .tag {height: 33px; line-height: 32px; padding: 0 16px; border-radius: 16.5px; font-size: rem(18px); font-weight: 600; color: var(---Primary); background:#D6EFFA;}
+                .tag {height: 33px; line-height: 32px; padding: 0 16px; border-radius: 16.5px; font-size: rem(18px); font-weight: 600; color: var(--Primary); background:#D6EFFA;}
                 .etc {font-size: rem(18px); color: var(--Gray-800); font-weight: 500;}
             }
 
@@ -272,7 +272,7 @@
                                 .name {display: inline-block; vertical-align: middle; position: relative;}
                             }
                             input:checked + label {
-                                background: #E8F8FF; border-color: var(---Primary); color: var(---Primary);
+                                background: #E8F8FF; border-color: var(--Primary); color: var(--Primary);
                                 .name {
                                     &::after {display: block; content: ""; width: 18px; height: 18px; background: url(../../images/common/ic_12_chk_mit.svg) center no-repeat; position: absolute; right: -20px; top: 13px;}
                                 }
@@ -372,7 +372,7 @@
                     dt {font-size: rem(16px); color: var(--Gray-500); font-weight: 500;}
                     dd {
                         font-size: rem(20px); color: var(--Gray-900); font-weight: 700;
-                        .result {color: var(---Primary);font-weight: 700;}
+                        .result {color: var(--Primary);font-weight: 700;}
                     }
                 }
             }
@@ -531,7 +531,7 @@
                                 &:hover {
                                     width: 93px; height: 114px; box-shadow: none; background: #fff;
                                     .matchTit {padding-top: 0; color:var(--Gray-800); background-position: center -24px;}
-                                    .matchTag {color: var(---Primary);background:#D6EFFA;  }
+                                    .matchTag {color: var(--Primary);background:#D6EFFA;  }
                                     .matchTime {color: var(--Gray-600);}
                                 }  
                                 &.on {
