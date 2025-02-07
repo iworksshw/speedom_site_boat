@@ -23594,6 +23594,7 @@ form:has(.cptSection:first-child):first-child {
 	margin-top: 60px;
 	border-bottom: 1px solid var(--Gray-150);
 	position: relative;
+	/* 예외 */
 }
 .comSubInfo:first-child {
 	margin-top: 0;
@@ -23659,6 +23660,17 @@ form:has(.cptSection:first-child):first-child {
 		margin-top: 12px;
 	}
 	.comSubInfo + .cptBoardList {
+		margin-top: 0;
+	}
+}
+.comSubInfo + form:has(.comSearchBox:first-child) {
+	margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+	.comSubInfo + form:has(.comSearchBox:first-child) {
+		margin-top: 40px;
+	}
+	.comSubInfo + form:has(.comSearchBox:first-child) .comSearchBox:first-child {
 		margin-top: 0;
 	}
 }
