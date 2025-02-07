@@ -8988,6 +8988,13 @@ select.iptSlt.typeLine {
 .cptSection:first-child {
 	margin-top: 0;
 }
+.cptSection:has(.comDateSwiper.sticky) {
+	position: sticky;
+	left: 0;
+	top: 64px;
+	z-index: 90;
+	background: #fff;
+}
 @media screen and (max-width: 767px) {
 	.cptSection {
 		margin-top: 40px;
@@ -30952,6 +30959,15 @@ form:has(.cptSection:first-child):first-child {
 	}
 }
 
+/* -------------------------- 스티키 컨테이너 -------------------------- */
+.modStickyContainer {
+	margin-top: 60px;
+	position: relative;
+}
+.modStickyContainer:first-child {
+	margin-top: 0;
+}
+
 /* 영문버전 수정 */
 .eng {
 	/* 출주표 */
@@ -30966,6 +30982,9 @@ form:has(.cptSection:first-child):first-child {
 }
 .eng .cptContSpeedom .contArea .btnGrp a {
 	width: 100%;
+}
+.eng .cptSection:has(.comDateSwiper.sticky) {
+	top: 0;
 }
 .eng .comDateSwiper.sticky.sOn .dateSwiper {
 	top: 0;
