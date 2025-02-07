@@ -1,6 +1,16 @@
 /* 영문버전 수정 */
 
 .eng {
+    .cptContSpeedom {
+        .contArea {
+            .btnGrp {
+                flex-wrap: wrap;
+                a {
+                    width: 100%;
+                }
+            }
+        }
+    }
     /* 출주표 */
     .comDateSwiper {
         &.sticky.sOn {
@@ -100,6 +110,13 @@
         &.mRow {
             flex-wrap: wrap;
             .right {margin-top: 12px; }
+        }
+    }
+    .comPlayerThumList {
+        .playerGroup {
+            .playerItem {
+                width: 100%; text-align: center;
+            }
         }
     }
 

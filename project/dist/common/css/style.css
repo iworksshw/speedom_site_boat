@@ -30961,6 +30961,12 @@ form:has(.cptSection:first-child):first-child {
 	/* 경륜동영상 상세부분 */
 	/* 선수 프로필 상세 */
 }
+.eng .cptContSpeedom .contArea .btnGrp {
+	flex-wrap: wrap;
+}
+.eng .cptContSpeedom .contArea .btnGrp a {
+	width: 100%;
+}
 .eng .comDateSwiper.sticky.sOn .dateSwiper {
 	top: 0;
 }
@@ -31020,6 +31026,10 @@ form:has(.cptSection:first-child):first-child {
 }
 .eng .comTitH2.mRow .right {
 	margin-top: 12px;
+}
+.eng .comPlayerThumList .playerGroup .playerItem {
+	width: 100%;
+	text-align: center;
 }
 @media screen and (max-width: 767px) {
 	.eng .cptBoardView .boardViewArea .viewTop .info {
