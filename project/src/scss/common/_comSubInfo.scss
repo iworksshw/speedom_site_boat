@@ -25,4 +25,15 @@
             margin-top:0;
         }
     }
+
+    /* 예외 */
+    & + form:has(.comSearchBox:first-child) {
+        margin-top: 60px;
+        @include media("mobile"){
+            margin-top: 40px;
+            .comSearchBox:first-child {
+                margin-top: 0;
+            }
+        }
+    }
 }
