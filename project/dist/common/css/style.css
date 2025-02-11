@@ -29834,7 +29834,7 @@ form:has(.cptSection:first-child):first-child {
 }
 .comRaceTime .timeArea .tit {
 	color: var(--Gray-900, #111);
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 1.6;
@@ -29878,6 +29878,40 @@ form:has(.cptSection:first-child):first-child {
 	position: absolute;
 	left: 0;
 	top: 3px;
+}
+@media screen and (max-width: 767px) {
+	.comRaceTime {
+		margin-top: 40px;
+	}
+	.comRaceTime .timeArea {
+		width: calc(100% + 32px);
+		margin-left: -16px;
+		flex-wrap: wrap;
+		padding: 16px;
+	}
+	.comRaceTime .timeArea .alignL {
+		align-items: flex-end;
+	}
+	.comRaceTime .timeArea .alignR {
+		justify-content: flex-start;
+	}
+	.comRaceTime .timeArea .tit {
+		font-size: 1.25rem;
+	}
+	.comRaceTime .timeArea .tit .mbr {
+		width: 100%;
+		display: block;
+	}
+	.comRaceTime .timeArea .tag {
+		margin-bottom: 3px;
+	}
+	.comRaceTime .timeArea .time {
+		margin-top: 16px;
+		font-size: 1.25rem;
+	}
+	.comRaceTime + .cptSection {
+		margin-top: 0;
+	}
 }
 
 /* -------------------------------- 파일 업로드/다운로드 -------------------------------- */
@@ -31166,5 +31200,102 @@ form:has(.cptSection:first-child):first-child {
 	.lytLayout .layoutArea .layoutFooter {
 		display: none;
 	}
+}
+/* 메인 */
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .raceTit .titArea .race .tit {
+	font-size: 26px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .raceTit .titArea .date {
+	font-size: 18px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .modTab .tabMenuGroup .tabMenu .tabItem .tabName {
+	font-size: 18px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .raceTit .btnArea .raceCheck {
+	font-size: 16px;
+}
+
+.comDateSwiper .dateSwiper .swiper-slide .dateBox > span {
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .refresh .text {
+	font-size: 16px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .playerName .plInfo .info {
+	font-size: 16px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .playerName .plInfo .info em {
+	font-size: 18px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .aiChart .chartNum em {
+	font-size: 18px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .aiChart .chartNum i {
+	font-size: 16px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .txt {
+	font-size: 18px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .txt .sm::before {
+	font-size: 16px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem .th {
+	font-size: 16px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .rowGroup .rowItem .th .tooltip {
+	vertical-align: middle;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea .playerTable .txt .sm {
+	font-size: 16px;
+}
+
+.lytMain .layoutArea .layoutContainer .raceArea .raceBox .tabArea .assayArea > .info {
+	font-size: 16px;
+}
+
+/* 출주표 */
+.comDataTable .tableArea table thead tr th {
+	font-size: 18px;
+	padding: 8px 5px;
+}
+
+.comDataTable .tableArea table tbody tr th {
+	font-size: 18px;
+	padding: 8px 5px;
+}
+
+.comDataTable .tableArea table tbody tr th .txtBtn {
+	font-size: 18px;
+}
+
+.comDataTable .tableArea table tbody tr td {
+	font-size: 18px;
+	padding: 8px 5px;
+}
+
+.comDataTable .tableArea table tbody tr td .txtBtn {
+	font-size: 18px;
+}
+
+.comDataTable .tableArea table tbody tr .left {
+	padding: 8px 20px;
+}
+
+.comDataTable .player {
+	font-size: 18px;
 }
 /*# sourceMappingURL=../maps/style.css.map */
