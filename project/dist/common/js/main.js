@@ -97,14 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-    // 배너 on/off
-    const btmBanner = document.querySelector(".bannerBtm");
-    const bannerClose = btmBanner.querySelector(".btnClose");
+    // // 배너 on/off
+    // const btmBanner = document.querySelector(".bannerBtm");
+    // const bannerClose = btmBanner.querySelector(".btnClose");
 
-    btmBanner.classList.add("on");
-    bannerClose.addEventListener("click", function(){
-        btmBanner.classList.remove("on");
-    })
+    // btmBanner.classList.add("on");
+    // bannerClose.addEventListener("click", function(){
+    //     btmBanner.classList.remove("on");
+    // })
     
     // 퀵메뉴 / 헤더 스크롤 보정
     // let lastScrollX = 0;
