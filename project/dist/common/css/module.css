@@ -826,23 +826,20 @@
 	left: 15px;
 	bottom: 20px;
 	transform-origin: center;
-	animation: popLoading 1.5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+	animation: popLoading 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 }
 @keyframes popLoading {
 	0% {
 		transform: translateY(0) rotate(0deg);
 	}
 	15% {
-		transform: translateY(0) rotate(5deg);
+		transform: translateY(-10px) rotate(2deg);
 	}
-	30% {
+	35% {
 		transform: translateY(0) rotate(0deg);
 	}
-	45% {
-		transform: translateY(0) rotate(5deg);
-	}
-	60% {
-		transform: translateY(0) rotate(0deg);
+	80% {
+		transform: translateY(6px) rotate(0deg);
 	}
 	100% {
 		transform: translateY(0) rotate(0deg);
