@@ -4693,6 +4693,7 @@ select.iptSlt.typeLine {
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 77px;
+	text-align: center;
 }
 .lytMain .mainPopup .popArea .popCont .raceCancel .cancelDate {
 	width: 100%;
