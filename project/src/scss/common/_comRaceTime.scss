@@ -1,6 +1,7 @@
 /* ------------------- 현재 경주 발매상태 및 현재시간 ------------------- */
 .comRaceTime {
     width: 100%; margin-top: 60px;
+    &:first-child {margin-top: 0;}
     .timeArea {
         width: 100%; padding: 20px 40px; border-radius: 12px; background: #EEF9FD; display: flex; justify-content: space-between; align-items: center;
         .alignL {
@@ -13,7 +14,7 @@
             color: var(--Gray-900, #111); font-size: rem(24px); font-style: normal; font-weight: 700; line-height: 1.6;
         }
         .tag {
-            width: max-content; height: 26px; margin-left: 8px; padding: 0 10px; border-radius: 20px; 
+            width: max-content; min-width: max-content; height: 26px; margin-left: 8px; padding: 0 10px; border-radius: 20px; 
             color: #FFF; font-size: rem(16px); font-weight: 700; line-height: 1.6;
             &.before {
                 background: var(--Secondary); 
@@ -54,5 +55,6 @@
             }
         }
         & + .cptSection {margin-top: 0;}
+        & + .comDataTable {margin-top: 40px;}
     }
 }
