@@ -4725,7 +4725,7 @@ select.iptSlt.typeLine {
 }
 .lytMain .mainPopup .popArea .popCont .raceCancel .cancelMsg p {
 	color: var(--Gray-700);
-	text-align: center;
+	text-align: left;
 	font-size: 22px;
 	font-weight: 400;
 	line-height: 1.6;
