@@ -5933,6 +5933,12 @@ select.iptSlt.typeLine {
 .comDataTable .legend.type04 {
 	background: #92BA2B;
 }
+.comDataTable .btnMovie {
+	width: 40px;
+	height: 24px;
+	font-size: 0;
+	background: url(../../images/common/ic_16_monitor.svg) center no-repeat;
+}
 
 .comContTable {
 	margin-top: 14px;
@@ -9720,6 +9726,20 @@ select.iptSlt.typeLine {
 	.comTabData .rightLink ul {
 		gap: 12px 8px;
 	}
+}
+
+.modPopup .comTabData {
+	width: 100%;
+	margin-left: 0;
+}
+.modPopup .comTabData .tabMenuGroup {
+	padding: 0;
+}
+.modPopup .comTabData .tabMenuGroup .tabMenu .tabItem {
+	margin-right: 12px;
+}
+.modPopup .comTabData .tabMenuGroup .tabMenu .tabItem:last-child {
+	margin-right: 0;
 }
 
 /* ------------------------------- 컨텐츠 내 약관상자 ------------------------------- */
