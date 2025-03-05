@@ -4,7 +4,7 @@
         width: 100%; height: 68px; padding: 10px 32px; background: linear-gradient(90deg, #169EEA 0%, #1C4C7E 100%); display: flex; justify-content: center; align-items: center;
         .headTit {
             line-height: 0;
-            .txt {font-size: rem(20px); color: #fff; font-weight: 700;}
+            .txt {font-size: rem(20px); color: #fff; font-weight: 700; white-space: nowrap;}
         }
         .btnClose {
             display: none;
