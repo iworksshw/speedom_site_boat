@@ -169,7 +169,8 @@
             }
         }
         .raceInfo {
-            display: flex; flex-wrap: wrap;;
+            display: none; flex-wrap: wrap;
+            &.on {display: flex;}
             .item {
                 display: flex; align-items: center; min-height: 29px;
                 .itemTit {
