@@ -3745,6 +3745,9 @@
 	padding-top: 12px;
 	padding-bottom: 0;
 }
+.modMdPopup .cptBoardView .boardViewArea.bdNone .viewBody .viewContArea pre {
+	white-space: normal;
+}
 @media screen and (max-width: 767px) {
 	.modMdPopup .cptBoardView {
 		width: 100%;
